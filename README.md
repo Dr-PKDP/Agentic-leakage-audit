@@ -1,11 +1,5 @@
-# P6: Population-Valid Agentic Clinical Prediction
+# P6 Stage 2
 
-Stage 1 reproducibility scaffold for the NHANES clinical-agent benchmark. Raw NHANES files are deliberately not included.
+Windows 10 / Python 3.11: resumable NHANES development-data acquisition, checksum logs, XPT schema extraction, harmonization table creation, and leakage-validator tests.
 
-## Setup
-
-```bash
-python -m pip install -r requirements.txt
-python src/acquire_manifest.py --manifest protocol/nhanes_input_manifest_v1.csv --split development --output data/raw/development
-pytest -q
-```
+Run: `./run_stage2_windows.ps1`
