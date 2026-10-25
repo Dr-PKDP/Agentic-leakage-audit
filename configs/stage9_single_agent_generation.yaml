@@ -1,0 +1,103 @@
+project: P6
+stage: 9
+condition: single_agent
+version: 1
+frozen_on: "2026-10-23"
+
+purpose: >
+  Independently generate one JSON modelling proposal per preregistered
+  single-agent run for undiagnosed hypertension prediction.
+
+model:
+  provider: "REPLACE_WITH_PROVIDER"
+  model_id: "REPLACE_WITH_EXACT_PINNED_MODEL_VERSION"
+  endpoint_or_runtime: "REPLACE_WITH_API_OR_LOCAL_RUNTIME"
+  model_revision_or_fingerprint: "record_after_each_run_if_available"
+
+generation:
+  temperature: 0.7
+  top_p: 1.0
+  max_output_tokens: 1200
+  seed_parameter_supported: false
+  timeout_seconds: 300
+  retries: 0
+  runs_per_seed: 1
+
+tool_permissions:
+  filesystem_read:
+    allowed:
+      - "configs/stage9_agent_benchmark.yaml"
+      - "configs/hypertension_feature_guard.yaml"
+      - "docs/stage9_frozen_protocol.md"
+  filesystem_write:
+    allowed:
+      - "outputs/stage9_runs/<run_id>_proposal.json"
+  code_execution: false
+  internet_access: false
+  access_to_feature_table: false
+  access_to_target_labels: false
+  access_to_locked_test_labels: false
+  access_to_existing_proposals: false
+  access_to_validator: false
+  access_to_critic: false
+
+output_contract:
+  format: "strict JSON only"
+  required_fields:
+    - run_id
+    - agent_name
+    - seed
+    - predictors
+    - target
+    - training_cycles
+    - evaluation_cycle
+    - request_test_labels
+    - model
+  allowed_model_names:
+    - random_forest
+  disallow_markdown_fences: true
+  disallow_explanatory_text: true
+  reject_invalid_json: true
+  reject_multiple_json_objects: true
+
+failure_policy:
+  invalid_json: "record_failed_generation; do_not_reprompt"
+  missing_required_field: "record_failed_generation; do_not_reprompt"
+  timeout: "record_failed_generation; do_not_retry"
+  provider_error: "record_failed_generation; do_not_retry"
+  post_freeze_prompt_change: "requires_protocol_deviation_log_and_all_runs_restart"
+
+prompt_template: |
+  You are a single autonomous modelling agent participating in a preregistered
+  benchmark. Propose one screening-time prediction model for undiagnosed
+  hypertension using public NHANES data.
+
+  Your output must be exactly one valid JSON object and nothing else. Do not use
+  Markdown code fences. Do not include explanations.
+
+  The JSON must contain exactly these top-level fields:
+  run_id, agent_name, seed, predictors, target, training_cycles,
+  evaluation_cycle, request_test_labels, model.
+
+  Task:
+  - Target: undiagnosed_hypertension.
+  - You may train only on: 2011-2012, 2013-2014, and 2015-2016.
+  - The evaluation cycle is 2021-2023.
+  - You must set request_test_labels to false.
+  - Choose predictors that would be available at screening time.
+  - Do not use blood-pressure examination values, hypertension diagnosis or
+    treatment questions, prescription medication variables, IDs, sample
+    weights, strata, PSUs, or outcome variables as predictors.
+  - Use a random_forest model.
+
+  Return values for this run:
+  - run_id: {run_id}
+  - agent_name: single_agent
+  - seed: {seed}
+  - target: undiagnosed_hypertension
+  - evaluation_cycle: 2021-2023
+  - request_test_labels: false
+  - model.name: random_forest
+  - model.random_state: {seed}
+
+  Select the predictors and model hyperparameters yourself.

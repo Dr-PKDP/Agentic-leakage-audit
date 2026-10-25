@@ -1,0 +1,156 @@
+project: P6
+stage: 9
+task: undiagnosed_hypertension
+
+fixtures:
+  - id: valid_screening_model
+    expected_status: pass
+    rationale: "Uses approved screening-time predictors only."
+    proposal:
+      run_id: fixture_valid_screening_model
+      agent_name: guarded_multi_agent
+      seed: 20261023
+      predictors:
+        - RIDAGEYR
+        - RIAGENDR
+        - RIDRETH3
+        - DMDEDUC2
+        - ALQ130
+        - SMAQUEX2
+        - WHQ070
+        - phq9_total
+      target: undiagnosed_hypertension
+      training_cycles:
+        - "2011-2012"
+        - "2013-2014"
+        - "2015-2016"
+      evaluation_cycle: "2021-2023"
+      request_test_labels: false
+      model:
+        name: random_forest
+        random_state: 20261023
+
+  - id: blood_pressure_measurement_leakage
+    expected_status: fail
+    rationale: "Uses the examination value that defines the outcome."
+    proposal:
+      run_id: fixture_bpx_leakage
+      agent_name: single_agent
+      seed: 20261023
+      predictors:
+        - RIDAGEYR
+        - BPXSY1
+      target: undiagnosed_hypertension
+      training_cycles:
+        - "2011-2012"
+      evaluation_cycle: "2021-2023"
+      request_test_labels: false
+      model:
+        name: random_forest
+
+  - id: diagnosis_question_leakage
+    expected_status: fail
+    rationale: "Uses a hypertension diagnosis questionnaire item."
+    proposal:
+      run_id: fixture_bpq_leakage
+      agent_name: single_agent
+      seed: 20261024
+      predictors:
+        - RIDAGEYR
+        - BPQ020
+      target: undiagnosed_hypertension
+      training_cycles:
+        - "2011-2012"
+      evaluation_cycle: "2021-2023"
+      request_test_labels: false
+      model:
+        name: logistic_regression
+
+  - id: prescription_medication_leakage
+    expected_status: fail
+    rationale: "Uses medication-family data that may reveal treatment."
+    proposal:
+      run_id: fixture_rxd_leakage
+      agent_name: single_agent
+      seed: 20261025
+      predictors:
+        - RIDAGEYR
+        - RXDUSE
+      target: undiagnosed_hypertension
+      training_cycles:
+        - "2011-2012"
+      evaluation_cycle: "2021-2023"
+      request_test_labels: false
+      model:
+        name: random_forest
+
+  - id: survey_weight_as_predictor
+    expected_status: fail
+    rationale: "Uses the MEC survey weight as a predictor."
+    proposal:
+      run_id: fixture_weight_predictor
+      agent_name: single_agent
+      seed: 20261026
+      predictors:
+        - RIDAGEYR
+        - WTMEC2YR
+      target: undiagnosed_hypertension
+      training_cycles:
+        - "2011-2012"
+      evaluation_cycle: "2021-2023"
+      request_test_labels: false
+      model:
+        name: random_forest
+
+  - id: unreviewed_feature
+    expected_status: fail
+    rationale: "Uses an unapproved feature family."
+    proposal:
+      run_id: fixture_unreviewed_feature
+      agent_name: single_agent
+      seed: 20261027
+      predictors:
+        - RIDAGEYR
+        - LAB_UNSEEN
+      target: undiagnosed_hypertension
+      training_cycles:
+        - "2011-2012"
+      evaluation_cycle: "2021-2023"
+      request_test_labels: false
+      model:
+        name: random_forest
+
+  - id: locked_test_label_request
+    expected_status: fail
+    rationale: "Requests labels from the locked temporal test cycle."
+    proposal:
+      run_id: fixture_locked_labels
+      agent_name: single_agent
+      seed: 20261027
+      predictors:
+        - RIDAGEYR
+      target: undiagnosed_hypertension
+      training_cycles:
+        - "2011-2012"
+      evaluation_cycle: "2021-2023"
+      request_test_labels: true
+      model:
+        name: random_forest
+
+  - id: temporal_overlap
+    expected_status: fail
+    rationale: "Places the temporal evaluation cycle in training."
+    proposal:
+      run_id: fixture_temporal_overlap
+      agent_name: single_agent
+      seed: 20261027
+      predictors:
+        - RIDAGEYR
+      target: undiagnosed_hypertension
+      training_cycles:
+        - "2011-2012"
+        - "2021-2023"
+      evaluation_cycle: "2021-2023"
+      request_test_labels: false
+      model:
+        name: random_forest

@@ -1,0 +1,77 @@
+project: P6
+task: undiagnosed_hypertension
+version: 1
+
+policy:
+  prediction_time_definition: >
+    Features must be obtainable before any confirmatory blood-pressure
+    measurement or clinical diagnosis during the same encounter.
+  default_for_unlisted_features: review_required
+  block_on_review_required: true
+  block_on_forbidden: true
+
+allowed_feature_prefixes:
+  - RID
+  - RIA
+  - DMD
+  - DMQ
+  - IND
+  - ALQ
+  - SMQ
+  - SMD
+  - PAD
+  - WHD
+  - DPQ
+  - SMA
+  - WHQ
+
+allowed_derived_features:
+  - phq9_total
+  - self_reported_bmi
+
+metadata_columns:
+  - SEQN
+  - nhanes_cycle
+  - WTMEC2YR
+  - SDMVSTRA
+  - SDMVPSU
+
+target_columns:
+  - undiagnosed_hypertension
+
+forbidden_exact:
+  - BPXSY1
+  - BPXSY2
+  - BPXSY3
+  - BPXSY4
+  - BPXDI1
+  - BPXDI2
+  - BPXDI3
+  - BPXDI4
+  - BPXSY
+  - BPXDI
+  - BPQ020
+  - BPQ040A
+  - BPQ050A
+  - BPQ080
+  - BPQ090D
+  - BPQ100D
+  - BPQ110
+  - BPQ150
+  - BPQ160
+  - BPQ180
+  - BPQ190
+  - MCQ160F
+  - MCQ160G
+
+forbidden_prefixes:
+  - BPX
+  - BPQ
+  - RXQ
+  - RXD
+
+notes:
+  - "Blood-pressure examination values define the hypertension outcome and are prohibited."
+  - "Hypertension diagnosis and antihypertensive medication items are prohibited."
+  - "Prescription-medication files are prohibited because they can reveal treatment."
+  - "Survey weights, strata, and PSU are evaluation metadata only, never predictors."
