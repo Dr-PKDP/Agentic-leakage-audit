@@ -1,0 +1,6 @@
+path,known_error_repairs_of_21,supported_retained_of_24,observed_harmful_changes,supported_outputs_of_48,unparseable_of_48,schema_failures_of_48
+self_review,16,24,0,42,1,0
+structure_feedback,17,23,1,42,0,1
+evidence_critic,16,23,1,41,0,1
+patch_critic/interface_only,20,22,1,45,1,0
+patch_critic/evidence_guarded,20,23,0,46,1,0
