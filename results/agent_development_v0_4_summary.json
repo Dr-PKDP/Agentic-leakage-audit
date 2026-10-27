@@ -1,6 +1,6 @@
 {
   "run_id": "integrated_v0_4_20261027T040459122453Z",
-  "evidence": "user-supplied terminal summaries and two matched records; raw archive not independently inspected",
+  "evidence": "user-supplied terminal summaries, two matched fallback records and five targeted revision extracts; raw archive not independently inspected",
   "contexts": 24,
   "inputs": 48,
   "workflow_units": 192,
@@ -14,6 +14,8 @@
   "heldout_evaluation": false,
   "independent_scientific_validation": false,
   "generated_code_execution": false,
-  "pending_audit": ["two unparseable outputs", "two schema failures", "malformed stale-contract patch"],
-  "original_run_unchanged": true
+  "targeted_failure_audit": {"status": "complete_on_supplied_extracts", "units": 5, "markdown_fence_failures": 2, "empty_string_schema_failures": 2, "unknown_patch_field_failures": 1, "audited_revisions_truncated": 0, "record": "results/agent_development_v0_4_failure_audit.json"},
+  "original_run_unchanged": true,
+  "scores_unchanged": true,
+  "retrospective_normalization_performed": false
 }
