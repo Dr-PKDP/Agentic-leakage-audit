@@ -1,0 +1,2253 @@
+[
+  {
+    "unit": "availability_review__guarded_critic__42",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__guarded_critic__43",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__guarded_critic__44",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__guarded_critic__45",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__guarded_critic__46",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch",
+          "pending_decision_mismatch",
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch",
+          "pending_decision_mismatch",
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__single_self_review__42",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__single_self_review__43",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch",
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__single_self_review__44",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch",
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__single_self_review__45",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__single_self_review__46",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch",
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__structure_feedback__42",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__structure_feedback__43",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__structure_feedback__44",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__structure_feedback__45",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "availability_review__structure_feedback__46",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__guarded_critic__42",
+    "case": "fixed_internal_design",
+    "condition": "guarded_critic",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__guarded_critic__43",
+    "case": "fixed_internal_design",
+    "condition": "guarded_critic",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__guarded_critic__44",
+    "case": "fixed_internal_design",
+    "condition": "guarded_critic",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__guarded_critic__45",
+    "case": "fixed_internal_design",
+    "condition": "guarded_critic",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__guarded_critic__46",
+    "case": "fixed_internal_design",
+    "condition": "guarded_critic",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__single_self_review__42",
+    "case": "fixed_internal_design",
+    "condition": "single_self_review",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__single_self_review__43",
+    "case": "fixed_internal_design",
+    "condition": "single_self_review",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__single_self_review__44",
+    "case": "fixed_internal_design",
+    "condition": "single_self_review",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "pending_decision_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__single_self_review__45",
+    "case": "fixed_internal_design",
+    "condition": "single_self_review",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__single_self_review__46",
+    "case": "fixed_internal_design",
+    "condition": "single_self_review",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__structure_feedback__42",
+    "case": "fixed_internal_design",
+    "condition": "structure_feedback",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__structure_feedback__43",
+    "case": "fixed_internal_design",
+    "condition": "structure_feedback",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__structure_feedback__44",
+    "case": "fixed_internal_design",
+    "condition": "structure_feedback",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__structure_feedback__45",
+    "case": "fixed_internal_design",
+    "condition": "structure_feedback",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "fixed_internal_design__structure_feedback__46",
+    "case": "fixed_internal_design",
+    "condition": "structure_feedback",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "claim_scope_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__guarded_critic__42",
+    "case": "initial_pending",
+    "condition": "guarded_critic",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__guarded_critic__43",
+    "case": "initial_pending",
+    "condition": "guarded_critic",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__guarded_critic__44",
+    "case": "initial_pending",
+    "condition": "guarded_critic",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__guarded_critic__45",
+    "case": "initial_pending",
+    "condition": "guarded_critic",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__guarded_critic__46",
+    "case": "initial_pending",
+    "condition": "guarded_critic",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__single_self_review__42",
+    "case": "initial_pending",
+    "condition": "single_self_review",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__single_self_review__43",
+    "case": "initial_pending",
+    "condition": "single_self_review",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__single_self_review__44",
+    "case": "initial_pending",
+    "condition": "single_self_review",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "survey_plan_mismatch",
+          "validation_plan_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__single_self_review__45",
+    "case": "initial_pending",
+    "condition": "single_self_review",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__single_self_review__46",
+    "case": "initial_pending",
+    "condition": "single_self_review",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [
+          "excluded_partition_mismatch"
+        ],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__structure_feedback__42",
+    "case": "initial_pending",
+    "condition": "structure_feedback",
+    "seed": 42,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__structure_feedback__43",
+    "case": "initial_pending",
+    "condition": "structure_feedback",
+    "seed": 43,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__structure_feedback__44",
+    "case": "initial_pending",
+    "condition": "structure_feedback",
+    "seed": 44,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__structure_feedback__45",
+    "case": "initial_pending",
+    "condition": "structure_feedback",
+    "seed": 45,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  },
+  {
+    "unit": "initial_pending__structure_feedback__46",
+    "case": "initial_pending",
+    "condition": "structure_feedback",
+    "seed": 46,
+    "initial": {
+      "claims_normalized": true,
+      "strict": {
+        "structure_valid": false,
+        "structure_findings": [
+          "claims: expected nonblank string list"
+        ],
+        "contract_assessable": false,
+        "contract_findings": [],
+        "contract_pass": false,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    },
+    "final": {
+      "claims_normalized": false,
+      "strict": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      },
+      "normalized": {
+        "structure_valid": true,
+        "structure_findings": [],
+        "contract_assessable": true,
+        "contract_findings": [],
+        "contract_pass": true,
+        "scientific_validity": "not_independently_assessed"
+      }
+    }
+  }
+]

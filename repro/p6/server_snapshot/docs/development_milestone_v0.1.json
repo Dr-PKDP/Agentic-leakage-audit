@@ -1,0 +1,24 @@
+{
+  "status": "development_only_not_frozen",
+  "task_id": "nhanes_depression_screening_dev_v1",
+  "test_methods_passed": 21,
+  "test_breakdown": {
+    "original_gate": 8,
+    "shared_gate": 8,
+    "proposal_structure": 5
+  },
+  "test_count_limitation": "Gate suites overlap; methods include subtests; this is not a count of independent safeguards.",
+  "original_run": "outputs/depression_dev_9rZCEUo9",
+  "revision_run": "outputs/depression_dev_9rZCEUo9/revision_SlAdGp0E",
+  "schema_v2_run": "outputs/depression_schema_v2_HUocN0EL",
+  "observations": [
+    "Original and revised proposals omitted required unresolved decisions.",
+    "Schema-v2 response preserved all four pending-decision identifiers and passed structural checks.",
+    "Schema-v2 narrative survey-design and predictive-evaluation plans remained incomplete."
+  ],
+  "review_provenance": "AI-assistant reviews saved by user; not independent human adjudication.",
+  "scientific_validation_completed": false,
+  "benchmark_completed": false,
+  "model_training_authorized": false,
+  "next_milestone": "Resolve predictor availability, income handling, survey weights, and evaluation design before freezing a research protocol."
+}

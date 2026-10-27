@@ -1,0 +1,81 @@
+{
+  "task_id": "nhanes_depression_screening_dev_v1",
+  "status": "development_only_not_frozen",
+  "dataset": {
+    "survey": "NHANES",
+    "cycle": "2017-2018",
+    "components": [
+      "DEMO_J",
+      "DPQ_J"
+    ],
+    "reader": "pyreadstat.read_xport",
+    "join_key": "SEQN",
+    "join_validation": "one_to_one"
+  },
+  "intended_task": "Concurrent screening for elevated depressive symptoms using information available before DPQ administration.",
+  "not_claimed": [
+    "Confirmed clinical diagnosis",
+    "Future depression risk",
+    "Temporal transport",
+    "Clinical deployment readiness"
+  ],
+  "population": {
+    "minimum_age": 18,
+    "require_positive_mec_weight": true,
+    "require_design_fields_present": true
+  },
+  "outcome": {
+    "name": "elevated_depressive_symptoms",
+    "items": [
+      "DPQ010",
+      "DPQ020",
+      "DPQ030",
+      "DPQ040",
+      "DPQ050",
+      "DPQ060",
+      "DPQ070",
+      "DPQ080",
+      "DPQ090"
+    ],
+    "valid_item_values": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "score_rule": "sum all nine valid items",
+    "positive_threshold": 10,
+    "incomplete_item_policy": "Outcome remains missing; no imputation or prorating.",
+    "sources": [
+      "https://www.cdc.gov/nchs/products/databriefs/db527.htm"
+    ]
+  },
+  "predictor_policy": {
+    "status": "not_yet_selected",
+    "forbidden": [
+      "All DPQ fields",
+      "PHQ-9 total score",
+      "Any derivative of outcome-defining items",
+      "SEQN",
+      "Survey weights and design identifiers"
+    ],
+    "requirement": "Explicit allowlist with codebook and availability review."
+  },
+  "survey_design": {
+    "candidate_weight": "WTMEC2YR",
+    "stratum": "SDMVSTRA",
+    "psu": "SDMVPSU",
+    "weight_approval": "Pending component-specific documentation review.",
+    "retain_design_fields_for_analysis": true
+  },
+  "evaluation": {
+    "status": "not_specified",
+    "cycle_role": "development_only",
+    "no_final_test_set_defined": true
+  },
+  "execution_permissions": {
+    "local_outcome_audit": true,
+    "model_training": false,
+    "autonomous_generated_code": false
+  }
+}

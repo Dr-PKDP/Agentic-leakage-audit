@@ -1,0 +1,28 @@
+{
+  "unit": "fixed_internal_design__guarded_critic__45",
+  "case": "fixed_internal_design",
+  "condition": "guarded_critic",
+  "seed": 45,
+  "status": "completed",
+  "initial": {
+    "structure_valid": false,
+    "structure_findings": [
+      "claims: expected nonblank string list"
+    ],
+    "contract_assessable": false,
+    "contract_findings": [],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "final": {
+    "structure_valid": true,
+    "structure_findings": [],
+    "contract_assessable": true,
+    "contract_findings": [
+      "claim_scope_mismatch"
+    ],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "elapsed_seconds": 7.921099194791168
+}

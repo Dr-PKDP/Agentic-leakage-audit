@@ -1,0 +1,840 @@
+[
+  {
+    "proposal_id": "P0D622157E4E4",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": null
+        }
+      ],
+      "rule_id": "F01/direct_ingredient",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PE4CDFD280768",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "eligibility"
+      ],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": null
+        },
+        {
+          "feature": "TARGET",
+          "state": "contradicted_contract",
+          "ready": null
+        }
+      ],
+      "rule_id": "F01/direct_ingredient",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PB1B01D3107B6",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": null
+        }
+      ],
+      "rule_id": "F01/transitive_dependency",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P63659F3DB204",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "eligibility"
+      ],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": null
+        },
+        {
+          "feature": "DERIVED",
+          "state": "contradicted_contract",
+          "ready": null
+        }
+      ],
+      "rule_id": "F01/transitive_dependency",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P47EFF910C2F1",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": null
+        }
+      ],
+      "rule_id": "F01/target_record_aggregation",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P330F99085507",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "eligibility"
+      ],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": null
+        },
+        {
+          "feature": "AGG",
+          "state": "contradicted_contract",
+          "ready": null
+        }
+      ],
+      "rule_id": "F01/target_record_aggregation",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P37499145E4BF",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": null
+        }
+      ],
+      "rule_id": "F01/missing_dependency",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P815F7548C1D3",
+    "assessment": {
+      "verdict": "insufficient_evidence",
+      "pipeline": "evidence_insufficient",
+      "findings": [
+        "eligibility"
+      ],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": null
+        },
+        {
+          "feature": "UNKNOWN",
+          "state": "insufficient_evidence",
+          "ready": null
+        }
+      ],
+      "rule_id": "F01/missing_dependency",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PCE19850F7C55",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": 1
+        }
+      ],
+      "rule_id": "F02/release_delay",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P5C86A0DDAE24",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "eligibility"
+      ],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": 1
+        },
+        {
+          "feature": "LATE",
+          "state": "contradicted_contract",
+          "ready": 12
+        }
+      ],
+      "rule_id": "F02/release_delay",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PC0199EC80C3B",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": 1
+        }
+      ],
+      "rule_id": "F02/latest_dependency",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P1865670A1B5F",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "eligibility"
+      ],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": 1
+        },
+        {
+          "feature": "DERIVED",
+          "state": "contradicted_contract",
+          "ready": 12
+        }
+      ],
+      "rule_id": "F02/latest_dependency",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PE8FBA2D3F6A5",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": 1
+        }
+      ],
+      "rule_id": "F02/current_scope_late",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P02DCE92E0E86",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "eligibility"
+      ],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": 1
+        },
+        {
+          "feature": "LATE",
+          "state": "contradicted_contract",
+          "ready": 12
+        }
+      ],
+      "rule_id": "F02/current_scope_late",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P1A2DFD2FEA0A",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": 1
+        }
+      ],
+      "rule_id": "F02/missing_release",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PB5B7C7D64373",
+    "assessment": {
+      "verdict": "insufficient_evidence",
+      "pipeline": "evidence_insufficient",
+      "findings": [
+        "eligibility"
+      ],
+      "trace": [
+        {
+          "feature": "SAFE",
+          "state": "supported",
+          "ready": 1
+        },
+        {
+          "feature": "UNKNOWN",
+          "state": "insufficient_evidence",
+          "ready": null
+        }
+      ],
+      "rule_id": "F02/missing_release",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P93D10779CD49",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "record": "A",
+          "partition": "training",
+          "state": "supported"
+        }
+      ],
+      "rule_id": "F03/imputer_records",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P4077BF4FA0F7",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "fit_boundary"
+      ],
+      "trace": [
+        {
+          "record": "A",
+          "partition": "training",
+          "state": "supported"
+        },
+        {
+          "record": "B",
+          "partition": "final_heldout",
+          "state": "contradicted_contract"
+        }
+      ],
+      "rule_id": "F03/imputer_records",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P3BBB97950FB6",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "record": "A",
+          "partition": "training",
+          "state": "supported"
+        }
+      ],
+      "rule_id": "F03/selector_records",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P3DA527A36B7A",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "fit_boundary"
+      ],
+      "trace": [
+        {
+          "record": "A",
+          "partition": "training",
+          "state": "supported"
+        },
+        {
+          "record": "B",
+          "partition": "final_heldout",
+          "state": "contradicted_contract"
+        }
+      ],
+      "rule_id": "F03/selector_records",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P295B1217536B",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "record": "A",
+          "partition": "calibration_development",
+          "state": "supported"
+        }
+      ],
+      "rule_id": "F03/calibration_records",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P50395D16D6DF",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "fit_boundary"
+      ],
+      "trace": [
+        {
+          "record": "A",
+          "partition": "calibration_development",
+          "state": "supported"
+        },
+        {
+          "record": "B",
+          "partition": "final_heldout",
+          "state": "contradicted_contract"
+        }
+      ],
+      "rule_id": "F03/calibration_records",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P17376429D7ED",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "overlap": []
+        }
+      ],
+      "rule_id": "F03/group_overlap",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PDF82FCAB314E",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "group_overlap"
+      ],
+      "trace": [
+        {
+          "overlap": [
+            "G1"
+          ]
+        }
+      ],
+      "rule_id": "F03/group_overlap",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P7C0A0ECF4B34",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F04/weighted_points_not_variance",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P8D90BCB77C8B",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "variance_claim"
+      ],
+      "trace": [
+        {
+          "witnesses": []
+        }
+      ],
+      "rule_id": "F04/weighted_points_not_variance",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P2084A8339B3A",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "missing_components": [],
+          "domain_matches": true
+        }
+      ],
+      "rule_id": "F04/component_weight_coverage",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P10832DF41DE0",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "weight_scope"
+      ],
+      "trace": [
+        {
+          "missing_components": [
+            "exam"
+          ],
+          "domain_matches": false
+        }
+      ],
+      "rule_id": "F04/component_weight_coverage",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PEC9CE5B71734",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F04/proposed_not_executed_variance",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PEFF12C65768D",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "variance_claim"
+      ],
+      "trace": [
+        {
+          "witnesses": []
+        }
+      ],
+      "rule_id": "F04/proposed_not_executed_variance",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P721BEE9E82B1",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F04/population_scope",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P27438DE9A6C8",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "population_scope"
+      ],
+      "trace": [],
+      "rule_id": "F04/population_scope",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PB7B5BBAEA81F",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F05/withheld",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P649D3CC783E6",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "permission"
+      ],
+      "trace": [
+        {
+          "approval": 0,
+          "applicable": false
+        }
+      ],
+      "rule_id": "F05/withheld",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P503C0FDFD061",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F05/expired",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P0682E292F02F",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "permission"
+      ],
+      "trace": [
+        {
+          "approval": 0,
+          "applicable": false
+        }
+      ],
+      "rule_id": "F05/expired",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P629223F0CA8D",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [
+        {
+          "approval": 0,
+          "applicable": true
+        }
+      ],
+      "rule_id": "F05/wrong_action_role",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P7E32AC7977A8",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "permission"
+      ],
+      "trace": [
+        {
+          "approval": 0,
+          "applicable": false
+        }
+      ],
+      "rule_id": "F05/wrong_action_role",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P7A23A56E5D35",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F05/stale_binding",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P4A18C3FED9AC",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "permission"
+      ],
+      "trace": [
+        {
+          "approval": 0,
+          "applicable": false
+        }
+      ],
+      "rule_id": "F05/stale_binding",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PAED0E945CDF6",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F06/overlapping_external_data",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P495CC91FFD46",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "validation_claim"
+      ],
+      "trace": [
+        {
+          "artifact": 0,
+          "overlap": [
+            "B"
+          ],
+          "applicable": false
+        }
+      ],
+      "rule_id": "F06/overlapping_external_data",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PDD4D431F663C",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F06/future_validation",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PF2557B958961",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "validation_claim"
+      ],
+      "trace": [
+        {
+          "artifact": 0,
+          "overlap": [],
+          "applicable": false
+        }
+      ],
+      "rule_id": "F06/future_validation",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P18460F39E4F5",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F06/planned_validation",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PF44849618F42",
+    "assessment": {
+      "verdict": "contradicted_contract",
+      "pipeline": "assessable",
+      "findings": [
+        "validation_claim"
+      ],
+      "trace": [
+        {
+          "artifact": 0,
+          "overlap": [],
+          "applicable": false
+        }
+      ],
+      "rule_id": "F06/planned_validation",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "P5ADE2C4BF0FA",
+    "assessment": {
+      "verdict": "supported",
+      "pipeline": "assessable",
+      "findings": [],
+      "trace": [],
+      "rule_id": "F06/incomplete_validation_ledger",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "proposal_id": "PA035A71FF34B",
+    "assessment": {
+      "verdict": "insufficient_evidence",
+      "pipeline": "evidence_insufficient",
+      "findings": [
+        "validation_claim"
+      ],
+      "trace": [],
+      "rule_id": "F06/incomplete_validation_ledger",
+      "independent_scientific_validity": "NOT_ESTABLISHED"
+    }
+  }
+]

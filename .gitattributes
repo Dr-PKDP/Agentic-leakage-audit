@@ -1,0 +1,5 @@
+.gitattributes -text
+README.md -text
+RELEASE_MANIFEST.json -text
+reproduce.py -text
+repro/p6/** -text

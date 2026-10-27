@@ -1,0 +1,856 @@
+[
+  {
+    "unit": "availability_review__guarded_critic__42",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 42,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. According to the proposal requirements, it should be a list containing exactly one of the specified claim labels. This violates the schema and must be corrected.\n\n2. The \"survey_plan\" is set to \"pending\", but the scenario states that survey weighting and evaluation design remain unapproved. The \"survey_plan\" should reflect the unresolved status of survey weight approval, which is not captured in the current value. The value \"pending\" is acceptable, but the scenario's specific unresolved decisions should be reflected in the \"unresolved_decisions\" list, which they are.\n\n3. The \"validation_plan\" is set to \"pending\", which is appropriate given that the scenario states that the evaluation design remains unapproved. However, the scenario also mentions that grouped internal validation is an option, but it is not explicitly approved. Therefore, \"pending\" is correct.\n\n4. The \"predictors\" list includes \"AGE\" and \"GENDER\", which are explicitly approved in the scenario. The \"excluded\" list includes \"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", and \"PARTICIPANT_ID\", which aligns with the global rules that these are not predictors. However, \"INCOME\" and \"INCOME_MISSING\" are marked as unresolved in the scenario, so they should not be in the \"excluded\" list unless explicitly excluded.\n\n5. The \"unresolved_decisions\" list includes all the required identifiers, which is correct. However, \"INCOME\" and \"INCOME_MISSING\" are not explicitly listed as unresolved decisions in the scenario, so they should not be included in the \"unresolved_decisions\" list unless the scenario explicitly states that their handling is unresolved.\n\n6. The \"execution_requested\" field is correctly set to false, as the scenario explicitly states that no model execution is authorized.\n\n7. The \"claims\" field is incorrectly formatted as a string instead of a list. It should be a list containing exactly one of the specified claim labels. The scenario states that the design is still pending, so the correct value should be \"no_empirical_claim\".",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__guarded_critic__43",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 43,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. According to the proposal requirements, it should be a list containing exactly one of the specified claim labels. This violates the schema and must be corrected.\n\n2. The \"survey_plan\" is set to \"pending,\" but the scenario states that survey weighting and evaluation design remain unapproved. The \"survey_plan\" should reflect the unresolved status of survey weight approval, which is not captured in the current value. It should remain \"pending\" as per the scenario.\n\n3. The \"validation_plan\" is set to \"pending,\" but the scenario does not mention any specific validation plan. The scenario only states that no model execution is authorized, so \"pending\" is appropriate.\n\n4. The \"unresolved_decisions\" list includes \"predictor_codebook_and_availability_review\" and \"income_missingness_handling,\" which are correct based on the scenario. However, the scenario explicitly states that predictor review remains pending for income-related fields, which should be included in the unresolved decisions. The current list does not include \"income_missingness_handling\" as a separate unresolved decision, which is required.\n\n5. The \"excluded\" list includes \"INCOME\" and \"INCOME_MISSING,\" which is correct based on the scenario. However, the scenario states that INCOME availability and INCOME_MISSING handling remain unresolved, so these should not be excluded yet. They should remain in the unresolved decisions and not be placed in the excluded list.\n\n6. The \"predictors\" list includes \"AGE\" and \"GENDER,\" which are approved as per the scenario. This is correct.\n\n7. The \"execution_requested\" field is set to false, which is correct as the scenario explicitly states no model execution is authorized.\n\n8. The \"claims\" field should be a list containing \"no_empirical_claim\" as per the scenario, which is correct. However, it is currently formatted as a string, not a list.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__guarded_critic__44",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 44,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. According to the proposal requirements, it should be a list containing exactly one of the allowed claim labels. This violates the schema and must be corrected.\n\n2. The \"survey_plan\" is set to \"pending\", but the scenario states that survey weighting and evaluation design remain unapproved. The \"survey_plan\" should reflect the unresolved status more accurately, possibly using \"descriptive_WTMEC2YR_with_caveats\" as suggested in the global rules, but this is not explicitly approved in the scenario.\n\n3. The \"validation_plan\" is set to \"pending\", but the scenario does not mention any validation plan approval. The scenario only mentions that grouped internal validation is an option, but it is not explicitly approved. Therefore, \"pending\" is appropriate.\n\n4. The \"unresolved_decisions\" list includes \"predictor_codebook_and_availability_review\", which is not explicitly mentioned as unresolved in the scenario. The scenario only mentions that predictor review remains pending for income-related fields, not for the codebook and availability. This is an over-inclusion.\n\n5. The \"excluded\" list includes \"INCOME\" and \"INCOME_MISSING\", but the scenario states that income availability and missingness handling remain unresolved. These variables should not be excluded yet, as their inclusion or exclusion is pending decision.\n\n6. The \"predictors\" list includes only \"AGE\" and \"GENDER\", which are explicitly approved in the scenario. However, the scenario also states that predictor review remains pending for income-related fields, which implies that these variables are not yet approved for inclusion. Therefore, they should not be excluded but rather marked as unresolved.\n\n7. The \"execution_requested\" field is correctly set to false, as no model execution is authorized.\n\n8. The \"claims\" field should be a list with exactly one of the allowed claim labels. The scenario states that the design is still pending, so \"no_empirical_claim\" is appropriate. However, the current format is incorrect as a string instead of a list.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\", \"predictor_codebook_and_availability_review\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__guarded_critic__45",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 45,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. According to the proposal requirements, it should be a list containing exactly one of the allowed claim labels. This violates the schema and must be corrected.\n\n2. The \"survey_plan\" is set to \"pending,\" but the scenario states that survey weighting and evaluation design remain unapproved. The \"survey_plan\" should reflect the unresolved status of survey weight approval and evaluation design, which may require a more specific value like \"descriptive_WTMEC2YR_with_caveats\" if applicable, though this is not explicitly resolved in the scenario.\n\n3. The \"validation_plan\" is set to \"pending,\" but the scenario does not mention any specific validation plan. The scenario only states that grouped internal validation is not yet approved, so the validation plan should remain pending.\n\n4. The \"unresolved_decisions\" list includes \"predictor_codebook_and_availability_review\" and \"income_missingness_handling,\" which are correct based on the scenario. However, the scenario also mentions that income-related fields remain unresolved, which should be explicitly captured in the list. The current list does not include \"income_missingness_handling\" as a separate unresolved decision, which is required.\n\n5. The \"excluded\" list includes \"INCOME\" and \"INCOME_MISSING,\" which is correct based on the scenario. However, the scenario does not explicitly state that INCOME is excluded, only that its availability and missingness handling remain unresolved. Therefore, it may be more accurate to exclude these only if they are not approved as predictors, which is not clearly stated.\n\n6. The \"execution_requested\" field is correctly set to false, as no model execution is authorized.\n\n7. The \"claims\" field should be a list containing exactly one of the allowed claim labels. The scenario states that the design is still pending, so the correct value should be \"no_empirical_claim\" as a list, not as a string.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__guarded_critic__46",
+    "case": "availability_review",
+    "condition": "guarded_critic",
+    "seed": 46,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch",
+        "pending_decision_mismatch",
+        "survey_plan_mismatch",
+        "validation_plan_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. According to the proposal requirements, it should be a list containing exactly one of the specified claim labels. This violates the schema and must be corrected.\n\n2. The \"survey_plan\" is set to \"pending,\" but the scenario states that survey weighting and evaluation design remain unapproved. The \"survey_plan\" should reflect the unresolved status of these components, which is not captured by \"pending\" alone. A more appropriate value would be \"descriptive_WTMEC2YR_with_caveats\" as per the scenario's unresolved survey weight approval.\n\n3. The \"validation_plan\" is set to \"pending,\" but the scenario indicates that grouped internal validation is acceptable as long as it is \"grouped_internal_5fold_train_only_preprocessing.\" This plan should be explicitly set to that value, as it is a valid and approved internal validation approach.\n\n4. The \"unresolved_decisions\" list includes \"predictor_codebook_and_availability_review,\" but the scenario states that predictor review remains pending for income-related fields, not for the entire codebook. This decision should be more precisely identified as \"income_missingness_handling\" and \"survey_weight_approval\" rather than a general codebook review.\n\n5. The \"excluded\" list includes \"INCOME\" and \"INCOME_MISSING,\" but the scenario states that income availability and missingness handling remain unresolved. These variables should not be excluded until their handling is resolved, as they may still be relevant predictors depending on the final decision.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "fixed_internal_design__guarded_critic__43",
+    "case": "fixed_internal_design",
+    "condition": "guarded_critic",
+    "seed": 43,
+    "transition": "improvement",
+    "scenario_evidence": [
+      "This is a synthetic approved-design, execution-withheld snapshot.",
+      "AGE, GENDER, INCOME, and INCOME_MISSING are approved predictors.",
+      "For this scenario only, income availability and missingness review are complete.",
+      "Select all four approved predictors without adding or removing any.",
+      "The approved survey plan is descriptive evaluation using WTMEC2YR with caveats.",
+      "The approved validation plan is five-fold grouped internal development.",
+      "All fitted preprocessing must use training-fold data only.",
+      "No temporal validation, external validation, or clinical utility is established.",
+      "The four scientific decisions are resolved for this scenario.",
+      "Execution permission remains withheld despite design approval."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "claim_scope_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. The scenario specifies that \"claims\" must be a list with exactly one of the two allowed values, and the draft uses a string instead of a list.  \n2. The \"unresolved_decisions\" field is empty, but the scenario states that \"all four scientific decisions are resolved for this scenario,\" which implies that no unresolved decisions should be listed.  \n3. The \"claims\" field should be set to \"internal_development_design_only\" since the scenario explicitly states that it is an \"approved internal-design scenario\" and \"no empirical claim\" is not applicable.  \n4. The \"survey_plan\" and \"validation_plan\" fields are correctly set based on the scenario's approval.  \n5. The \"predictors\" and \"excluded\" fields are correctly populated according to the scenario's approval of AGE, GENDER, INCOME, and INCOME_MISSING as predictors, and the exclusion of OUTCOME_ITEM, SURVEY_WEIGHT, and PARTICIPANT_ID as per global rules.  \n6. The \"execution_requested\" field is correctly set to false, as execution is explicitly withheld.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [],\n  \"execution_requested\": false,\n  \"claims\": [\"internal_development_design_only\"]\n}"
+  },
+  {
+    "unit": "fixed_internal_design__guarded_critic__46",
+    "case": "fixed_internal_design",
+    "condition": "guarded_critic",
+    "seed": 46,
+    "transition": "improvement",
+    "scenario_evidence": [
+      "This is a synthetic approved-design, execution-withheld snapshot.",
+      "AGE, GENDER, INCOME, and INCOME_MISSING are approved predictors.",
+      "For this scenario only, income availability and missingness review are complete.",
+      "Select all four approved predictors without adding or removing any.",
+      "The approved survey plan is descriptive evaluation using WTMEC2YR with caveats.",
+      "The approved validation plan is five-fold grouped internal development.",
+      "All fitted preprocessing must use training-fold data only.",
+      "No temporal validation, external validation, or clinical utility is established.",
+      "The four scientific decisions are resolved for this scenario.",
+      "Execution permission remains withheld despite design approval."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "claim_scope_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. This violates the JSON schema requirement for the \"claims\" field to be a list of strings.  \n2. The \"unresolved_decisions\" field is empty, but the scenario states that all four scientific decisions are resolved, which implies that no unresolved decisions should be listed.  \n3. The \"claims\" field should be set to \"internal_development_design_only\" instead of \"no_empirical_claim\", as the scenario indicates that the design is approved and the focus is on internal development.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [],\n  \"execution_requested\": false,\n  \"claims\": [\"internal_development_design_only\"]\n}"
+  },
+  {
+    "unit": "initial_pending__guarded_critic__43",
+    "case": "initial_pending",
+    "condition": "guarded_critic",
+    "seed": 43,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic initial-development decision snapshot.",
+      "No candidate predictor has completed scientific approval.",
+      "All four listed pending decisions remain unresolved.",
+      "Do not select predictors before that approval.",
+      "Survey weighting and evaluation design are not approved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. According to the proposal requirements, it should be a list containing exactly one of the allowed claim labels. This violates the schema and the instruction to use exactly one claim label.\n\n2. The \"predictors\" list is empty, which is acceptable given the scenario states that no candidate predictor has completed scientific approval. However, the \"excluded\" list includes all candidate labels, which may not be correct. According to the global rules, only variables that are explicitly excluded (e.g., outcome-derived, design variables, grouping identifiers) should be in \"excluded\". The \"excluded\" list includes \"INCOME\" and \"INCOME_MISSING\", which are not explicitly excluded by the rules unless the \"income_missingness_handling\" decision is resolved. Since this decision is unresolved, \"INCOME\" and \"INCOME_MISSING\" should not be in \"excluded\" yet.\n\n3. The \"survey_plan\" and \"validation_plan\" are set to \"pending\", which is correct given the scenario states that survey weighting and evaluation design are not approved. However, the \"survey_plan\" could be more descriptive if the scenario allows for a descriptive plan with caveats, but the scenario does not explicitly approve such a plan.\n\n4. The \"unresolved_decisions\" list includes all four pending decisions, which is correct as per the scenario. However, the \"survey_weight_approval\" and \"evaluation_design\" are not explicitly mentioned as unresolved in the scenario, but the scenario does state that survey weighting and evaluation design are not approved, so they should be included.\n\n5. The \"execution_requested\" field is set to false, which is correct as per the scenario that no model execution is authorized.\n\n6. The \"claims\" field is incorrectly formatted as a string instead of a list. It should be a list containing exactly one of the allowed claim labels, as specified in the proposal requirements. The correct value should be [\"no_empirical_claim\"], as the scenario is still pending and no empirical claims are made.",
+    "final": "{\n  \"predictors\": [],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "initial_pending__guarded_critic__45",
+    "case": "initial_pending",
+    "condition": "guarded_critic",
+    "seed": 45,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic initial-development decision snapshot.",
+      "No candidate predictor has completed scientific approval.",
+      "All four listed pending decisions remain unresolved.",
+      "Do not select predictors before that approval.",
+      "Survey weighting and evaluation design are not approved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. According to the proposal requirements, it should be a list containing exactly one of the specified claim labels. This violates the schema and the scenario's instruction to use \"no_empirical_claim\" for a pending design scenario.\n\n2. The \"predictors\" list is empty, which is acceptable given the scenario's instruction that no candidate predictor has completed scientific approval. However, the \"excluded\" list includes all candidate labels, which may not be correct. According to the global rules, only variables that are explicitly excluded (e.g., outcome-derived, design variables, grouping identifiers) should be in \"excluded.\" The current \"excluded\" list includes all variables, which may be over-inclusive and not aligned with the scenario's pending approvals.\n\n3. The \"survey_plan\" and \"validation_plan\" are set to \"pending,\" which is appropriate given the scenario's statement that survey weighting and evaluation design are not approved. However, the \"survey_plan\" could be more descriptive if the scenario allows for a limited description with caveats, but the current value is acceptable as \"pending.\"\n\n4. The \"unresolved_decisions\" list includes all four required pending decisions, which is correct as per the scenario's statement that all four remain unresolved.\n\n5. The \"execution_requested\" field is correctly set to false, as no model execution is authorized.\n\n6. The \"claims\" field should be a list with one element, not a string. The correct value should be [\"no_empirical_claim\"], as the scenario is in the initial-development phase with pending design decisions.",
+    "final": "{\n  \"predictors\": [],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "initial_pending__guarded_critic__46",
+    "case": "initial_pending",
+    "condition": "guarded_critic",
+    "seed": 46,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic initial-development decision snapshot.",
+      "No candidate predictor has completed scientific approval.",
+      "All four listed pending decisions remain unresolved.",
+      "Do not select predictors before that approval.",
+      "Survey weighting and evaluation design are not approved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "1. The \"claims\" field is incorrectly formatted as a string instead of a list. According to the proposal requirements, \"claims\" must be a list containing exactly one of the specified labels. This violates the schema and the scenario's instruction to use \"no_empirical_claim\" for a pending design scenario.\n\n2. The \"predictors\" list is empty, which is acceptable given the scenario's instruction that no candidate predictor has completed scientific approval. However, the \"excluded\" list includes all candidate labels, which is incorrect. According to the global rules, only variables that are explicitly excluded (e.g., outcome-derived, design variables, grouping identifiers) should be listed in \"excluded.\" The current \"excluded\" list includes all variables, including those that may be valid predictors once approved, which is inconsistent with the rule that \"every candidate not selected as a predictor in excluded.\"\n\n3. The \"survey_plan\" and \"validation_plan\" are set to \"pending,\" which is correct given the scenario's instruction that survey weighting and evaluation design are not approved. However, the \"survey_plan\" could be more descriptive if approval were to occur, but it remains pending as per the scenario.\n\n4. The \"unresolved_decisions\" list is correct as it includes all four pending decisions as specified in the scenario.\n\n5. The \"execution_requested\" field is correctly set to false, as no model execution is authorized.\n\n6. The \"claims\" field should be a list, not a string. The correct value should be [\"no_empirical_claim\"], as the scenario is in the initial-development phase with pending decisions.",
+    "final": "{\n  \"predictors\": [],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__single_self_review__42",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 42,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft is mostly correct but has one key error: the \"claims\" field should be an array, not a string. Additionally, the \"survey_plan\" should be set to \"descriptive_WTMEC2YR_with_caveats\" as per the scenario, since survey weighting is unresolved but the plan is descriptive with caveats. The \"validation_plan\" should also be \"grouped_internal_5fold_train_only_preprocessing\" as per the scenario. The \"unresolved_decisions\" list is correct, and the \"predictors\" and \"excluded\" lists are accurate based on the scenario.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__single_self_review__43",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 43,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch",
+        "claim_scope_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft correctly identifies \"AGE\" and \"GENDER\" as predictors and excludes the other variables per the rules. However, the \"survey_plan\" should be set to \"descriptive_WTMEC2YR_with_caveats\" instead of \"pending\" since the scenario does not explicitly state that survey weighting is pending. The \"validation_plan\" should also be \"grouped_internal_5fold_train_only_preprocessing\" as the scenario indicates no execution is authorized, implying internal development design only. The \"claims\" field should be \"internal_development_design_only\" to reflect the approved internal-design scenario. The \"unresolved_decisions\" list is accurate.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"internal_development_design_only\"\n}"
+  },
+  {
+    "unit": "availability_review__single_self_review__44",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 44,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch",
+        "claim_scope_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft is mostly aligned with the scenario and proposal requirements, but there are two key issues:\n\n1. The `survey_plan` should be set to `\"descriptive_WTMEC2YR_with_caveats\"` instead of `\"pending\"` since the scenario mentions survey weighting remains unapproved but the plan is descriptive in nature with caveats.\n\n2. The `claims` field should be `\"internal_development_design_only\"` instead of `\"no_empirical_claim\"` because the scenario indicates that the design is approved internally, even though execution is not authorized.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"internal_development_design_only\"\n}"
+  },
+  {
+    "unit": "availability_review__single_self_review__46",
+    "case": "availability_review",
+    "condition": "single_self_review",
+    "seed": 46,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch",
+        "claim_scope_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft is mostly correct but contains an error in the \"claims\" field. It should be \"internal_development_design_only\" instead of \"no_empirical_claim\", as the scenario indicates that the design is approved for internal development purposes. Additionally, the \"survey_plan\" should be \"descriptive_WTMEC2YR_with_caveats\" to reflect the pending survey weight approval, and the \"validation_plan\" should be \"grouped_internal_5fold_train_only_preprocessing\" as the scenario implies an internal validation approach. The \"unresolved_decisions\" list is accurate, and the \"execution_requested\" field is correctly set to false.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"internal_development_design_only\"\n}"
+  },
+  {
+    "unit": "initial_pending__single_self_review__44",
+    "case": "initial_pending",
+    "condition": "single_self_review",
+    "seed": 44,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic initial-development decision snapshot.",
+      "No candidate predictor has completed scientific approval.",
+      "All four listed pending decisions remain unresolved.",
+      "Do not select predictors before that approval.",
+      "Survey weighting and evaluation design are not approved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft correctly excludes all candidate labels as predictors, aligns with the global rules by not including OUTCOME_ITEM, SURVEY_WEIGHT, or PARTICIPANT_ID as predictors, and lists all four pending decisions. The \"claims\" field is appropriately set to \"no_empirical_claim\" since no scientific approval has been completed. The \"execution_requested\" field is correctly set to false. However, the \"survey_plan\" and \"validation_plan\" fields should be set to their respective pending identifiers as specified in the pending-decision identifiers list, not just \"pending\". The current draft uses \"pending\" for both, which is not compliant with the required format.",
+    "final": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}"
+  },
+  {
+    "unit": "initial_pending__single_self_review__45",
+    "case": "initial_pending",
+    "condition": "single_self_review",
+    "seed": 45,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic initial-development decision snapshot.",
+      "No candidate predictor has completed scientific approval.",
+      "All four listed pending decisions remain unresolved.",
+      "Do not select predictors before that approval.",
+      "Survey weighting and evaluation design are not approved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft correctly excludes all candidate labels as predictors, adhering to the global rules. However, the \"excluded\" list should not include labels that are not explicitly excluded by the rules. Specifically, \"INCOME\" and \"INCOME_MISSING\" are not explicitly excluded and should not be in the \"excluded\" list. Additionally, the \"claims\" field should be \"internal_development_design_only\" since the scenario is an approved internal-design scenario, not pending.",
+    "final": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"OUTCOME_ITEM\", \"PARTICIPANT_ID\", \"SURVEY_WEIGHT\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}"
+  },
+  {
+    "unit": "initial_pending__single_self_review__46",
+    "case": "initial_pending",
+    "condition": "single_self_review",
+    "seed": 46,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic initial-development decision snapshot.",
+      "No candidate predictor has completed scientific approval.",
+      "All four listed pending decisions remain unresolved.",
+      "Do not select predictors before that approval.",
+      "Survey weighting and evaluation design are not approved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "excluded_partition_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft correctly excludes all candidate labels as predictors, adhering to the global rules. However, the \"excluded\" list includes \"INCOME_MISSING,\" which should not be excluded since it is a candidate label and not explicitly ruled out as a predictor. The \"claims\" field is correctly set to \"no_empirical_claim,\" and all other fields align with the scenario's constraints. The unresolved decisions are appropriately listed. The main error is the inclusion of \"INCOME_MISSING\" in the \"excluded\" list.",
+    "final": "{\n  \"predictors\": [],\n  \"excluded\": [\"AGE\", \"GENDER\", \"INCOME\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}"
+  },
+  {
+    "unit": "availability_review__structure_feedback__42",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 42,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft has a structural error: the \"claims\" field is incorrectly formatted as a string instead of a list. It should be a list containing exactly one of the allowed claim labels. Additionally, the \"survey_plan\" and \"validation_plan\" fields should reflect the specific pending plans as outlined in the scenario, not just \"pending.\" The \"unresolved_decisions\" list is correct but should be verified against the exact pending identifiers provided.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__structure_feedback__43",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 43,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft has a structural error: the \"claims\" field is incorrectly formatted as a string instead of a list. It should be a list containing exactly one of the allowed claim labels. Additionally, the \"survey_plan\" and \"validation_plan\" fields should reflect the specific pending plans as described in the scenario, not just \"pending\". The \"unresolved_decisions\" list is correct but could be more precise based on the scenario's specifics.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__structure_feedback__44",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 44,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft has a structural error: the \"claims\" field is incorrectly formatted as a string instead of a list. It should be a list containing exactly one of the allowed claim labels. Additionally, the \"survey_plan\" and \"validation_plan\" fields should reflect the specific pending plans as described in the scenario, not just \"pending\". The \"unresolved_decisions\" list is correct but could be more precise based on the scenario's details.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "availability_review__structure_feedback__46",
+    "case": "availability_review",
+    "condition": "structure_feedback",
+    "seed": 46,
+    "transition": "regression",
+    "scenario_evidence": [
+      "This is a synthetic intermediate decision snapshot.",
+      "AGE and GENDER are approved candidate predictors.",
+      "INCOME availability and INCOME_MISSING handling remain unresolved.",
+      "Select all approved predictors, and no unapproved predictors.",
+      "Predictor review remains pending for the income-related fields.",
+      "Survey weighting and evaluation design remain unapproved.",
+      "No model execution is authorized."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "survey_plan_mismatch",
+        "validation_plan_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"pending\",\n  \"validation_plan\": \"pending\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft has a structural error: the \"claims\" field is incorrectly formatted as a string instead of a list. It should be a list containing exactly one of the allowed claim labels. Additionally, the \"survey_plan\" and \"validation_plan\" fields should reflect the specific pending plans as outlined in the scenario, not just \"pending\". The \"unresolved_decisions\" list is correct but could be more precise based on the scenario's details.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\"],\n  \"excluded\": [\"INCOME\", \"INCOME_MISSING\", \"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"predictor_codebook_and_availability_review\", \"income_missingness_handling\", \"survey_weight_approval\", \"evaluation_design\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim\"]\n}"
+  },
+  {
+    "unit": "fixed_internal_design__structure_feedback__44",
+    "case": "fixed_internal_design",
+    "condition": "structure_feedback",
+    "seed": 44,
+    "transition": "improvement",
+    "scenario_evidence": [
+      "This is a synthetic approved-design, execution-withheld snapshot.",
+      "AGE, GENDER, INCOME, and INCOME_MISSING are approved predictors.",
+      "For this scenario only, income availability and missingness review are complete.",
+      "Select all four approved predictors without adding or removing any.",
+      "The approved survey plan is descriptive evaluation using WTMEC2YR with caveats.",
+      "The approved validation plan is five-fold grouped internal development.",
+      "All fitted preprocessing must use training-fold data only.",
+      "No temporal validation, external validation, or clinical utility is established.",
+      "The four scientific decisions are resolved for this scenario.",
+      "Execution permission remains withheld despite design approval."
+    ],
+    "initial_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [
+        "claim_scope_mismatch"
+      ],
+      "contract_pass": false,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "final_normalized_score": {
+      "structure_valid": true,
+      "structure_findings": [],
+      "contract_assessable": true,
+      "contract_findings": [],
+      "contract_pass": true,
+      "scientific_validity": "not_independently_assessed"
+    },
+    "attribution_status": "unreviewed_in_this_packet",
+    "initial": "{\n  \"predictors\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [],\n  \"execution_requested\": false,\n  \"claims\": \"no_empirical_claim\"\n}",
+    "review": "The draft has an error in the \"claims\" field, which is expected to be a list of strings but is provided as a single string. The correct value should be a list containing either \"no_empirical_claim\" or \"internal_development_design_only\". Based on the scenario, the appropriate value is \"internal_development_design_only\" since the design is approved and the scenario is for internal development.",
+    "final": "{\n  \"predictors\": [\"AGE\", \"GENDER\", \"INCOME\", \"INCOME_MISSING\"],\n  \"excluded\": [\"OUTCOME_ITEM\", \"SURVEY_WEIGHT\", \"PARTICIPANT_ID\"],\n  \"survey_plan\": \"descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [],\n  \"execution_requested\": false,\n  \"claims\": [\"internal_development_design_only\"]\n}"
+  }
+]

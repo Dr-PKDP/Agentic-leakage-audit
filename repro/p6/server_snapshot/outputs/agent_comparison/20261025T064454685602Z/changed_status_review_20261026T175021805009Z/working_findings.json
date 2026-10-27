@@ -1,0 +1,31 @@
+{
+  "evidence_cutoff": "2026-10-26 12:34 CDT",
+  "review_provenance": "AI-assisted inspection of three user-pasted sequences; not independent human adjudication.",
+  "confirmed_checks": {
+    "original_scores_reproduced": true,
+    "matched_initial_draft_groups": 15,
+    "byte_identical_initial_draft_groups": 15
+  },
+  "inspected_examples": [
+    {
+      "unit": "availability_review__single_self_review__42",
+      "finding": "Review explicitly recommended unapproved survey and validation plans; final proposal adopted both changes."
+    },
+    {
+      "unit": "availability_review__structure_feedback__42",
+      "finding": "Review incorrectly instructed replacement of pending plans; final proposal supplied the specific unapproved plan labels."
+    },
+    {
+      "unit": "availability_review__guarded_critic__42",
+      "finding": "Review advised removing unresolved income fields from excluded; final proposal followed that advice, breaking the required partition without selecting those fields as predictors or requesting execution."
+    }
+  ],
+  "limitations": [
+    "Three inspected examples do not establish attribution rates.",
+    "Excluded-field accounting failure is not itself predictor leakage.",
+    "Review text and matching final changes do not establish a controlled causal effect.",
+    "The field name excluded permits a natural-language interpretation different from its explicit contract definition.",
+    "Original strict results remain primary; normalization is post hoc."
+  ],
+  "next": "Inspect three improvements, then remaining regressions."
+}

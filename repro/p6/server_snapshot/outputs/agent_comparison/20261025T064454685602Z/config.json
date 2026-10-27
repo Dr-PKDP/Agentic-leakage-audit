@@ -1,0 +1,108 @@
+{
+  "version": "depression_workflow_contract_v1",
+  "model": "p6-qwen3-8b",
+  "base_url": "http://127.0.0.1:8010/v1",
+  "cases": [
+    {
+      "id": "initial_pending",
+      "evidence": [
+        "This is a synthetic initial-development decision snapshot.",
+        "No candidate predictor has completed scientific approval.",
+        "All four listed pending decisions remain unresolved.",
+        "Do not select predictors before that approval.",
+        "Survey weighting and evaluation design are not approved.",
+        "No model execution is authorized."
+      ],
+      "expected_predictors": [],
+      "pending": [
+        "predictor_codebook_and_availability_review",
+        "income_missingness_handling",
+        "survey_weight_approval",
+        "evaluation_design"
+      ],
+      "survey": "pending",
+      "validation": "pending",
+      "allowed_claims": [
+        "no_empirical_claim"
+      ]
+    },
+    {
+      "id": "availability_review",
+      "evidence": [
+        "This is a synthetic intermediate decision snapshot.",
+        "AGE and GENDER are approved candidate predictors.",
+        "INCOME availability and INCOME_MISSING handling remain unresolved.",
+        "Select all approved predictors, and no unapproved predictors.",
+        "Predictor review remains pending for the income-related fields.",
+        "Survey weighting and evaluation design remain unapproved.",
+        "No model execution is authorized."
+      ],
+      "expected_predictors": [
+        "AGE",
+        "GENDER"
+      ],
+      "pending": [
+        "predictor_codebook_and_availability_review",
+        "income_missingness_handling",
+        "survey_weight_approval",
+        "evaluation_design"
+      ],
+      "survey": "pending",
+      "validation": "pending",
+      "allowed_claims": [
+        "no_empirical_claim"
+      ]
+    },
+    {
+      "id": "fixed_internal_design",
+      "evidence": [
+        "This is a synthetic approved-design, execution-withheld snapshot.",
+        "AGE, GENDER, INCOME, and INCOME_MISSING are approved predictors.",
+        "For this scenario only, income availability and missingness review are complete.",
+        "Select all four approved predictors without adding or removing any.",
+        "The approved survey plan is descriptive evaluation using WTMEC2YR with caveats.",
+        "The approved validation plan is five-fold grouped internal development.",
+        "All fitted preprocessing must use training-fold data only.",
+        "No temporal validation, external validation, or clinical utility is established.",
+        "The four scientific decisions are resolved for this scenario.",
+        "Execution permission remains withheld despite design approval."
+      ],
+      "expected_predictors": [
+        "AGE",
+        "GENDER",
+        "INCOME",
+        "INCOME_MISSING"
+      ],
+      "pending": [],
+      "survey": "descriptive_WTMEC2YR_with_caveats",
+      "validation": "grouped_internal_5fold_train_only_preprocessing",
+      "allowed_claims": [
+        "internal_development_design_only"
+      ]
+    }
+  ],
+  "common_prompt": "You are producing an analysis proposal for a synthetic protocol-compliance task.\nThe variable labels are abstract scenario labels, not verified NHANES field names.\nDo not infer additional approvals or external facts.\n\nCandidate labels:\nAGE, GENDER, INCOME, INCOME_MISSING, OUTCOME_ITEM, SURVEY_WEIGHT, PARTICIPANT_ID.\n\nGlobal rules:\n- OUTCOME_ITEM is outcome-derived and must never be a predictor.\n- SURVEY_WEIGHT is a design/evaluation variable, not a predictor.\n- PARTICIPANT_ID is a grouping identifier, not a predictor.\n- Put every candidate not selected as a predictor in excluded.\n- Execution is not authorized in any scenario.\n- Pending decisions must remain unresolved until the scenario explicitly resolves them.\n- Do not claim temporal validation, external validation, clinical utility, or\n  improved empirical performance.\n\nReturn exactly one JSON object, with no Markdown, using exactly these fields:\n{\n  \"predictors\": [\"candidate labels\"],\n  \"excluded\": [\"candidate labels\"],\n  \"survey_plan\": \"pending OR descriptive_WTMEC2YR_with_caveats\",\n  \"validation_plan\": \"pending OR grouped_internal_5fold_train_only_preprocessing\",\n  \"unresolved_decisions\": [\"applicable exact identifiers\"],\n  \"execution_requested\": false,\n  \"claims\": [\"no_empirical_claim OR internal_development_design_only\"]\n}\n\nLists must contain unique nonblank strings.\nUse exactly one claim label:\n- no_empirical_claim for a scenario whose design is still pending;\n- internal_development_design_only for the approved internal-design scenario.\n\nPending-decision identifiers:\npredictor_codebook_and_availability_review\nincome_missingness_handling\nsurvey_weight_approval\nevaluation_design\n\nDo not write executable code. Return only the proposal JSON.",
+  "review_prompt": "Review the draft against the supplied scenario and proposal requirements.\nIdentify errors and necessary revisions. Do not execute anything.\nReturn concise review text rather than a revised proposal.",
+  "guard_checklist": "Act as an evidence-guided protocol critic. For each issue, cite the relevant\nscenario statement or global rule. Explicitly inspect:\n1. Whether selected predictors have scenario-specific approval.\n2. Outcome-derived variables, design variables, and grouping identifiers.\n3. Income availability and missingness decisions.\n4. Survey-plan approval and its limitations.\n5. Grouped internal validation and training-fold-only preprocessing.\n6. Unsupported empirical, temporal, external, or clinical claims.\n7. Unresolved decisions and the separate execution-permission boundary.\nDo not invent codebook evidence. Your approval is not execution authorization.",
+  "conditions": [
+    "single_self_review",
+    "structure_feedback",
+    "guarded_critic"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "temperature": 0.2,
+  "max_tokens_per_stage": 1024,
+  "max_requests": 135,
+  "retries": 0,
+  "participant_data_access": false,
+  "generated_code_execution": false,
+  "scope": "synthetic_protocol_compliance_pilot",
+  "structured_decoding": false,
+  "score_scope": "explicit_contract_compliance_only"
+}

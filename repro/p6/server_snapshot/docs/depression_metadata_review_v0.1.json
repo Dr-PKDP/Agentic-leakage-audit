@@ -1,0 +1,27 @@
+{
+  "status": "development_only_not_frozen",
+  "scope": "NHANES 2017-2018 DEMO_J plus DPQ_J",
+  "predictors": {
+    "RIDAGEYR": "Age at screening; 80 means 80 or older.",
+    "RIAGENDR": "Released variable labelled Gender; 1=Male, 2=Female. Preserve source definition.",
+    "INDFMPIR": "Derived family-income-to-poverty ratio; topcoded at 5; preserve missingness."
+  },
+  "availability": {
+    "evidence": "Demographic questionnaires administered at home; DPQ administered at MEC.",
+    "limitation": "INDFMPIR is a processed derived value. Retrospective screening assumes its inputs and calculation are available before DPQ; real-time availability is not established."
+  },
+  "component_weight": {
+    "documented_choice": "WTMEC2YR",
+    "basis": "DPQ_J analytic notes explicitly specify the two-year MEC examination weight.",
+    "limitations": [
+      "Does not resolve selection bias from incomplete DPQ outcomes.",
+      "Does not specify the full predictive evaluation or uncertainty procedure."
+    ]
+  },
+  "sources": [
+    "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/datafiles/DEMO_J.htm",
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DPQ_J.htm"
+  ],
+  "configuration_changed": false,
+  "model_training_authorized": false
+}

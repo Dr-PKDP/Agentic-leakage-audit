@@ -1,0 +1,29 @@
+{
+  "unit": "availability_review__structure_feedback__42",
+  "case": "availability_review",
+  "condition": "structure_feedback",
+  "seed": 42,
+  "status": "completed",
+  "initial": {
+    "structure_valid": false,
+    "structure_findings": [
+      "claims: expected nonblank string list"
+    ],
+    "contract_assessable": false,
+    "contract_findings": [],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "final": {
+    "structure_valid": true,
+    "structure_findings": [],
+    "contract_assessable": true,
+    "contract_findings": [
+      "survey_plan_mismatch",
+      "validation_plan_mismatch"
+    ],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "elapsed_seconds": 4.859423159155995
+}
