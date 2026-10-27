@@ -11,5 +11,8 @@ The synthetic development run completed 192 workflow units from 24 authored cont
 - [Manuscript insert](docs/manuscript/development_evaluation_v0_4.md)
 - [Structured summary](results/agent_development_v0_4_summary.json)
 - [Outcome table](results/agent_development_v0_4_outcomes.csv)
+- [Completed targeted failure audit](results/agent_development_v0_4_failure_audit.json)
 
-These are user-reported development results, not held-out evaluation or independent scientific validation. Earlier pilot findings remain unchanged. The raw archive has not been independently inspected or uploaded; this documentation update is not a complete runtime release. No participant data or generated-code execution was involved in this run. Remaining offline audits and limitations are recorded in the manuscript insert. Do not retry or overwrite the completed run retrospectively.
+The five-case offline audit identified two Markdown-fence strict parsing failures, two empty-string schema violations and one unknown prefixed patch-field address. All five saved revisions ended normally with stop, not token-limit truncation. Diagnostic fence removal did not change scores. The stale-contract patch proposed an evidence-consistent correction but used proposal.requested_action rather than requested_action.
+
+These are user-reported development results, not held-out evaluation or independent scientific validation. Earlier pilot findings remain unchanged. The raw archive has not been independently inspected or uploaded; this documentation update is not a complete runtime release. No participant data or generated-code execution was involved in this run. The targeted audit is complete, not exhaustive output validation. Original scores and the outcome CSV remain unchanged; no retries, normalization rescoring or runtime-code changes are included.
