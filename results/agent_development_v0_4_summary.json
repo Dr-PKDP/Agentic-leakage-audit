@@ -1,6 +1,6 @@
 {
   "run_id": "integrated_v0_4_20261027T040459122453Z",
-  "evidence": "user-supplied terminal summaries, two matched fallback records and five targeted revision extracts; raw archive not independently inspected",
+  "evidence": "complete saved-output and source/request exports inspected and computationally replayed",
   "contexts": 24,
   "inputs": 48,
   "workflow_units": 192,
@@ -14,7 +14,13 @@
   "heldout_evaluation": false,
   "independent_scientific_validation": false,
   "generated_code_execution": false,
-  "targeted_failure_audit": {"status": "complete_on_supplied_extracts", "units": 5, "markdown_fence_failures": 2, "empty_string_schema_failures": 2, "unknown_patch_field_failures": 1, "audited_revisions_truncated": 0, "record": "results/agent_development_v0_4_failure_audit.json"},
+  "targeted_failure_audit": {"units": 5, "markdown_fence_failures": 2, "empty_string_schema_failures": 2, "unknown_patch_field_failures": 1, "audited_revisions_truncated": 0},
+  "computational_replay": {"exact_units": 192, "exact_references": 48, "reconstructed_requests": 384, "source_and_job_hashes_match": true},
+  "resources": {"prompt_tokens": 346336, "completion_tokens": 197235, "total_tokens": 543571, "summed_client_seconds": 3828.1289821425453},
+  "review_limit_stops": {"count": 93, "denominator": 192, "self_review": 21, "structure_feedback": 12, "evidence_critic": 30, "patch_critic": 30, "revision_limit_stops": 0},
+  "initial_schema_failures": 0,
+  "identical_review_payload_pairs": {"count": 48, "identical_returned_text": 8, "different_returned_text": 40},
+  "empty_feature_selections": {"evidence_critic": 2, "counted_repairs": 1, "counted_preservations": 1},
   "original_run_unchanged": true,
   "scores_unchanged": true,
   "retrospective_normalization_performed": false

@@ -4,15 +4,17 @@ Windows 10 / Python 3.11: resumable NHANES development-data acquisition, checksu
 
 Run: `./run_stage2_windows.ps1`
 
-## Development results — 27 October 2026
+## Source-verified development results - 27 October 2026
 
-The synthetic development run completed 192 workflow units from 24 authored contexts and 48 inputs using 384 generation requests. Two outputs were unparseable. Both patch-acceptance paths repaired 20 of 21 contradicted inputs. Matched inspection confirmed that evidence checking prevented one harmful timing edit; a separate structural rejection retained an incorrect permission request in both paths.
+The synthetic run completed 192 units from 24 contexts and 48 inputs using 384 requests. Complete output and source/request exports have now been inspected. Approved hashes, prompts and payloads reconcile; offline replay reproduces all 192 unit records and 48 reference assessments. This is computational replay, not independent scientific validation.
 
 - [Manuscript insert](docs/manuscript/development_evaluation_v0_4.md)
 - [Structured summary](results/agent_development_v0_4_summary.json)
-- [Outcome table](results/agent_development_v0_4_outcomes.csv)
-- [Completed targeted failure audit](results/agent_development_v0_4_failure_audit.json)
+- [Original outcome table](results/agent_development_v0_4_outcomes.csv)
+- [Earlier targeted failure audit](results/agent_development_v0_4_failure_audit.json)
+- [Source/request replay provenance](results/agent_development_v0_4_replay.json)
+- [Verified resource totals](results/agent_development_v0_4_resources.csv)
 
-The five-case offline audit identified two Markdown-fence strict parsing failures, two empty-string schema violations and one unknown prefixed patch-field address. All five saved revisions ended normally with stop, not token-limit truncation. Diagnostic fence removal did not change scores. The stale-contract patch proposed an evidence-consistent correction but used proposal.requested_action rather than requested_action.
+Both patch paths repaired 20/21 known errors; one harmful timing edit was prevented by evidence checking. Original scores are unchanged. New limitations: 93/192 reviews hit the output limit; structural findings were empty on every initial input; 40/48 identical review requests returned different text; the evidence critic twice returned empty feature sets counted as supported. Contract support is not task utility or safety.
 
-These are user-reported development results, not held-out evaluation or independent scientific validation. Earlier pilot findings remain unchanged. The raw archive has not been independently inspected or uploaded; this documentation update is not a complete runtime release. No participant data or generated-code execution was involved in this run. The targeted audit is complete, not exhaustive output validation. Original scores and the outcome CSV remain unchanged; no retries, normalization rescoring or runtime-code changes are included.
+Total usage was 543571 tokens and 3828.13 summed client-request seconds, not GPU time or full wall time. No participant records or generated-code execution were involved. Earlier unfavorable findings remain unchanged. Held-out evidence, independent adjudication and substantial novelty remain unestablished. This commit publishes derived documentation, not private prompts/responses, raw logs or a complete runtime release. No new generation, rescoring or runtime changes are included.

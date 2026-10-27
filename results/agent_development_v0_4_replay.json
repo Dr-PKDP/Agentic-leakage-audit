@@ -1,0 +1,18 @@
+{
+  "status": "exact_offline_computational_replay",
+  "scope": "Same authored implementation replayed on saved responses; no independent scientific adjudication",
+  "source_output_export_sha256": "2092dd7ebfed2cd89bd1dbc4f94103562cac00bacbb108fcdd2cfc70453d9b02",
+  "source_request_export_sha256": "4ea09ef4335a1502d4f4eb7ed462ca8a241fe8b366e5b373e85a3736db9b4ea6",
+  "runner_sha256": "1649d94540600146e4f562c48525b68f82813b2fa6e360c8fa881bbdb8b7cb83",
+  "job_manifest_canonical_sha256": "0caf3fbd29cc07382588a0efafb23ea3a5f9121a20e6947eda70331def585b03",
+  "checks_passed": 14,
+  "exact_unit_records": 192,
+  "exact_reference_assessments": 48,
+  "actual_payloads_reconstructed": 384,
+  "all_request_payload_hashes_match": true,
+  "omitted_request_payload_fields": 0,
+  "new_generation_requests": 0,
+  "original_scores_changed": false,
+  "raw_logs_published": false,
+  "runtime_source_published": false
+}

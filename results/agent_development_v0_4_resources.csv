@@ -1,0 +1,5 @@
+stream,requests,prompt_tokens,completion_tokens,total_tokens,summed_client_seconds,review_length_stops
+self_review,96,82973,46137,129110,891.31,21
+structure_feedback,96,82026,44995,127021,863.36,12
+evidence_critic,96,86042,47773,133815,943.42,30
+patch_critic,96,95295,58330,153625,1130.04,30
