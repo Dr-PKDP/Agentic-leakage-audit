@@ -1,0 +1,19 @@
+{
+  "run_id": "integrated_v0_4_20261027T040459122453Z",
+  "evidence": "user-supplied terminal summaries and two matched records; raw archive not independently inspected",
+  "contexts": 24,
+  "inputs": 48,
+  "workflow_units": 192,
+  "generation_requests": 384,
+  "unparseable_units": 2,
+  "initial_states": {"supported": 24, "contradicted_contract": 21, "insufficient_evidence": 3},
+  "paired_guard_effect": {"repairs_both_paths": 20, "known_error_denominator": 21, "supported_outputs_interface": 45, "supported_outputs_guarded": 46, "input_denominator": 48},
+  "audited_prevented_harm": "PC0199EC80C3B__patch_critic__42",
+  "audited_shared_unsuccessful_repair": "P4A18C3FED9AC__patch_critic__42",
+  "plan_sha256": "0e8f19089e1c30abd239e31980645f17a566369e37422b58228389a7f5d74250",
+  "heldout_evaluation": false,
+  "independent_scientific_validation": false,
+  "generated_code_execution": false,
+  "pending_audit": ["two unparseable outputs", "two schema failures", "malformed stale-contract patch"],
+  "original_run_unchanged": true
+}
