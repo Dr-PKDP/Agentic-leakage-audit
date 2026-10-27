@@ -1,0 +1,152 @@
+[
+  {
+    "case": "availability_review",
+    "seed": 42,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "single_self_review": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "structure_feedback": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53"
+    }
+  },
+  {
+    "case": "availability_review",
+    "seed": 43,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "single_self_review": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "structure_feedback": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53"
+    }
+  },
+  {
+    "case": "availability_review",
+    "seed": 44,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "single_self_review": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "structure_feedback": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53"
+    }
+  },
+  {
+    "case": "availability_review",
+    "seed": 45,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "single_self_review": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "structure_feedback": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53"
+    }
+  },
+  {
+    "case": "availability_review",
+    "seed": 46,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "single_self_review": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53",
+      "structure_feedback": "1e8b722ec9eba7ec362acffc95e9a430332c9e891e660722a9b59098e004cc53"
+    }
+  },
+  {
+    "case": "fixed_internal_design",
+    "seed": 42,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "single_self_review": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "structure_feedback": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3"
+    }
+  },
+  {
+    "case": "fixed_internal_design",
+    "seed": 43,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "single_self_review": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "structure_feedback": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3"
+    }
+  },
+  {
+    "case": "fixed_internal_design",
+    "seed": 44,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "single_self_review": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "structure_feedback": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3"
+    }
+  },
+  {
+    "case": "fixed_internal_design",
+    "seed": 45,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "single_self_review": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "structure_feedback": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3"
+    }
+  },
+  {
+    "case": "fixed_internal_design",
+    "seed": 46,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "single_self_review": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3",
+      "structure_feedback": "3ec2da88b3d973910a482d6f240276107b88c49e600fc7c02bf25fda71bd22d3"
+    }
+  },
+  {
+    "case": "initial_pending",
+    "seed": 42,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "single_self_review": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "structure_feedback": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e"
+    }
+  },
+  {
+    "case": "initial_pending",
+    "seed": 43,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "single_self_review": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "structure_feedback": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e"
+    }
+  },
+  {
+    "case": "initial_pending",
+    "seed": 44,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "single_self_review": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "structure_feedback": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e"
+    }
+  },
+  {
+    "case": "initial_pending",
+    "seed": 45,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "single_self_review": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "structure_feedback": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e"
+    }
+  },
+  {
+    "case": "initial_pending",
+    "seed": 46,
+    "byte_identical_across_conditions": true,
+    "sha256_by_condition": {
+      "guarded_critic": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "single_self_review": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e",
+      "structure_feedback": "c0451c47a824416518f15494165d1855cffaf3b05157299e47a34d9d6d8cf89e"
+    }
+  }
+]

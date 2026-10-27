@@ -1,0 +1,63 @@
+{
+  "decision_id": "depression_predictor_specification_v0.1",
+  "created_utc": "2026-10-25T04:46:12.601952+00:00",
+  "status": "accepted_development_specification_not_frozen",
+  "provenance": {
+    "recommendation": "AI-assistant methodological recommendation",
+    "acceptance": "User accepted in conversation",
+    "independent_human_adjudication": false
+  },
+  "scope": "Retrospective concurrent screening development pilot",
+  "primary_predictors": [
+    "RIDAGEYR",
+    "RIAGENDR",
+    "INDFMPIR"
+  ],
+  "derived_predictor": "INDFMPIR_missing",
+  "availability_assumption": "Released demographic variables represent information collected before the MEC depression interview. Real-time availability of the processed income-to-poverty ratio is not established.",
+  "coding": {
+    "RIDAGEYR": "Preserve released coding; 80 represents age 80 or older.",
+    "RIAGENDR": "Preserve source definition and released codes.",
+    "INDFMPIR": "Preserve released ratio; 5 is the topcoded category."
+  },
+  "income_missingness": {
+    "retain_missing_income_participants": true,
+    "indicator": "Create from original missingness before imputation.",
+    "imputation": "Median of observed income in each training partition.",
+    "heldout_application": "Use only the corresponding training median.",
+    "all_missing_training_partition": "Stop; no automatic fallback.",
+    "bias_correction_claimed": false
+  },
+  "outcome_missingness": {
+    "policy": "Retain the existing complete-outcome cohort definition.",
+    "imputation_or_prorating_permitted": false
+  },
+  "secondary_comparison": {
+    "predictors": [
+      "RIDAGEYR",
+      "RIAGENDR"
+    ],
+    "purpose": "Assess dependence on including income and its missingness indicator.",
+    "requirements": [
+      "Same eligible cohort and folds as the primary analysis",
+      "Same estimator specification and evaluation rules",
+      "No post-hoc promotion based on held-out performance"
+    ],
+    "execution_authorized_by_this_record": false
+  },
+  "supporting_audit": {
+    "path": "outputs/data_inspection/depression_predictor_fold_audit_20261025T043127048932Z.json",
+    "audited_config_sha256": "0e68c1165cf6e113fc11b4ee9dca4021fef8744455435ca29154d0738db45aa1",
+    "meaning": "Predictor validity and fold income availability checks passed.",
+    "limitation": "Does not establish clinical utility or eliminate missing-data bias."
+  },
+  "pending": [
+    "Reconcile this decision with the next versioned configuration",
+    "Specify estimator and categorical encoding",
+    "Specify training-weight policy",
+    "Finalize evaluation and design-aware uncertainty procedures"
+  ],
+  "model_training_authorized": false,
+  "configuration_modified_by_this_record": false,
+  "protocol_frozen": false
+}

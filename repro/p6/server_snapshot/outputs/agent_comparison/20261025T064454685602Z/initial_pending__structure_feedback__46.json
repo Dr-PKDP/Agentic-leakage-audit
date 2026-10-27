@@ -1,0 +1,26 @@
+{
+  "unit": "initial_pending__structure_feedback__46",
+  "case": "initial_pending",
+  "condition": "structure_feedback",
+  "seed": 46,
+  "status": "completed",
+  "initial": {
+    "structure_valid": false,
+    "structure_findings": [
+      "claims: expected nonblank string list"
+    ],
+    "contract_assessable": false,
+    "contract_findings": [],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "final": {
+    "structure_valid": true,
+    "structure_findings": [],
+    "contract_assessable": true,
+    "contract_findings": [],
+    "contract_pass": true,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "elapsed_seconds": 4.730691898846999
+}

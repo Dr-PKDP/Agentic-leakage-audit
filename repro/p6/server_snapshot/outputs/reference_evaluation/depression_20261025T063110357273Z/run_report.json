@@ -1,0 +1,182 @@
+{
+  "task_id": "nhanes_depression_screening_dev_v7",
+  "status": "COMPLETED_FIXED_REFERENCE_DEVELOPMENT",
+  "created_utc": "2026-10-25T06:31:10.357413+00:00",
+  "config_sha256": "e3d871c07e4aabc9de9a46ad2b3492e4a4018ba942b7cab9acc0c0cc3fb751ba",
+  "runner_sha256": "caade765e0970dab9bc390b2b52d26435f9555284368aabc4cb5a32c5279d35c",
+  "source_sha256": {
+    "src/depression_preprocessing_v1.py": "0df10cdcbb6449708895b5b325373c4b1268bb7b340fcd8abbc5efad3189ba66",
+    "src/depression_baseline_fit_v1.py": "82b6929a8af6a3d14b537fcc29c9810673925362cc7fc84ba47b2b7d1557af4c",
+    "src/depression_execution_v1.py": "d1e3143ad45068eb8167cdd3ce124dd5e45368f35a0f24e91de6103eb4268dbf",
+    "src/depression_secondary_v1.py": "f34097d94cf90f398fe8c05b50c3849a9cdd43ba8f7d52da2693835fbd8dc3b7"
+  },
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.3.5",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1",
+    "pyreadstat": "1.3.7"
+  },
+  "authorization": {
+    "provenance": "User explicitly approved in conversation",
+    "scope": "One fixed three-arm internal-development reference evaluation",
+    "arms": [
+      "primary",
+      "age_gender",
+      "intercept_only"
+    ],
+    "intercept_only": "Training-fold survey-weighted outcome fraction",
+    "tuning": false,
+    "autonomous_agent_execution": false,
+    "temporal_test_access": false,
+    "participant_level_exports": false,
+    "fitted_model_exports": false,
+    "metrics": [
+      "AUROC",
+      "Brier",
+      "log_loss"
+    ],
+    "aggregation": "Pooled out-of-fold predictions",
+    "weighting": "Both original-WTMEC2YR-weighted and unweighted",
+    "log_loss_clipping": "float64 machine epsilon",
+    "confidence_intervals": "Not calculated in this bounded run",
+    "protocol_frozen": false
+  },
+  "participant_level_output_saved": false,
+  "fitted_models_saved": false,
+  "autonomous_agent_execution": false,
+  "protocol_frozen": false,
+  "input_sha256": {
+    "DEMO_J": "c0b46e0345ea19404928656277c8b0d10b0cca348a9b2fe4fc3c67e8b7ee73ec",
+    "DPQ_J": "1c075f332e79736bd2360b41b0c10ed526883417e0b5996c407b1c564b01ca24"
+  },
+  "prior_audit_sha256": "980f6e2b1cac7919b01d88978ae0f6ee9258c309fbac5ee6e770d75f61f46438",
+  "cohort": {
+    "eligible_before_completeness": 5533,
+    "missing_outcome": 465,
+    "complete_outcome": 5068,
+    "positive": 459,
+    "negative": 4609,
+    "groups": 30
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "training_rows": 4067,
+      "heldout_rows": 1001,
+      "training_positive": 370,
+      "heldout_positive": 89,
+      "training_groups": 24,
+      "heldout_groups": 6,
+      "primary_iterations": 15,
+      "age_gender_iterations": 10
+    },
+    {
+      "fold": 2,
+      "training_rows": 4062,
+      "heldout_rows": 1006,
+      "training_positive": 363,
+      "heldout_positive": 96,
+      "training_groups": 24,
+      "heldout_groups": 6,
+      "primary_iterations": 14,
+      "age_gender_iterations": 10
+    },
+    {
+      "fold": 3,
+      "training_rows": 4061,
+      "heldout_rows": 1007,
+      "training_positive": 371,
+      "heldout_positive": 88,
+      "training_groups": 24,
+      "heldout_groups": 6,
+      "primary_iterations": 13,
+      "age_gender_iterations": 10
+    },
+    {
+      "fold": 4,
+      "training_rows": 4019,
+      "heldout_rows": 1049,
+      "training_positive": 366,
+      "heldout_positive": 93,
+      "training_groups": 24,
+      "heldout_groups": 6,
+      "primary_iterations": 14,
+      "age_gender_iterations": 11
+    },
+    {
+      "fold": 5,
+      "training_rows": 4063,
+      "heldout_rows": 1005,
+      "training_positive": 366,
+      "heldout_positive": 93,
+      "training_groups": 24,
+      "heldout_groups": 6,
+      "primary_iterations": 13,
+      "age_gender_iterations": 11
+    }
+  ],
+  "metrics": [
+    {
+      "arm": "primary",
+      "weighting": "WTMEC2YR",
+      "participants": 5068,
+      "AUROC": 0.6314489785144908,
+      "Brier": 0.07658242168886781,
+      "log_loss": 0.28342734004755865
+    },
+    {
+      "arm": "primary",
+      "weighting": "unweighted",
+      "participants": 5068,
+      "AUROC": 0.6195179839009686,
+      "Brier": 0.08121680282268998,
+      "log_loss": 0.2965760034342476
+    },
+    {
+      "arm": "age_gender",
+      "weighting": "WTMEC2YR",
+      "participants": 5068,
+      "AUROC": 0.544789430803456,
+      "Brier": 0.07790129338885521,
+      "log_loss": 0.2906804972474944
+    },
+    {
+      "arm": "age_gender",
+      "weighting": "unweighted",
+      "participants": 5068,
+      "AUROC": 0.5429547002620145,
+      "Brier": 0.08225173248870575,
+      "log_loss": 0.3031802537855651
+    },
+    {
+      "arm": "intercept_only",
+      "weighting": "WTMEC2YR",
+      "participants": 5068,
+      "AUROC": 0.4606446427859987,
+      "Brier": 0.07811494911177058,
+      "log_loss": 0.2920911917648009
+    },
+    {
+      "arm": "intercept_only",
+      "weighting": "unweighted",
+      "participants": 5068,
+      "AUROC": 0.5018607621443505,
+      "Brier": 0.08239970282413978,
+      "log_loss": 0.3040692422053567
+    }
+  ],
+  "log_loss_clipping_epsilon": 2.220446049250313e-16,
+  "aggregation": "Pooled out-of-fold predictions, not mean fold metrics",
+  "warnings": [],
+  "limitations": [
+    "Internal development only; no temporal or final test evaluation.",
+    "No confidence intervals or significance tests.",
+    "Weighted point estimates are not complete complex-survey inference.",
+    "Complete-outcome selection remains unresolved.",
+    "Processed-income real-time availability is not established.",
+    "No agent benchmark or clinical validation is completed by this run."
+  ],
+  "elapsed_seconds": 0.197265479946509,
+  "completed_utc": "2026-10-25T06:31:10.554540+00:00"
+}

@@ -1,0 +1,11 @@
+# Reproducibility notes and recovered-result correction
+
+The exact 105-file server collection is preserved in server_snapshot, apart from a separately declared empty src package marker and a copied dependency-list convenience file. Original bytes/hashes are tracked in the release manifest. No clinical participant rows or model weights are included. Original private collection metadata is not a scientific approval.
+
+The original fixed-reference runner contains a host-specific ROOT and a hard-coded path to a prior v5 audit that was not collected. The optional portability adapter regenerates the real v5 audit from the checksum-matched public inputs, then changes only those two path assignments in memory. It does not fabricate a passed audit or alter the numerical analysis. The adapter has not been run on participant inputs in this release session; default replay verifies the archived metrics and source hashes only.
+
+Recovered earlier post hoc sensitivity report: completed on the original saved artifacts, not merely proposed. Normalized final passes are self-review 3/15, structure-feedback 7/15, guarded critic 4/15. Matched normalized improvements/regressions are 0/7, 1/4, 2/8 respectively. Fifteen case/seed initial-draft groups were byte-identical across conditions. This separate sensitivity does not overwrite strict passes 1/15, 7/15 and 4/15. The offline release recomputes both strict and normalized results from the original scorer and responses.
+
+The principal v0.4 source has its own immutable plan/job/scorer semantics. Repeated inputs, shared candidate paths, authored rules and development exposure remain limitations. The runtime and data are archived; exact original model weights/serving environment are not certified. Later hand-coded rule and source-contract prototypes are distinct post hoc/development artifacts; do not infer a held-out benchmark or new clinical validation from their implementation checks.
+
+The scientific master and earlier manuscript revisions had incomplete execution provenance. The recovered reports supersede their not-yet-executed language where explicitly documented here. No new model request, participant fit, selective retry or primary-score change occurred during release construction.

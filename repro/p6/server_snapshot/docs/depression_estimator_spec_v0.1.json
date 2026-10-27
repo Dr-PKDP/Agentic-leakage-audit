@@ -1,0 +1,64 @@
+{
+  "specification_id": "depression_logistic_baseline_v0.1",
+  "created_utc": "2026-10-25T05:22:08.882844+00:00",
+  "status": "proposed_for_synthetic_validation_not_frozen",
+  "purpose": "Fixed development reference, not the scientific novelty claim",
+  "source_config": "nhanes_depression_dev_v6.json",
+  "source_config_sha256": "8904bbd1e12ebf5368a6ef49415bad2737e95be6f896ec82746155999efb0541",
+  "predictor_decision": "docs/depression_predictor_decision_v0.1.json",
+  "estimator": {
+    "class": "sklearn.linear_model.LogisticRegression",
+    "parameters": {
+      "solver": "lbfgs",
+      "l1_ratio": 0,
+      "C": 1.0,
+      "fit_intercept": true,
+      "class_weight": null,
+      "max_iter": 2000,
+      "tol": 1e-06
+    },
+    "tuning": "None",
+    "convergence_failure": "Stop and review"
+  },
+  "preprocessing": {
+    "income_indicator": "Create from original missingness",
+    "income_imputation": "Unweighted observed training-partition median",
+    "continuous_scaling": "Unweighted training-partition mean and standard deviation for age and imputed income",
+    "gender_encoding": "Fixed mapping: 1 -> 0; 2 -> 1",
+    "binary_indicator_scaling": "None",
+    "unexpected_or_missing_gender": "Stop",
+    "all_missing_training_income": "Stop"
+  },
+  "training_weights": {
+    "source": "WTMEC2YR",
+    "normalization": "Divide by the training-partition arithmetic mean",
+    "require_finite_and_positive": true,
+    "clipping": "None",
+    "class_balancing": "None",
+    "status": "Proposed; not a complete complex-survey inference method"
+  },
+  "justification": {
+    "fixed_baseline": "Transparent reference without held-out tuning",
+    "C_1": "Pragmatic fixed choice; optimality is not claimed",
+    "fold_local_preprocessing": "Exclude held-out records from fitted quantities",
+    "weight_normalization": "Define weight scale alongside fixed regularization while preserving relative training weights"
+  },
+  "verification": {
+    "constructor_check": "User reported success with scikit-learn 1.9.1",
+    "synthetic_fit_tests_completed": false,
+    "participant_data_fit_completed": false
+  },
+  "required_synthetic_tests": [
+    "Known training median and original missingness indicator",
+    "Held-out changes cannot alter fitted preprocessing",
+    "Fixed gender coding and rejection of invalid codes",
+    "All-missing training income fails",
+    "Nonfinite or nonpositive weights fail",
+    "Training weight normalization has mean one",
+    "Weights reach the estimator fit",
+    "Finite probabilities in [0, 1]",
+    "Convergence warnings become explicit failures"
+  ],
+  "model_training_authorized": false,
+  "protocol_frozen": false
+}

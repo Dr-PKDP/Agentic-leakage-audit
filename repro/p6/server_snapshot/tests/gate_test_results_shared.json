@@ -1,0 +1,8 @@
+{
+  "gate_version": "pilot_v2",
+  "test_methods_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "note": "Malformed-input cases run as subtests. Passing tests do not establish scientific validity."
+}

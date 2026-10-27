@@ -1,0 +1,215 @@
+{
+  "task_id": "nhanes_depression_screening_dev_v6",
+  "status": "development_only_not_frozen",
+  "dataset": {
+    "survey": "NHANES",
+    "cycle": "2017-2018",
+    "components": [
+      "DEMO_J",
+      "DPQ_J"
+    ],
+    "reader": "pyreadstat.read_xport",
+    "join_key": "SEQN",
+    "join_validation": "one_to_one"
+  },
+  "intended_task": "Concurrent screening for elevated depressive symptoms using information available before DPQ administration.",
+  "not_claimed": [
+    "Confirmed clinical diagnosis",
+    "Future depression risk",
+    "Temporal transport",
+    "Clinical deployment readiness"
+  ],
+  "population": {
+    "minimum_age": 18,
+    "require_positive_mec_weight": true,
+    "require_design_fields_present": true
+  },
+  "outcome": {
+    "name": "elevated_depressive_symptoms",
+    "items": [
+      "DPQ010",
+      "DPQ020",
+      "DPQ030",
+      "DPQ040",
+      "DPQ050",
+      "DPQ060",
+      "DPQ070",
+      "DPQ080",
+      "DPQ090"
+    ],
+    "valid_item_values": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "score_rule": "sum all nine valid items",
+    "positive_threshold": 10,
+    "incomplete_item_policy": "Outcome remains missing; no imputation or prorating.",
+    "sources": [
+      "https://www.cdc.gov/nchs/products/databriefs/db527.htm"
+    ]
+  },
+  "predictor_policy": {
+    "status": "proposed_not_approved",
+    "forbidden": [
+      "All DPQ fields",
+      "PHQ-9 total score",
+      "Any derivative of outcome-defining items",
+      "SEQN",
+      "Survey weights and design identifiers"
+    ],
+    "requirement": "Explicit allowlist with codebook and availability review.",
+    "candidate_allowlist": [
+      "RIDAGEYR",
+      "RIAGENDR",
+      "INDFMPIR"
+    ],
+    "proposed_derived_predictors": [
+      "INDFMPIR_missing"
+    ],
+    "availability_review": {
+      "status": "evidence_recorded_assumptions_not_approved",
+      "review_path": "docs/depression_metadata_review_v0.1.json",
+      "evidence_as_recorded": "Demographic questionnaires administered at home; DPQ administered at MEC.",
+      "limitation_as_recorded": "INDFMPIR is a processed derived value. Retrospective screening assumes its inputs and calculation are available before DPQ; real-time availability is not established.",
+      "real_time_availability_established": false
+    }
+  },
+  "survey_design": {
+    "candidate_weight": "WTMEC2YR",
+    "stratum": "SDMVSTRA",
+    "psu": "SDMVPSU",
+    "weight_approval": "Existing metadata review records WTMEC2YR as the documented DPQ_J component weight. Predictive weighting, uncertainty, and final evaluation approval remain pending.",
+    "retain_design_fields_for_analysis": true,
+    "component_weight_documentation": {
+      "status": "recorded_from_existing_local_metadata_review",
+      "weight": "WTMEC2YR",
+      "review_path": "docs/depression_metadata_review_v0.1.json",
+      "review_sha256": "c5b9225978938f9d3a31b04e9164c499faf700f7acb7880ea8a1654fbe68f0d4",
+      "basis_as_recorded": "DPQ_J analytic notes explicitly specify the two-year MEC examination weight.",
+      "limitations": [
+        "Does not resolve selection bias from incomplete DPQ outcomes.",
+        "Does not specify the full predictive evaluation or uncertainty procedure."
+      ],
+      "source_urls_as_recorded": [
+        "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/datafiles/DEMO_J.htm",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DPQ_J.htm"
+      ],
+      "new_external_verification_performed": false,
+      "predictive_weighting_approved": false
+    }
+  },
+  "evaluation": {
+    "status": "proposed_not_approved",
+    "cycle_role": "development_only",
+    "no_final_test_set_defined": true,
+    "purpose": "Exploratory internal predictive evaluation, not temporal validation or national generalizability proof",
+    "splitter": "StratifiedGroupKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "group_fields": [
+      "SDMVSTRA",
+      "SDMVPSU"
+    ],
+    "group_rule": "Use the pair as one group; no group may cross training and held-out partitions",
+    "preprocessing": "Fit all learned preprocessing within each training fold only",
+    "predictions": "One held-out prediction per eligible participant",
+    "proposed_metrics": [
+      "WTMEC2YR-weighted AUROC",
+      "WTMEC2YR-weighted Brier score",
+      "WTMEC2YR-weighted log loss"
+    ],
+    "model_selection": "No tuning or threshold selection using held-out performance; estimator specification remains pending",
+    "required_checks": [
+      "Enough distinct groups for five folds",
+      "Both outcome classes in every training and held-out partition",
+      "No group overlap",
+      "Exactly one held-out prediction per eligible participant"
+    ],
+    "failure_policy": "Stop and review; do not silently change seed or splitting method",
+    "limitations": [
+      "Class balance is approximate",
+      "Released design groups do not establish complete household or geographic independence",
+      "Outcome-completeness selection remains unresolved"
+    ],
+    "uncertainty": "Design-aware uncertainty method pending; fold variability is not a population confidence interval"
+  },
+  "execution_permissions": {
+    "local_outcome_audit": true,
+    "model_training": false,
+    "autonomous_generated_code": false,
+    "local_split_audit": true,
+    "local_predictor_audit": true
+  },
+  "parent_config": "nhanes_depression_dev_v5.json",
+  "missing_data": {
+    "status": "proposed_development_baseline",
+    "income": {
+      "retain_missing_records": true,
+      "indicator": "INDFMPIR_missing",
+      "imputation": "Training-partition median of observed INDFMPIR",
+      "fit_scope": "Fit separately within every training fold; never on held-out records",
+      "all_missing_training_partition": "Stop; do not invent a fallback value"
+    },
+    "outcome": "Keep incomplete DPQ outcomes missing; no imputation or prorating",
+    "limitation": "Median imputation and a missingness indicator do not establish correction of missing-data bias."
+  },
+  "split_audit_scope": {
+    "allowed": [
+      "Read configured local DEMO_J and DPQ_J files",
+      "Reconstruct configured eligibility and outcome in memory",
+      "Construct proposed grouped folds in memory",
+      "Save aggregate feasibility diagnostics and configuration hash"
+    ],
+    "prohibited": [
+      "Fit models or preprocessing",
+      "Evaluate predictive performance",
+      "Save participant identifiers, outcomes, or fold assignments",
+      "Change seed or splitter to obtain a preferred result"
+    ],
+    "failure_policy": "Report infeasibility; do not silently relax the proposed design"
+  },
+  "parent_config_sha256": "0e68c1165cf6e113fc11b4ee9dca4021fef8744455435ca29154d0738db45aa1",
+  "predictor_audit_scope": {
+    "candidate_fields": [
+      "RIDAGEYR",
+      "RIAGENDR",
+      "INDFMPIR"
+    ],
+    "allowed": [
+      "Read the configured local DEMO_J and DPQ_J files",
+      "Reconstruct the configured eligible complete-outcome cohort",
+      "Check candidate predictor values and missingness",
+      "Reconstruct the proposed grouped folds in memory",
+      "Count observed and missing income values in each partition",
+      "Check every training partition has observed income",
+      "Save aggregate diagnostics, software versions and configuration hash"
+    ],
+    "prohibited": [
+      "Fit an imputer, scaler, encoder or other learned preprocessing",
+      "Fit models or evaluate predictive performance",
+      "Save participant identifiers, outcomes or fold assignments",
+      "Change the seed or splitter to obtain a preferred result",
+      "Approve predictors or freeze the evaluation protocol automatically"
+    ],
+    "failure_policy": "Report failed checks and stop; no automatic fallback"
+  },
+  "change_log": {
+    "scope": "Documentation reconciliation only",
+    "changes": [
+      "Record the existing component-weight documentation review",
+      "Carry forward the derived-income availability limitation"
+    ],
+    "unchanged": [
+      "Cohort and outcome rules",
+      "Candidate predictor approval status",
+      "Missing-data proposal",
+      "Split settings and evaluation approval status",
+      "Execution permissions"
+    ],
+    "audit_provenance": "Existing passing audit reports apply to their recorded v4/v5 configuration hashes; they are not relabelled as v6 audits.",
+    "protocol_frozen": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unit": "fixed_internal_design__single_self_review__44",
+  "case": "fixed_internal_design",
+  "condition": "single_self_review",
+  "seed": 44,
+  "status": "completed",
+  "initial": {
+    "structure_valid": false,
+    "structure_findings": [
+      "claims: expected nonblank string list"
+    ],
+    "contract_assessable": false,
+    "contract_findings": [],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "final": {
+    "structure_valid": false,
+    "structure_findings": [
+      "claims: expected nonblank string list"
+    ],
+    "contract_assessable": false,
+    "contract_findings": [],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "elapsed_seconds": 5.081849506124854
+}
