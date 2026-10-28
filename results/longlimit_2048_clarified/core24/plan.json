@@ -1,0 +1,34 @@
+{
+  "version": "p6_extended_0.5",
+  "scope": "DEVELOPMENT_ONLY_NOT_CONFIRMATORY",
+  "arm": "core24_review2048",
+  "context_set": "core24",
+  "thinking": "default",
+  "model": "p6-qwen3-8b",
+  "base_url": "http://127.0.0.1:8010/v1",
+  "seeds": [
+    42
+  ],
+  "temperature": 0.2,
+  "max_tokens": 512,
+  "review_max_tokens": 2048,
+  "timeout_seconds": 300,
+  "retries": 0,
+  "workers": 8,
+  "contexts": 24,
+  "inputs": 48,
+  "generator_streams": [
+    "self_review",
+    "structure_feedback",
+    "evidence_critic",
+    "patch_critic"
+  ],
+  "workflow_units": 192,
+  "max_generation_calls": 384,
+  "patch_paths_share_generation": true,
+  "jobs_sha256": "57f9d55aaef2d4b969a36472413d146c1210fa73d440270ae467d50f455f5faa",
+  "script_sha256": "a1de7e2c6c32b194786eec58d371d0b932a3e9265bd0066f0b5528bcaf67f446",
+  "v4_script_sha256": "1649d94540600146e4f562c48525b68f82813b2fa6e360c8fa881bbdb8b7cb83",
+  "execution_authorized": false,
+  "prompt_variant": "clarified"
+}

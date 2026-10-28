@@ -1,7 +1,8 @@
 """Clarified revision instruction and review scoring for the second-model and longer-limit runs.
 
-For each arm (core24, nhanes) and each run set (Qwen3-8B at the longer limit, Granite 3.3 8B Instruct with the
-original instruction, Granite 3.3 8B Instruct with the clarified instruction), the script regenerates the plan,
+For each arm (core24, nhanes) and each run set (Qwen3-8B at the longer limit with the original and the clarified
+instruction, Granite 3.3 8B Instruct with the original and the clarified instruction; Qwen3-8B with the clarified
+instruction was run on the core arm only), the script regenerates the plan,
 rescores the archived responses strictly and after normalization, tabulates response-format categories and the
 gate comparison (as in analysis/second_model_stats.py), and scores the reviews with analysis/review_flags.py.
 It writes results/prompt_variant_stats.json and, for the clarified run, strict/ and normalized/ outcome tables.
@@ -27,6 +28,7 @@ SETS = {
     "qwen3_8b_original": ("longlimit_2048", "original", "p6-qwen3-8b", "http://127.0.0.1:8010/v1"),
     "granite_original": ("second_model_granite", "original", "p6-granite-8b", "http://127.0.0.1:8011/v1"),
     "granite_clarified": ("second_model_granite_clarified", "clarified", "p6-granite-8b", "http://127.0.0.1:8011/v1"),
+    "qwen3_8b_clarified": ("longlimit_2048_clarified", "clarified", "p6-qwen3-8b", "http://127.0.0.1:8010/v1"),
 }
 
 
@@ -42,6 +44,8 @@ def main():
     for name, (folder, variant, model, url) in SETS.items():
         for arm in sm.ARMS:
             run = RES / folder / arm
+            if not (run / "requests.jsonl").exists():
+                continue
             events = [json.loads(s) for s in (run / "requests.jsonl").read_text().splitlines() if s.strip()]
             with tempfile.TemporaryDirectory() as tmp:
                 tmp = Path(tmp)

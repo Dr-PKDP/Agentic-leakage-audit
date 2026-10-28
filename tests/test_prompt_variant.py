@@ -26,3 +26,5 @@ def test_prompt_variant_statistics_reproduce_reported_values():
     assert [label[p]["repair"][0] for p in list(label)[:5]] == [0, 1, 1, 1, 1]
     assert s["granite_clarified"]["nhanes"]["review_flags"]["summary"]["flagged"] == {"n": 53, "acted": 3}
     assert s["qwen3_8b_original"]["nhanes"]["review_flags"]["summary"]["flagged"] == {"n": 132, "acted": 122}
+    q = s["qwen3_8b_clarified"]["core24"]["strict"]["paths"]
+    assert [q[p]["repair"][0] for p in q] == [17, 18, 17, 18, 18]

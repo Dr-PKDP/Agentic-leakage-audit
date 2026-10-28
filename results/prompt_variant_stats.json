@@ -1793,5 +1793,291 @@
     }
    }
   }
+ },
+ "qwen3_8b_clarified": {
+  "core24": {
+   "formats": {
+    "responses": {
+     "full": 144,
+     "patch": 48
+    },
+    "categories": {
+     "full|extra_keys": 0,
+     "full|fenced": 0,
+     "full|nested_under_wrapper_key": 0,
+     "full|same_as_input": 83,
+     "full|schema_keys_missing": 0,
+     "full|text_after_json": 0,
+     "patch|envelope_fields_missing": 0,
+     "patch|fenced": 0,
+     "patch|operation_names_unknown_field": 0,
+     "patch|text_after_json": 0
+    }
+   },
+   "strict": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       17,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "structure_feedback": {
+      "repair": [
+       18,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "evidence_critic": {
+      "repair": [
+       17,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       18,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 43,
+      "responses": 48
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       18,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 41,
+      "responses": 48
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 24,
+     "only_gate_B_better": 1,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "normalized": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       17,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "structure_feedback": {
+      "repair": [
+       18,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "evidence_critic": {
+      "repair": [
+       17,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       18,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 43,
+      "responses": 48
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       18,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 41,
+      "responses": 48
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 24,
+     "only_gate_B_better": 1,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "review_flags": {
+    "summary": {
+     "all": {
+      "n": 24,
+      "acted": 24
+     },
+     "named": {
+      "n": 24,
+      "acted": 24
+     },
+     "not_named": {
+      "n": 0,
+      "acted": 0
+     },
+     "flagged": {
+      "n": 24,
+      "acted": 24
+     },
+     "not_flagged": {
+      "n": 0,
+      "acted": 0
+     }
+    },
+    "by_stream": {
+     "evidence_critic": {
+      "all": {
+       "n": 6,
+       "acted": 6
+      },
+      "named": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "patch_critic": {
+      "all": {
+       "n": 6,
+       "acted": 6
+      },
+      "named": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "self_review": {
+      "all": {
+       "n": 6,
+       "acted": 6
+      },
+      "named": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "structure_feedback": {
+      "all": {
+       "n": 6,
+       "acted": 6
+      },
+      "named": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     }
+    }
+   }
+  }
  }
 }
