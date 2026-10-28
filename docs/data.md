@@ -24,6 +24,8 @@ Verdicts are `supported`, `contradicted_contract` and `insufficient_evidence`. P
 | `failure_audit.json` | Audit of the five revisions that failed to parse or validate, with finish reasons and token counts. |
 | `replay_check.json` | Record of the first replay: hashes of the source exports and the runner, and the checks passed. |
 
+`results/principal_v0_4/sensitivity.json` holds the output of `analysis/sensitivity.py` (truncation strata, selection quality, paired contrasts, leave-one-family-out rates).
+
 Client seconds are measured around each request on a shared machine and include queueing. They are not GPU time or wall-clock time.
 
 ## `experiments/extended_v0_5`

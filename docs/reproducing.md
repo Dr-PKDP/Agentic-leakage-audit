@@ -24,6 +24,14 @@ python analysis/schema_audit.py
 
 This reads `nhanes/metadata/` and rewrites `results/nhanes/schema_audit.json` and `schema_audit_reference.csv`. The expected totals are 33 of 80 reference pairs flagged.
 
+## Sensitivity analyses
+
+```
+python analysis/sensitivity.py
+```
+
+This recomputes four analyses of the principal run from the archived records and writes `results/principal_v0_4/sensitivity.json`: outcomes by whether the review stopped at the output limit, selections compared with the rule reference, paired contrasts between paths (exact McNemar tests, context-level bootstrap with 5,000 resamples and a fixed seed), and rates with each constraint family left out in turn. The output is deterministic and corresponds to Supplementary Table S7.
+
 ## Refitting the fixed reference
 
 The refit uses the public DEMO_J and DPQ_J files from the NHANES 2017–2018 cycle. It needs Python 3.11 and the packages pinned in `experiments/pilot_depression/requirements-reference.lock.txt`.

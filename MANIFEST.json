@@ -471,6 +471,11 @@
    "sha256": "d85ed51523df825542e16107b9aa833c4638c8cf2845f8ca0354f015226c000d"
   },
   {
+   "path": "analysis/sensitivity.py",
+   "bytes": 12168,
+   "sha256": "010a19bd409a0b8354075c0a8fa9e1dd5c8a12358562781b266060a7d9d6c3b7"
+  },
+  {
    "path": "nhanes/__init__.py",
    "bytes": 0,
    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -559,6 +564,11 @@
    "path": "results/principal_v0_4/resources.csv",
    "bytes": 292,
    "sha256": "a11c1820d23971b657dc6b20f1018b1b0187df64590550759b80ef3cad4ac0be"
+  },
+  {
+   "path": "results/principal_v0_4/sensitivity.json",
+   "bytes": 10199,
+   "sha256": "e4404178d4e5137b610d0f00828268d13bfadaafd35acfb489272e6e7b83bf03"
   },
   {
    "path": "results/principal_v0_4/summary.json",

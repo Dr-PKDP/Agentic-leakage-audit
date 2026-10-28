@@ -26,7 +26,7 @@ The command checks `MANIFEST.json`, recomputes every score from the saved respon
 ```
 reproduce.py            offline replay, manifest check, optional reference refit
 MANIFEST.json           SHA-256 of every file the replay depends on
-analysis/               replay, deterministic rule reference, NHANES schema audit
+analysis/               replay, deterministic rule reference, NHANES schema audit, sensitivity analyses
 experiments/
   principal_v0_4/       24-context run: runner, plan, jobs, requests, responses, scored units
   extended_v0_5/        NHANES-label contexts, thinking-mode switch, multiple seeds
