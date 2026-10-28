@@ -36,6 +36,21 @@
    "sha256": "9a15e739adc205697153c193f7da1e57c1a569758ab678642a058af5541126a1"
   },
   {
+   "path": "experiments/direct_revision/analyze_direct_revision.py",
+   "bytes": 7471,
+   "sha256": "d08be0d444e5f09341da389eaa58317ec73bbc88b7389cfad2c9921a04db551a"
+  },
+  {
+   "path": "experiments/direct_revision/p6_direct_revision.py",
+   "bytes": 9511,
+   "sha256": "ef4f0d8c9c6378a425f728319c57d6ac2239169f72503f79557741de4df697a2"
+  },
+  {
+   "path": "experiments/direct_revision/run_direct_revision.sh",
+   "bytes": 3446,
+   "sha256": "f8be6579569d60d1c6ccaa2f824c09132d6f3e2808b1bd3d6f4a107360d809d4"
+  },
+  {
    "path": "experiments/label_contexts/p6_extended_analyze.py",
    "bytes": 7535,
    "sha256": "aee524c77c7df79376afdf6af99265074687b3886e1ce90bf8c701b691a496fc"

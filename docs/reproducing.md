@@ -127,3 +127,15 @@ pytest
 ```
 
 The suite covers the lineage rules, the offline replay and the schema audit, the extended pipeline against a mock server, and the numerical modules of the depression reference.
+
+## Direct-revision comparator
+
+`experiments/direct_revision` runs the reviser without a critic. Each input receives one revision request that contains the context and the initial proposal and no review, in the two formats of the critic–reviser workflows (a complete proposal and a JSON patch scored under both gates on one response). Settings follow the 2,048-token run: revision limit 512 tokens, temperature 0.2, revision seeds 1042 (core contexts) and 1042 and 1043 (label contexts), server-default thinking mode, original revision instruction. The run makes at most 232 requests and uses the same server configuration as the reference run.
+
+```
+export P6_MODEL=p6-qwen3-8b
+export P6_BASE_URL=http://127.0.0.1:8010/v1
+P6_CONFIRM=yes nohup bash experiments/direct_revision/run_direct_revision.sh > direct_revision.log 2>&1 &
+```
+
+The script runs an offline check, confirms that the endpoint serves the model, prepares and hashes both plans, runs them, and analyzes each run against `results/review_limit_2048/<set>/outcomes.csv`. Without `P6_CONFIRM=yes` it prints the plan hashes and waits for the confirmation `RUN`. The analysis reports repair, preservation, harmful edits, retention and permissions-family repair for each direct-revision path, and paired contrasts with the critic–reviser paths that share its revision format (exact McNemar test and a context-level bootstrap interval).
