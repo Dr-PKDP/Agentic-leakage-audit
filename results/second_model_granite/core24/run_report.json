@@ -1,0 +1,12 @@
+{
+  "status": "DEVELOPMENT_RUN_FINISHED",
+  "arm": "core24_review2048",
+  "units": 192,
+  "generation_requests": 384,
+  "failed_or_unparseable_units": 46,
+  "wall_clock_seconds": 307.96277624880895,
+  "independent_scientific_validation": false,
+  "heldout_evaluation": false,
+  "execution_of_model_code": false,
+  "scope": "synthetic_proposal_generation_only"
+}

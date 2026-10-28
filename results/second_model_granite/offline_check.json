@@ -1,0 +1,161 @@
+{
+  "status": "PASS_OFFLINE",
+  "nhanes_contexts": 17,
+  "core24_check": "PASS_INTEGRATED_OFFLINE_DEVELOPMENT_CHECK_ONLY",
+  "model_calls": 0,
+  "rows": [
+    {
+      "context_id": "P6D05_N001",
+      "archetype": "defining_measure",
+      "task": "diabetes",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": true,
+      "prefix_reviser_verdict_on_counterpart": "supported",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "task": "diabetes",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "task": "diabetes",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "task": "diabetes",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N005",
+      "archetype": "defining_measure",
+      "task": "hypertension",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": true,
+      "prefix_reviser_verdict_on_counterpart": "supported",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "task": "hypertension",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "task": "hypertension",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "task": "hypertension",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "task": "hypertension",
+      "guard_accepts_correct_patch": false,
+      "guard_blocks_harmful_patch": true,
+      "prefix_reviser_verdict_on_counterpart": "supported",
+      "prefix_reviser_retained_fraction": 0.5
+    },
+    {
+      "context_id": "P6D05_N010",
+      "archetype": "defining_item",
+      "task": "depression",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": true,
+      "prefix_reviser_verdict_on_counterpart": "supported",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N011",
+      "archetype": "instrument_item_10",
+      "task": "depression",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": true,
+      "prefix_reviser_verdict_on_counterpart": "supported",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "task": "depression",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "task": "depression",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N014",
+      "archetype": "defining_measure",
+      "task": "ckd",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": true,
+      "prefix_reviser_verdict_on_counterpart": "supported",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "task": "ckd",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "task": "ckd",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "task": "ckd",
+      "guard_accepts_correct_patch": true,
+      "guard_blocks_harmful_patch": false,
+      "prefix_reviser_verdict_on_counterpart": "contradicted_contract",
+      "prefix_reviser_retained_fraction": 1.0
+    }
+  ]
+}

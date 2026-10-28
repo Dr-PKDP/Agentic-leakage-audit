@@ -43,6 +43,14 @@ The first script recomputes, from `results/extended_v0_5/`, the outcomes of the 
 
 The three-arm extended run used the revision of `p6_extended_v0_5.py` that preceded the review-limit option; the two revisions differ only in the plan fields and the request payload for the review limit.
 
+## Second model
+
+```
+python analysis/second_model_stats.py
+```
+
+`results/second_model_granite/` holds the responses of a second model (Granite 3.3 8B Instruct, served as `p6-granite-8b` with a context window of 8,192 tokens) for the core contexts and the NHANES-label contexts, run with the longer-limit protocol. The script regenerates each plan from the runner, rescores every revision twice with `analysis/normalized_rescore.py`, checks that the strict rescoring reproduces the outcomes of the original run, and writes `stats.json` and the rescored `outcomes.csv` and `summary.json` under `strict/` and `normalized/`. The strict mode parses a response as the runner does. The normalized mode applies five fixed rules before scoring: it removes a Markdown fence, parses the first JSON value and ignores text after it, unwraps a proposal nested under a single `proposal_schema` or `proposal` key, keeps only the keys named in the context's proposal schema when all are present, and adds the three envelope fields of a patch when they are absent. Evaluator and gates are unchanged. The normalized scores correspond to Table 9 and Supplementary Table S14 of the manuscript.
+
 ## Refitting the fixed reference
 
 The refit uses the public DEMO_J and DPQ_J files from the NHANES 2017–2018 cycle. It needs Python 3.11 and the packages pinned in `experiments/pilot_depression/requirements-reference.lock.txt`.
