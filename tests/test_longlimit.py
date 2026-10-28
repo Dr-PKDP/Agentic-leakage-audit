@@ -20,6 +20,22 @@ def prepare(tmp_path, *extra):
     return json.loads(out), json.loads(plan.read_text())
 
 
+def test_clarified_prompt_variant(tmp_path):
+    _, plan = prepare(tmp_path, "--prompt-variant", "clarified")
+    assert plan["prompt_variant"] == "clarified"
+    jobs = json.loads((tmp_path / "plan/jobs.json").read_text())
+    full = next(j for j in jobs if j["stream"] != "patch_critic")
+    patch = next(j for j in jobs if j["stream"] == "patch_critic")
+    assert json.dumps(list(full["context"]["proposal_schema"])) in full["revision_instruction"]
+    assert "no wrapper object" in full["revision_instruction"]
+    assert patch["context"]["context_id"] in patch["revision_instruction"]
+
+
+def test_original_variant_is_the_default(tmp_path):
+    _, plan = prepare(tmp_path)
+    assert "prompt_variant" not in plan
+
+
 def test_limits_are_recorded_in_the_plan(tmp_path):
     _, plan = prepare(tmp_path, "--review-max-tokens", "2048", "--revision-max-tokens", "512")
     assert plan["review_max_tokens"] == 2048 and plan["max_tokens"] == 512

@@ -11,6 +11,7 @@
 #            P6_ARMS                    arms to run (default "core24 nhanes")
 #            P6_REVIEW_MAX_TOKENS       default 2048
 #            P6_REVISION_MAX_TOKENS     default 512
+#            P6_PROMPT_VARIANT          original (default) or clarified (explicit statement of the response form)
 #            P6_WORKERS                 concurrent requests (default 8)
 #            P6_CONFIRM=yes             skip the interactive confirmation
 # Seeds: 42 for core24, 42 and 43 for nhanes. Thinking mode: server default.
@@ -19,7 +20,7 @@ set -uo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export PYTHONPATH="$HERE/../principal_v0_4${PYTHONPATH:+:$PYTHONPATH}"
 REV="${P6_REVIEW_MAX_TOKENS:-2048}"; RVS="${P6_REVISION_MAX_TOKENS:-512}"
-ARMS="${P6_ARMS:-core24 nhanes}"; WORKERS="${P6_WORKERS:-8}"
+ARMS="${P6_ARMS:-core24 nhanes}"; WORKERS="${P6_WORKERS:-8}"; VARIANT="${P6_PROMPT_VARIANT:-original}"
 TS="$(date -u +%Y%m%dT%H%M%SZ)"
 OUT="${P6_OUT:-$PWD/outputs/longlimit}/$TS"
 mkdir -p "$OUT"
@@ -33,12 +34,12 @@ curl -sS --noproxy '*' -m 15 ${AUTH[@]+"${AUTH[@]}"} "$P6_BASE_URL/models" \
 declare -A HASH; TOTAL=0
 for set in $ARMS; do
   if [ "$set" = "nhanes" ]; then SEEDS="42,43"; else SEEDS="42"; fi
-  J="$( cd "$HERE" && python p6_extended_v0_5.py prepare --output-dir "$OUT/plans/$set" --arm "${set}_review${REV}" --context-set "$set" --thinking default --seeds "$SEEDS" --model "$P6_MODEL" --base-url "$P6_BASE_URL" --workers "$WORKERS" --review-max-tokens "$REV" --revision-max-tokens "$RVS" )" || { echo "prepare failed for $set"; exit 1; }
+  J="$( cd "$HERE" && python p6_extended_v0_5.py prepare --output-dir "$OUT/plans/$set" --arm "${set}_review${REV}_${VARIANT}" --context-set "$set" --thinking default --seeds "$SEEDS" --model "$P6_MODEL" --base-url "$P6_BASE_URL" --workers "$WORKERS" --review-max-tokens "$REV" --revision-max-tokens "$RVS" --prompt-variant "$VARIANT" )" || { echo "prepare failed for $set"; exit 1; }
   HASH[$set]="$(echo "$J" | python -c "import sys,json; print(json.load(sys.stdin)['plan_sha256'])")"
   C="$(echo "$J" | python -c "import sys,json; print(json.load(sys.stdin)['max_generation_calls'])")"; TOTAL=$((TOTAL+C))
   echo "$set seeds=$SEEDS max_calls=$C plan=${HASH[$set]:0:16}"
 done
-echo "total maximum generation requests: $TOTAL (review limit $REV, revision limit $RVS)"
+echo "total maximum generation requests: $TOTAL (review limit $REV, revision limit $RVS, prompt variant $VARIANT)"
 if [ "${P6_CONFIRM:-ask}" != "yes" ]; then
   read -r -p "Type RUN to start: " ANS
   [ "$ANS" = "RUN" ] || { echo "stopped before any generation; plans are in $OUT/plans"; exit 0; }

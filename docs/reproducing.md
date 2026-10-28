@@ -51,6 +51,13 @@ python analysis/second_model_stats.py
 
 `results/second_model_granite/` holds the responses of a second model (Granite 3.3 8B Instruct, served as `p6-granite-8b` with a context window of 8,192 tokens) for the core contexts and the NHANES-label contexts, run with the longer-limit protocol. The script regenerates each plan from the runner, rescores every revision twice with `analysis/normalized_rescore.py`, checks that the strict rescoring reproduces the outcomes of the original run, and writes `stats.json` and the rescored `outcomes.csv` and `summary.json` under `strict/` and `normalized/`. The strict mode parses a response as the runner does. The normalized mode applies five fixed rules before scoring: it removes a Markdown fence, parses the first JSON value and ignores text after it, unwraps a proposal nested under a single `proposal_schema` or `proposal` key, keeps only the keys named in the context's proposal schema when all are present, and adds the three envelope fields of a patch when they are absent. Evaluator and gates are unchanged. The normalized scores correspond to Table 9 and Supplementary Table S14 of the manuscript.
 
+```
+python analysis/prompt_variant_stats.py
+```
+
+`results/second_model_granite_clarified/` holds the responses of the same model and contexts with a clarified revision instruction (`--prompt-variant clarified` in the runner, `P6_PROMPT_VARIANT=clarified` in `experiments/extended_v0_5/run_longlimit.sh`): the instruction states the exact top-level keys and forbids a wrapper key, a code fence and extra text for full proposals, and states the envelope values and the allowed field names for patches. The script rescores the responses of this run, of the Granite run with the original instruction and of the Qwen3-8B longer-limit run (whose responses are in `results/longlimit_2048/*/requests.jsonl`), strictly and after normalization, and scores the reviews with `analysis/review_flags.py`. That module takes the contexts with a feature-selection proposal (families F01, F02 and F07) and a contradicted initial proposal, finds the variables that are contradicted when selected alone, and records whether the review names such a variable, whether an exclusion cue (a fixed list of words in the module) occurs within 160 characters of it, and whether the final selection leaves it out. Results are written to `results/prompt_variant_stats.json` and correspond to Supplementary Table S15.
+
+
 ## Refitting the fixed reference
 
 The refit uses the public DEMO_J and DPQ_J files from the NHANES 2017–2018 cycle. It needs Python 3.11 and the packages pinned in `experiments/pilot_depression/requirements-reference.lock.txt`.

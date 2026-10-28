@@ -211,6 +211,20 @@ def check():
     return {"status": "PASS_OFFLINE", "nhanes_contexts": len(out), "core24_check": core_ok, "model_calls": 0, "rows": out}
 
 
+def clarified_instruction(c, p, stream):
+    """Revision instruction that states the response form explicitly (used for the prompt-variant arms)."""
+    if stream == "patch_critic":
+        env = {"context_id": c["context_id"], "context_sha256": v4.sha(c), "proposal_sha256": v4.sha(p)}
+        return ("Return only one JSON object, with no Markdown fence and no text before or after it. Its top-level keys are exactly "
+                "context_id, context_sha256, proposal_sha256 and operations. Copy the first three values exactly: " + json.dumps(env) +
+                ". operations is a list; each item has the keys field, old_value, new_value, evidence_ids and rationale, where field is one of " +
+                json.dumps(list(p)) + ", old_value is the current value of that field and evidence_ids lists applicable source IDs. "
+                "Use operations=[] if no justified change.")
+    return ("Return only the complete revised proposal as one JSON object whose top-level keys are exactly " + json.dumps(list(c["proposal_schema"])) +
+            ", with no wrapper object, no Markdown fence and no text before or after it. Retain correct decisions. "
+            "If evidence is insufficient, do not invent support or approval.")
+
+
 def prepare(a):
     items = context_items(a.context_set)
     seeds = [int(x) for x in a.seeds.split(",")]
@@ -219,6 +233,7 @@ def prepare(a):
         for stream in STREAMS:
             for seed in seeds:
                 review, task, instruction = v4.prompts(c, p, stream)
+                if a.prompt_variant == "clarified": instruction = clarified_instruction(c, p, stream)
                 jobs.append({"unit": f"{pid}__{stream}__{seed}", "proposal_id": pid, "author_role": role, "context": c, "initial_proposal": p,
                              "stream": stream, "seed": seed, "review_messages": review, "revision_task": task, "revision_instruction": instruction})
     plan = {"version": VERSION, "scope": "DEVELOPMENT_ONLY_NOT_CONFIRMATORY", "arm": a.arm, "context_set": a.context_set,
@@ -228,6 +243,7 @@ def prepare(a):
             "patch_paths_share_generation": True, "jobs_sha256": sha(jobs),
             "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             "v4_script_sha256": hashlib.sha256(Path(v4.__file__).read_bytes()).hexdigest(), "execution_authorized": False}
+    if a.prompt_variant != "original": plan["prompt_variant"] = a.prompt_variant
     d = a.output_dir
     d.mkdir(parents=True, exist_ok=False)
     v4.write(d / "jobs.json", jobs); v4.write(d / "plan.json", plan)
@@ -312,7 +328,7 @@ def main():
     b = s.add_parser("prepare"); b.add_argument("--output-dir", required=True, type=Path); b.add_argument("--arm", required=True)
     b.add_argument("--context-set", choices=["core24", "nhanes"], required=True); b.add_argument("--thinking", choices=["default", "off"], required=True)
     b.add_argument("--seeds", default="42"); b.add_argument("--model", default="p6-qwen3-8b"); b.add_argument("--base-url", default="http://127.0.0.1:8010/v1")
-    b.add_argument("--workers", type=int, default=8); b.add_argument("--review-max-tokens", type=int, default=1024); b.add_argument("--revision-max-tokens", type=int, default=1024)
+    b.add_argument("--workers", type=int, default=8); b.add_argument("--prompt-variant", choices=["original", "clarified"], default="original"); b.add_argument("--review-max-tokens", type=int, default=1024); b.add_argument("--revision-max-tokens", type=int, default=1024)
     r = s.add_parser("run"); r.add_argument("--plan-dir", required=True, type=Path); r.add_argument("--output-dir", required=True, type=Path); r.add_argument("--approve-plan-hash", required=True)
     a = p.parse_args()
     if a.cmd == "check": print(json.dumps(check(), indent=2))

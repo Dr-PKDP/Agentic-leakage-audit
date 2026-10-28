@@ -1,0 +1,12 @@
+{
+  "status": "DEVELOPMENT_RUN_FINISHED",
+  "arm": "nhanes_review2048",
+  "units": 272,
+  "generation_requests": 544,
+  "failed_or_unparseable_units": 24,
+  "wall_clock_seconds": 443.72100726212375,
+  "independent_scientific_validation": false,
+  "heldout_evaluation": false,
+  "execution_of_model_code": false,
+  "scope": "synthetic_proposal_generation_only"
+}

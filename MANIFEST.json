@@ -7,8 +7,8 @@
   },
   {
    "path": "experiments/extended_v0_5/p6_extended_v0_5.py",
-   "bytes": 23630,
-   "sha256": "7d0b3824a869d7d9c027facaa4cf339b32c046b47da6d3fdcb8d978d8e0d5ea8"
+   "bytes": 25153,
+   "sha256": "82a2bf9fbfeec29e8b83b69da3f7daa8e6cd8a57657d4eaa3940fd64c9175474"
   },
   {
    "path": "experiments/extended_v0_5/p6_scan_requests.py",
@@ -22,8 +22,8 @@
   },
   {
    "path": "experiments/extended_v0_5/run_longlimit.sh",
-   "bytes": 3839,
-   "sha256": "8598a220433872b26997000d57a1fb90c3db1d547ad0ab67bf118fd461150e09"
+   "bytes": 4059,
+   "sha256": "a1f6da2448cd92e877ef64f313b56dd10eb3ccea9e7739eecbddedcf03cc2e0b"
   },
   {
    "path": "experiments/pilot_depression/configs/nhanes_depression_dev_v4.json",
@@ -471,6 +471,11 @@
    "sha256": "b368e8c21c8575370e1a10ea58c8a96f2d0ca7e5946913a093c19cc25d458d76"
   },
   {
+   "path": "analysis/prompt_variant_stats.py",
+   "bytes": 3537,
+   "sha256": "d2a5f94ebc8a79e1e35d2bb297f9b2050d46cf11d73e079eee492300317b5e0b"
+  },
+  {
    "path": "analysis/reference_portable.py",
    "bytes": 5511,
    "sha256": "4f77591416e8e4d138c9050577b3675b560e3c6558227823809b704d64781e3f"
@@ -479,6 +484,11 @@
    "path": "analysis/replay.py",
    "bytes": 12521,
    "sha256": "454e899fd3e5c801f3a64b2b5737e575741ab7fd19b87d625a20e479ba55beb8"
+  },
+  {
+   "path": "analysis/review_flags.py",
+   "bytes": 4548,
+   "sha256": "89090c5fc02b3050885bf8d4213083ad957dc2657db1126fd8fff7eede53dc74"
   },
   {
    "path": "analysis/rule_reference.py",
@@ -626,6 +636,11 @@
    "sha256": "fbdfec7bf594888e10847fe70f476d8012f47d527ec1e1249ef959649aec1150"
   },
   {
+   "path": "results/longlimit_2048/core24/requests.jsonl",
+   "bytes": 2534031,
+   "sha256": "aa81bac42ad3c61f2d0c503f087c0f472af0d0eaa4b30c3400936ef1bce3f478"
+  },
+  {
    "path": "results/longlimit_2048/core24/run_report.json",
    "bytes": 360,
    "sha256": "95eced940e3600eda840c87178c4638533fec74da3d3fe4e37557cd9ee69aeae"
@@ -639,6 +654,11 @@
    "path": "results/longlimit_2048/nhanes/outcomes.csv",
    "bytes": 69946,
    "sha256": "90fb502f1bf7affccca5c4e2ac620111a54cc1eb4bd9a48c6c5180ab95764f3a"
+  },
+  {
+   "path": "results/longlimit_2048/nhanes/requests.jsonl",
+   "bytes": 5637392,
+   "sha256": "174ada5c68745336cb4b92531e4361e3653a3823c72e5d904b63c1776926d32b"
   },
   {
    "path": "results/longlimit_2048/nhanes/run_report.json",
@@ -704,6 +724,11 @@
    "path": "results/principal_v0_4/summary.json",
    "bytes": 1877,
    "sha256": "cff09e84c3def684631bc772592e3e7bbc9383033ba1f0405494b785bb0fbe70"
+  },
+  {
+   "path": "results/prompt_variant_stats.json",
+   "bytes": 30265,
+   "sha256": "834a3b9db52f3cb70862b00b5c5d74734588014445e1744fa7512cb66bae5f0b"
   },
   {
    "path": "results/second_model_granite/core24/models.json",
@@ -814,6 +839,96 @@
    "path": "results/second_model_granite/stats.json",
    "bytes": 6363,
    "sha256": "9b9afccf906f499354d2e83a584f92678bb5b2a184edb8070592dce57a7b8967"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/models.json",
+   "bytes": 762,
+   "sha256": "4b3e37ab852042fd53231368f0bd9c58455907e079b07c300045ded9e2f952d7"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/normalized/outcomes.csv",
+   "bytes": 45498,
+   "sha256": "284fdc42ec5ead7cc9a408f0612a07ce26d88459ec2a6a6bd9837affe2669d83"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/normalized/summary.json",
+   "bytes": 11467,
+   "sha256": "24b441473e584a7af3092df5cd514996deb680e078af65010972f451b636dfcc"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/plan.json",
+   "bytes": 965,
+   "sha256": "2775646d3d8226f4ae70494d91d280cb4287579c22ee33722812ec97a7ce7f97"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/requests.jsonl",
+   "bytes": 1651047,
+   "sha256": "ee870a43650e44dd0a22a6e91eea70060a642a50975988407d4bf1b93b2f44bb"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/run_report.json",
+   "bytes": 361,
+   "sha256": "c4e5ff6f9e0eb654cb092626ca7509245bdde3d4ca4eca9d3f0d8de741da8aec"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/server_version.json",
+   "bytes": 26,
+   "sha256": "d807dd3b9fd5815b2411a6d060d29b1f86c6d845f0d38e4e93e6150ecd6c17ca"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/strict/outcomes.csv",
+   "bytes": 45498,
+   "sha256": "284fdc42ec5ead7cc9a408f0612a07ce26d88459ec2a6a6bd9837affe2669d83"
+  },
+  {
+   "path": "results/second_model_granite_clarified/core24/strict/summary.json",
+   "bytes": 11467,
+   "sha256": "24b441473e584a7af3092df5cd514996deb680e078af65010972f451b636dfcc"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/models.json",
+   "bytes": 762,
+   "sha256": "f55b5cccd20f03040d57e20e13876e033cccaf6f654f837d48ba96e0a7c4773b"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/normalized/outcomes.csv",
+   "bytes": 73633,
+   "sha256": "458915b921e9f8eacc0a765e4de22bac20ae1307f2d2a7288fee3eb04f8e17fb"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/normalized/summary.json",
+   "bytes": 25765,
+   "sha256": "595dd20e2d876c01006d0b586d94399870e29dedc46f4c367b4acd3e5c99c7d1"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/plan.json",
+   "bytes": 973,
+   "sha256": "1aae45eb03bd73e0dd2701838c71a4feb9f8b3fd86881bf48a05a4f0267cab58"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/requests.jsonl",
+   "bytes": 3262836,
+   "sha256": "2cf3bfaeaf15d7c74668b045c5719f8ab63a2c16394238d894ad784c493044c3"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/run_report.json",
+   "bytes": 362,
+   "sha256": "c05405017f13cc3a1953cc3980eca363d250592835be9e34215b5a95c54ca389"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/server_version.json",
+   "bytes": 26,
+   "sha256": "d807dd3b9fd5815b2411a6d060d29b1f86c6d845f0d38e4e93e6150ecd6c17ca"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/strict/outcomes.csv",
+   "bytes": 73526,
+   "sha256": "6df4589fb2e8efb8635be23d98a4ee29a293c6714df06de7d1a045070cf19094"
+  },
+  {
+   "path": "results/second_model_granite_clarified/nhanes/strict/summary.json",
+   "bytes": 25772,
+   "sha256": "148515950eddbced6180776c17a6fb91f36f485cddce06965277f3c459f6eeac"
   }
  ]
 }

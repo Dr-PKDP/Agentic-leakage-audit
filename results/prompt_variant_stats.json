@@ -1,0 +1,1797 @@
+{
+ "qwen3_8b_original": {
+  "core24": {
+   "formats": {
+    "responses": {
+     "full": 144,
+     "patch": 48
+    },
+    "categories": {
+     "full|extra_keys": 0,
+     "full|fenced": 1,
+     "full|nested_under_wrapper_key": 0,
+     "full|same_as_input": 82,
+     "full|schema_keys_missing": 0,
+     "full|text_after_json": 0,
+     "patch|envelope_fields_missing": 0,
+     "patch|fenced": 0,
+     "patch|operation_names_unknown_field": 0,
+     "patch|text_after_json": 0
+    }
+   },
+   "strict": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       17,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "structure_feedback": {
+      "repair": [
+       17,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 45,
+      "responses": 48
+     },
+     "evidence_critic": {
+      "repair": [
+       16,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 46,
+      "responses": 48
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       21,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       21,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 24,
+     "only_gate_B_better": 0,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "normalized": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       17,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "structure_feedback": {
+      "repair": [
+       18,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 46,
+      "responses": 48
+     },
+     "evidence_critic": {
+      "repair": [
+       16,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 46,
+      "responses": 48
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       21,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       21,
+       21
+      ],
+      "preserve": [
+       24,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 47,
+      "responses": 48
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 24,
+     "only_gate_B_better": 0,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "review_flags": {
+    "summary": {
+     "all": {
+      "n": 24,
+      "acted": 24
+     },
+     "named": {
+      "n": 24,
+      "acted": 24
+     },
+     "not_named": {
+      "n": 0,
+      "acted": 0
+     },
+     "flagged": {
+      "n": 24,
+      "acted": 24
+     },
+     "not_flagged": {
+      "n": 0,
+      "acted": 0
+     }
+    },
+    "by_stream": {
+     "evidence_critic": {
+      "all": {
+       "n": 6,
+       "acted": 6
+      },
+      "named": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "patch_critic": {
+      "all": {
+       "n": 6,
+       "acted": 6
+      },
+      "named": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "self_review": {
+      "all": {
+       "n": 6,
+       "acted": 6
+      },
+      "named": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "structure_feedback": {
+      "all": {
+       "n": 6,
+       "acted": 6
+      },
+      "named": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 6
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     }
+    }
+   }
+  },
+  "nhanes": {
+   "formats": {
+    "responses": {
+     "full": 204,
+     "patch": 68
+    },
+    "categories": {
+     "full|extra_keys": 0,
+     "full|fenced": 3,
+     "full|nested_under_wrapper_key": 0,
+     "full|same_as_input": 66,
+     "full|schema_keys_missing": 0,
+     "full|text_after_json": 0,
+     "patch|envelope_fields_missing": 0,
+     "patch|fenced": 1,
+     "patch|operation_names_unknown_field": 0,
+     "patch|text_after_json": 0
+    }
+   },
+   "strict": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       30,
+       34
+      ],
+      "preserve": [
+       33,
+       34
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "structure_feedback": {
+      "repair": [
+       30,
+       34
+      ],
+      "preserve": [
+       34,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "evidence_critic": {
+      "repair": [
+       30,
+       34
+      ],
+      "preserve": [
+       32,
+       34
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 65,
+      "responses": 68
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       33,
+       34
+      ],
+      "preserve": [
+       29,
+       34
+      ],
+      "harmful": 4,
+      "scored_without_format_failure": 67,
+      "responses": 68
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       32,
+       34
+      ],
+      "preserve": [
+       33,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 60,
+      "responses": 68
+     },
+     "prefix_rule_reviser": {
+      "repair": [
+       6,
+       17
+      ],
+      "preserve": [
+       17,
+       17
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 34,
+      "responses": 34
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 33,
+     "only_gate_B_better": 4,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 0.125
+    }
+   },
+   "normalized": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       30,
+       34
+      ],
+      "preserve": [
+       33,
+       34
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "structure_feedback": {
+      "repair": [
+       30,
+       34
+      ],
+      "preserve": [
+       34,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "evidence_critic": {
+      "repair": [
+       32,
+       34
+      ],
+      "preserve": [
+       33,
+       34
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       33,
+       34
+      ],
+      "preserve": [
+       30,
+       34
+      ],
+      "harmful": 4,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       32,
+       34
+      ],
+      "preserve": [
+       34,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 61,
+      "responses": 68
+     },
+     "prefix_rule_reviser": {
+      "repair": [
+       6,
+       17
+      ],
+      "preserve": [
+       17,
+       17
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 34,
+      "responses": 34
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 34,
+     "only_gate_B_better": 4,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 0.125
+    }
+   },
+   "review_flags": {
+    "summary": {
+     "all": {
+      "n": 136,
+      "acted": 123
+     },
+     "named": {
+      "n": 135,
+      "acted": 123
+     },
+     "not_named": {
+      "n": 1,
+      "acted": 0
+     },
+     "flagged": {
+      "n": 132,
+      "acted": 122
+     },
+     "not_flagged": {
+      "n": 4,
+      "acted": 1
+     }
+    },
+    "by_stream": {
+     "evidence_critic": {
+      "all": {
+       "n": 34,
+       "acted": 30
+      },
+      "named": {
+       "n": 34,
+       "acted": 30
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 33,
+       "acted": 30
+      },
+      "not_flagged": {
+       "n": 1,
+       "acted": 0
+      }
+     },
+     "patch_critic": {
+      "all": {
+       "n": 34,
+       "acted": 33
+      },
+      "named": {
+       "n": 34,
+       "acted": 33
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 34,
+       "acted": 33
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "self_review": {
+      "all": {
+       "n": 34,
+       "acted": 30
+      },
+      "named": {
+       "n": 34,
+       "acted": 30
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 32,
+       "acted": 29
+      },
+      "not_flagged": {
+       "n": 2,
+       "acted": 1
+      }
+     },
+     "structure_feedback": {
+      "all": {
+       "n": 34,
+       "acted": 30
+      },
+      "named": {
+       "n": 33,
+       "acted": 30
+      },
+      "not_named": {
+       "n": 1,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 33,
+       "acted": 30
+      },
+      "not_flagged": {
+       "n": 1,
+       "acted": 0
+      }
+     }
+    }
+   }
+  }
+ },
+ "granite_original": {
+  "core24": {
+   "formats": {
+    "responses": {
+     "full": 144,
+     "patch": 48
+    },
+    "categories": {
+     "full|extra_keys": 26,
+     "full|fenced": 30,
+     "full|nested_under_wrapper_key": 82,
+     "full|no_json": 2,
+     "full|same_as_input": 65,
+     "full|schema_keys_missing": 17,
+     "full|text_after_json": 13,
+     "patch|envelope_fields_missing": 47,
+     "patch|fenced": 0,
+     "patch|no_json": 1,
+     "patch|operation_names_unknown_field": 18,
+     "patch|text_after_json": 0
+    }
+   },
+   "strict": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       2,
+       21
+      ],
+      "preserve": [
+       3,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 6,
+      "responses": 48
+     },
+     "structure_feedback": {
+      "repair": [
+       1,
+       21
+      ],
+      "preserve": [
+       3,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 4,
+      "responses": 48
+     },
+     "evidence_critic": {
+      "repair": [
+       2,
+       21
+      ],
+      "preserve": [
+       0,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 4,
+      "responses": 48
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       0,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 0,
+      "responses": 48
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       0,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 0,
+      "responses": 48
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 23,
+     "only_gate_B_better": 0,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "normalized": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       8,
+       21
+      ],
+      "preserve": [
+       21,
+       24
+      ],
+      "harmful": 2,
+      "scored_without_format_failure": 40,
+      "responses": 48
+     },
+     "structure_feedback": {
+      "repair": [
+       8,
+       21
+      ],
+      "preserve": [
+       22,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 41,
+      "responses": 48
+     },
+     "evidence_critic": {
+      "repair": [
+       12,
+       21
+      ],
+      "preserve": [
+       21,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 40,
+      "responses": 48
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       11,
+       21
+      ],
+      "preserve": [
+       18,
+       24
+      ],
+      "harmful": 5,
+      "scored_without_format_failure": 27,
+      "responses": 48
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       10,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 20,
+      "responses": 48
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 23,
+     "only_gate_B_better": 5,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 0.0625
+    }
+   },
+   "review_flags": {
+    "summary": {
+     "all": {
+      "n": 24,
+      "acted": 0
+     },
+     "named": {
+      "n": 24,
+      "acted": 0
+     },
+     "not_named": {
+      "n": 0,
+      "acted": 0
+     },
+     "flagged": {
+      "n": 19,
+      "acted": 0
+     },
+     "not_flagged": {
+      "n": 5,
+      "acted": 0
+     }
+    },
+    "by_stream": {
+     "evidence_critic": {
+      "all": {
+       "n": 6,
+       "acted": 0
+      },
+      "named": {
+       "n": 6,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "patch_critic": {
+      "all": {
+       "n": 6,
+       "acted": 0
+      },
+      "named": {
+       "n": 6,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "self_review": {
+      "all": {
+       "n": 6,
+       "acted": 0
+      },
+      "named": {
+       "n": 6,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 3,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 3,
+       "acted": 0
+      }
+     },
+     "structure_feedback": {
+      "all": {
+       "n": 6,
+       "acted": 0
+      },
+      "named": {
+       "n": 6,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 4,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 2,
+       "acted": 0
+      }
+     }
+    }
+   }
+  },
+  "nhanes": {
+   "formats": {
+    "responses": {
+     "full": 204,
+     "patch": 68
+    },
+    "categories": {
+     "full|extra_keys": 3,
+     "full|fenced": 78,
+     "full|nested_under_wrapper_key": 123,
+     "full|no_json": 1,
+     "full|same_as_input": 176,
+     "full|schema_keys_missing": 0,
+     "full|text_after_json": 2,
+     "patch|envelope_fields_missing": 63,
+     "patch|fenced": 0,
+     "patch|no_json": 5,
+     "patch|operation_names_unknown_field": 46,
+     "patch|text_after_json": 3
+    }
+   },
+   "strict": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       8,
+       34
+      ],
+      "harmful": 2,
+      "scored_without_format_failure": 18,
+      "responses": 68
+     },
+     "structure_feedback": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       9,
+       34
+      ],
+      "harmful": 2,
+      "scored_without_format_failure": 23,
+      "responses": 68
+     },
+     "evidence_critic": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       3,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 10,
+      "responses": 68
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       29,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 0,
+      "responses": 68
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       29,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 0,
+      "responses": 68
+     },
+     "prefix_rule_reviser": {
+      "repair": [
+       6,
+       17
+      ],
+      "preserve": [
+       17,
+       17
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 34,
+      "responses": 34
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 29,
+     "only_gate_B_better": 0,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "normalized": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       29,
+       34
+      ],
+      "harmful": 5,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "structure_feedback": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       30,
+       34
+      ],
+      "harmful": 4,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "evidence_critic": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       32,
+       34
+      ],
+      "harmful": 2,
+      "scored_without_format_failure": 67,
+      "responses": 68
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       31,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 17,
+      "responses": 68
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       31,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 12,
+      "responses": 68
+     },
+     "prefix_rule_reviser": {
+      "repair": [
+       6,
+       17
+      ],
+      "preserve": [
+       17,
+       17
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 34,
+      "responses": 34
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 31,
+     "only_gate_B_better": 0,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "review_flags": {
+    "summary": {
+     "all": {
+      "n": 136,
+      "acted": 0
+     },
+     "named": {
+      "n": 134,
+      "acted": 0
+     },
+     "not_named": {
+      "n": 2,
+      "acted": 0
+     },
+     "flagged": {
+      "n": 54,
+      "acted": 0
+     },
+     "not_flagged": {
+      "n": 82,
+      "acted": 0
+     }
+    },
+    "by_stream": {
+     "evidence_critic": {
+      "all": {
+       "n": 34,
+       "acted": 0
+      },
+      "named": {
+       "n": 34,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 17,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 17,
+       "acted": 0
+      }
+     },
+     "patch_critic": {
+      "all": {
+       "n": 34,
+       "acted": 0
+      },
+      "named": {
+       "n": 34,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 16,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 18,
+       "acted": 0
+      }
+     },
+     "self_review": {
+      "all": {
+       "n": 34,
+       "acted": 0
+      },
+      "named": {
+       "n": 34,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 10,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 24,
+       "acted": 0
+      }
+     },
+     "structure_feedback": {
+      "all": {
+       "n": 34,
+       "acted": 0
+      },
+      "named": {
+       "n": 32,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 2,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 11,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 23,
+       "acted": 0
+      }
+     }
+    }
+   }
+  }
+ },
+ "granite_clarified": {
+  "core24": {
+   "formats": {
+    "responses": {
+     "full": 144,
+     "patch": 48
+    },
+    "categories": {
+     "full|extra_keys": 0,
+     "full|fenced": 0,
+     "full|nested_under_wrapper_key": 0,
+     "full|no_json": 1,
+     "full|same_as_input": 99,
+     "full|schema_keys_missing": 0,
+     "full|text_after_json": 0,
+     "patch|envelope_fields_missing": 0,
+     "patch|fenced": 0,
+     "patch|no_json": 1,
+     "patch|operation_names_unknown_field": 0,
+     "patch|text_after_json": 0
+    }
+   },
+   "strict": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       9,
+       21
+      ],
+      "preserve": [
+       22,
+       24
+      ],
+      "harmful": 2,
+      "scored_without_format_failure": 46,
+      "responses": 48
+     },
+     "structure_feedback": {
+      "repair": [
+       8,
+       21
+      ],
+      "preserve": [
+       22,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 44,
+      "responses": 48
+     },
+     "evidence_critic": {
+      "repair": [
+       13,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 48,
+      "responses": 48
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       10,
+       21
+      ],
+      "preserve": [
+       22,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 43,
+      "responses": 48
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       9,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 36,
+      "responses": 48
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 23,
+     "only_gate_B_better": 1,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "normalized": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       9,
+       21
+      ],
+      "preserve": [
+       22,
+       24
+      ],
+      "harmful": 2,
+      "scored_without_format_failure": 46,
+      "responses": 48
+     },
+     "structure_feedback": {
+      "repair": [
+       8,
+       21
+      ],
+      "preserve": [
+       22,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 44,
+      "responses": 48
+     },
+     "evidence_critic": {
+      "repair": [
+       13,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 48,
+      "responses": 48
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       10,
+       21
+      ],
+      "preserve": [
+       22,
+       24
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 43,
+      "responses": 48
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       9,
+       21
+      ],
+      "preserve": [
+       23,
+       24
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 36,
+      "responses": 48
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 23,
+     "only_gate_B_better": 1,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "review_flags": {
+    "summary": {
+     "all": {
+      "n": 24,
+      "acted": 14
+     },
+     "named": {
+      "n": 24,
+      "acted": 14
+     },
+     "not_named": {
+      "n": 0,
+      "acted": 0
+     },
+     "flagged": {
+      "n": 18,
+      "acted": 14
+     },
+     "not_flagged": {
+      "n": 6,
+      "acted": 0
+     }
+    },
+    "by_stream": {
+     "evidence_critic": {
+      "all": {
+       "n": 6,
+       "acted": 4
+      },
+      "named": {
+       "n": 6,
+       "acted": 4
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 6,
+       "acted": 4
+      },
+      "not_flagged": {
+       "n": 0,
+       "acted": 0
+      }
+     },
+     "patch_critic": {
+      "all": {
+       "n": 6,
+       "acted": 4
+      },
+      "named": {
+       "n": 6,
+       "acted": 4
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 5,
+       "acted": 4
+      },
+      "not_flagged": {
+       "n": 1,
+       "acted": 0
+      }
+     },
+     "self_review": {
+      "all": {
+       "n": 6,
+       "acted": 3
+      },
+      "named": {
+       "n": 6,
+       "acted": 3
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 3,
+       "acted": 3
+      },
+      "not_flagged": {
+       "n": 3,
+       "acted": 0
+      }
+     },
+     "structure_feedback": {
+      "all": {
+       "n": 6,
+       "acted": 3
+      },
+      "named": {
+       "n": 6,
+       "acted": 3
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 4,
+       "acted": 3
+      },
+      "not_flagged": {
+       "n": 2,
+       "acted": 0
+      }
+     }
+    }
+   }
+  },
+  "nhanes": {
+   "formats": {
+    "responses": {
+     "full": 204,
+     "patch": 68
+    },
+    "categories": {
+     "full|extra_keys": 0,
+     "full|fenced": 7,
+     "full|nested_under_wrapper_key": 0,
+     "full|same_as_input": 177,
+     "full|schema_keys_missing": 0,
+     "full|text_after_json": 0,
+     "patch|envelope_fields_missing": 0,
+     "patch|fenced": 9,
+     "patch|no_json": 8,
+     "patch|operation_names_unknown_field": 0,
+     "patch|text_after_json": 0
+    }
+   },
+   "strict": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       31,
+       34
+      ],
+      "harmful": 3,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "structure_feedback": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       29,
+       34
+      ],
+      "harmful": 5,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "evidence_critic": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       28,
+       34
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 61,
+      "responses": 68
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       23,
+       34
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 19,
+      "responses": 68
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       24,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 13,
+      "responses": 68
+     },
+     "prefix_rule_reviser": {
+      "repair": [
+       6,
+       17
+      ],
+      "preserve": [
+       17,
+       17
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 34,
+      "responses": 34
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 24,
+     "only_gate_B_better": 1,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "normalized": {
+    "paths": {
+     "self_review": {
+      "repair": [
+       0,
+       34
+      ],
+      "preserve": [
+       31,
+       34
+      ],
+      "harmful": 3,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "structure_feedback": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       29,
+       34
+      ],
+      "harmful": 5,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "evidence_critic": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       33,
+       34
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 68,
+      "responses": 68
+     },
+     "patch_critic/interface_only": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       30,
+       34
+      ],
+      "harmful": 1,
+      "scored_without_format_failure": 26,
+      "responses": 68
+     },
+     "patch_critic/evidence_guarded": {
+      "repair": [
+       1,
+       34
+      ],
+      "preserve": [
+       31,
+       34
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 20,
+      "responses": 68
+     },
+     "prefix_rule_reviser": {
+      "repair": [
+       6,
+       17
+      ],
+      "preserve": [
+       17,
+       17
+      ],
+      "harmful": 0,
+      "scored_without_format_failure": 34,
+      "responses": 34
+     }
+    },
+    "gate_comparison": {
+     "parseable_pairs": 31,
+     "only_gate_B_better": 1,
+     "only_gate_A_better": 0,
+     "exact_mcnemar_p": 1.0
+    }
+   },
+   "review_flags": {
+    "summary": {
+     "all": {
+      "n": 136,
+      "acted": 3
+     },
+     "named": {
+      "n": 134,
+      "acted": 3
+     },
+     "not_named": {
+      "n": 2,
+      "acted": 0
+     },
+     "flagged": {
+      "n": 53,
+      "acted": 3
+     },
+     "not_flagged": {
+      "n": 83,
+      "acted": 0
+     }
+    },
+    "by_stream": {
+     "evidence_critic": {
+      "all": {
+       "n": 34,
+       "acted": 1
+      },
+      "named": {
+       "n": 34,
+       "acted": 1
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 16,
+       "acted": 1
+      },
+      "not_flagged": {
+       "n": 18,
+       "acted": 0
+      }
+     },
+     "patch_critic": {
+      "all": {
+       "n": 34,
+       "acted": 1
+      },
+      "named": {
+       "n": 34,
+       "acted": 1
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 17,
+       "acted": 1
+      },
+      "not_flagged": {
+       "n": 17,
+       "acted": 0
+      }
+     },
+     "self_review": {
+      "all": {
+       "n": 34,
+       "acted": 0
+      },
+      "named": {
+       "n": 34,
+       "acted": 0
+      },
+      "not_named": {
+       "n": 0,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 10,
+       "acted": 0
+      },
+      "not_flagged": {
+       "n": 24,
+       "acted": 0
+      }
+     },
+     "structure_feedback": {
+      "all": {
+       "n": 34,
+       "acted": 1
+      },
+      "named": {
+       "n": 32,
+       "acted": 1
+      },
+      "not_named": {
+       "n": 2,
+       "acted": 0
+      },
+      "flagged": {
+       "n": 10,
+       "acted": 1
+      },
+      "not_flagged": {
+       "n": 24,
+       "acted": 0
+      }
+     }
+    }
+   }
+  }
+ }
+}
