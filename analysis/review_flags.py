@@ -16,8 +16,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXT = ROOT / "experiments/extended_v0_5"
-sys.path[:0] = [str(EXT), str(ROOT / "experiments/principal_v0_4")]
+EXT = ROOT / "experiments/label_contexts"
+sys.path[:0] = [str(EXT), str(ROOT / "experiments/core_contexts")]
 import p6_extended_v0_5 as x  # noqa: E402
 
 CUE = re.compile(r"exclud|remov|drop|leak|should not|must not|cannot|can't|violat|not be (used|included|selected)|inadmissible|not ready|too late|after the cutoff", re.I)

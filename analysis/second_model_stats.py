@@ -1,8 +1,8 @@
 """Statistics for the second-model run (Granite 3.3 8B Instruct, review limit 2,048 tokens).
 
-Rescores the archived responses in results/second_model_granite strictly and after normalization
+Rescores the archived responses in results/granite strictly and after normalization
 (analysis/normalized_rescore.py), tabulates outcomes, response-format categories and the gate comparison,
-and writes results/second_model_granite/stats.json plus the rescored outcomes. No model calls.
+and writes results/granite/stats.json plus the rescored outcomes. No model calls.
 """
 import csv
 import json
@@ -16,8 +16,8 @@ from math import comb
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RES = ROOT / "results/second_model_granite"
-EXT = ROOT / "experiments/extended_v0_5"
+RES = ROOT / "results/granite"
+EXT = ROOT / "experiments/label_contexts"
 sys.path[:0] = [str(Path(__file__).parent)]
 import normalized_rescore as nr  # noqa: E402
 
@@ -38,7 +38,7 @@ def prepare(arm, d):
     subprocess.run([sys.executable, "p6_extended_v0_5.py", "prepare", "--output-dir", str(d), "--arm", arm, "--context-set", arm, "--thinking", "default",
                     "--seeds", ARMS[arm], "--model", "p6-granite-8b", "--base-url", "http://127.0.0.1:8011/v1", "--review-max-tokens", "2048",
                     "--revision-max-tokens", "512"], cwd=EXT, check=True, capture_output=True,
-                   env={**os.environ, "PYTHONPATH": str(ROOT / "experiments/principal_v0_4")})
+                   env={**os.environ, "PYTHONPATH": str(ROOT / "experiments/core_contexts")})
 
 
 def formats(jobs, events):

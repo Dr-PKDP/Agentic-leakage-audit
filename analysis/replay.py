@@ -36,7 +36,7 @@ def pure_functions(source, names, env):
 
 
 def principal(base, out):
-    d = base / "experiments/principal_v0_4"
+    d = base / "experiments/core_contexts"
     plan = load(d / "plan.json")
     jobs = load(d / "jobs.json")
     events = load(d / "request_ledger.json")
@@ -167,7 +167,7 @@ def principal(base, out):
 
 
 def pilot(base, out):
-    archive = base / "experiments/pilot_depression"
+    archive = base / "experiments/preliminary_study"
     run = archive / "outputs/agent_comparison/20261025T064454685602Z"
     provenance = load(run / "provenance.json")
     source = (archive / "scripts/run_depression_agent_comparison_v1.py").read_text()
@@ -256,7 +256,7 @@ def pilot(base, out):
 
 
 def reference_metadata(base, out):
-    archive = base / "experiments/pilot_depression"
+    archive = base / "experiments/preliminary_study"
     run = archive / "outputs/reference_evaluation/depression_20261025T063110357273Z"
     r = load(run / "run_report.json")
     assert sha_bytes((archive / "configs/nhanes_depression_dev_v7.json").read_bytes()) == r["config_sha256"]

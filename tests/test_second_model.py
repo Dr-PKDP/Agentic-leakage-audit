@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path[:0] = [str(ROOT / "analysis"), str(ROOT / "experiments/extended_v0_5"), str(ROOT / "experiments/principal_v0_4")]
+sys.path[:0] = [str(ROOT / "analysis"), str(ROOT / "experiments/label_contexts"), str(ROOT / "experiments/core_contexts")]
 import normalized_rescore as nr  # noqa: E402
 
 CTX = {"proposal_schema": {"selected": {"type": "string_list"}}, "context_id": "c"}
@@ -25,7 +25,7 @@ def test_normalization_rules():
 
 def test_second_model_statistics_reproduce_reported_values():
     subprocess.run([sys.executable, str(ROOT / "analysis/second_model_stats.py")], check=True, capture_output=True)
-    s = json.loads((ROOT / "results/second_model_granite/stats.json").read_text())
+    s = json.loads((ROOT / "results/granite/stats.json").read_text())
     assert s["core24"]["strict_rescoring_matches_run"] and s["nhanes"]["strict_rescoring_matches_run"]
     core, label = s["core24"]["normalized"]["paths"], s["nhanes"]["normalized"]["paths"]
     assert [core[p]["repair"][0] for p in list(core)] == [8, 8, 12, 11, 10]

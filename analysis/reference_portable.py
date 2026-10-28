@@ -8,7 +8,7 @@ def report(base):
     return json.loads(
         (
             base
-            / "experiments/pilot_depression/outputs/reference_evaluation/depression_20261025T063110357273Z/run_report.json"
+            / "experiments/preliminary_study/outputs/reference_evaluation/depression_20261025T063110357273Z/run_report.json"
         ).read_text()
     )
 
@@ -41,7 +41,7 @@ def refit(base, demo, dpq, out):
             raise ValueError("Reference package mismatch: " + package)
     out.mkdir(parents=True)
     workspace = out / "workspace"
-    shutil.copytree(base / "experiments/pilot_depression", workspace)
+    shutil.copytree(base / "experiments/preliminary_study", workspace)
     raw = workspace / "data/raw/nhanes/2017_2018"
     raw.mkdir(parents=True)
     shutil.copyfile(demo, raw / "DEMO_J.xpt")

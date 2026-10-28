@@ -18,7 +18,7 @@
 set -uo pipefail
 : "${P6_MODEL:?set P6_MODEL}"; : "${P6_BASE_URL:?set P6_BASE_URL}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-export PYTHONPATH="$HERE/../principal_v0_4${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONPATH="$HERE/../core_contexts${PYTHONPATH:+:$PYTHONPATH}"
 REV="${P6_REVIEW_MAX_TOKENS:-2048}"; RVS="${P6_REVISION_MAX_TOKENS:-512}"
 ARMS="${P6_ARMS:-core24 nhanes}"; WORKERS="${P6_WORKERS:-8}"; VARIANT="${P6_PROMPT_VARIANT:-original}"
 TS="$(date -u +%Y%m%dT%H%M%SZ)"

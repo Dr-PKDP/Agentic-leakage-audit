@@ -56,7 +56,7 @@ def test_sensitivity_matches_reported_values():
         check=True,
         capture_output=True,
     )
-    text = (ROOT / "results/principal_v0_4/sensitivity.json").read_text()
+    text = (ROOT / "results/core_contexts/sensitivity.json").read_text()
     data = json.loads(text)
     assert data, "empty sensitivity output"
     again = subprocess.run(
@@ -64,4 +64,4 @@ def test_sensitivity_matches_reported_values():
         check=True,
         capture_output=True,
     )
-    assert (ROOT / "results/principal_v0_4/sensitivity.json").read_text() == text
+    assert (ROOT / "results/core_contexts/sensitivity.json").read_text() == text

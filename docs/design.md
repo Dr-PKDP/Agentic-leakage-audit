@@ -2,7 +2,7 @@
 
 ## Constraint families
 
-The principal run encodes six families of constraints that correspond to documented leakage and reporting failures in clinical prediction. Each family has four synthetic contexts.
+The core-context run encodes six families of constraints that correspond to documented leakage and reporting failures in clinical prediction. Each family has four synthetic contexts.
 
 | Family | Rule checked | Schema field proposed |
 |---|---|---|
@@ -15,7 +15,7 @@ The principal run encodes six families of constraints that correspond to documen
 
 The extended package adds F07, 17 contexts in which candidate variables carry NHANES 2015–2016 codebook labels. The evaluator scores F07 against author-written reference sets, and the evidence gate uses the name-prefix rules in `nhanes/lineage_validator.py`.
 
-Each context holds scoped evidence records, an explicit rule, a cutoff and a proposal schema. Two initial proposals per context give 48 inputs in the principal run: 24 supported by the evidence, 21 contradicted and 3 with insufficient evidence.
+Each context holds scoped evidence records, an explicit rule, a cutoff and a proposal schema. Two initial proposals per context give 48 inputs in the core-context run: 24 supported by the evidence, 21 contradicted and 3 with insufficient evidence.
 
 ## Workflows
 
@@ -51,11 +51,11 @@ Unresolved initial proposals are analysed separately.
 
 ## Deterministic reference
 
-`analysis/rule_reference.py` generates one proposal per context from the scoped facts and the proposal schema alone. It does not read the initial proposal, any model output or the expected verdict. For feature selection it computes each feature's readiness as the latest of its acquisition time plus processing delay, its release time and the readiness of its inputs. For the other schemas it selects permitted records, separates groups, matches weights to required components and domains, accepts only current approvals and asserts analyses or validations only when a completed record exists. It was written after the principal run.
+`analysis/rule_reference.py` generates one proposal per context from the scoped facts and the proposal schema alone. It does not read the initial proposal, any model output or the expected verdict. For feature selection it computes each feature's readiness as the latest of its acquisition time plus processing delay, its release time and the readiness of its inputs. For the other schemas it selects permitted records, separates groups, matches weights to required components and domains, accepts only current approvals and asserts analyses or validations only when a completed record exists. It was written after the core-context run.
 
 ## Model and generation settings
 
-The principal run used Qwen3-8B served through an OpenAI-compatible endpoint under the identifier `p6-qwen3-8b`, temperature 0.2, a 1,024-token output limit, seed 42 for reviews and 1042 for revisions, no constrained decoding and no retries. The extended package uses the same limits with seeds s and s + 1000, and it can switch the thinking mode off through `chat_template_kwargs`. Its runner also takes a separate review limit and revision limit (`--review-max-tokens`, `--revision-max-tokens`, both 1,024 by default). The rerun with a longer review limit used 2,048 tokens for reviews and 512 for revisions, which keeps each revision prompt and its output inside a 4,096-token context window.
+The core-context run used Qwen3-8B served through an OpenAI-compatible endpoint under the identifier `p6-qwen3-8b`, temperature 0.2, a 1,024-token output limit, seed 42 for reviews and 1042 for revisions, no constrained decoding and no retries. The extended package uses the same limits with seeds s and s + 1000, and it can switch the thinking mode off through `chat_template_kwargs`. Its runner also takes a separate review limit and revision limit (`--review-max-tokens`, `--revision-max-tokens`, both 1,024 by default). The repeat with a longer review limit used 2,048 tokens for reviews and 512 for revisions, which keeps each revision prompt and its output inside a 4,096-token context window.
 
 The recorded model identifier is a serving label and does not fix the weight revision. Identical review requests did not always return identical text, so a fixed seed does not guarantee repeatable generation on the serving stack used.
 

@@ -1,14 +1,14 @@
 """Statistics for the rerun with a review limit of 2,048 tokens and a revision limit of 512.
 
-Compares results/longlimit_2048 with the principal run and the extended run (review limit 1,024).
-Writes results/longlimit_2048/stats.json. No model calls.
+Compares results/review_limit_2048 with the principal run and the extended run (review limit 1,024).
+Writes results/review_limit_2048/stats.json. No model calls.
 """
 import csv,json,math,random,collections
 from math import comb
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-L=str(ROOT/"results/longlimit_2048");R=str(ROOT/"results/extended_v0_5")
-C0=str(ROOT/"results/principal_v0_4/per_input_outcomes.csv")
+L=str(ROOT/"results/review_limit_2048");R=str(ROOT/"results/label_contexts")
+C0=str(ROOT/"results/core_contexts/per_input_outcomes.csv")
 SEED=20261028;B=5000
 def wilson(k,n,z=1.959964):
     p=k/n;d=1+z*z/n;c=(p+z*z/(2*n))/d;h=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d

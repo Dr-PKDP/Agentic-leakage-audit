@@ -5,7 +5,7 @@
 # Required:  P6_MODEL      model identifier served by the endpoint
 #            P6_BASE_URL   endpoint, e.g. http://127.0.0.1:8000/v1
 # Optional:  OPENAI_API_KEY    bearer token if the endpoint requires one (never printed)
-#            P6_OUT            output root (default: outputs/extended_v0_5 under the current directory)
+#            P6_OUT            output root (default: outputs/label_contexts under the current directory)
 #            P6_WORKERS        concurrent requests (default 8)
 #            P6_ORIGINAL_RUNS  space-separated run directories to scan for reasoning output
 #            P6_CONFIRM=yes    skip the interactive confirmation
@@ -13,10 +13,10 @@
 set -uo pipefail
 : "${P6_MODEL:?set P6_MODEL}"; : "${P6_BASE_URL:?set P6_BASE_URL}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-export PYTHONPATH="$HERE/../principal_v0_4${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONPATH="$HERE/../core_contexts${PYTHONPATH:+:$PYTHONPATH}"
 WORKERS="${P6_WORKERS:-8}"
 TS="$(date -u +%Y%m%dT%H%M%SZ)"
-OUT="${P6_OUT:-$PWD/outputs/extended_v0_5}/$TS"
+OUT="${P6_OUT:-$PWD/outputs/label_contexts}/$TS"
 mkdir -p "$OUT/plans" "$OUT/runs" "$OUT/analysis"
 
 { echo "== date"; date -u; echo "== host"; hostname; echo "== python"; python --version 2>&1

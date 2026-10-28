@@ -17,7 +17,7 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXT = ROOT / "experiments/extended_v0_5"
+EXT = ROOT / "experiments/label_contexts"
 sys.path[:0] = [str(Path(__file__).parent)]
 import normalized_rescore as nr  # noqa: E402
 import review_flags as rf  # noqa: E402
@@ -25,10 +25,10 @@ import second_model_stats as sm  # noqa: E402
 
 RES = ROOT / "results"
 SETS = {
-    "qwen3_8b_original": ("longlimit_2048", "original", "p6-qwen3-8b", "http://127.0.0.1:8010/v1"),
-    "granite_original": ("second_model_granite", "original", "p6-granite-8b", "http://127.0.0.1:8011/v1"),
-    "granite_clarified": ("second_model_granite_clarified", "clarified", "p6-granite-8b", "http://127.0.0.1:8011/v1"),
-    "qwen3_8b_clarified": ("longlimit_2048_clarified", "clarified", "p6-qwen3-8b", "http://127.0.0.1:8010/v1"),
+    "qwen3_8b_original": ("review_limit_2048", "original", "p6-qwen3-8b", "http://127.0.0.1:8010/v1"),
+    "granite_original": ("granite", "original", "p6-granite-8b", "http://127.0.0.1:8011/v1"),
+    "granite_clarified": ("granite_clarified", "clarified", "p6-granite-8b", "http://127.0.0.1:8011/v1"),
+    "qwen3_8b_clarified": ("review_limit_2048_clarified", "clarified", "p6-qwen3-8b", "http://127.0.0.1:8010/v1"),
 }
 
 
@@ -36,7 +36,7 @@ def prepare(arm, d, variant, model, url):
     subprocess.run([sys.executable, "p6_extended_v0_5.py", "prepare", "--output-dir", str(d), "--arm", arm, "--context-set", arm, "--thinking", "default",
                     "--seeds", sm.ARMS[arm], "--model", model, "--base-url", url, "--review-max-tokens", "2048", "--revision-max-tokens", "512",
                     "--prompt-variant", variant], cwd=EXT, check=True, capture_output=True,
-                   env={**os.environ, "PYTHONPATH": str(ROOT / "experiments/principal_v0_4")})
+                   env={**os.environ, "PYTHONPATH": str(ROOT / "experiments/core_contexts")})
 
 
 def main():

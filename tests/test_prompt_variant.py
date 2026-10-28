@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path[:0] = [str(ROOT / "analysis"), str(ROOT / "experiments/extended_v0_5"), str(ROOT / "experiments/principal_v0_4")]
+sys.path[:0] = [str(ROOT / "analysis"), str(ROOT / "experiments/label_contexts"), str(ROOT / "experiments/core_contexts")]
 import review_flags as rf  # noqa: E402
 
 

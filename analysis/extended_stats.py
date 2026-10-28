@@ -1,12 +1,12 @@
 """Statistics for the extended run (NHANES-label contexts, thinking-mode comparison).
 
-Reads results/extended_v0_5 and writes results/extended_v0_5/stats.json. No model calls.
+Reads results/label_contexts and writes results/label_contexts/stats.json. No model calls.
 """
 import csv,json,math,random,collections
 from pathlib import Path
 from math import comb
 ROOT=Path(__file__).resolve().parents[1]
-R=str(ROOT/"results/extended_v0_5")
+R=str(ROOT/"results/label_contexts")
 SEED=20261027;B=5000
 def wilson(k,n,z=1.959964):
     p=k/n;d=1+z*z/n;c=(p+z*z/(2*n))/d;h=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d

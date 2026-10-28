@@ -22,8 +22,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXT = ROOT / "experiments/extended_v0_5"
-sys.path[:0] = [str(EXT), str(ROOT / "experiments/principal_v0_4")]
+EXT = ROOT / "experiments/label_contexts"
+sys.path[:0] = [str(EXT), str(ROOT / "experiments/core_contexts")]
 import p6_extended_v0_5 as x  # noqa: E402
 
 v4 = x.v4
@@ -76,7 +76,7 @@ def rescore(plan_dir, run_dir, out_dir, mode="normalized"):
             rec["status"] = "completed"
         v4.write(out_dir / (unit + ".json"), rec)
     subprocess.run([sys.executable, str(EXT / "p6_extended_analyze.py"), "--plan-dir", str(plan_dir), "--run-dir", str(out_dir),
-                    "--out-dir", str(out_dir / "analysis")], check=True, env={**os.environ, "PYTHONPATH": str(ROOT / "experiments/principal_v0_4")}, stdout=subprocess.DEVNULL)
+                    "--out-dir", str(out_dir / "analysis")], check=True, env={**os.environ, "PYTHONPATH": str(ROOT / "experiments/core_contexts")}, stdout=subprocess.DEVNULL)
 
 
 def main():

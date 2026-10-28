@@ -4,12 +4,12 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXT = ROOT / "experiments/extended_v0_5"
-LL = ROOT / "results/longlimit_2048"
+EXT = ROOT / "experiments/label_contexts"
+LL = ROOT / "results/review_limit_2048"
 
 
 def prepare(tmp_path, *extra):
-    env = {"PYTHONPATH": str(ROOT / "experiments/principal_v0_4")}
+    env = {"PYTHONPATH": str(ROOT / "experiments/core_contexts")}
     out = subprocess.run(
         [sys.executable, "p6_extended_v0_5.py", "prepare", "--output-dir", str(tmp_path / "plan"),
          "--arm", "t", "--context-set", "core24", "--thinking", "default", "--seeds", "42",

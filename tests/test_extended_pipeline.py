@@ -8,11 +8,11 @@ import mock_server
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-EXT = ROOT / "experiments/extended_v0_5"
+EXT = ROOT / "experiments/label_contexts"
 ENV = {
     **os.environ,
     "PYTHONPATH": os.pathsep.join(
-        [str(ROOT / "experiments/principal_v0_4"), os.environ.get("PYTHONPATH", "")]
+        [str(ROOT / "experiments/core_contexts"), os.environ.get("PYTHONPATH", "")]
     ),
 }
 

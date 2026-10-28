@@ -1,6 +1,6 @@
 """Sensitivity analyses of the principal run, computed offline from the archived records.
 
-Writes results/principal_v0_4/sensitivity.json. No model calls and no new generation.
+Writes results/core_contexts/sensitivity.json. No model calls and no new generation.
 
 A. Outcomes stratified by whether the review stopped at the output limit.
 B. Feature selections of the availability and target-dependency families compared with the
@@ -19,7 +19,7 @@ from pathlib import Path
 import rule_reference
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN = ROOT / "experiments/principal_v0_4"
+RUN = ROOT / "experiments/core_contexts"
 SUPPORTED, CONTRADICTED = "supported", "contradicted_contract"
 PATHS = [
     "self_review",
@@ -314,7 +314,7 @@ def main():
         "paired_contrasts": paired_contrasts(rows),
         "leave_one_family_out": leave_one_family_out(rows),
     }
-    out = ROOT / "results/principal_v0_4/sensitivity.json"
+    out = ROOT / "results/core_contexts/sensitivity.json"
     out.write_text(json.dumps(result, indent=1) + "\n", encoding="utf-8")
     print(
         json.dumps(
