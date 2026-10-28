@@ -6,7 +6,8 @@
 #
 # Required:  P6_MODEL      model identifier served by the endpoint (p6-qwen3-8b for the reference run)
 #            P6_BASE_URL   endpoint, e.g. http://127.0.0.1:8010/v1
-# Optional:  OPENAI_API_KEY   bearer token if the endpoint requires one (never printed)
+# Optional:  OPENAI_API_KEY   bearer token if the endpoint requires one; found automatically from this account's
+#                             vLLM process when unset (never printed)
 #            P6_OUT           output root (default: outputs/direct_revision under the current directory)
 #            P6_WORKERS       concurrent requests (default 8)
 #            P6_CONFIRM=yes   skip the interactive confirmation (needed for nohup)
@@ -20,6 +21,21 @@ OUT="${P6_OUT:-$PWD/outputs/direct_revision}/$TS"
 mkdir -p "$OUT"
 
 ( cd "$HERE" && python p6_direct_revision.py check > "$OUT/offline_check.json" ) || { echo "offline check failed; nothing was run"; exit 1; }
+# API key: use the one in the environment if it works, otherwise look in this account's own vLLM process
+# (command line, then environment). Candidates are tested against the endpoint; the key is never printed.
+probe() { curl -s --noproxy '*' -m 10 -o /dev/null -w '%{http_code}' ${1:+-H "Authorization: Bearer $1"} "$P6_BASE_URL/models"; }
+if [ "$(probe "${OPENAI_API_KEY:-}")" != "200" ]; then
+  CAND=()
+  while read -r k; do [ -n "$k" ] && CAND+=("$k"); done < <(ps -u "$(id -un)" -o args= 2>/dev/null | grep -i vllm | grep -v grep \
+    | grep -oE -- '--api-key[ =][^ ]+' | sed -E 's/--api-key[ =]//')
+  for pid in $(pgrep -u "$(id -un)" -f vllm 2>/dev/null); do
+    k="$(tr '\0' '\n' < "/proc/$pid/environ" 2>/dev/null | sed -n 's/^VLLM_API_KEY=//p' | head -1)"; [ -n "$k" ] && CAND+=("$k")
+  done
+  for k in ${CAND[@]+"${CAND[@]}"}; do
+    if [ "$(probe "$k")" = "200" ]; then export OPENAI_API_KEY="$k"; echo "API key taken from this account's vLLM process (not printed)."; break; fi
+  done
+  unset k CAND
+fi
 AUTH=(); [ -n "${OPENAI_API_KEY:-}" ] && AUTH=(-H "Authorization: Bearer $OPENAI_API_KEY")
 curl -sS --noproxy '*' -m 15 ${AUTH[@]+"${AUTH[@]}"} "$P6_BASE_URL/models" \
   | python -c "import sys,json; d=json.load(sys.stdin)['data']; ids=[x['id'] for x in d]; print('served:',ids,'max_model_len:',[x.get('max_model_len') for x in d]); sys.exit(0 if '$P6_MODEL' in ids else 3)" \

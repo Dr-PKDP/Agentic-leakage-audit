@@ -47,8 +47,8 @@
   },
   {
    "path": "experiments/direct_revision/run_direct_revision.sh",
-   "bytes": 3446,
-   "sha256": "f8be6579569d60d1c6ccaa2f824c09132d6f3e2808b1bd3d6f4a107360d809d4"
+   "bytes": 4557,
+   "sha256": "35a4445846111f397352d491e19e52a9b54642c23551ac8fa147fc43da7304d4"
   },
   {
    "path": "experiments/label_contexts/p6_extended_analyze.py",
