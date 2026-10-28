@@ -1,0 +1,81 @@
+task,variable,category,components,label_2015_2016,repository_rule
+T1_diabetes_screening,LBXGH,A,GHB,Glycohemoglobin (%),flagged
+T1_diabetes_screening,LBXGLU,A,GLU,Fasting Glucose (mg/dL),flagged
+T1_diabetes_screening,LBXGLT,A,OGTT,Two Hour Glucose (OGTT) (mg/dL),MISSED
+T1_diabetes_screening,LBDGLUSI,B,GLU,Fasting Glucose (mmol/L),flagged
+T1_diabetes_screening,LBDGLTSI,B,OGTT,Two Hour Glucose (OGTT) (mmol/L),MISSED
+T1_diabetes_screening,GTDCODE,B,OGTT,Incomplete OGTT Comment Code,MISSED
+T1_diabetes_screening,LBXSGL,B,BIOPRO,"Glucose, refrigerated serum (mg/dL)",MISSED
+T1_diabetes_screening,LBDSGLSI,B,BIOPRO,"Glucose, refrigerated serum (mmol/L)",MISSED
+T1_diabetes_screening,DID040,C,DIQ,Age when first told you had diabetes,MISSED
+T1_diabetes_screening,DIQ050,C,DIQ,Taking insulin now,flagged
+T1_diabetes_screening,DID060,C,DIQ,How long taking insulin,MISSED
+T1_diabetes_screening,DIQ060U,C,DIQ,Unit of measure (month/year),flagged
+T1_diabetes_screening,DIQ070,C,DIQ,Take diabetic pills to lower blood sugar,flagged
+T1_diabetes_screening,DIQ080,C,DIQ,Diabetes affected eyes/had retinopathy,flagged
+T1_diabetes_screening,RXDDRUG,C,RXQ_RX,Generic drug name,MISSED
+T1_diabetes_screening,RXDDRGID,C,RXQ_RX,Generic drug code,MISSED
+T1_diabetes_screening,RXDRSC1,C,RXQ_RX,ICD-10-CM code 1,MISSED
+T1_diabetes_screening,RXDRSC2,C,RXQ_RX,ICD-10-CM code 2,MISSED
+T1_diabetes_screening,RXDRSC3,C,RXQ_RX,ICD-10-CM code 3,MISSED
+T1_diabetes_screening,RXDRSD1,C,RXQ_RX,ICD-10-CM code 1 description,MISSED
+T1_diabetes_screening,RXDRSD2,C,RXQ_RX,ICD-10-CM code 2 description,MISSED
+T1_diabetes_screening,RXDRSD3,C,RXQ_RX,ICD-10-CM code 3 description,MISSED
+T2_hypertension_screening,BPXSY1,A,BPX,Systolic: Blood pres (1) mm Hg,flagged
+T2_hypertension_screening,BPXSY2,A,BPX,Systolic: Blood pres (2) mm Hg,flagged
+T2_hypertension_screening,BPXSY3,A,BPX,Systolic: Blood pres (3) mm Hg,flagged
+T2_hypertension_screening,BPXSY4,A,BPX,Systolic: Blood pres (4) mm Hg,flagged
+T2_hypertension_screening,BPXDI1,A,BPX,Diastolic: Blood pres (1) mm Hg,flagged
+T2_hypertension_screening,BPXDI2,A,BPX,Diastolic: Blood pres (2) mm Hg,flagged
+T2_hypertension_screening,BPXDI3,A,BPX,Diastolic: Blood pres (3) mm Hg,flagged
+T2_hypertension_screening,BPXDI4,A,BPX,Diastolic: Blood pres (4) mm Hg,flagged
+T2_hypertension_screening,DIQ300S,B,DIQ,What was your recent SBP,MISSED
+T2_hypertension_screening,DIQ300D,B,DIQ,What was your recent DBP,MISSED
+T2_hypertension_screening,BPQ020,C,BPQ,Ever told you had high blood pressure,flagged
+T2_hypertension_screening,BPQ030,C,BPQ,Told had high blood pressure - 2+ times,flagged
+T2_hypertension_screening,BPD035,C,BPQ,Age told had hypertension,MISSED
+T2_hypertension_screening,BPQ040A,C,BPQ,Taking prescription for hypertension,flagged
+T2_hypertension_screening,BPQ050A,C,BPQ,Now taking prescribed medicine for HBP,flagged
+T2_hypertension_screening,RXDDRUG,C,RXQ_RX,Generic drug name,MISSED
+T2_hypertension_screening,RXDDRGID,C,RXQ_RX,Generic drug code,MISSED
+T2_hypertension_screening,RXDRSC1,C,RXQ_RX,ICD-10-CM code 1,MISSED
+T2_hypertension_screening,RXDRSC2,C,RXQ_RX,ICD-10-CM code 2,MISSED
+T2_hypertension_screening,RXDRSC3,C,RXQ_RX,ICD-10-CM code 3,MISSED
+T2_hypertension_screening,RXDRSD1,C,RXQ_RX,ICD-10-CM code 1 description,MISSED
+T2_hypertension_screening,RXDRSD2,C,RXQ_RX,ICD-10-CM code 2 description,MISSED
+T2_hypertension_screening,RXDRSD3,C,RXQ_RX,ICD-10-CM code 3 description,MISSED
+T3_depressive_symptoms,DPQ010,A,DPQ,PHQ-9 item 1,flagged
+T3_depressive_symptoms,DPQ020,A,DPQ,PHQ-9 item 2,flagged
+T3_depressive_symptoms,DPQ030,A,DPQ,PHQ-9 item 3,flagged
+T3_depressive_symptoms,DPQ040,A,DPQ,PHQ-9 item 4,flagged
+T3_depressive_symptoms,DPQ050,A,DPQ,PHQ-9 item 5,flagged
+T3_depressive_symptoms,DPQ060,A,DPQ,PHQ-9 item 6,flagged
+T3_depressive_symptoms,DPQ070,A,DPQ,PHQ-9 item 7,flagged
+T3_depressive_symptoms,DPQ080,A,DPQ,PHQ-9 item 8,flagged
+T3_depressive_symptoms,DPQ090,A,DPQ,PHQ-9 item 9,flagged
+T3_depressive_symptoms,DPQ100,A,DPQ,Difficulty these problems have caused,flagged
+T3_depressive_symptoms,RXDDRUG,C,RXQ_RX,Generic drug name,MISSED
+T3_depressive_symptoms,RXDDRGID,C,RXQ_RX,Generic drug code,MISSED
+T3_depressive_symptoms,RXDRSC1,C,RXQ_RX,ICD-10-CM code 1,MISSED
+T3_depressive_symptoms,RXDRSC2,C,RXQ_RX,ICD-10-CM code 2,MISSED
+T3_depressive_symptoms,RXDRSC3,C,RXQ_RX,ICD-10-CM code 3,MISSED
+T3_depressive_symptoms,RXDRSD1,C,RXQ_RX,ICD-10-CM code 1 description,MISSED
+T3_depressive_symptoms,RXDRSD2,C,RXQ_RX,ICD-10-CM code 2 description,MISSED
+T3_depressive_symptoms,RXDRSD3,C,RXQ_RX,ICD-10-CM code 3 description,MISSED
+T4_ckd_screening,LBXSCR,A,BIOPRO,"Creatinine, refrigerated serum (mg/dL)",flagged
+T4_ckd_screening,URXUMA,A,ALB_CR,"Albumin, urine (ug/mL)",flagged
+T4_ckd_screening,URXUCR,A,ALB_CR,"Creatinine, urine (mg/dL)",flagged
+T4_ckd_screening,URDACT,A,ALB_CR,Albumin creatinine ratio (mg/g),flagged
+T4_ckd_screening,LBDSCRSI,B,BIOPRO,"Creatinine, refrigerated serum (umol/L)",MISSED
+T4_ckd_screening,URXUMS,B,ALB_CR,"Albumin, urine (mg/L)",MISSED
+T4_ckd_screening,URXCRS,B,ALB_CR,"Creatinine, urine (umol/L)",MISSED
+T4_ckd_screening,URDUMALC,B,ALB_CR,"Albumin, urine comment code",MISSED
+T4_ckd_screening,URDUCRLC,B,ALB_CR,"Creatinine, urine comment code",MISSED
+T4_ckd_screening,RXDDRUG,C,RXQ_RX,Generic drug name,MISSED
+T4_ckd_screening,RXDDRGID,C,RXQ_RX,Generic drug code,MISSED
+T4_ckd_screening,RXDRSC1,C,RXQ_RX,ICD-10-CM code 1,MISSED
+T4_ckd_screening,RXDRSC2,C,RXQ_RX,ICD-10-CM code 2,MISSED
+T4_ckd_screening,RXDRSC3,C,RXQ_RX,ICD-10-CM code 3,MISSED
+T4_ckd_screening,RXDRSD1,C,RXQ_RX,ICD-10-CM code 1 description,MISSED
+T4_ckd_screening,RXDRSD2,C,RXQ_RX,ICD-10-CM code 2 description,MISSED
+T4_ckd_screening,RXDRSD3,C,RXQ_RX,ICD-10-CM code 3 description,MISSED

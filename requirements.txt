@@ -1,3 +1,5 @@
-pandas==2.2.3
-requests==2.32.3
-pytest==8.3.4
+# Offline replay (python reproduce.py) uses only the standard library.
+# Tests and the optional reference refit use the pinned scientific stack (Python 3.11).
+-r experiments/pilot_depression/requirements-reference.lock.txt
+pytest>=8
+requests>=2.32

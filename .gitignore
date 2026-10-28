@@ -1,18 +1,22 @@
-﻿# Python environment and cache
-.venv/
+# environments and caches
+.venv*/
 __pycache__/
 *.pyc
+.pytest_cache/
 
-# Downloaded or derived data: retained locally, never committed
+# downloaded and derived data
 data/raw/
 data/processed/
+nhanes/raw/
 
-# Large local or run-specific artifacts
-results/*.parquet
-results/*.pkl
-results/*.joblib
+# generated output
+_generated*/
+/outputs/
+*.parquet
+*.pkl
+*.joblib
 
-# OS/editor files
+# editor and OS files
 .DS_Store
 Thumbs.db
 .vscode/
