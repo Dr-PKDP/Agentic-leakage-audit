@@ -26,13 +26,13 @@ The command checks `MANIFEST.json`, recomputes every score from the saved respon
 ```
 reproduce.py            offline replay, manifest check, optional reference refit
 MANIFEST.json           SHA-256 of every file the replay depends on
-analysis/               replay, deterministic rule reference, NHANES schema audit, sensitivity analyses
+analysis/               replay, deterministic rule reference, NHANES schema audit, sensitivity and run-comparison statistics
 experiments/
   principal_v0_4/       24-context run: runner, plan, jobs, requests, responses, scored units
-  extended_v0_5/        NHANES-label contexts, thinking-mode switch, multiple seeds
+  extended_v0_5/        NHANES-label contexts, thinking-mode switch, multiple seeds, review-limit option
   pilot_depression/     earlier three-scenario pilot and the fixed depression reference
 nhanes/                 name-prefix lineage rules, acquisition scripts, schema and harmonization tables
-results/                scored tables and the schema audit
+results/                scored tables, the schema audit, extended and longer-limit runs
 tests/                  unit, replay and pipeline tests
 docs/                   design, reproduction, data dictionary and lineage-rule notes
 ```

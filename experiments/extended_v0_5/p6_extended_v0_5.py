@@ -222,7 +222,7 @@ def prepare(a):
                 jobs.append({"unit": f"{pid}__{stream}__{seed}", "proposal_id": pid, "author_role": role, "context": c, "initial_proposal": p,
                              "stream": stream, "seed": seed, "review_messages": review, "revision_task": task, "revision_instruction": instruction})
     plan = {"version": VERSION, "scope": "DEVELOPMENT_ONLY_NOT_CONFIRMATORY", "arm": a.arm, "context_set": a.context_set,
-            "thinking": a.thinking, "model": a.model, "base_url": a.base_url, "seeds": seeds, "temperature": 0.2, "max_tokens": 1024,
+            "thinking": a.thinking, "model": a.model, "base_url": a.base_url, "seeds": seeds, "temperature": 0.2, "max_tokens": a.revision_max_tokens, "review_max_tokens": a.review_max_tokens,
             "timeout_seconds": 300, "retries": 0, "workers": a.workers, "contexts": len(items), "inputs": len(items) * 2,
             "generator_streams": list(STREAMS), "workflow_units": len(jobs), "max_generation_calls": len(jobs) * 2,
             "patch_paths_share_generation": True, "jobs_sha256": sha(jobs),
@@ -263,7 +263,7 @@ def run(a):
     lock, plock = threading.Lock(), threading.Lock(); state = {"n": 0, "done": 0}; records = []
 
     def completion(messages, seed, unit, stage):
-        payload = {"model": plan["model"], "messages": messages, "temperature": plan["temperature"], "max_tokens": plan["max_tokens"], "seed": seed}
+        payload = {"model": plan["model"], "messages": messages, "temperature": plan["temperature"], "max_tokens": (plan.get("review_max_tokens", plan["max_tokens"]) if stage == "review" else plan["max_tokens"]), "seed": seed}
         if plan["thinking"] == "off": payload["chat_template_kwargs"] = {"enable_thinking": False}
         with lock:
             if state["n"] >= plan["max_generation_calls"]: raise RuntimeError("Request ceiling reached")
@@ -312,7 +312,7 @@ def main():
     b = s.add_parser("prepare"); b.add_argument("--output-dir", required=True, type=Path); b.add_argument("--arm", required=True)
     b.add_argument("--context-set", choices=["core24", "nhanes"], required=True); b.add_argument("--thinking", choices=["default", "off"], required=True)
     b.add_argument("--seeds", default="42"); b.add_argument("--model", default="p6-qwen3-8b"); b.add_argument("--base-url", default="http://127.0.0.1:8010/v1")
-    b.add_argument("--workers", type=int, default=8)
+    b.add_argument("--workers", type=int, default=8); b.add_argument("--review-max-tokens", type=int, default=1024); b.add_argument("--revision-max-tokens", type=int, default=1024)
     r = s.add_parser("run"); r.add_argument("--plan-dir", required=True, type=Path); r.add_argument("--output-dir", required=True, type=Path); r.add_argument("--approve-plan-hash", required=True)
     a = p.parse_args()
     if a.cmd == "check": print(json.dumps(check(), indent=2))

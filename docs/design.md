@@ -55,7 +55,7 @@ Unresolved initial proposals are analysed separately.
 
 ## Model and generation settings
 
-The principal run used Qwen3-8B served through an OpenAI-compatible endpoint under the identifier `p6-qwen3-8b`, temperature 0.2, a 1,024-token output limit, seed 42 for reviews and 1042 for revisions, no constrained decoding and no retries. The extended package uses the same limits with seeds s and s + 1000, and it can switch the thinking mode off through `chat_template_kwargs`.
+The principal run used Qwen3-8B served through an OpenAI-compatible endpoint under the identifier `p6-qwen3-8b`, temperature 0.2, a 1,024-token output limit, seed 42 for reviews and 1042 for revisions, no constrained decoding and no retries. The extended package uses the same limits with seeds s and s + 1000, and it can switch the thinking mode off through `chat_template_kwargs`. Its runner also takes a separate review limit and revision limit (`--review-max-tokens`, `--revision-max-tokens`, both 1,024 by default). The rerun with a longer review limit used 2,048 tokens for reviews and 512 for revisions, which keeps each revision prompt and its output inside a 4,096-token context window.
 
 The recorded model identifier is a serving label and does not fix the weight revision. Identical review requests did not always return identical text, so a fixed seed does not guarantee repeatable generation on the serving stack used.
 

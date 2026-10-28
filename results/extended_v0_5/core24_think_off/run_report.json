@@ -1,0 +1,12 @@
+{
+  "status": "DEVELOPMENT_RUN_FINISHED",
+  "arm": "core24_think_off",
+  "units": 192,
+  "generation_requests": 384,
+  "failed_or_unparseable_units": 3,
+  "wall_clock_seconds": 3126.0723186889663,
+  "independent_scientific_validation": false,
+  "heldout_evaluation": false,
+  "execution_of_model_code": false,
+  "scope": "synthetic_proposal_generation_only"
+}

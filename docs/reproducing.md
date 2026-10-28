@@ -32,6 +32,17 @@ python analysis/sensitivity.py
 
 This recomputes four analyses of the principal run from the archived records and writes `results/principal_v0_4/sensitivity.json`: outcomes by whether the review stopped at the output limit, selections compared with the rule reference, paired contrasts between paths (exact McNemar tests, context-level bootstrap with 5,000 resamples and a fixed seed), and rates with each constraint family left out in turn. The output is deterministic and corresponds to Supplementary Table S7.
 
+## Extended and longer-limit runs
+
+```
+python analysis/extended_stats.py
+python analysis/longlimit_stats.py
+```
+
+The first script recomputes, from `results/extended_v0_5/`, the outcomes of the 17 NHANES-label contexts, the context-level contrasts with the name-prefix baseline, the comparison of the two gates and the thinking-mode comparison, and writes `results/extended_v0_5/stats.json`. The second compares `results/longlimit_2048/` (review limit 2,048 tokens, revision limit 512) with the principal run (`results/principal_v0_4/per_input_outcomes.csv`) and with the extended run: per-input exact McNemar tests, pooled repair with a context-level bootstrap (5,000 resamples, fixed seed), and request statistics. It writes `results/longlimit_2048/stats.json`. Both are deterministic and correspond to Table 7, Table 8 and Supplementary Tables S11 to S13 of the manuscript.
+
+The three-arm extended run used the revision of `p6_extended_v0_5.py` that preceded the review-limit option; the two revisions differ only in the plan fields and the request payload for the review limit.
+
 ## Refitting the fixed reference
 
 The refit uses the public DEMO_J and DPQ_J files from the NHANES 2017–2018 cycle. It needs Python 3.11 and the packages pinned in `experiments/pilot_depression/requirements-reference.lock.txt`.
@@ -82,6 +93,14 @@ bash experiments/extended_v0_5/run_extended.sh
 | `P6_MODEL2`, `P6_BASE_URL2` | add think-off arms for a second served model |
 
 The three arms are `nhanes_default` (17 contexts, server-default thinking, seeds 42 and 43, 544 requests), `core24_think_off` (24 contexts, thinking off, seed 42, 384 requests) and `nhanes_think_off` (17 contexts, thinking off, seeds 42 and 43, 544 requests). Each arm writes a plan, request log, run records and, after analysis, `outcomes.csv` and `summary.json`. Name-prefix rule results for the 17 contexts are scored offline as a fixed comparison row.
+
+Longer review limit:
+
+```
+bash experiments/extended_v0_5/run_longlimit.sh
+```
+
+It takes the same `P6_MODEL`, `P6_BASE_URL`, `OPENAI_API_KEY`, `P6_OUT`, `P6_WORKERS` and `P6_CONFIRM` variables, plus `P6_ARMS` (default `core24 nhanes`), `P6_REVIEW_MAX_TOKENS` (default 2,048) and `P6_REVISION_MAX_TOKENS` (default 512). The arms are `core24` (seed 42, 384 requests) and `nhanes` (seeds 42 and 43, 544 requests) at the server-default thinking mode.
 
 The scripts in `experiments/extended_v0_5` import the principal runner from `experiments/principal_v0_4`, so they run through `run_extended.sh`, or with that directory on `PYTHONPATH`.
 

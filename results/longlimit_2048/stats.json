@@ -1,0 +1,841 @@
+{
+ "core24": {
+  "limit1024": {
+   "self_review": {
+    "repair": [
+     16,
+     21,
+     [
+      54.9,
+      89.4
+     ]
+    ],
+    "preserve": [
+     24,
+     24,
+     [
+      86.2,
+      100.0
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 42,
+    "n": 48,
+    "unparse": 2
+   },
+   "structure_feedback": {
+    "repair": [
+     17,
+     21,
+     [
+      60.0,
+      92.3
+     ]
+    ],
+    "preserve": [
+     23,
+     24,
+     [
+      79.8,
+      99.3
+     ]
+    ],
+    "harmful": 1,
+    "supported_all": 42,
+    "n": 48,
+    "unparse": 2
+   },
+   "evidence_critic": {
+    "repair": [
+     16,
+     21,
+     [
+      54.9,
+      89.4
+     ]
+    ],
+    "preserve": [
+     23,
+     24,
+     [
+      79.8,
+      99.3
+     ]
+    ],
+    "harmful": 1,
+    "supported_all": 41,
+    "n": 48,
+    "unparse": 2
+   },
+   "patch_critic/interface_only": {
+    "repair": [
+     20,
+     21,
+     [
+      77.3,
+      99.2
+     ]
+    ],
+    "preserve": [
+     22,
+     24,
+     [
+      74.2,
+      97.7
+     ]
+    ],
+    "harmful": 1,
+    "supported_all": 45,
+    "n": 48,
+    "unparse": 1
+   },
+   "patch_critic/evidence_guarded": {
+    "repair": [
+     20,
+     21,
+     [
+      77.3,
+      99.2
+     ]
+    ],
+    "preserve": [
+     23,
+     24,
+     [
+      79.8,
+      99.3
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 46,
+    "n": 48,
+    "unparse": 1
+   }
+  },
+  "limit2048": {
+   "self_review": {
+    "repair": [
+     17,
+     21,
+     [
+      60.0,
+      92.3
+     ]
+    ],
+    "preserve": [
+     24,
+     24,
+     [
+      86.2,
+      100.0
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 43,
+    "n": 48,
+    "unparse": 1
+   },
+   "structure_feedback": {
+    "repair": [
+     17,
+     21,
+     [
+      60.0,
+      92.3
+     ]
+    ],
+    "preserve": [
+     23,
+     24,
+     [
+      79.8,
+      99.3
+     ]
+    ],
+    "harmful": 1,
+    "supported_all": 42,
+    "n": 48,
+    "unparse": 3
+   },
+   "evidence_critic": {
+    "repair": [
+     16,
+     21,
+     [
+      54.9,
+      89.4
+     ]
+    ],
+    "preserve": [
+     23,
+     24,
+     [
+      79.8,
+      99.3
+     ]
+    ],
+    "harmful": 1,
+    "supported_all": 41,
+    "n": 48,
+    "unparse": 2
+   },
+   "patch_critic/interface_only": {
+    "repair": [
+     21,
+     21,
+     [
+      84.5,
+      100.0
+     ]
+    ],
+    "preserve": [
+     24,
+     24,
+     [
+      86.2,
+      100.0
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 48,
+    "n": 48,
+    "unparse": 0
+   },
+   "patch_critic/evidence_guarded": {
+    "repair": [
+     21,
+     21,
+     [
+      84.5,
+      100.0
+     ]
+    ],
+    "preserve": [
+     24,
+     24,
+     [
+      86.2,
+      100.0
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 48,
+    "n": 48,
+    "unparse": 0
+   }
+  }
+ },
+ "nhanes": {
+  "limit1024": {
+   "self_review": {
+    "repair": [
+     21,
+     34,
+     [
+      45.0,
+      76.1
+     ]
+    ],
+    "preserve": [
+     32,
+     34,
+     [
+      80.9,
+      98.4
+     ]
+    ],
+    "harmful": 2,
+    "supported_all": 53,
+    "n": 68,
+    "unparse": 0
+   },
+   "structure_feedback": {
+    "repair": [
+     18,
+     34,
+     [
+      36.7,
+      68.5
+     ]
+    ],
+    "preserve": [
+     32,
+     34,
+     [
+      80.9,
+      98.4
+     ]
+    ],
+    "harmful": 2,
+    "supported_all": 50,
+    "n": 68,
+    "unparse": 0
+   },
+   "evidence_critic": {
+    "repair": [
+     25,
+     34,
+     [
+      56.9,
+      85.4
+     ]
+    ],
+    "preserve": [
+     33,
+     34,
+     [
+      85.1,
+      99.5
+     ]
+    ],
+    "harmful": 1,
+    "supported_all": 58,
+    "n": 68,
+    "unparse": 0
+   },
+   "patch_critic/interface_only": {
+    "repair": [
+     24,
+     34,
+     [
+      53.8,
+      83.2
+     ]
+    ],
+    "preserve": [
+     27,
+     34,
+     [
+      63.2,
+      89.7
+     ]
+    ],
+    "harmful": 5,
+    "supported_all": 51,
+    "n": 68,
+    "unparse": 2
+   },
+   "patch_critic/evidence_guarded": {
+    "repair": [
+     23,
+     34,
+     [
+      50.8,
+      80.9
+     ]
+    ],
+    "preserve": [
+     32,
+     34,
+     [
+      80.9,
+      98.4
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 55,
+    "n": 68,
+    "unparse": 2
+   },
+   "prefix_rule_reviser": {
+    "repair": [
+     6,
+     17,
+     [
+      17.3,
+      58.7
+     ]
+    ],
+    "preserve": [
+     17,
+     17,
+     [
+      81.6,
+      100.0
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 23,
+    "n": 34,
+    "unparse": 0
+   }
+  },
+  "limit2048": {
+   "self_review": {
+    "repair": [
+     30,
+     34,
+     [
+      73.4,
+      95.3
+     ]
+    ],
+    "preserve": [
+     33,
+     34,
+     [
+      85.1,
+      99.5
+     ]
+    ],
+    "harmful": 1,
+    "supported_all": 63,
+    "n": 68,
+    "unparse": 0
+   },
+   "structure_feedback": {
+    "repair": [
+     30,
+     34,
+     [
+      73.4,
+      95.3
+     ]
+    ],
+    "preserve": [
+     34,
+     34,
+     [
+      89.8,
+      100.0
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 64,
+    "n": 68,
+    "unparse": 0
+   },
+   "evidence_critic": {
+    "repair": [
+     30,
+     34,
+     [
+      73.4,
+      95.3
+     ]
+    ],
+    "preserve": [
+     32,
+     34,
+     [
+      80.9,
+      98.4
+     ]
+    ],
+    "harmful": 1,
+    "supported_all": 62,
+    "n": 68,
+    "unparse": 3
+   },
+   "patch_critic/interface_only": {
+    "repair": [
+     33,
+     34,
+     [
+      85.1,
+      99.5
+     ]
+    ],
+    "preserve": [
+     29,
+     34,
+     [
+      69.9,
+      93.6
+     ]
+    ],
+    "harmful": 4,
+    "supported_all": 62,
+    "n": 68,
+    "unparse": 1
+   },
+   "patch_critic/evidence_guarded": {
+    "repair": [
+     32,
+     34,
+     [
+      80.9,
+      98.4
+     ]
+    ],
+    "preserve": [
+     33,
+     34,
+     [
+      85.1,
+      99.5
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 65,
+    "n": 68,
+    "unparse": 1
+   },
+   "prefix_rule_reviser": {
+    "repair": [
+     6,
+     17,
+     [
+      17.3,
+      58.7
+     ]
+    ],
+    "preserve": [
+     17,
+     17,
+     [
+      81.6,
+      100.0
+     ]
+    ],
+    "harmful": 0,
+    "supported_all": 23,
+    "n": 34,
+    "unparse": 0
+   }
+  }
+ },
+ "paired_core24": {
+  "self_review": {
+   "repair": {
+    "n": 21,
+    "better_with_long": 1,
+    "worse_with_long": 0,
+    "p": 1.0
+   },
+   "preserve": {
+    "n": 24,
+    "better_with_long": 0,
+    "worse_with_long": 0,
+    "p": 1.0
+   }
+  },
+  "structure_feedback": {
+   "repair": {
+    "n": 21,
+    "better_with_long": 1,
+    "worse_with_long": 1,
+    "p": 1.0
+   },
+   "preserve": {
+    "n": 24,
+    "better_with_long": 0,
+    "worse_with_long": 0,
+    "p": 1.0
+   }
+  },
+  "evidence_critic": {
+   "repair": {
+    "n": 21,
+    "better_with_long": 0,
+    "worse_with_long": 0,
+    "p": 1.0
+   },
+   "preserve": {
+    "n": 24,
+    "better_with_long": 0,
+    "worse_with_long": 0,
+    "p": 1.0
+   }
+  },
+  "patch_critic/interface_only": {
+   "repair": {
+    "n": 21,
+    "better_with_long": 1,
+    "worse_with_long": 0,
+    "p": 1.0
+   },
+   "preserve": {
+    "n": 24,
+    "better_with_long": 2,
+    "worse_with_long": 0,
+    "p": 0.5
+   }
+  },
+  "patch_critic/evidence_guarded": {
+   "repair": {
+    "n": 21,
+    "better_with_long": 1,
+    "worse_with_long": 0,
+    "p": 1.0
+   },
+   "preserve": {
+    "n": 24,
+    "better_with_long": 1,
+    "worse_with_long": 0,
+    "p": 1.0
+   }
+  }
+ },
+ "paired_nhanes": {
+  "self_review": {
+   "repair": {
+    "n": 34,
+    "better_with_long": 10,
+    "worse_with_long": 1,
+    "p": 0.0117
+   },
+   "preserve": {
+    "n": 34,
+    "better_with_long": 1,
+    "worse_with_long": 0,
+    "p": 1.0
+   }
+  },
+  "structure_feedback": {
+   "repair": {
+    "n": 34,
+    "better_with_long": 12,
+    "worse_with_long": 0,
+    "p": 0.0005
+   },
+   "preserve": {
+    "n": 34,
+    "better_with_long": 2,
+    "worse_with_long": 0,
+    "p": 0.5
+   }
+  },
+  "evidence_critic": {
+   "repair": {
+    "n": 34,
+    "better_with_long": 6,
+    "worse_with_long": 1,
+    "p": 0.125
+   },
+   "preserve": {
+    "n": 34,
+    "better_with_long": 0,
+    "worse_with_long": 1,
+    "p": 1.0
+   }
+  },
+  "patch_critic/interface_only": {
+   "repair": {
+    "n": 34,
+    "better_with_long": 9,
+    "worse_with_long": 0,
+    "p": 0.0039
+   },
+   "preserve": {
+    "n": 34,
+    "better_with_long": 3,
+    "worse_with_long": 1,
+    "p": 0.625
+   }
+  },
+  "patch_critic/evidence_guarded": {
+   "repair": {
+    "n": 34,
+    "better_with_long": 9,
+    "worse_with_long": 0,
+    "p": 0.0039
+   },
+   "preserve": {
+    "n": 34,
+    "better_with_long": 1,
+    "worse_with_long": 0,
+    "p": 1.0
+   }
+  }
+ },
+ "pooled_repair_core24": {
+  "old": 82.1,
+  "new": 84.5,
+  "diff_pp": 2.4,
+  "ci": [
+   -2.4,
+   7.1
+  ],
+  "contexts": 21
+ },
+ "pooled_repair_nhanes": {
+  "old": 64.0,
+  "new": 89.7,
+  "diff_pp": 25.7,
+  "ci": [
+   16.9,
+   34.6
+  ],
+  "contexts": 17
+ },
+ "agent_minus_prefix_long": {
+  "repair": {
+   "self_review": {
+    "diff_pp": 52.9,
+    "ci": [
+     32.4,
+     73.5
+    ],
+    "contexts": 17
+   },
+   "structure_feedback": {
+    "diff_pp": 52.9,
+    "ci": [
+     26.5,
+     79.4
+    ],
+    "contexts": 17
+   },
+   "evidence_critic": {
+    "diff_pp": 52.9,
+    "ci": [
+     29.4,
+     76.5
+    ],
+    "contexts": 17
+   },
+   "patch_critic/interface_only": {
+    "diff_pp": 61.8,
+    "ci": [
+     35.3,
+     88.2
+    ],
+    "contexts": 17
+   },
+   "patch_critic/evidence_guarded": {
+    "diff_pp": 58.8,
+    "ci": [
+     29.4,
+     82.4
+    ],
+    "contexts": 17
+   }
+  },
+  "preservation": {
+   "self_review": {
+    "diff_pp": -2.9,
+    "ci": [
+     -8.8,
+     0.0
+    ],
+    "contexts": 17
+   },
+   "structure_feedback": {
+    "diff_pp": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "contexts": 17
+   },
+   "evidence_critic": {
+    "diff_pp": -5.9,
+    "ci": [
+     -14.7,
+     0.0
+    ],
+    "contexts": 17
+   },
+   "patch_critic/interface_only": {
+    "diff_pp": -14.7,
+    "ci": [
+     -26.5,
+     -2.9
+    ],
+    "contexts": 17
+   },
+   "patch_critic/evidence_guarded": {
+    "diff_pp": -2.9,
+    "ci": [
+     -8.8,
+     0.0
+    ],
+    "contexts": 17
+   }
+  }
+ },
+ "gate_nhanes_long": {
+  "pairs": 33,
+  "only_B_better": 4,
+  "only_A_better": 0,
+  "p": 0.125,
+  "contexts": [
+   "P6D05_N004",
+   "P6D05_N005",
+   "P6D05_N010",
+   "P6D05_N014"
+  ]
+ },
+ "gate_core_long_discordant": 0,
+ "requests_core24": {
+  "review": {
+   "n": 192,
+   "errors": 0,
+   "finish_reasons": {
+    "stop": 192
+   },
+   "median_completion_tokens": 1021.5,
+   "prompt_tokens": 76296,
+   "summed_client_seconds": 14096.7,
+   "responses_with_reasoning_field": 0,
+   "responses_with_think_tags": 0
+  },
+  "revision": {
+   "n": 192,
+   "errors": 0,
+   "finish_reasons": {
+    "stop": 192
+   },
+   "median_completion_tokens": 12.0,
+   "prompt_tokens": 281207,
+   "summed_client_seconds": 11168.6,
+   "responses_with_reasoning_field": 0,
+   "responses_with_think_tags": 0
+  }
+ },
+ "requests_nhanes": {
+  "review": {
+   "n": 272,
+   "errors": 0,
+   "finish_reasons": {
+    "stop": 263,
+    "length": 9
+   },
+   "median_completion_tokens": 1456.5,
+   "prompt_tokens": 236136,
+   "summed_client_seconds": 33417.4,
+   "responses_with_reasoning_field": 0,
+   "responses_with_think_tags": 0
+  },
+  "revision": {
+   "n": 272,
+   "errors": 0,
+   "finish_reasons": {
+    "stop": 272
+   },
+   "median_completion_tokens": 29.0,
+   "prompt_tokens": 642123,
+   "summed_client_seconds": 24811.1,
+   "responses_with_reasoning_field": 0,
+   "responses_with_think_tags": 0
+  }
+ },
+ "requests_old_nhanes": {
+  "review": {
+   "n": 272,
+   "errors": 0,
+   "finish_reasons": {
+    "length": 238,
+    "stop": 34
+   },
+   "median_completion_tokens": 1024.0,
+   "prompt_tokens": 236136,
+   "summed_client_seconds": 25266.6,
+   "responses_with_reasoning_field": 0,
+   "responses_with_think_tags": 0
+  },
+  "revision": {
+   "n": 272,
+   "errors": 0,
+   "finish_reasons": {
+    "stop": 272
+   },
+   "median_completion_tokens": 29.0,
+   "prompt_tokens": 523057,
+   "summed_client_seconds": 18680.6,
+   "responses_with_reasoning_field": 0,
+   "responses_with_think_tags": 0
+  }
+ }
+}
