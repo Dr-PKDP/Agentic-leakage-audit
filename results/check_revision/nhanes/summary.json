@@ -1,0 +1,257 @@
+{
+  "arm": "check_revision_nhanes",
+  "model": "p6-qwen3-8b",
+  "seeds": [
+    42,
+    43
+  ],
+  "by_path": {
+    "direct_full": {
+      "repair": [
+        25,
+        34
+      ],
+      "preserve": [
+        32,
+        34
+      ],
+      "harmful": 2,
+      "no_output": 0,
+      "unchanged_input": 0,
+      "mean_retained_fraction": 0.853
+    },
+    "direct_patch/interface_only": {
+      "repair": [
+        26,
+        34
+      ],
+      "preserve": [
+        29,
+        34
+      ],
+      "harmful": 5,
+      "no_output": 0,
+      "unchanged_input": 19,
+      "mean_retained_fraction": 0.824
+    },
+    "direct_patch/evidence_guarded": {
+      "repair": [
+        23,
+        34
+      ],
+      "preserve": [
+        33,
+        34
+      ],
+      "harmful": 1,
+      "no_output": 0,
+      "unchanged_input": 19,
+      "mean_retained_fraction": 0.915
+    }
+  },
+  "permissions_family_repair": {
+    "direct_full": [
+      0,
+      0
+    ],
+    "direct_patch/interface_only": [
+      0,
+      0
+    ],
+    "direct_patch/evidence_guarded": [
+      0,
+      0
+    ]
+  },
+  "paired_vs_critic_reviser": {
+    "direct_full vs self_review (repair)": {
+      "pairs": 34,
+      "direct_only": 3,
+      "critic_workflow_only": 8,
+      "exact_mcnemar_p": 0.2266,
+      "difference_points_direct_minus_critic": -14.7,
+      "context_bootstrap_95": [
+        -38.2,
+        5.9
+      ]
+    },
+    "direct_full vs self_review (preserve)": {
+      "pairs": 34,
+      "direct_only": 1,
+      "critic_workflow_only": 2,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": -2.9,
+      "context_bootstrap_95": [
+        -11.8,
+        5.9
+      ]
+    },
+    "direct_full vs structure_feedback (repair)": {
+      "pairs": 34,
+      "direct_only": 2,
+      "critic_workflow_only": 7,
+      "exact_mcnemar_p": 0.1797,
+      "difference_points_direct_minus_critic": -14.7,
+      "context_bootstrap_95": [
+        -35.3,
+        2.9
+      ]
+    },
+    "direct_full vs structure_feedback (preserve)": {
+      "pairs": 34,
+      "direct_only": 0,
+      "critic_workflow_only": 2,
+      "exact_mcnemar_p": 0.5,
+      "difference_points_direct_minus_critic": -5.9,
+      "context_bootstrap_95": [
+        -14.7,
+        0.0
+      ]
+    },
+    "direct_full vs evidence_critic (repair)": {
+      "pairs": 34,
+      "direct_only": 3,
+      "critic_workflow_only": 8,
+      "exact_mcnemar_p": 0.2266,
+      "difference_points_direct_minus_critic": -14.7,
+      "context_bootstrap_95": [
+        -41.2,
+        8.8
+      ]
+    },
+    "direct_full vs evidence_critic (preserve)": {
+      "pairs": 34,
+      "direct_only": 2,
+      "critic_workflow_only": 2,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        -11.8,
+        11.8
+      ]
+    },
+    "direct_patch/interface_only vs patch_critic/interface_only (repair)": {
+      "pairs": 34,
+      "direct_only": 1,
+      "critic_workflow_only": 8,
+      "exact_mcnemar_p": 0.0391,
+      "difference_points_direct_minus_critic": -20.6,
+      "context_bootstrap_95": [
+        -38.2,
+        -2.9
+      ]
+    },
+    "direct_patch/interface_only vs patch_critic/interface_only (preserve)": {
+      "pairs": 34,
+      "direct_only": 4,
+      "critic_workflow_only": 4,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        -14.7,
+        14.7
+      ]
+    },
+    "direct_patch/evidence_guarded vs patch_critic/evidence_guarded (repair)": {
+      "pairs": 34,
+      "direct_only": 0,
+      "critic_workflow_only": 9,
+      "exact_mcnemar_p": 0.0039,
+      "difference_points_direct_minus_critic": -26.5,
+      "context_bootstrap_95": [
+        -44.1,
+        -11.8
+      ]
+    },
+    "direct_patch/evidence_guarded vs patch_critic/evidence_guarded (preserve)": {
+      "pairs": 34,
+      "direct_only": 1,
+      "critic_workflow_only": 1,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        -8.8,
+        8.8
+      ]
+    }
+  },
+  "paired_vs_plain_direct": {
+    "direct_full vs direct_full (repair)": {
+      "pairs": 34,
+      "direct_only": 25,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 0.0,
+      "difference_points_direct_minus_critic": 73.5,
+      "context_bootstrap_95": [
+        52.9,
+        91.2
+      ]
+    },
+    "direct_full vs direct_full (preserve)": {
+      "pairs": 34,
+      "direct_only": 1,
+      "critic_workflow_only": 1,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        -8.8,
+        8.8
+      ]
+    },
+    "direct_patch/interface_only vs direct_patch/interface_only (repair)": {
+      "pairs": 34,
+      "direct_only": 22,
+      "critic_workflow_only": 1,
+      "exact_mcnemar_p": 0.0,
+      "difference_points_direct_minus_critic": 61.8,
+      "context_bootstrap_95": [
+        38.2,
+        82.4
+      ]
+    },
+    "direct_patch/interface_only vs direct_patch/interface_only (preserve)": {
+      "pairs": 34,
+      "direct_only": 22,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 0.0,
+      "difference_points_direct_minus_critic": 64.7,
+      "context_bootstrap_95": [
+        41.2,
+        85.3
+      ]
+    },
+    "direct_patch/evidence_guarded vs direct_patch/evidence_guarded (repair)": {
+      "pairs": 34,
+      "direct_only": 20,
+      "critic_workflow_only": 2,
+      "exact_mcnemar_p": 0.0001,
+      "difference_points_direct_minus_critic": 52.9,
+      "context_bootstrap_95": [
+        26.5,
+        76.5
+      ]
+    },
+    "direct_patch/evidence_guarded vs direct_patch/evidence_guarded (preserve)": {
+      "pairs": 34,
+      "direct_only": 2,
+      "critic_workflow_only": 1,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 2.9,
+      "context_bootstrap_95": [
+        -8.8,
+        17.6
+      ]
+    }
+  },
+  "status_counts": {
+    "completed": 204
+  },
+  "requests": {
+    "n": 136,
+    "errors": 0,
+    "finish_reasons": {
+      "stop": 136
+    },
+    "median_completion_tokens": 215.0
+  }
+}

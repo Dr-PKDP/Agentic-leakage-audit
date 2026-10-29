@@ -97,3 +97,14 @@ def test_check_revision_pipeline(tmp_path):
         assert s["by_path"][p]["repair"] == [21, 21] and s["by_path"][p]["harmful"] == 0
     assert "paired_vs_plain_direct" in s and s["status_counts"] == {"completed": 144}
     server.shutdown()
+
+
+def test_archived_check_revision_results():
+    base = ROOT / "results/check_revision"
+    expected = {"core24": {"direct_full": (16, 21, 24, 0), "direct_patch/interface_only": (16, 21, 20, 3), "direct_patch/evidence_guarded": (16, 21, 24, 0)},
+                "nhanes": {"direct_full": (25, 34, 32, 2), "direct_patch/interface_only": (26, 34, 29, 5), "direct_patch/evidence_guarded": (23, 34, 33, 1)}}
+    for name, paths in expected.items():
+        s = json.loads((base / name / "summary.json").read_text())
+        assert s["requests"]["errors"] == 0 and s["requests"]["finish_reasons"] == {"stop": s["requests"]["n"]}
+        for p, (rep, n, pres, harm) in paths.items():
+            assert s["by_path"][p]["repair"] == [rep, n] and s["by_path"][p]["preserve"][0] == pres and s["by_path"][p]["harmful"] == harm
