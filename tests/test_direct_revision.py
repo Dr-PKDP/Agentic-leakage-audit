@@ -59,3 +59,17 @@ def test_direct_revision_pipeline(tmp_path):
         assert s["by_path"][p]["repair"] == [21, 21] and s["by_path"][p]["preserve"] == [24, 24] and s["by_path"][p]["harmful"] == 0
     assert "paired_vs_critic_reviser" in s
     server.shutdown()
+
+
+def test_archived_direct_revision_results():
+    import csv
+    base = ROOT / "results/direct_revision"
+    expected = {"core24": {"direct_full": (4, 21, 24, 0), "direct_patch/interface_only": (9, 21, 17, 7), "direct_patch/evidence_guarded": (9, 21, 24, 0)},
+                "nhanes": {"direct_full": (0, 34, 32, 2), "direct_patch/interface_only": (5, 34, 7, 27), "direct_patch/evidence_guarded": (5, 34, 32, 2)}}
+    for name, paths in expected.items():
+        s = json.loads((base / name / "summary.json").read_text())
+        assert s["requests"]["errors"] == 0
+        rows = list(csv.DictReader((base / name / "outcomes.csv").open()))
+        for p, (rep, n, pres, harm) in paths.items():
+            assert s["by_path"][p]["repair"] == [rep, n] and s["by_path"][p]["preserve"][0] == pres and s["by_path"][p]["harmful"] == harm
+            assert sum(r["path"] == p and r["initial"].startswith("contradicted") for r in rows) == n

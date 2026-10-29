@@ -621,6 +621,46 @@
    "sha256": "cff09e84c3def684631bc772592e3e7bbc9383033ba1f0405494b785bb0fbe70"
   },
   {
+   "path": "results/direct_revision/core24/outcomes.csv",
+   "bytes": 26132,
+   "sha256": "fc4e5c6cee5a24a3c46ed05fbe9fbf1011b5891166bf12a30688daa0d4a4c166"
+  },
+  {
+   "path": "results/direct_revision/core24/plan.json",
+   "bytes": 856,
+   "sha256": "8c04e968a16c1437b0048f390d81b1b6a187bf16d1a82b216cece3669ea713ef"
+  },
+  {
+   "path": "results/direct_revision/core24/requests.jsonl",
+   "bytes": 282776,
+   "sha256": "3890cf573fa92902460d162e1b6ae0ba6987e6ca1a883b2db6607d99d84e5f52"
+  },
+  {
+   "path": "results/direct_revision/core24/summary.json",
+   "bytes": 4207,
+   "sha256": "f31f8ae51ebecff880e7e33f31b92c9cbc7fa79c48642cabe19f5a2395efe77e"
+  },
+  {
+   "path": "results/direct_revision/nhanes/outcomes.csv",
+   "bytes": 37683,
+   "sha256": "c28ae84378ef03ea8bb9da5173ed14ec2c43064e8d5b3f376d767c0b8fbde933"
+  },
+  {
+   "path": "results/direct_revision/nhanes/plan.json",
+   "bytes": 866,
+   "sha256": "d70ba4d44eb224f6d2a570ba53deba18f661ec2da3dea285ce99caab39265e35"
+  },
+  {
+   "path": "results/direct_revision/nhanes/requests.jsonl",
+   "bytes": 668070,
+   "sha256": "0b85800755690012e0b641eb23a048759ab1b4ab555caca60346c0b6cd524261"
+  },
+  {
+   "path": "results/direct_revision/nhanes/summary.json",
+   "bytes": 4211,
+   "sha256": "5ea534c50414bdfec367cdbaad9f12333b85e26639f7540c13ff066298bd7e20"
+  },
+  {
    "path": "results/granite/core24/models.json",
    "bytes": 762,
    "sha256": "9c81475025801f0b2ca70c1891be86fa4f4e3a208abb1cca69a8f516b3bde6f8"
