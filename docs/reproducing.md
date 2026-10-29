@@ -139,3 +139,14 @@ P6_CONFIRM=yes nohup bash experiments/direct_revision/run_direct_revision.sh > d
 ```
 
 The script runs an offline check, finds the API key when the endpoint requires one (from `OPENAI_API_KEY`, else from this account's vLLM process, without printing it), confirms that the endpoint serves the model, prepares and hashes both plans, runs them, and analyzes each run against `results/review_limit_2048/<set>/outcomes.csv`. Without `P6_CONFIRM=yes` it prints the plan hashes and waits for the confirmation `RUN`. The analysis reports repair, preservation, harmful edits, retention and permissions-family repair for each direct-revision path, and paired contrasts with the critic–reviser paths that share its revision format (exact McNemar test and a context-level bootstrap interval). The archived run is in `results/direct_revision/` (`core24` and `nhanes`: outcomes, summary, plan and the logged requests and responses).
+
+### Check-then-revise comparator
+
+`experiments/direct_revision/p6_check_revision.py` gives the reviser one request that asks for a short written check of the proposal against the evidence and rule (the wording of the evidence-critic review request, at most 120 words, citing evidence identifiers) followed by a line `FINAL:` and the revision in the format of the original instruction. Only the text after the last `FINAL:` is parsed, strictly; a response without the marker is an interface failure. The revision limit is 1,024 tokens so that the check and the revision fit; the other settings are those of the direct-revision run. The runner imports the core and label runners unchanged and verifies their hashes.
+
+```
+P6_MODEL=p6-qwen3-8b P6_BASE_URL=http://127.0.0.1:8010/v1 \
+P6_CONFIRM=yes nohup bash experiments/direct_revision/run_check_revision.sh > check_revision.log 2>&1 &
+```
+
+The script makes at most 232 requests and analyzes each run against the critic-reviser paths of the 2,048-token run and against the direct-revision run in `results/direct_revision/`.

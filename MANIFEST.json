@@ -37,13 +37,23 @@
   },
   {
    "path": "experiments/direct_revision/analyze_direct_revision.py",
-   "bytes": 7471,
-   "sha256": "d08be0d444e5f09341da389eaa58317ec73bbc88b7389cfad2c9921a04db551a"
+   "bytes": 7843,
+   "sha256": "f4f3d83249ed5915257260ecfbb99cc131a5e695b1774fa5cac76b839ce95464"
+  },
+  {
+   "path": "experiments/direct_revision/p6_check_revision.py",
+   "bytes": 10883,
+   "sha256": "ab43ca85dcfdd645930697902be73823bab5faed01540bd38d807dc10b57bb7c"
   },
   {
    "path": "experiments/direct_revision/p6_direct_revision.py",
    "bytes": 9511,
    "sha256": "ef4f0d8c9c6378a425f728319c57d6ac2239169f72503f79557741de4df697a2"
+  },
+  {
+   "path": "experiments/direct_revision/run_check_revision.sh",
+   "bytes": 4811,
+   "sha256": "6ea5c513d575e227542098ad815cc01041785cad53342f68931131886756abba"
   },
   {
    "path": "experiments/direct_revision/run_direct_revision.sh",

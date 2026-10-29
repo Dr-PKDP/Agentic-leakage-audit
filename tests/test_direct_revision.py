@@ -37,6 +37,8 @@ class Oracle(BaseHTTPRequestHandler):
         c, p = task["context"], task["initial_proposal"]
         target = ITEMS[c["context_id"]]["valid_or_conservative"]
         out = json.dumps(v4.patch(c, p, target) if "JSON patch" in user else target)
+        if "FINAL:" in user:
+            out = "CHECK: the proposal was compared with the evidence.\nFINAL: " + out
         self._send({"choices": [{"index": 0, "message": {"role": "assistant", "content": out}, "finish_reason": "stop"}],
                     "usage": {"prompt_tokens": 100, "completion_tokens": 20, "total_tokens": 120}})
 
@@ -73,3 +75,25 @@ def test_archived_direct_revision_results():
         for p, (rep, n, pres, harm) in paths.items():
             assert s["by_path"][p]["repair"] == [rep, n] and s["by_path"][p]["preserve"][0] == pres and s["by_path"][p]["harmful"] == harm
             assert sum(r["path"] == p and r["initial"].startswith("contradicted") for r in rows) == n
+
+
+def test_check_revision_pipeline(tmp_path):
+    server = ThreadingHTTPServer(("127.0.0.1", 0), Oracle)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    url = f"http://127.0.0.1:{server.server_address[1]}/v1"
+    py = [sys.executable, "p6_check_revision.py"]
+    subprocess.run([*py, "check"], cwd=DIR, check=True, capture_output=True)
+    prep = json.loads(subprocess.run([*py, "prepare", "--output-dir", str(tmp_path / "plan"), "--context-set", "core24", "--model", "mock-model",
+                                       "--base-url", url, "--workers", "2"], cwd=DIR, capture_output=True, text=True, check=True).stdout)
+    assert prep["units"] == 96
+    subprocess.run([*py, "run", "--plan-dir", str(tmp_path / "plan"), "--output-dir", str(tmp_path / "run"),
+                    "--approve-plan-hash", prep["plan_sha256"]], cwd=DIR, check=True, capture_output=True)
+    ref = ROOT / "results/review_limit_2048/core24/outcomes.csv"
+    plain = ROOT / "results/direct_revision/core24/outcomes.csv"
+    subprocess.run([sys.executable, "analyze_direct_revision.py", "--plan-dir", str(tmp_path / "plan"), "--run-dir", str(tmp_path / "run"),
+                    "--out-dir", str(tmp_path / "an"), "--reference", str(ref), "--plain", str(plain)], cwd=DIR, check=True, capture_output=True)
+    s = json.loads((tmp_path / "an/summary.json").read_text())
+    for p in ("direct_full", "direct_patch/interface_only", "direct_patch/evidence_guarded"):
+        assert s["by_path"][p]["repair"] == [21, 21] and s["by_path"][p]["harmful"] == 0
+    assert "paired_vs_plain_direct" in s and s["status_counts"] == {"completed": 144}
+    server.shutdown()

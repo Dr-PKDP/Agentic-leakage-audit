@@ -31,7 +31,7 @@ experiments/
   core_contexts/       24-context run: runner, plan, jobs, requests, responses, scored units
   label_contexts/        NHANES-label contexts, thinking-mode switch, multiple seeds, review-limit option
   preliminary_study/     three-scenario preliminary study and the fixed depression reference
-  direct_revision/      reviser-only comparator: runner, analysis and launcher
+  direct_revision/      reviser-only and check-then-revise comparators: runners, analysis and launchers
 nhanes/                 name-prefix lineage rules, acquisition scripts, schema and harmonization tables
 results/                scored tables, the schema audit, extended, longer-limit and second-model runs
 tests/                  unit, replay and pipeline tests

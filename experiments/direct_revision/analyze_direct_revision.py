@@ -27,6 +27,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--plan-dir", type=Path, required=True); ap.add_argument("--run-dir", type=Path, required=True); ap.add_argument("--out-dir", type=Path, required=True)
     ap.add_argument("--reference", type=Path, default=None, help="outcomes.csv of the matching Experiment 3 arm")
+    ap.add_argument("--plain", type=Path, default=None, help="outcomes.csv of the plain direct-revision run on the same context set (for the check variant)")
     a = ap.parse_args()
     plan = json.loads((a.plan_dir / "plan.json").read_text()); jobs = {j["unit"]: j for j in json.loads((a.plan_dir / "jobs.json").read_text())}
     items = ext.context_items(plan["context_set"]); valid = {i["public"]["context_id"]: i["valid_or_conservative"] for i in items}
@@ -61,16 +62,16 @@ def main():
     paths = list(PAIRS)
     summary = {"arm": plan["arm"], "model": plan["model"], "seeds": plan["seeds"], "by_path": {p: tally([r for r in rows if r["path"] == p]) for p in paths},
                "permissions_family_repair": {p: tally([r for r in rows if r["path"] == p and r["family"] == "F05"])["repair"] for p in paths}}
-    if a.reference:
-        ref = [r for r in csv.DictReader(a.reference.open())]; R = {(r["unit"], r["path"]): r for r in ref}
+    def paired(refpath, pairs):
+        R = {(r["unit"], r["path"]): r for r in csv.DictReader(refpath.open())}
         D = {(r["unit"], r["path"]): r for r in rows}; contrasts = {}
-        for dp, refs in PAIRS.items():
+        for dp, refs in pairs.items():
             for rp in refs:
                 for init, key in ((F, "repair"), (T, "preserve")):
                     ks = []
                     for (u, p), r in D.items():
                         if p != dp or r["initial"] != init: continue
-                        ru = u.replace(dp.split("/")[0], rp.split("/")[0]);
+                        ru = u.replace(dp.split("/")[0], rp.split("/")[0])
                         if (ru, rp) in R: ks.append((u, ru))
                     both = lambda s: s == T
                     only_direct = sum(both(D[(u, dp)]["final"]) and not both(R[(ru, rp)]["final"]) for u, ru in ks)
@@ -87,7 +88,10 @@ def main():
                     contrasts[f"{dp} vs {rp} ({key})"] = {"pairs": len(ks), "direct_only": only_direct, "critic_workflow_only": only_crit, "exact_mcnemar_p": round(mcnemar(only_direct, only_crit), 4),
                                                         "difference_points_direct_minus_critic": round(100 * (only_direct - only_crit) / len(ks), 1) if ks else None,
                                                         "context_bootstrap_95": [round(diffs[125], 1), round(diffs[4874], 1)]}
-        summary["paired_vs_critic_reviser"] = contrasts
+        return contrasts
+    if a.reference: summary["paired_vs_critic_reviser"] = paired(a.reference, PAIRS)
+    if a.plain: summary["paired_vs_plain_direct"] = paired(a.plain, {p: [p] for p in PAIRS})
+    summary["status_counts"] = dict(collections.Counter(r["status"] for r in rows))
     ev = [json.loads(s) for s in (a.run_dir / "requests.jsonl").read_text().splitlines() if s.strip()]
     fin = collections.Counter(e["response"]["choices"][0]["finish_reason"] for e in ev if e.get("status") == "completed")
     summary["requests"] = {"n": len(ev), "errors": sum(e.get("status") != "completed" for e in ev), "finish_reasons": dict(fin),
