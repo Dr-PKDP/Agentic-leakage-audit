@@ -11,6 +11,15 @@ settings in November 2026. The underlying model versions are not pinned and are 
 the ratings cannot be reproduced by re-running a fixed checkpoint. They are a check on the reference
 exclusion sets, not an inter-rater reliability estimate, and no independent human rater took part.
 
+## Exposure
+
+The reference exclusion sets were not supplied in the rating task. That is not the same as the tool
+having had no prior exposure to them: for at least one tool the session had earlier contained
+manuscript and supplementary material describing the exclusions and their rationale. The ratings are
+therefore unblinded to the task only, and must not be described as exposure-naive. A clean version of
+this check would run each tool in a fresh session from a frozen task specification, with the session
+history recorded; that has not been done here.
+
 ## What each tool received
 
 1. The three written criteria that define a reference exclusion, in this order and wording:
