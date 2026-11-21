@@ -59,6 +59,8 @@ def main():
     collapsed = {name: [sum(agrees(f(v)) for v in groups.values()), len(groups)]
                  for name, f in picks.items()}
 
+    key_counts = collections.Counter(key(r) for r in executed)
+
     per_arm = {}
     by_arm = collections.defaultdict(list)
     for r in executed:
@@ -102,6 +104,8 @@ def main():
                  "here; the joined subset is a provenance check and not a result."),
         "threshold_auc": THRESHOLD,
         "rows_as_published": [sum(map(agrees, assessable)), len(assessable)],
+        "keys_in_all_rows": len(key_counts),
+        "keys_with_more_than_one_row": sum(1 for n in key_counts.values() if n > 1),
         "distinct_units_among_assessable_rows": len(groups),
         "agreement_after_collapsing_each_key": collapsed,
         "rows_and_keys_by_arm": per_arm,

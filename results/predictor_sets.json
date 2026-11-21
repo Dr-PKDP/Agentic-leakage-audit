@@ -5,6 +5,8 @@
   2989,
   3030
  ],
+ "keys_in_all_rows": 2730,
+ "keys_with_more_than_one_row": 704,
  "distinct_units_among_assessable_rows": 2685,
  "agreement_after_collapsing_each_key": {
   "first": [
