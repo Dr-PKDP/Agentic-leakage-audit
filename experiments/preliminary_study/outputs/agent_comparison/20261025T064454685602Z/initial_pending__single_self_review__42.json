@@ -1,0 +1,28 @@
+{
+  "unit": "initial_pending__single_self_review__42",
+  "case": "initial_pending",
+  "condition": "single_self_review",
+  "seed": 42,
+  "status": "completed",
+  "initial": {
+    "structure_valid": false,
+    "structure_findings": [
+      "claims: expected nonblank string list"
+    ],
+    "contract_assessable": false,
+    "contract_findings": [],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "final": {
+    "structure_valid": false,
+    "structure_findings": [
+      "claims: expected nonblank string list"
+    ],
+    "contract_assessable": false,
+    "contract_findings": [],
+    "contract_pass": false,
+    "scientific_validity": "not_independently_assessed"
+  },
+  "elapsed_seconds": 9.511857349891216
+}

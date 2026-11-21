@@ -1,0 +1,12 @@
+{
+  "status": "DEVELOPMENT_RUN_FINISHED",
+  "arm": "q27b_con_nhanes",
+  "units": 272,
+  "generation_requests": 544,
+  "failed_or_unparseable_units": 0,
+  "wall_clock_seconds": 326.5511272009462,
+  "independent_scientific_validation": false,
+  "heldout_evaluation": false,
+  "execution_of_model_code": false,
+  "scope": "synthetic_proposal_generation_only"
+}

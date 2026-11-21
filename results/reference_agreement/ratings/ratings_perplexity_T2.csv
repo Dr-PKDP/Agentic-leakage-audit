@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+BPXSY2,1,A,Systolic reading contributes to the defining mean blood pressure.
+BPAEN1,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+LBXSTR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID341,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDRSD1,1,C,Prescription component identifies this as a medication indication description.
+LBDSPHSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXPULS,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+BPXML1,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+LBDGLTSI,0,none,Glucose-related measurement or procedure does not define the target condition.
+BPQ070,0,none,Cholesterol information does not establish hypertension diagnosis or treatment.
+LBXSTB,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+GTDSCMMN,0,none,Glucose-related measurement or procedure does not define the target condition.
+DIQ350U,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175J,0,none,Diabetes questionnaire content does not establish the target condition.
+BPXSY3,1,A,Systolic reading contributes to the defining mean blood pressure.
+DIQ175Q,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175X,0,none,Diabetes questionnaire content does not establish the target condition.
+DPQ030,0,none,Depressive symptom item does not define or document the target condition.
+LBXSNASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ300D,1,B,Reported blood pressure restates a defining quantity in another component.
+RXDRSC1,1,C,Prescription component identifies this as a medication indication code.
+DPQ070,0,none,Depressive symptom item does not define or document the target condition.
+DPQ060,0,none,Depressive symptom item does not define or document the target condition.
+DIQ260U,0,none,Diabetes questionnaire content does not establish the target condition.
+DPQ020,0,none,Depressive symptom item does not define or document the target condition.
+LBXSC3SI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXGH,0,none,Glucose-related measurement or procedure does not define the target condition.
+DID310S,0,none,Recommended blood pressure target is not an observed defining measurement.
+DID060,0,none,Diabetes questionnaire content does not establish the target condition.
+URXCRS,0,none,Urine measurement does not enter this outcome definition.
+LBDSUASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSATSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+URXUMS,0,none,Urine measurement does not enter this outcome definition.
+DID260,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDUSE,0,none,Ambiguous: general medication use does not establish condition-specific treatment.
+BPXPLS,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+LBXGLU,0,none,Glucose-related measurement or procedure does not define the target condition.
+DID040,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ060U,0,none,Ambiguous: unit label alone identifies no defining quantity or treatment.
+DIQ291,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSCK,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175U,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175F,0,none,Diabetes questionnaire content does not establish the target condition.
+BPQ030,1,C,Records repeated physician diagnoses of hypertension.
+BPXDI3,1,A,Diastolic reading contributes to the defining mean blood pressure.
+RXDDAYS,0,none,Ambiguous: general medication use does not establish condition-specific treatment.
+LBXSGB,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175L,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175D,0,none,Diabetes questionnaire content does not establish the target condition.
+DID320,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDDRUG,1,C,Drug name field explicitly included under criterion C.
+DIQ300S,1,B,Reported blood pressure restates a defining quantity in another component.
+DIQ175E,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSASSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPQ060,0,none,Cholesterol information does not establish hypertension diagnosis or treatment.
+GTDDR1MN,0,none,Glucose-related measurement or procedure does not define the target condition.
+DIQ180,0,none,Diabetes questionnaire content does not establish the target condition.
+DPQ010,0,none,Depressive symptom item does not define or document the target condition.
+LBXSTP,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPQ040A,1,C,Records prescribed treatment specifically for hypertension.
+BPXDI2,1,A,Diastolic reading contributes to the defining mean blood pressure.
+DIQ175R,0,none,Diabetes questionnaire content does not establish the target condition.
+GTDDR2MN,0,none,Glucose-related measurement or procedure does not define the target condition.
+WTSOG2YR,0,none,Glucose-related measurement or procedure does not define the target condition.
+LBXSGL,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175W,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175N,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSCHSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ080,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175P,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSTRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSBU,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDGLUSI,0,none,Glucose-related measurement or procedure does not define the target condition.
+URXUCR,0,none,Urine measurement does not enter this outcome definition.
+BPAARM,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+RXQSEEN,0,none,Container verification does not specify treatment identity or indication.
+DID330,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSTPSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSAL,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175I,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175H,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSPH,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPAEN3,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+BPQ050A,0,none,Ambiguous: medicine indication unspecified; component also covers cholesterol.
+DPQ040,0,none,Depressive symptom item does not define or document the target condition.
+DIQ050,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ280,0,none,Diabetes questionnaire content does not establish the target condition.
+GTDBL2MN,0,none,Glucose-related measurement or procedure does not define the target condition.
+DID310D,0,none,Recommended blood pressure target is not an observed defining measurement.
+LBXSUA,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXDI1,1,A,Diastolic reading contributes to the defining mean blood pressure.
+DIQ175G,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSCA,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDSTBSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID250,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175M,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175S,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDDRGID,1,C,Drug identifier explicitly included under criterion C.
+URDACT,0,none,Urine measurement does not enter this outcome definition.
+LBXSIR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+PEASCCT1,1,B,Comment code attached to defining blood pressure measurements.
+DIQ230,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSKSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175B,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSIRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDSGBSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDSBUSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175K,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSLDSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175C,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDRSD3,1,C,Prescription component identifies this as a medication indication description.
+DIQ172,0,none,Diabetes questionnaire content does not establish the target condition.
+DPQ100,0,none,Depressive symptom item does not define or document the target condition.
+DPQ080,0,none,Depressive symptom item does not define or document the target condition.
+RXDCOUNT,0,none,Medication count specifies neither drug identity nor condition-specific treatment.
+LBXSAPSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXSY4,1,A,Systolic reading contributes to the defining mean blood pressure.
+BPQ090D,0,none,Cholesterol information does not establish hypertension diagnosis or treatment.
+LBDSCASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDSGLSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175T,0,none,Diabetes questionnaire content does not establish the target condition.
+BPQ080,0,none,Cholesterol information does not establish hypertension diagnosis or treatment.
+DPQ090,0,none,Depressive symptom item does not define or document the target condition.
+RXDRSC2,1,C,Prescription component identifies this as a medication indication code.
+DIQ010,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSGTSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID350,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ070,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSOSSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXGLT,0,none,Glucose-related measurement or procedure does not define the target condition.
+URDUMALC,0,none,Urine measurement does not enter this outcome definition.
+BPD035,1,C,Age at diagnosis records that hypertension was diagnosed.
+LBDSALSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDSCRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ360,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSCR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ170,0,none,Diabetes questionnaire content does not establish the target condition.
+BPACSZ,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+DIQ175A,0,none,Diabetes questionnaire content does not establish the target condition.
+BPAEN2,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+GTXDRANK,0,none,Glucose-related measurement or procedure does not define the target condition.
+WTSAF2YR,0,none,Glucose-related measurement or procedure does not define the target condition.
+BPXCHR,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+DIQ175V,0,none,Diabetes questionnaire content does not establish the target condition.
+DPQ050,0,none,Depressive symptom item does not define or document the target condition.
+URDUCRLC,0,none,Urine measurement does not enter this outcome definition.
+DIQ240,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ275,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175O,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDRSD2,1,C,Prescription component identifies this as a medication indication description.
+BPQ100D,0,none,Ambiguous: medicine indication unspecified; component also covers cholesterol.
+RXDRSC3,1,C,Prescription component identifies this as a medication indication code.
+DIQ160,0,none,Diabetes questionnaire content does not establish the target condition.
+GTDCODE,0,none,Glucose-related measurement or procedure does not define the target condition.
+BPXPTY,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+BPXSY1,1,A,Systolic reading contributes to the defining mean blood pressure.
+LBXSCLSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPAEN4,0,none,Measurement procedure or pulse information does not meet exclusion criteria.
+BPXDI4,1,A,Diastolic reading contributes to the defining mean blood pressure.
+LBXSCH,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPQ020,1,C,Records physician diagnosis of hypertension.
+URXUMA,0,none,Urine measurement does not enter this outcome definition.

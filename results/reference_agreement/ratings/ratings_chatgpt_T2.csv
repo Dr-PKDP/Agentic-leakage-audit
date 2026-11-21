@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+LBDSUASI,0,none,Not part of the hypertension case definition or treatment.
+GTDSCMMN,0,none,Not part of the hypertension case definition or treatment.
+BPXDI4,1,A,This diastolic reading contributes to the defining mean.
+LBXSTP,0,none,Not part of the hypertension case definition or treatment.
+DIQ175F,0,none,Not part of the hypertension case definition or treatment.
+DIQ175E,0,none,Not part of the hypertension case definition or treatment.
+LBXSLDSI,0,none,Not part of the hypertension case definition or treatment.
+LBDSCHSI,0,none,Not part of the hypertension case definition or treatment.
+DPQ090,0,none,Not part of the hypertension case definition or treatment.
+BPXCHR,0,none,Not part of the hypertension case definition or treatment.
+LBDSTPSI,0,none,Not part of the hypertension case definition or treatment.
+BPAARM,0,none,Not part of the hypertension case definition or treatment.
+BPQ040A,1,C,Records hypertension-specific prescribed-treatment advice.
+LBXSBU,0,none,Not part of the hypertension case definition or treatment.
+DIQ175N,0,none,Not part of the hypertension case definition or treatment.
+GTDDR1MN,0,none,Not part of the hypertension case definition or treatment.
+BPXPTY,0,none,Not part of the hypertension case definition or treatment.
+LBDGLTSI,0,none,Not part of the hypertension case definition or treatment.
+DIQ175B,0,none,Not part of the hypertension case definition or treatment.
+DIQ010,0,none,Not part of the hypertension case definition or treatment.
+LBXSCH,0,none,Not part of the hypertension case definition or treatment.
+BPQ100D,0,none,Label does not identify hypertension-specific medication use.
+LBXSCA,0,none,Not part of the hypertension case definition or treatment.
+LBDSTBSI,0,none,Not part of the hypertension case definition or treatment.
+DIQ175R,0,none,Not part of the hypertension case definition or treatment.
+LBXSGTSI,0,none,Not part of the hypertension case definition or treatment.
+DIQ175H,0,none,Not part of the hypertension case definition or treatment.
+DPQ050,0,none,Not part of the hypertension case definition or treatment.
+DIQ275,0,none,Not part of the hypertension case definition or treatment.
+LBXSCK,0,none,Not part of the hypertension case definition or treatment.
+LBXSAL,0,none,Not part of the hypertension case definition or treatment.
+BPAEN4,1,B,Reading-specific enhancement status accompanies a defining measurement.
+DID310S,0,none,Not part of the hypertension case definition or treatment.
+BPQ060,0,none,Not part of the hypertension case definition or treatment.
+DIQ175J,0,none,Not part of the hypertension case definition or treatment.
+DID060,0,none,Not part of the hypertension case definition or treatment.
+DPQ040,0,none,Not part of the hypertension case definition or treatment.
+DID260,0,none,Not part of the hypertension case definition or treatment.
+URXUMA,0,none,Not part of the hypertension case definition or treatment.
+DIQ175C,0,none,Not part of the hypertension case definition or treatment.
+DID341,0,none,Not part of the hypertension case definition or treatment.
+LBXSPH,0,none,Not part of the hypertension case definition or treatment.
+DIQ070,0,none,Not part of the hypertension case definition or treatment.
+DIQ175V,0,none,Not part of the hypertension case definition or treatment.
+DPQ080,0,none,Not part of the hypertension case definition or treatment.
+DIQ160,0,none,Not part of the hypertension case definition or treatment.
+RXQSEEN,0,none,Not part of the hypertension case definition or treatment.
+BPXDI1,1,A,This diastolic reading contributes to the defining mean.
+DID330,0,none,Not part of the hypertension case definition or treatment.
+GTDCODE,0,none,Not part of the hypertension case definition or treatment.
+DPQ070,0,none,Not part of the hypertension case definition or treatment.
+LBXSATSI,0,none,Not part of the hypertension case definition or treatment.
+DPQ020,0,none,Not part of the hypertension case definition or treatment.
+DIQ260U,0,none,Not part of the hypertension case definition or treatment.
+BPACSZ,0,none,Not part of the hypertension case definition or treatment.
+BPXPULS,0,none,Not part of the hypertension case definition or treatment.
+RXDDRGID,1,C,Medication identifier can reveal condition-specific treatment.
+DIQ175X,0,none,Not part of the hypertension case definition or treatment.
+RXDRSC2,1,C,Prescription indication code identifies the medication's condition.
+BPXSY4,1,A,This systolic reading contributes to the defining mean.
+DIQ350U,0,none,Not part of the hypertension case definition or treatment.
+GTDBL2MN,0,none,Not part of the hypertension case definition or treatment.
+DIQ175T,0,none,Not part of the hypertension case definition or treatment.
+BPQ070,0,none,Not part of the hypertension case definition or treatment.
+BPAEN2,1,B,Reading-specific enhancement status accompanies a defining measurement.
+DID040,0,none,Not part of the hypertension case definition or treatment.
+RXDRSD2,1,C,Prescription indication description identifies the medication's condition.
+BPQ080,0,none,Not part of the hypertension case definition or treatment.
+LBXGH,0,none,Not part of the hypertension case definition or treatment.
+BPXSY2,1,A,This systolic reading contributes to the defining mean.
+LBXSKSI,0,none,Not part of the hypertension case definition or treatment.
+LBDSTRSI,0,none,Not part of the hypertension case definition or treatment.
+GTDDR2MN,0,none,Not part of the hypertension case definition or treatment.
+DIQ175G,0,none,Not part of the hypertension case definition or treatment.
+BPAEN1,1,B,Reading-specific enhancement status accompanies a defining measurement.
+DIQ060U,0,none,Not part of the hypertension case definition or treatment.
+LBDSALSI,0,none,Not part of the hypertension case definition or treatment.
+DIQ050,0,none,Not part of the hypertension case definition or treatment.
+URXCRS,0,none,Not part of the hypertension case definition or treatment.
+DIQ291,0,none,Not part of the hypertension case definition or treatment.
+DIQ300S,1,B,Self-reported blood pressure restates the defining quantity.
+LBXSC3SI,0,none,Not part of the hypertension case definition or treatment.
+DIQ180,0,none,Not part of the hypertension case definition or treatment.
+DIQ175D,0,none,Not part of the hypertension case definition or treatment.
+RXDUSE,0,none,Not part of the hypertension case definition or treatment.
+LBXSTR,0,none,Not part of the hypertension case definition or treatment.
+LBXSASSI,0,none,Not part of the hypertension case definition or treatment.
+WTSOG2YR,0,none,Not part of the hypertension case definition or treatment.
+DID350,0,none,Not part of the hypertension case definition or treatment.
+LBXGLU,0,none,Not part of the hypertension case definition or treatment.
+LBXSGB,0,none,Not part of the hypertension case definition or treatment.
+DIQ280,0,none,Not part of the hypertension case definition or treatment.
+LBXSIR,0,none,Not part of the hypertension case definition or treatment.
+LBXGLT,0,none,Not part of the hypertension case definition or treatment.
+DPQ100,0,none,Not part of the hypertension case definition or treatment.
+DIQ175K,0,none,Not part of the hypertension case definition or treatment.
+URXUCR,0,none,Not part of the hypertension case definition or treatment.
+DIQ080,0,none,Not part of the hypertension case definition or treatment.
+DIQ175L,0,none,Not part of the hypertension case definition or treatment.
+LBXSUA,0,none,Not part of the hypertension case definition or treatment.
+URDUMALC,0,none,Not part of the hypertension case definition or treatment.
+RXDDRUG,1,C,Medication name can reveal condition-specific treatment.
+DPQ060,0,none,Not part of the hypertension case definition or treatment.
+LBXSTB,0,none,Not part of the hypertension case definition or treatment.
+DIQ175O,0,none,Not part of the hypertension case definition or treatment.
+WTSAF2YR,0,none,Not part of the hypertension case definition or treatment.
+DIQ175Q,0,none,Not part of the hypertension case definition or treatment.
+BPQ090D,0,none,Not part of the hypertension case definition or treatment.
+DIQ240,0,none,Not part of the hypertension case definition or treatment.
+RXDCOUNT,0,none,Not part of the hypertension case definition or treatment.
+LBDSCASI,0,none,Not part of the hypertension case definition or treatment.
+LBDGLUSI,0,none,Not part of the hypertension case definition or treatment.
+BPXSY3,1,A,This systolic reading contributes to the defining mean.
+LBXSAPSI,0,none,Not part of the hypertension case definition or treatment.
+RXDRSC3,1,C,Prescription indication code identifies the medication's condition.
+BPQ030,1,C,Records repeated physician diagnosis of hypertension.
+BPXPLS,0,none,Not part of the hypertension case definition or treatment.
+BPXDI2,1,A,This diastolic reading contributes to the defining mean.
+DIQ175S,0,none,Not part of the hypertension case definition or treatment.
+BPXDI3,1,A,This diastolic reading contributes to the defining mean.
+RXDDAYS,1,C,Duration of a named prescription medication records treatment exposure.
+LBXSNASI,0,none,Not part of the hypertension case definition or treatment.
+DIQ175U,0,none,Not part of the hypertension case definition or treatment.
+LBXSOSSI,0,none,Not part of the hypertension case definition or treatment.
+DID320,0,none,Not part of the hypertension case definition or treatment.
+LBDSIRSI,0,none,Not part of the hypertension case definition or treatment.
+DPQ030,0,none,Not part of the hypertension case definition or treatment.
+GTXDRANK,0,none,Not part of the hypertension case definition or treatment.
+DPQ010,0,none,Not part of the hypertension case definition or treatment.
+RXDRSD1,1,C,Prescription indication description identifies the medication's condition.
+LBDSCRSI,0,none,Not part of the hypertension case definition or treatment.
+DID310D,0,none,Not part of the hypertension case definition or treatment.
+RXDRSD3,1,C,Prescription indication description identifies the medication's condition.
+DIQ300D,1,B,Self-reported blood pressure restates the defining quantity.
+URDUCRLC,0,none,Not part of the hypertension case definition or treatment.
+DIQ170,0,none,Not part of the hypertension case definition or treatment.
+BPQ020,1,C,Records a physician diagnosis of hypertension.
+URDACT,0,none,Not part of the hypertension case definition or treatment.
+BPXSY1,1,A,This systolic reading contributes to the defining mean.
+DIQ230,0,none,Not part of the hypertension case definition or treatment.
+RXDRSC1,1,C,Prescription indication code identifies the medication's condition.
+LBXSCLSI,0,none,Not part of the hypertension case definition or treatment.
+DIQ360,0,none,Not part of the hypertension case definition or treatment.
+PEASCCT1,1,B,Blood-pressure comment code accompanies defining measurements.
+BPXML1,0,none,Not part of the hypertension case definition or treatment.
+DID250,0,none,Not part of the hypertension case definition or treatment.
+LBDSBUSI,0,none,Not part of the hypertension case definition or treatment.
+LBDSGBSI,0,none,Not part of the hypertension case definition or treatment.
+DIQ175M,0,none,Not part of the hypertension case definition or treatment.
+DIQ175A,0,none,Not part of the hypertension case definition or treatment.
+LBXSCR,0,none,Not part of the hypertension case definition or treatment.
+BPD035,1,C,Records age at first hypertension diagnosis.
+LBDSGLSI,0,none,Not part of the hypertension case definition or treatment.
+DIQ172,0,none,Not part of the hypertension case definition or treatment.
+DIQ175W,0,none,Not part of the hypertension case definition or treatment.
+URXUMS,0,none,Not part of the hypertension case definition or treatment.
+DIQ175P,0,none,Not part of the hypertension case definition or treatment.
+DIQ175I,0,none,Not part of the hypertension case definition or treatment.
+LBDSPHSI,0,none,Not part of the hypertension case definition or treatment.
+LBXSGL,0,none,Not part of the hypertension case definition or treatment.
+BPQ050A,1,A,Current antihypertensive medication use enters the case definition.
+BPAEN3,1,B,Reading-specific enhancement status accompanies a defining measurement.

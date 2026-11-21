@@ -1,0 +1,9 @@
+{
+  "status": "SAVED_EVIDENCE_PACKET_NOT_COMPLETED_ADJUDICATION",
+  "output_directory": "outputs/agent_comparison/20261025T064454685602Z/changed_status_review_20261026T175021805009Z",
+  "regressions": 19,
+  "improvements": 3,
+  "source_requests_sha256": "f07e2370dc45a21b6f0a16513f6b497def62f1a7710d7a0c1326e87de6dbf2cd",
+  "new_model_requests": 0,
+  "original_artifacts_modified": false
+}

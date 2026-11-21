@@ -1,0 +1,10 @@
+{
+  "status": "DEVELOPMENT_RUN_FINISHED",
+  "units": 192,
+  "generation_requests": 384,
+  "failed_or_unparseable_units": 2,
+  "independent_scientific_validation": false,
+  "heldout_evaluation": false,
+  "execution_of_model_code": false,
+  "scope": "synthetic_proposal_generation_only"
+}

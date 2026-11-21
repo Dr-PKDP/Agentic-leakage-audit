@@ -1,0 +1,16 @@
+{
+  "run_id": "integrated_v0_4_20261027T040459122453Z",
+  "status": "targeted_audit_complete_on_user_supplied_extracts",
+  "target_units": 5,
+  "all_finish_reasons": "stop",
+  "original_scores_unchanged": true,
+  "additional_generation_requests": 0,
+  "cases": [
+    {"unit": "P27438DE9A6C8__evidence_critic__42", "classification": "empty_string_schema_violation", "field": "population_domain", "completion_tokens": 9},
+    {"unit": "P4A18C3FED9AC__patch_critic__42", "classification": "unknown_prefixed_patch_field", "returned_field": "proposal.requested_action", "permitted_field": "requested_action", "intended_change": "fit -> none", "duplicate_field": false, "completion_tokens": 288},
+    {"unit": "P7A23A56E5D35__patch_critic__42", "classification": "markdown_fence_strict_parse_failure", "fence_only_diagnostic_parse": "pass_not_rescored", "completion_tokens": 168},
+    {"unit": "P7E32AC7977A8__structure_feedback__42", "classification": "empty_string_schema_violation", "field": "requested_action", "completion_tokens": 9},
+    {"unit": "PE4CDFD280768__self_review__42", "classification": "markdown_fence_strict_parse_failure", "fence_only_diagnostic_parse": "pass_not_rescored", "completion_tokens": 14}
+  ],
+  "scope_limit": "Targeted classification, not exhaustive validation or retrospective normalization; raw archive not independently inspected."
+}

@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+LBXGLU,1,A,Fasting plasma glucose in mg/dL defines outcome
+LBDSCASI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ300D,1,C,Ambiguous; asked in diabetes management module for diagnosed patients
+BPQ090D,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+URDUMALC,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175E,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSCLSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSTRSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSTP,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXCHR,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSAPSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXDDRUG,1,C,"Medication drug name, code, or ICD-10 indication field"
+DIQ175V,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+URXCRS,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSCHSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ080,1,C,Records diagnosis of diabetes affecting eyes or retinopathy
+DIQ172,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXPTY,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID060,1,C,Records duration of insulin treatment for diabetes
+DIQ010,1,A,Self-reported physician diabetes diagnosis defines outcome
+LBXGLT,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXDDAYS,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ020,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+GTXDRANK,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175B,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPAEN3,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ030,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSC3SI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXDI1,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPQ080,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+GTDCODE,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSLDSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ240,1,C,Records clinical care visits for diagnosed diabetes
+RXDDRGID,1,C,"Medication drug name, code, or ICD-10 indication field"
+BPAEN1,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+URDACT,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSGL,1,B,Serum glucose in BIOPRO restates glucose in another file
+DIQ175F,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXQSEEN,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPQ050A,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPQ100D,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ010,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSGTSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ070,1,C,Records taking diabetic pills to lower blood sugar
+URXUMA,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXDI4,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSBUSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXPULS,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ230,1,C,Records clinical care visits for diagnosed diabetes
+BPXDI3,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXPLS,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPD035,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXDRSC1,1,C,"Medication drug name, code, or ICD-10 indication field"
+LBDSPHSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175N,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID040,1,C,Records age at first diabetes diagnosis
+BPXML1,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ300S,1,C,Ambiguous; asked in diabetes management module for diagnosed patients
+DIQ175P,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID350,1,C,Diabetes disease-management and clinical monitoring item
+BPAEN4,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSTPSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID310D,1,C,Diabetes disease-management and clinical monitoring item
+BPACSZ,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXDRSD3,1,C,"Medication drug name, code, or ICD-10 indication field"
+RXDCOUNT,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSCRSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSATSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175G,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPAARM,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175J,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXDRSC3,1,C,"Medication drug name, code, or ICD-10 indication field"
+DIQ275,1,C,Diabetes disease-management and clinical monitoring item
+LBXSNASI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175T,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSGB,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXSY4,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ040,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ160,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSCR,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+URXUCR,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXDI2,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ090,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSAL,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXDRSD1,1,C,"Medication drug name, code, or ICD-10 indication field"
+LBDSGBSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSCK,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+URDUCRLC,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ080,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175M,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175R,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175L,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+URXUMS,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175D,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175O,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+GTDSCMMN,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175I,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175X,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPAEN2,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID330,1,C,Diabetes disease-management and clinical monitoring item
+LBXSBU,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175K,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSGLSI,1,B,Serum glucose in BIOPRO restates glucose in another file
+DIQ260U,1,C,Diabetes disease-management and clinical monitoring item
+LBXSIR,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXSY3,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSTB,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDGLTSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ170,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ060,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175W,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ291,1,C,Diabetes disease-management and clinical monitoring item
+RXDRSD2,1,C,"Medication drug name, code, or ICD-10 indication field"
+BPQ060,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSTR,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXDRSC2,1,C,"Medication drug name, code, or ICD-10 indication field"
+LBXSCA,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+GTDBL2MN,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID310S,1,C,Diabetes disease-management and clinical monitoring item
+DIQ175Q,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ180,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175A,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175S,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID341,1,C,Diabetes disease-management and clinical monitoring item
+WTSAF2YR,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175H,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSCH,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ360,1,C,Diabetes disease-management and clinical monitoring item
+BPQ040A,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDGLUSI,1,B,Restates fasting plasma glucose in mmol/L units
+DIQ050,1,C,Records current insulin treatment for diabetes
+PEASCCT1,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID250,1,C,Records clinical care visits for diagnosed diabetes
+DIQ280,1,B,Ambiguous; self-reported last A1C restates defining glycohemoglobin quantity
+LBDSALSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ070,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+RXDUSE,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSIRSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ100,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DID260,1,C,Diabetes disease-management and clinical monitoring item
+DID320,1,C,Ambiguous; asked in diabetes management module for diagnosed patients
+DIQ175U,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXGH,1,A,Glycohemoglobin measurement enters diabetes outcome definition
+LBXSUA,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ350U,1,C,Diabetes disease-management and clinical monitoring item
+BPQ030,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSASSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXSY2,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ060U,1,C,Records duration of insulin treatment for diabetes
+GTDDR1MN,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSTBSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSPH,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DPQ050,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+DIQ175C,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+WTSOG2YR,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBDSUASI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSOSSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+LBXSKSI,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPXSY1,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPQ070,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+GTDDR2MN,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"
+BPQ020,0,none,"Not part of diabetes definition, restatement, or diagnosis/treatment"

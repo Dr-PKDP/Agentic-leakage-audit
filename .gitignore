@@ -1,0 +1,22 @@
+# environments and caches
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# downloaded and derived data
+data/raw/
+data/processed/
+nhanes/raw/
+
+# generated output
+_generated*/
+/outputs/
+*.parquet
+*.pkl
+*.joblib
+
+# editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/

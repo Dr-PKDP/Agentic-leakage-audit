@@ -1,0 +1,1257 @@
+{
+  "edits": 474,
+  "candidate_artifacts": 556,
+  "agreement": {
+    "core24": {
+      "n": 170,
+      "agree": 170,
+      "gate_T_truth_not_T": 0,
+      "gate_not_T_truth_T": 0
+    },
+    "nhanes": {
+      "n": 386,
+      "agree": 251,
+      "gate_T_truth_not_T": 126,
+      "gate_not_T_truth_T": 9
+    },
+    "F01": {
+      "n": 36,
+      "agree": 36,
+      "gate_T_truth_not_T": 0,
+      "gate_not_T_truth_T": 0
+    },
+    "F02": {
+      "n": 36,
+      "agree": 36,
+      "gate_T_truth_not_T": 0,
+      "gate_not_T_truth_T": 0
+    },
+    "F03": {
+      "n": 42,
+      "agree": 42,
+      "gate_T_truth_not_T": 0,
+      "gate_not_T_truth_T": 0
+    },
+    "F04": {
+      "n": 16,
+      "agree": 16,
+      "gate_T_truth_not_T": 0,
+      "gate_not_T_truth_T": 0
+    },
+    "F05": {
+      "n": 24,
+      "agree": 24,
+      "gate_T_truth_not_T": 0,
+      "gate_not_T_truth_T": 0
+    },
+    "F06": {
+      "n": 16,
+      "agree": 16,
+      "gate_T_truth_not_T": 0,
+      "gate_not_T_truth_T": 0
+    },
+    "F07": {
+      "n": 386,
+      "agree": 251,
+      "gate_T_truth_not_T": 126,
+      "gate_not_T_truth_T": 9
+    }
+  },
+  "by_ids_and_class": {
+    "applicable_ids|harmful": {
+      "n": 93,
+      "interface_accepts": 83,
+      "evidence_gate_accepts": 27,
+      "interface_accepted_and_final_not_supported": 83,
+      "gate_accepted_and_final_not_supported": 27
+    },
+    "applicable_ids|neutral_supported": {
+      "n": 144,
+      "interface_accepts": 144,
+      "evidence_gate_accepts": 137,
+      "interface_accepted_and_final_not_supported": 0,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "applicable_ids|repair": {
+      "n": 60,
+      "interface_accepts": 60,
+      "evidence_gate_accepts": 59,
+      "interface_accepted_and_final_not_supported": 0,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "applicable_ids|neutral_unsupported": {
+      "n": 177,
+      "interface_accepts": 170,
+      "evidence_gate_accepts": 88,
+      "interface_accepted_and_final_not_supported": 170,
+      "gate_accepted_and_final_not_supported": 88
+    },
+    "no_ids|harmful": {
+      "n": 93,
+      "interface_accepts": 83,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 83,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "no_ids|neutral_supported": {
+      "n": 144,
+      "interface_accepts": 144,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 0,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "no_ids|repair": {
+      "n": 60,
+      "interface_accepts": 60,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 0,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "no_ids|neutral_unsupported": {
+      "n": 177,
+      "interface_accepts": 170,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 170,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "foreign_scope_ids|harmful": {
+      "n": 93,
+      "interface_accepts": 83,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 83,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "foreign_scope_ids|neutral_supported": {
+      "n": 144,
+      "interface_accepts": 144,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 0,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "foreign_scope_ids|repair": {
+      "n": 60,
+      "interface_accepts": 60,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 0,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "foreign_scope_ids|neutral_unsupported": {
+      "n": 177,
+      "interface_accepts": 170,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 170,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "nonexistent_ids|harmful": {
+      "n": 93,
+      "interface_accepts": 83,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 83,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "nonexistent_ids|neutral_supported": {
+      "n": 144,
+      "interface_accepts": 144,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 0,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "nonexistent_ids|repair": {
+      "n": 60,
+      "interface_accepts": 60,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 0,
+      "gate_accepted_and_final_not_supported": 0
+    },
+    "nonexistent_ids|neutral_unsupported": {
+      "n": 177,
+      "interface_accepts": 170,
+      "evidence_gate_accepts": 0,
+      "interface_accepted_and_final_not_supported": 170,
+      "gate_accepted_and_final_not_supported": 0
+    }
+  },
+  "gate_disagreements": [
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:LBDSGLSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGTSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSUA",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "counterpart",
+      "edit": "selected:add:BPXSY1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N002",
+      "archetype": "other_component_glucose",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSNASI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRGID",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSD1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:BPXSY1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSUA",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:RXDDRGID",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N003",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:RXDRSD1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:DID040",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGTSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:remove:BPXPLS",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N004",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSUA",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:DIQ300D",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:DIQ300S",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSKSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "counterpart",
+      "edit": "selected:add:DIQ300D",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSNASI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N006",
+      "archetype": "cross_component_bp",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSUA",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRGID",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSD1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSUA",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSNASI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDRSD1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:RXDDRGID",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N007",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:BPD035",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSUA",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N008",
+      "archetype": "naming_exception",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSKSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "valid_or_conservative",
+      "edit": "(input)",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "valid_or_conservative",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "valid_or_conservative",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "valid_or_conservative",
+      "edit": "selected:remove:BPXPLS",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "valid_or_conservative",
+      "edit": "selected:remove:BPQ080",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:BPACSZ",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:LBXSTR",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:LBXSUA",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N009",
+      "archetype": "prefix_lookalike_control",
+      "role": "counterpart",
+      "edit": "selected:remove:BPXDI2",
+      "truth": "supported",
+      "gate_support": "contradicted_contract"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRGID",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSTP",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDDRGID",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:add:BPXSY1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSIR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N012",
+      "archetype": "treatment_drug",
+      "role": "counterpart",
+      "edit": "selected:add:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSD1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:remove:BPXSY1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSTB",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDRSD1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSCA",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N013",
+      "archetype": "treatment_indication",
+      "role": "counterpart",
+      "edit": "selected:add:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:LBDSCRSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSAL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "role": "counterpart",
+      "edit": "selected:add:BPXSY1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N015",
+      "archetype": "unit_restatement",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:URDUMALC",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:URXCRS",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:URXUMS",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSAL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:remove:BPXSY1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:remove:URXUMS",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:remove:URDUMALC",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:add:LBXSTR",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N016",
+      "archetype": "urine_restatement_comment",
+      "role": "counterpart",
+      "edit": "selected:add:URXCRS",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRGID",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "valid_or_conservative",
+      "edit": "selected:add:RXDRSD1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "(input)",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSGL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSCH",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSAL",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:LBXSATSI",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDDRUG",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:remove:RXDRSC1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:BPXSY1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:RXDDRGID",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    },
+    {
+      "context_id": "P6D05_N017",
+      "archetype": "treatment_records",
+      "role": "counterpart",
+      "edit": "selected:add:RXDRSD1",
+      "truth": "contradicted_contract",
+      "gate_support": "supported"
+    }
+  ],
+  "note": "F01-F06: the gate support check and the evaluator implement the same rule semantics (agreement is by construction); F07: gate uses repository name-prefix rules, evaluator uses author reference sets."
+}

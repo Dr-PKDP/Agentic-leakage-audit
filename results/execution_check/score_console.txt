@@ -1,0 +1,58 @@
+{
+  "threshold_auc_points": 0.02,
+  "rows": 3030,
+  "by_path": [
+    {
+      "path": "evidence_critic",
+      "n": 609,
+      "mean_inflation": 0.036,
+      "inflated": 146
+    },
+    {
+      "path": "patch_critic/evidence_guarded",
+      "n": 578,
+      "mean_inflation": 0.0237,
+      "inflated": 125
+    },
+    {
+      "path": "patch_critic/interface_only",
+      "n": 578,
+      "mean_inflation": 0.0397,
+      "inflated": 153
+    },
+    {
+      "path": "self_review",
+      "n": 630,
+      "mean_inflation": 0.0332,
+      "inflated": 171
+    },
+    {
+      "path": "structure_feedback",
+      "n": 635,
+      "mean_inflation": 0.0438,
+      "inflated": 190
+    }
+  ],
+  "evaluator_vs_execution": [
+    {
+      "final_verdict": "contradicted_contract",
+      "inflated": false,
+      "n": 35
+    },
+    {
+      "final_verdict": "contradicted_contract",
+      "inflated": true,
+      "n": 779
+    },
+    {
+      "final_verdict": "supported",
+      "inflated": false,
+      "n": 2210
+    },
+    {
+      "final_verdict": "supported",
+      "inflated": true,
+      "n": 6
+    }
+  ]
+}

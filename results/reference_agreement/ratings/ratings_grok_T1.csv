@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+LBXGLU,1,A,Fasting glucose enters diabetes definition
+LBDSCASI,0,none,Calcium SI not in definition
+DIQ300D,0,none,Recalled diastolic value not exam
+BPQ090D,0,none,Cholesterol medicine advice only
+URDUMALC,0,none,Urine albumin comment not this outcome
+DIQ175E,0,none,Perceived diabetes risk reason only
+LBXSCLSI,0,none,Chloride not in definition
+LBDSTRSI,0,none,Triglycerides SI not in definition
+LBXSTP,0,none,Total protein not in definition
+BPXCHR,0,none,Heart rate not a defining measure
+LBXSAPSI,0,none,ALP not in definition
+RXDDRUG,1,C,Generic drug name field
+DIQ175V,0,none,Perceived diabetes risk reason only
+URXCRS,0,none,Urine creatinine SI not this outcome
+LBDSCHSI,0,none,Cholesterol SI not in definition
+DIQ080,1,C,Records diabetic eye diagnosis
+DIQ172,0,none,Perceived diabetes risk only
+BPXPTY,0,none,Pulse type not a defining measure
+DID060,1,C,Duration of insulin treatment
+DIQ010,1,A,Physician diabetes diagnosis defines case
+LBXGLT,0,none,Two-hour glucose not in definition
+RXDDAYS,0,none,Drug duration not the indication
+DPQ020,0,none,PHQ item not this outcome
+GTXDRANK,0,none,Glucose drink amount not outcome
+DIQ175B,0,none,Perceived diabetes risk reason only
+BPAEN3,0,none,BP method flag not the reading
+DPQ030,0,none,PHQ item not this outcome
+LBXSC3SI,0,none,Bicarbonate not in definition
+BPXDI1,0,none,Diastolic reading not this outcome
+BPQ080,0,none,High cholesterol history only
+GTDCODE,0,none,OGTT incomplete comment not outcome
+LBXSLDSI,0,none,LDH not in definition
+DIQ240,0,none,Usual diabetes provider question only
+RXDDRGID,1,C,Generic drug identifier code
+BPAEN1,0,none,BP method flag not the reading
+URDACT,0,none,Albumin-creatinine ratio not this outcome
+LBXSGL,0,none,Serum glucose not the fasting plasma
+DIQ175F,0,none,Perceived diabetes risk reason only
+RXQSEEN,0,none,Whether medicine container was seen
+BPQ050A,0,none,Current BP medicine not this outcome
+BPQ100D,0,none,Following cholesterol medicine advice
+DPQ010,0,none,PHQ item not this outcome
+LBXSGTSI,0,none,GGT not in definition
+DIQ070,1,C,Currently taking diabetic pills
+URXUMA,0,none,Urine albumin not this outcome
+BPXDI4,0,none,Diastolic reading not this outcome
+LBDSBUSI,0,none,Blood urea nitrogen SI not defining
+BPXPULS,0,none,Pulse rhythm not a defining measure
+DIQ230,0,none,Diabetes educator visit timing only
+BPXDI3,0,none,Diastolic reading not this outcome
+BPXPLS,0,none,Pulse rate not a defining measure
+BPD035,0,none,Age at hypertension diagnosis not outcome
+RXDRSC1,1,C,Medication ICD-10 indication code
+LBDSPHSI,0,none,Phosphorus SI not in definition
+DIQ175N,0,none,Perceived diabetes risk reason only
+DID040,1,C,Age when diabetes diagnosis made
+BPXML1,0,none,Inflation level not the pressure
+DIQ300S,0,none,Recalled systolic value not exam
+DIQ175P,0,none,Perceived diabetes risk reason only
+DID350,0,none,Foot check frequency only
+BPAEN4,0,none,BP method flag not the reading
+LBDSTPSI,0,none,Total protein SI not in definition
+DID310D,0,none,Recommended diastolic target only
+BPACSZ,0,none,Cuff size not a pressure reading
+RXDRSD3,1,C,Medication ICD-10 indication description
+RXDCOUNT,0,none,Prescription count not indication
+LBDSCRSI,0,none,Serum creatinine SI not this outcome
+LBXSATSI,0,none,ALT not in definition
+DIQ175G,0,none,Perceived diabetes risk reason only
+BPAARM,0,none,Arm selected not a pressure reading
+DIQ175J,0,none,Perceived diabetes risk reason only
+RXDRSC3,1,C,Medication ICD-10 indication code
+DIQ275,0,none,Whether A1C was checked only
+LBXSNASI,0,none,Sodium not in definition
+DIQ175T,0,none,Perceived diabetes risk reason only
+LBXSGB,0,none,Globulin not in definition
+BPXSY4,0,none,Systolic reading not this outcome
+DPQ040,0,none,PHQ item not this outcome
+DIQ160,0,none,Prediabetes history is not the case
+LBXSCR,0,none,Serum creatinine not this outcome
+URXUCR,0,none,Urine creatinine not this outcome
+BPXDI2,0,none,Diastolic reading not this outcome
+DPQ090,0,none,PHQ item not this outcome
+LBXSAL,0,none,Serum albumin not a defining measure
+RXDRSD1,1,C,Medication ICD-10 indication description
+LBDSGBSI,0,none,Globulin SI not in definition
+LBXSCK,0,none,Creatine kinase is not creatinine
+URDUCRLC,0,none,Urine creatinine comment not this outcome
+DPQ080,0,none,PHQ item not this outcome
+DIQ175M,0,none,Perceived diabetes risk reason only
+DIQ175R,0,none,Perceived diabetes risk reason only
+DIQ175L,0,none,Perceived diabetes risk reason only
+URXUMS,0,none,Urine albumin SI not this outcome
+DIQ175D,0,none,Perceived diabetes risk reason only
+DIQ175O,0,none,Perceived diabetes risk reason only
+GTDSCMMN,0,none,OGTT timing not in definition
+DIQ175I,0,none,Perceived diabetes risk reason only
+DIQ175X,0,none,Perceived diabetes risk reason only
+BPAEN2,0,none,BP method flag not the reading
+DID330,0,none,Recommended LDL target only
+LBXSBU,0,none,Blood urea nitrogen not in definition
+DIQ175K,0,none,Perceived diabetes risk reason only
+LBDSGLSI,0,none,Serum glucose SI not fasting plasma
+DIQ260U,0,none,Home glucose check frequency only
+LBXSIR,0,none,Iron not in definition
+BPXSY3,0,none,Systolic reading not this outcome
+LBXSTB,0,none,Bilirubin not in definition
+LBDGLTSI,0,none,Two-hour glucose SI not in definition
+DIQ170,0,none,Diabetes risk factors only
+DPQ060,0,none,PHQ item not this outcome
+DIQ175W,0,none,Perceived diabetes risk reason only
+DIQ291,0,none,Recommended A1C target not value
+RXDRSD2,1,C,Medication ICD-10 indication description
+BPQ060,0,none,Cholesterol screening history only
+LBXSTR,0,none,Triglycerides not in definition
+RXDRSC2,1,C,Medication ICD-10 indication code
+LBXSCA,0,none,Calcium not in definition
+GTDBL2MN,0,none,OGTT timing not in definition
+DID310S,0,none,Recommended systolic target only
+DIQ175Q,0,none,Perceived diabetes risk reason only
+DIQ180,0,none,Diabetes screening history only
+DIQ175A,0,none,Perceived diabetes risk reason only
+DIQ175S,0,none,Perceived diabetes risk reason only
+DID341,0,none,Clinician foot exam count only
+WTSAF2YR,0,none,Fasting subsample survey weight
+DIQ175H,0,none,Perceived diabetes risk reason only
+LBXSCH,0,none,Cholesterol not in definition
+DIQ360,0,none,Dilated eye exam timing only
+BPQ040A,0,none,Hypertension medicine advice not outcome
+LBDGLUSI,1,B,Fasting glucose in other units
+DIQ050,1,C,Currently taking insulin
+PEASCCT1,0,none,BP comment not this outcome
+DID250,0,none,Diabetes visit count only
+DIQ280,0,none,Recalled A1C is not the lab
+LBDSALSI,0,none,Serum albumin SI not defining
+DPQ070,0,none,PHQ item not this outcome
+RXDUSE,0,none,Any prescription use not indication
+LBDSIRSI,0,none,Iron SI not in definition
+DPQ100,0,none,PHQ difficulty item not this outcome
+DID260,0,none,Home glucose check frequency only
+DID320,0,none,Recalled LDL value only
+DIQ175U,0,none,Perceived diabetes risk reason only
+LBXGH,1,A,Glycohemoglobin enters diabetes definition
+LBXSUA,0,none,Uric acid not in definition
+DIQ350U,0,none,Foot check frequency only
+BPQ030,0,none,Repeated hypertension diagnosis not outcome
+LBXSASSI,0,none,AST not in definition
+BPXSY2,0,none,Systolic reading not this outcome
+DIQ060U,1,C,Ambiguous; unit of insulin duration
+GTDDR1MN,0,none,OGTT timing not in definition
+LBDSTBSI,0,none,Bilirubin SI not in definition
+LBXSPH,0,none,Phosphorus not in definition
+DPQ050,0,none,PHQ item not this outcome
+DIQ175C,0,none,Perceived diabetes risk reason only
+WTSOG2YR,0,none,OGTT subsample survey weight
+LBDSUASI,0,none,Uric acid SI not in definition
+LBXSOSSI,0,none,Osmolality not in definition
+LBXSKSI,0,none,Potassium not in definition
+BPXSY1,0,none,Systolic reading not this outcome
+BPQ070,0,none,Time since cholesterol check only
+GTDDR2MN,0,none,OGTT timing not in definition
+BPQ020,0,none,Hypertension diagnosis not this outcome

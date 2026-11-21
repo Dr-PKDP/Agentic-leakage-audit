@@ -1,0 +1,680 @@
+{
+  "arm": "core24_think_off",
+  "context_set": "core24",
+  "thinking": "off",
+  "model": "p6-qwen3-8b",
+  "seeds": [
+    42
+  ],
+  "by_path": {
+    "self_review": {
+      "repair": [
+        16,
+        21
+      ],
+      "preserve": [
+        24,
+        24
+      ],
+      "harmful": 0,
+      "supported": [
+        42,
+        48
+      ],
+      "no_output": 2,
+      "mean_retained_fraction": null
+    },
+    "structure_feedback": {
+      "repair": [
+        16,
+        21
+      ],
+      "preserve": [
+        23,
+        24
+      ],
+      "harmful": 1,
+      "supported": [
+        41,
+        48
+      ],
+      "no_output": 3,
+      "mean_retained_fraction": null
+    },
+    "evidence_critic": {
+      "repair": [
+        16,
+        21
+      ],
+      "preserve": [
+        23,
+        24
+      ],
+      "harmful": 1,
+      "supported": [
+        41,
+        48
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    },
+    "patch_critic/interface_only": {
+      "repair": [
+        20,
+        21
+      ],
+      "preserve": [
+        22,
+        24
+      ],
+      "harmful": 1,
+      "supported": [
+        45,
+        48
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    },
+    "patch_critic/evidence_guarded": {
+      "repair": [
+        20,
+        21
+      ],
+      "preserve": [
+        23,
+        24
+      ],
+      "harmful": 0,
+      "supported": [
+        46,
+        48
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    }
+  },
+  "by_family_path": {
+    "F01|self_review": {
+      "repair": [
+        2,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        6,
+        8
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    },
+    "F01|structure_feedback": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        7,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F01|evidence_critic": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        7,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F01|patch_critic/interface_only": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F01|patch_critic/evidence_guarded": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F02|self_review": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F02|structure_feedback": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F02|evidence_critic": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F02|patch_critic/interface_only": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        3,
+        4
+      ],
+      "harmful": 1,
+      "supported": [
+        7,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F02|patch_critic/evidence_guarded": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F03|self_review": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F03|structure_feedback": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F03|evidence_critic": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F03|patch_critic/interface_only": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F03|patch_critic/evidence_guarded": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F04|self_review": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F04|structure_feedback": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F04|evidence_critic": {
+      "repair": [
+        3,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        7,
+        8
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    },
+    "F04|patch_critic/interface_only": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F04|patch_critic/evidence_guarded": {
+      "repair": [
+        4,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F05|self_review": {
+      "repair": [
+        0,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        4,
+        8
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    },
+    "F05|structure_feedback": {
+      "repair": [
+        0,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        4,
+        8
+      ],
+      "no_output": 2,
+      "mean_retained_fraction": null
+    },
+    "F05|evidence_critic": {
+      "repair": [
+        0,
+        4
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        4,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F05|patch_critic/interface_only": {
+      "repair": [
+        3,
+        4
+      ],
+      "preserve": [
+        3,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        6,
+        8
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    },
+    "F05|patch_critic/evidence_guarded": {
+      "repair": [
+        3,
+        4
+      ],
+      "preserve": [
+        3,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        6,
+        8
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    },
+    "F06|self_review": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F06|structure_feedback": {
+      "repair": [
+        2,
+        3
+      ],
+      "preserve": [
+        3,
+        4
+      ],
+      "harmful": 1,
+      "supported": [
+        6,
+        8
+      ],
+      "no_output": 1,
+      "mean_retained_fraction": null
+    },
+    "F06|evidence_critic": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        3,
+        4
+      ],
+      "harmful": 1,
+      "supported": [
+        7,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F06|patch_critic/interface_only": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    },
+    "F06|patch_critic/evidence_guarded": {
+      "repair": [
+        3,
+        3
+      ],
+      "preserve": [
+        4,
+        4
+      ],
+      "harmful": 0,
+      "supported": [
+        8,
+        8
+      ],
+      "no_output": 0,
+      "mean_retained_fraction": null
+    }
+  },
+  "by_archetype_path": {},
+  "unit_status": {
+    "completed": 94,
+    "unparseable_output": 2
+  },
+  "requests": {
+    "review": {
+      "n": 192,
+      "errors": 0,
+      "finish_reasons": {
+        "stop": 101,
+        "length": 91
+      },
+      "median_completion_tokens": 1021.5,
+      "prompt_tokens": 76296,
+      "summed_client_seconds": 14057.1,
+      "responses_with_reasoning_field": 0,
+      "responses_with_think_tags": 0
+    },
+    "revision": {
+      "n": 192,
+      "errors": 0,
+      "finish_reasons": {
+        "stop": 192
+      },
+      "median_completion_tokens": 12.0,
+      "prompt_tokens": 270241,
+      "summed_client_seconds": 10914.7,
+      "responses_with_reasoning_field": 0,
+      "responses_with_think_tags": 0
+    }
+  },
+  "run_report": {
+    "status": "DEVELOPMENT_RUN_FINISHED",
+    "arm": "core24_think_off",
+    "units": 192,
+    "generation_requests": 384,
+    "failed_or_unparseable_units": 3,
+    "wall_clock_seconds": 3126.0723186889663,
+    "independent_scientific_validation": false,
+    "heldout_evaluation": false,
+    "execution_of_model_code": false,
+    "scope": "synthetic_proposal_generation_only"
+  },
+  "server_model_entry": {
+    "id": "p6-qwen3-8b",
+    "object": "model",
+    "created": 1793150524,
+    "owned_by": "vllm",
+    "root": "/data/pduttapramanik/p6_vllm/models/Qwen3-8B",
+    "parent": null,
+    "max_model_len": 4096,
+    "permission": [
+      {
+        "id": "modelperm-99936e7e5bd71d42",
+        "object": "model_permission",
+        "created": 1793150524,
+        "allow_create_engine": false,
+        "allow_sampling": true,
+        "allow_logprobs": true,
+        "allow_search_indices": false,
+        "allow_view": true,
+        "allow_fine_tuning": false,
+        "organization": "*",
+        "group": null,
+        "is_blocking": false
+      }
+    ]
+  },
+  "server_version": {
+    "version": "0.32.0"
+  }
+}

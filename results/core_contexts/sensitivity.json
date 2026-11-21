@@ -1,0 +1,678 @@
+{
+ "stratified_by_review_truncation": {
+  "self_review": {
+   "review_truncated": {
+    "inputs": 21,
+    "repaired": [
+     5,
+     10
+    ],
+    "preserved": [
+     10,
+     10
+    ]
+   },
+   "review_complete": {
+    "inputs": 27,
+    "repaired": [
+     11,
+     11
+    ],
+    "preserved": [
+     14,
+     14
+    ]
+   }
+  },
+  "structure_feedback": {
+   "review_truncated": {
+    "inputs": 12,
+    "repaired": [
+     7,
+     10
+    ],
+    "preserved": [
+     2,
+     2
+    ]
+   },
+   "review_complete": {
+    "inputs": 36,
+    "repaired": [
+     10,
+     11
+    ],
+    "preserved": [
+     21,
+     22
+    ]
+   }
+  },
+  "evidence_critic": {
+   "review_truncated": {
+    "inputs": 30,
+    "repaired": [
+     12,
+     17
+    ],
+    "preserved": [
+     10,
+     11
+    ]
+   },
+   "review_complete": {
+    "inputs": 18,
+    "repaired": [
+     4,
+     4
+    ],
+    "preserved": [
+     13,
+     13
+    ]
+   }
+  },
+  "patch_critic/interface_only": {
+   "review_truncated": {
+    "inputs": 30,
+    "repaired": [
+     13,
+     14
+    ],
+    "preserved": [
+     11,
+     13
+    ]
+   },
+   "review_complete": {
+    "inputs": 18,
+    "repaired": [
+     7,
+     7
+    ],
+    "preserved": [
+     11,
+     11
+    ]
+   }
+  },
+  "patch_critic/evidence_guarded": {
+   "review_truncated": {
+    "inputs": 30,
+    "repaired": [
+     13,
+     14
+    ],
+    "preserved": [
+     12,
+     13
+    ]
+   },
+   "review_complete": {
+    "inputs": 18,
+    "repaired": [
+     7,
+     7
+    ],
+    "preserved": [
+     11,
+     11
+    ]
+   }
+  },
+  "pooled_four_streams_gate_b": {
+   "review_truncated": {
+    "inputs": 93,
+    "repaired": [
+     37,
+     51
+    ],
+    "preserved": [
+     34,
+     36
+    ]
+   },
+   "review_complete": {
+    "inputs": 99,
+    "repaired": [
+     32,
+     33
+    ],
+    "preserved": [
+     59,
+     60
+    ]
+   },
+   "repair_complete_minus_truncated": {
+    "difference_pp": 24.4,
+    "bootstrap_95_pp": [
+     6.4,
+     43.9
+    ],
+    "fisher_exact_p_descriptive": 0.0036,
+    "truncated_share_of_reviews_by_initial_state": {
+     "contradicted": 0.607,
+     "supported": 0.375
+    }
+   }
+  }
+ },
+ "selection_quality_F01_F02": {
+  "self_review": {
+   "repaired_inputs": 5,
+   "repaired_exact_reference_selection": 4,
+   "repaired_empty_selection": 0,
+   "repaired_mean_coverage": 0.9,
+   "preserved_inputs": 8,
+   "preserved_exact_reference_selection": 7,
+   "preserved_mean_coverage": 0.938
+  },
+  "structure_feedback": {
+   "repaired_inputs": 6,
+   "repaired_exact_reference_selection": 5,
+   "repaired_empty_selection": 0,
+   "repaired_mean_coverage": 0.917,
+   "preserved_inputs": 8,
+   "preserved_exact_reference_selection": 7,
+   "preserved_mean_coverage": 0.938
+  },
+  "evidence_critic": {
+   "repaired_inputs": 6,
+   "repaired_exact_reference_selection": 4,
+   "repaired_empty_selection": 1,
+   "repaired_mean_coverage": 0.75,
+   "preserved_inputs": 8,
+   "preserved_exact_reference_selection": 6,
+   "preserved_mean_coverage": 0.812
+  },
+  "patch_critic/interface_only": {
+   "repaired_inputs": 6,
+   "repaired_exact_reference_selection": 5,
+   "repaired_empty_selection": 0,
+   "repaired_mean_coverage": 0.917,
+   "preserved_inputs": 7,
+   "preserved_exact_reference_selection": 7,
+   "preserved_mean_coverage": 1.0
+  },
+  "patch_critic/evidence_guarded": {
+   "repaired_inputs": 6,
+   "repaired_exact_reference_selection": 5,
+   "repaired_empty_selection": 0,
+   "repaired_mean_coverage": 0.917,
+   "preserved_inputs": 8,
+   "preserved_exact_reference_selection": 7,
+   "preserved_mean_coverage": 0.938
+  },
+  "reference_selection_sizes": {
+   "P6D04_C001": 1,
+   "P6D04_C002": 1,
+   "P6D04_C003": 1,
+   "P6D04_C004": 1,
+   "P6D04_C005": 1,
+   "P6D04_C006": 2,
+   "P6D04_C007": 1,
+   "P6D04_C008": 1
+  }
+ },
+ "paired_contrasts": {
+  "reference_path": "patch_critic/evidence_guarded",
+  "contrasts": {
+   "self_review": {
+    "repair": {
+     "inputs": 21,
+     "patch_gate_b_only": 4,
+     "other_only": 0,
+     "difference_pp": 19.0,
+     "bootstrap_95_pp": [
+      4.5,
+      38.1
+     ],
+     "mcnemar_exact_p": 0.125
+    },
+    "preservation": {
+     "inputs": 24,
+     "patch_gate_b_only": 0,
+     "other_only": 1,
+     "difference_pp": -4.2,
+     "bootstrap_95_pp": [
+      -12.5,
+      0.0
+     ],
+     "mcnemar_exact_p": 1.0
+    },
+    "all_inputs": {
+     "inputs": 48,
+     "patch_gate_b_only": 5,
+     "other_only": 1,
+     "difference_pp": 8.3,
+     "bootstrap_95_pp": [
+      0.0,
+      18.8
+     ],
+     "mcnemar_exact_p": 0.2188
+    }
+   },
+   "structure_feedback": {
+    "repair": {
+     "inputs": 21,
+     "patch_gate_b_only": 3,
+     "other_only": 0,
+     "difference_pp": 14.3,
+     "bootstrap_95_pp": [
+      0.0,
+      30.4
+     ],
+     "mcnemar_exact_p": 0.25
+    },
+    "preservation": {
+     "inputs": 24,
+     "patch_gate_b_only": 1,
+     "other_only": 1,
+     "difference_pp": 0.0,
+     "bootstrap_95_pp": [
+      -12.5,
+      12.5
+     ],
+     "mcnemar_exact_p": 1.0
+    },
+    "all_inputs": {
+     "inputs": 48,
+     "patch_gate_b_only": 5,
+     "other_only": 1,
+     "difference_pp": 8.3,
+     "bootstrap_95_pp": [
+      0.0,
+      18.8
+     ],
+     "mcnemar_exact_p": 0.2188
+    }
+   },
+   "evidence_critic": {
+    "repair": {
+     "inputs": 21,
+     "patch_gate_b_only": 4,
+     "other_only": 0,
+     "difference_pp": 19.0,
+     "bootstrap_95_pp": [
+      4.5,
+      36.8
+     ],
+     "mcnemar_exact_p": 0.125
+    },
+    "preservation": {
+     "inputs": 24,
+     "patch_gate_b_only": 1,
+     "other_only": 1,
+     "difference_pp": 0.0,
+     "bootstrap_95_pp": [
+      -12.5,
+      12.5
+     ],
+     "mcnemar_exact_p": 1.0
+    },
+    "all_inputs": {
+     "inputs": 48,
+     "patch_gate_b_only": 6,
+     "other_only": 1,
+     "difference_pp": 10.4,
+     "bootstrap_95_pp": [
+      0.0,
+      20.8
+     ],
+     "mcnemar_exact_p": 0.125
+    }
+   },
+   "patch_critic/interface_only": {
+    "repair": {
+     "inputs": 21,
+     "patch_gate_b_only": 0,
+     "other_only": 0,
+     "difference_pp": 0.0,
+     "bootstrap_95_pp": [
+      0.0,
+      0.0
+     ],
+     "mcnemar_exact_p": 1.0
+    },
+    "preservation": {
+     "inputs": 24,
+     "patch_gate_b_only": 1,
+     "other_only": 0,
+     "difference_pp": 4.2,
+     "bootstrap_95_pp": [
+      0.0,
+      12.5
+     ],
+     "mcnemar_exact_p": 1.0
+    },
+    "all_inputs": {
+     "inputs": 48,
+     "patch_gate_b_only": 1,
+     "other_only": 0,
+     "difference_pp": 2.1,
+     "bootstrap_95_pp": [
+      0.0,
+      6.2
+     ],
+     "mcnemar_exact_p": 1.0
+    }
+   }
+  },
+  "bootstrap_resamples": 5000,
+  "seed": 20261027
+ },
+ "leave_one_family_out": {
+  "F01": {
+   "self_review": {
+    "repaired": [
+     14,
+     18
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   },
+   "structure_feedback": {
+    "repaired": [
+     14,
+     18
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "evidence_critic": {
+    "repaired": [
+     13,
+     18
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "patch_critic/interface_only": {
+    "repaired": [
+     17,
+     18
+    ],
+    "preserved": [
+     18,
+     20
+    ]
+   },
+   "patch_critic/evidence_guarded": {
+    "repaired": [
+     17,
+     18
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   }
+  },
+  "F02": {
+   "self_review": {
+    "repaired": [
+     13,
+     18
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   },
+   "structure_feedback": {
+    "repaired": [
+     14,
+     18
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "evidence_critic": {
+    "repaired": [
+     13,
+     18
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "patch_critic/interface_only": {
+    "repaired": [
+     17,
+     18
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "patch_critic/evidence_guarded": {
+    "repaired": [
+     17,
+     18
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   }
+  },
+  "F03": {
+   "self_review": {
+    "repaired": [
+     12,
+     17
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   },
+   "structure_feedback": {
+    "repaired": [
+     13,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "evidence_critic": {
+    "repaired": [
+     12,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "patch_critic/interface_only": {
+    "repaired": [
+     16,
+     17
+    ],
+    "preserved": [
+     18,
+     20
+    ]
+   },
+   "patch_critic/evidence_guarded": {
+    "repaired": [
+     16,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   }
+  },
+  "F04": {
+   "self_review": {
+    "repaired": [
+     12,
+     17
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   },
+   "structure_feedback": {
+    "repaired": [
+     13,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "evidence_critic": {
+    "repaired": [
+     13,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "patch_critic/interface_only": {
+    "repaired": [
+     16,
+     17
+    ],
+    "preserved": [
+     18,
+     20
+    ]
+   },
+   "patch_critic/evidence_guarded": {
+    "repaired": [
+     16,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   }
+  },
+  "F05": {
+   "self_review": {
+    "repaired": [
+     16,
+     17
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   },
+   "structure_feedback": {
+    "repaired": [
+     17,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "evidence_critic": {
+    "repaired": [
+     16,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "patch_critic/interface_only": {
+    "repaired": [
+     17,
+     17
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   },
+   "patch_critic/evidence_guarded": {
+    "repaired": [
+     17,
+     17
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   }
+  },
+  "F06": {
+   "self_review": {
+    "repaired": [
+     13,
+     18
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   },
+   "structure_feedback": {
+    "repaired": [
+     14,
+     18
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   },
+   "evidence_critic": {
+    "repaired": [
+     13,
+     18
+    ],
+    "preserved": [
+     20,
+     20
+    ]
+   },
+   "patch_critic/interface_only": {
+    "repaired": [
+     17,
+     18
+    ],
+    "preserved": [
+     18,
+     20
+    ]
+   },
+   "patch_critic/evidence_guarded": {
+    "repaired": [
+     17,
+     18
+    ],
+    "preserved": [
+     19,
+     20
+    ]
+   }
+  }
+ }
+}

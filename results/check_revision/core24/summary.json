@@ -1,0 +1,256 @@
+{
+  "arm": "check_revision_core24",
+  "model": "p6-qwen3-8b",
+  "seeds": [
+    42
+  ],
+  "by_path": {
+    "direct_full": {
+      "repair": [
+        16,
+        21
+      ],
+      "preserve": [
+        24,
+        24
+      ],
+      "harmful": 0,
+      "no_output": 0,
+      "unchanged_input": 0,
+      "mean_retained_fraction": null
+    },
+    "direct_patch/interface_only": {
+      "repair": [
+        16,
+        21
+      ],
+      "preserve": [
+        20,
+        24
+      ],
+      "harmful": 3,
+      "no_output": 0,
+      "unchanged_input": 18,
+      "mean_retained_fraction": null
+    },
+    "direct_patch/evidence_guarded": {
+      "repair": [
+        16,
+        21
+      ],
+      "preserve": [
+        24,
+        24
+      ],
+      "harmful": 0,
+      "no_output": 0,
+      "unchanged_input": 18,
+      "mean_retained_fraction": null
+    }
+  },
+  "permissions_family_repair": {
+    "direct_full": [
+      0,
+      4
+    ],
+    "direct_patch/interface_only": [
+      1,
+      4
+    ],
+    "direct_patch/evidence_guarded": [
+      1,
+      4
+    ]
+  },
+  "paired_vs_critic_reviser": {
+    "direct_full vs self_review (repair)": {
+      "pairs": 21,
+      "direct_only": 0,
+      "critic_workflow_only": 1,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": -4.8,
+      "context_bootstrap_95": [
+        -14.3,
+        0.0
+      ]
+    },
+    "direct_full vs self_review (preserve)": {
+      "pairs": 24,
+      "direct_only": 0,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "direct_full vs structure_feedback (repair)": {
+      "pairs": 21,
+      "direct_only": 0,
+      "critic_workflow_only": 1,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": -4.8,
+      "context_bootstrap_95": [
+        -14.3,
+        0.0
+      ]
+    },
+    "direct_full vs structure_feedback (preserve)": {
+      "pairs": 24,
+      "direct_only": 1,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 4.2,
+      "context_bootstrap_95": [
+        0.0,
+        12.5
+      ]
+    },
+    "direct_full vs evidence_critic (repair)": {
+      "pairs": 21,
+      "direct_only": 1,
+      "critic_workflow_only": 1,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        -14.3,
+        14.3
+      ]
+    },
+    "direct_full vs evidence_critic (preserve)": {
+      "pairs": 24,
+      "direct_only": 1,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 4.2,
+      "context_bootstrap_95": [
+        0.0,
+        12.5
+      ]
+    },
+    "direct_patch/interface_only vs patch_critic/interface_only (repair)": {
+      "pairs": 21,
+      "direct_only": 0,
+      "critic_workflow_only": 5,
+      "exact_mcnemar_p": 0.0625,
+      "difference_points_direct_minus_critic": -23.8,
+      "context_bootstrap_95": [
+        -42.9,
+        -4.8
+      ]
+    },
+    "direct_patch/interface_only vs patch_critic/interface_only (preserve)": {
+      "pairs": 24,
+      "direct_only": 0,
+      "critic_workflow_only": 4,
+      "exact_mcnemar_p": 0.125,
+      "difference_points_direct_minus_critic": -16.7,
+      "context_bootstrap_95": [
+        -33.3,
+        -4.2
+      ]
+    },
+    "direct_patch/evidence_guarded vs patch_critic/evidence_guarded (repair)": {
+      "pairs": 21,
+      "direct_only": 0,
+      "critic_workflow_only": 5,
+      "exact_mcnemar_p": 0.0625,
+      "difference_points_direct_minus_critic": -23.8,
+      "context_bootstrap_95": [
+        -42.9,
+        -4.8
+      ]
+    },
+    "direct_patch/evidence_guarded vs patch_critic/evidence_guarded (preserve)": {
+      "pairs": 24,
+      "direct_only": 0,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "paired_vs_plain_direct": {
+    "direct_full vs direct_full (repair)": {
+      "pairs": 21,
+      "direct_only": 12,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 0.0005,
+      "difference_points_direct_minus_critic": 57.1,
+      "context_bootstrap_95": [
+        33.3,
+        76.2
+      ]
+    },
+    "direct_full vs direct_full (preserve)": {
+      "pairs": 24,
+      "direct_only": 0,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "direct_patch/interface_only vs direct_patch/interface_only (repair)": {
+      "pairs": 21,
+      "direct_only": 7,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 0.0156,
+      "difference_points_direct_minus_critic": 33.3,
+      "context_bootstrap_95": [
+        14.3,
+        52.4
+      ]
+    },
+    "direct_patch/interface_only vs direct_patch/interface_only (preserve)": {
+      "pairs": 24,
+      "direct_only": 5,
+      "critic_workflow_only": 2,
+      "exact_mcnemar_p": 0.4531,
+      "difference_points_direct_minus_critic": 12.5,
+      "context_bootstrap_95": [
+        -8.3,
+        33.3
+      ]
+    },
+    "direct_patch/evidence_guarded vs direct_patch/evidence_guarded (repair)": {
+      "pairs": 21,
+      "direct_only": 7,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 0.0156,
+      "difference_points_direct_minus_critic": 33.3,
+      "context_bootstrap_95": [
+        14.3,
+        52.4
+      ]
+    },
+    "direct_patch/evidence_guarded vs direct_patch/evidence_guarded (preserve)": {
+      "pairs": 24,
+      "direct_only": 0,
+      "critic_workflow_only": 0,
+      "exact_mcnemar_p": 1.0,
+      "difference_points_direct_minus_critic": 0.0,
+      "context_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "status_counts": {
+    "completed": 144
+  },
+  "requests": {
+    "n": 96,
+    "errors": 0,
+    "finish_reasons": {
+      "stop": 96
+    },
+    "median_completion_tokens": 181.0
+  }
+}

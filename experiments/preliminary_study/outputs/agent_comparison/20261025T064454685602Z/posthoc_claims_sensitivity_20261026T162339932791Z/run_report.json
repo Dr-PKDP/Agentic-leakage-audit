@@ -1,0 +1,61 @@
+{
+  "status": "COMPLETED_POSTHOC_ARTIFACT_ANALYSIS",
+  "source_run": "outputs/agent_comparison/20261025T064454685602Z",
+  "source_requests_sha256": "f07e2370dc45a21b6f0a16513f6b497def62f1a7710d7a0c1326e87de6dbf2cd",
+  "original_runner_sha256": "f6d518f48c5dff95f706710727c41a926065868df0804e257b7a7460b912b68e",
+  "analysis_script_sha256": "bce31d4539e86834e13b27772bcab5858ce5a0090fb70616d99e58337d48294b",
+  "original_scores_reproduced": true,
+  "new_model_requests": 0,
+  "participant_data_access": false,
+  "normalization_rule": "Convert a scalar claims string to a singleton list only when it exactly matches an allowed claim label. No other changes.",
+  "matched_initial_draft_groups": 15,
+  "byte_identical_initial_draft_groups": 15,
+  "aggregate": [
+    {
+      "case": "ALL",
+      "condition": "single_self_review",
+      "units": 15,
+      "initial_claims_normalized": 15,
+      "initial_strict_pass": 0,
+      "initial_normalized_pass": 10,
+      "final_claims_normalized": 11,
+      "final_strict_pass": 1,
+      "final_normalized_pass": 3,
+      "normalized_revision_improvements": 0,
+      "normalized_revision_regressions": 7
+    },
+    {
+      "case": "ALL",
+      "condition": "structure_feedback",
+      "units": 15,
+      "initial_claims_normalized": 15,
+      "initial_strict_pass": 0,
+      "initial_normalized_pass": 10,
+      "final_claims_normalized": 0,
+      "final_strict_pass": 7,
+      "final_normalized_pass": 7,
+      "normalized_revision_improvements": 1,
+      "normalized_revision_regressions": 4
+    },
+    {
+      "case": "ALL",
+      "condition": "guarded_critic",
+      "units": 15,
+      "initial_claims_normalized": 15,
+      "initial_strict_pass": 0,
+      "initial_normalized_pass": 10,
+      "final_claims_normalized": 0,
+      "final_strict_pass": 4,
+      "final_normalized_pass": 4,
+      "normalized_revision_improvements": 2,
+      "normalized_revision_regressions": 8
+    }
+  ],
+  "output_directory": "outputs/agent_comparison/20261025T064454685602Z/posthoc_claims_sensitivity_20261026T162339932791Z",
+  "limitations": [
+    "Post hoc analysis motivated by observed outputs.",
+    "Original strict scores remain the primary reported result.",
+    "Normalized scores still assess contract compliance, not independent scientific validity.",
+    "No new model generations or modified original artifacts."
+  ]
+}

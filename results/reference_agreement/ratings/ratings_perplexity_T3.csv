@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+WTSAF2YR,0,none,Glucose-related measurement or procedure does not define the target condition.
+DIQ175F,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSALSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ280,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSASSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+URDACT,0,none,Urine measurement does not enter this outcome definition.
+DID341,0,none,Diabetes questionnaire content does not establish the target condition.
+WTSOG2YR,0,none,Glucose-related measurement or procedure does not define the target condition.
+LBXSATSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ060U,0,none,Ambiguous: unit label alone identifies no defining quantity or treatment.
+LBXSC3SI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSLDSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175G,0,none,Diabetes questionnaire content does not establish the target condition.
+BPXDI2,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ175O,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ080,0,none,Diabetes questionnaire content does not establish the target condition.
+BPXDI4,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ175C,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ230,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175K,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSCA,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DPQ070,1,A,One of nine symptom items entering the defined PHQ-9 total.
+LBDSCHSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSCLSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DPQ090,1,A,One of nine symptom items entering the defined PHQ-9 total.
+BPAEN1,0,none,Blood pressure or cholesterol information does not define the target condition.
+DID310D,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSCH,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID320,0,none,Diabetes questionnaire content does not establish the target condition.
+GTXDRANK,0,none,Glucose-related measurement or procedure does not define the target condition.
+RXDCOUNT,0,none,Medication count specifies neither drug identity nor condition-specific treatment.
+DPQ100,0,none,Ambiguous: impairment follow-up is outside the nine-item symptom total.
+URDUMALC,0,none,Urine measurement does not enter this outcome definition.
+BPXML1,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBXSCK,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+RXDDAYS,0,none,Ambiguous: general medication use does not establish condition-specific treatment.
+DIQ240,0,none,Diabetes questionnaire content does not establish the target condition.
+URXCRS,0,none,Urine measurement does not enter this outcome definition.
+LBDSGLSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPAARM,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPQ070,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBDSTRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+GTDDR1MN,0,none,Glucose-related measurement or procedure does not define the target condition.
+DID310S,0,none,Diabetes questionnaire content does not establish the target condition.
+BPXPLS,0,none,Blood pressure or cholesterol information does not define the target condition.
+URXUMA,0,none,Urine measurement does not enter this outcome definition.
+GTDBL2MN,0,none,Glucose-related measurement or procedure does not define the target condition.
+GTDSCMMN,0,none,Glucose-related measurement or procedure does not define the target condition.
+LBDSCRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175J,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175P,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSTR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSCR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDGLTSI,0,none,Glucose-related measurement or procedure does not define the target condition.
+LBXSPH,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPQ100D,0,none,Ambiguous: medicine indication unspecified; component also covers cholesterol.
+BPQ040A,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBDSIRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSGL,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175T,0,none,Diabetes questionnaire content does not establish the target condition.
+BPQ020,0,none,Blood pressure or cholesterol information does not define the target condition.
+URXUMS,0,none,Urine measurement does not enter this outcome definition.
+DIQ175Q,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXGH,0,none,Glucose-related measurement or procedure does not define the target condition.
+BPXDI1,0,none,Blood pressure or cholesterol information does not define the target condition.
+RXDRSC1,1,C,Prescription component identifies this as a medication indication code.
+LBXSKSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DPQ050,1,A,One of nine symptom items entering the defined PHQ-9 total.
+LBDSPHSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID350,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDUSE,0,none,Ambiguous: general medication use does not establish condition-specific treatment.
+DPQ060,1,A,One of nine symptom items entering the defined PHQ-9 total.
+DIQ291,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSUASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXGLU,0,none,Glucose-related measurement or procedure does not define the target condition.
+BPXSY2,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ175E,0,none,Diabetes questionnaire content does not establish the target condition.
+BPQ030,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPQ080,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBXSGB,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPACSZ,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPAEN4,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ360,0,none,Diabetes questionnaire content does not establish the target condition.
+DPQ080,1,A,One of nine symptom items entering the defined PHQ-9 total.
+DPQ010,1,A,One of nine symptom items entering the defined PHQ-9 total.
+LBDSGBSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ172,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175X,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ300S,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSBUSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID040,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ180,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175M,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175L,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ160,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSNASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDGLUSI,0,none,Glucose-related measurement or procedure does not define the target condition.
+DIQ175H,0,none,Diabetes questionnaire content does not establish the target condition.
+BPXDI3,0,none,Blood pressure or cholesterol information does not define the target condition.
+RXDRSD1,1,C,Prescription component identifies this as a medication indication description.
+LBXSUA,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+RXQSEEN,0,none,Container verification does not specify treatment identity or indication.
+DIQ050,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSAPSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ010,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ070,0,none,Diabetes questionnaire content does not establish the target condition.
+PEASCCT1,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ300D,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175N,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSCASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DPQ020,1,A,One of nine symptom items entering the defined PHQ-9 total.
+RXDRSC2,1,C,Prescription component identifies this as a medication indication code.
+BPXSY1,0,none,Blood pressure or cholesterol information does not define the target condition.
+RXDDRGID,1,C,Drug identifier explicitly included under criterion C.
+DID060,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175I,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSGTSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID250,0,none,Diabetes questionnaire content does not establish the target condition.
+DPQ030,1,A,One of nine symptom items entering the defined PHQ-9 total.
+BPQ090D,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ260U,0,none,Diabetes questionnaire content does not establish the target condition.
+BPAEN3,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPXSY3,0,none,Blood pressure or cholesterol information does not define the target condition.
+GTDCODE,0,none,Glucose-related measurement or procedure does not define the target condition.
+DIQ175D,0,none,Diabetes questionnaire content does not establish the target condition.
+DPQ040,1,A,One of nine symptom items entering the defined PHQ-9 total.
+LBXSTB,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175B,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ350U,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDRSD3,1,C,Prescription component identifies this as a medication indication description.
+GTDDR2MN,0,none,Glucose-related measurement or procedure does not define the target condition.
+BPAEN2,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBXGLT,0,none,Glucose-related measurement or procedure does not define the target condition.
+BPXSY4,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBDSTBSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+RXDRSD2,1,C,Prescription component identifies this as a medication indication description.
+LBXSTP,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ275,0,none,Diabetes questionnaire content does not establish the target condition.
+BPQ060,0,none,Blood pressure or cholesterol information does not define the target condition.
+DID330,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175W,0,none,Diabetes questionnaire content does not establish the target condition.
+LBDSTPSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175R,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSIR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+URXUCR,0,none,Urine measurement does not enter this outcome definition.
+RXDRSC3,1,C,Prescription component identifies this as a medication indication code.
+URDUCRLC,0,none,Urine measurement does not enter this outcome definition.
+BPQ050A,0,none,Ambiguous: medicine indication unspecified; component also covers cholesterol.
+DIQ175A,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSAL,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID260,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSOSSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175V,0,none,Diabetes questionnaire content does not establish the target condition.
+BPD035,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPXCHR,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ175S,0,none,Diabetes questionnaire content does not establish the target condition.
+RXDDRUG,1,C,Drug name field explicitly included under criterion C.
+BPXPULS,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ175U,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ170,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSBU,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXPTY,0,none,Blood pressure or cholesterol information does not define the target condition.

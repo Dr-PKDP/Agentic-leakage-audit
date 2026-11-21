@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+DIQ175A,0,none,Risk perception not hypertension
+DIQ175B,0,none,Risk perception not hypertension
+DIQ175C,0,none,Risk perception not hypertension
+DIQ175D,0,none,Risk perception not hypertension
+DIQ175E,0,none,Risk perception not hypertension
+DIQ175F,0,none,Risk perception not hypertension
+DIQ175G,0,none,Risk perception not hypertension
+DIQ175H,0,none,Risk perception not hypertension
+DIQ175I,0,none,Risk perception not hypertension
+DIQ175J,0,none,Risk perception not hypertension
+DIQ175K,0,none,Risk perception not hypertension
+DIQ175L,0,none,Risk perception not hypertension
+DIQ175M,0,none,Risk perception not hypertension
+DIQ175N,0,none,Risk perception not hypertension
+DIQ175O,0,none,Risk perception not hypertension
+DIQ175P,0,none,Risk perception not hypertension
+DIQ175Q,0,none,Risk perception not hypertension
+DIQ175R,0,none,Risk perception not hypertension
+DIQ175S,0,none,Risk perception not hypertension
+DIQ175T,0,none,Risk perception not hypertension
+DIQ175U,0,none,Risk perception not hypertension
+DIQ175V,0,none,Risk perception not hypertension
+DIQ175W,0,none,Risk perception not hypertension
+DIQ175X,0,none,Risk perception not hypertension
+DIQ010,0,none,Diabetes diagnosis not hypertension
+DIQ050,0,none,Insulin not hypertension
+DIQ060U,0,none,Unit code not hypertension
+DIQ070,0,none,Diabetic pills not hypertension
+DIQ080,0,none,Retinopathy not hypertension
+DIQ160,0,none,Prediabetes not hypertension
+DIQ170,0,none,Risk conditions not hypertension
+DIQ172,0,none,Perceived risk not hypertension
+DIQ180,0,none,Blood sugar test not hypertension
+DIQ230,0,none,Diabetes care not hypertension
+DIQ240,0,none,Diabetes doctor not hypertension
+DIQ260U,0,none,Unit glucose checking
+DIQ275,0,none,Checked A1c not hypertension
+DIQ280,0,none,Last A1c not hypertension
+DIQ291,0,none,Target A1c not hypertension
+DIQ300D,1,B,Self-reported diastolic pressure restatement
+DIQ300S,1,B,Self-reported systolic pressure restatement
+DIQ350U,0,none,Unit foot checks
+DIQ360,0,none,Eye exam not hypertension
+DID040,0,none,Age diabetes diagnosis not hypertension
+DID060,0,none,Insulin duration not hypertension
+DID250,0,none,Doctor visits not hypertension
+DID260,0,none,Glucose checking not hypertension
+DID310D,0,none,Target diastolic not measured
+DID310S,0,none,Target systolic not measured
+DID320,0,none,LDL not hypertension
+DID330,0,none,Target LDL not hypertension
+DID341,0,none,Foot checks not hypertension
+DID350,0,none,Foot checking not hypertension
+BPXCHR,0,none,Heart rate not defining
+BPXDI1,1,A,Diastolic reading enters mean
+BPXDI2,1,A,Diastolic reading enters mean
+BPXDI3,1,A,Diastolic reading enters mean
+BPXDI4,1,A,Diastolic reading enters mean
+BPXPLS,0,none,Pulse not defining
+BPXPTY,0,none,Pulse type not defining
+BPXPULS,0,none,Pulse regularity not defining
+BPXSY1,1,A,Systolic reading enters mean
+BPXSY2,1,A,Systolic reading enters mean
+BPXSY3,1,A,Systolic reading enters mean
+BPXSY4,1,A,Systolic reading enters mean
+BPAARM,0,none,Arm selected not pressure
+BPAEN1,0,none,Enhancement first reading
+BPAEN2,0,none,Enhancement second reading
+BPAEN3,0,none,Enhancement third reading
+BPAEN4,0,none,Enhancement fourth reading
+BPACSZ,0,none,Cuff size not pressure
+BPXML1,0,none,Inflation level not pressure
+PEASCCT1,1,B,Blood pressure comment code
+BPQ020,1,C,Ever told hypertension diagnosis
+BPQ030,1,C,Told hypertension twice diagnosis
+BPQ040A,1,C,Told take hypertension medicine
+BPQ050A,1,C,Now taking hypertension medicine
+BPQ060,0,none,Cholesterol checked not hypertension
+BPQ070,0,none,Time cholesterol check
+BPQ080,0,none,High cholesterol not hypertension
+BPQ090D,0,none,Cholesterol medicine advice
+BPQ100D,1,C,Following hypertension medicine advice
+BPD035,1,C,Age first told hypertension
+DPQ010,0,none,Anhedonia not hypertension
+DPQ020,0,none,Depressed mood not hypertension
+DPQ030,0,none,Sleep not hypertension
+DPQ040,0,none,Tiredness not hypertension
+DPQ050,0,none,Appetite not hypertension
+DPQ060,0,none,Self-worth not hypertension
+DPQ070,0,none,Concentration not hypertension
+DPQ080,0,none,Psychomotor not hypertension
+DPQ090,0,none,Self-harm thoughts not hypertension
+DPQ100,0,none,Impairment not hypertension
+LBDSALSI,0,none,Albumin not hypertension
+LBDSBUSI,0,none,Urea nitrogen not hypertension
+LBDSCASI,0,none,Calcium not hypertension
+LBDSCRSI,0,none,Creatinine not hypertension
+LBDSCHSI,0,none,Cholesterol not hypertension
+LBDSGBSI,0,none,Globulin not hypertension
+LBDSGLSI,0,none,Serum glucose not hypertension
+LBDSIRSI,0,none,Iron not hypertension
+LBDSPHSI,0,none,Phosphorus not hypertension
+LBDSTBSI,0,none,Bilirubin not hypertension
+LBDSTPSI,0,none,Protein not hypertension
+LBDSTRSI,0,none,Triglycerides not hypertension
+LBDSUASI,0,none,Uric acid not hypertension
+LBXSCA,0,none,Calcium not hypertension
+LBXSCK,0,none,Creatine kinase not hypertension
+LBXSAL,0,none,Albumin not hypertension
+LBXSAPSI,0,none,Alkaline phosphatase not hypertension
+LBXSASSI,0,none,AST not hypertension
+LBXSATSI,0,none,ALT not hypertension
+LBXSGTSI,0,none,GGT not hypertension
+LBXSGB,0,none,Globulin not hypertension
+LBXSGL,0,none,Serum glucose not hypertension
+LBXSCH,0,none,Cholesterol not hypertension
+LBXSCLSI,0,none,Chloride not hypertension
+LBXSC3SI,0,none,Bicarbonate not hypertension
+LBXSIR,0,none,Iron not hypertension
+LBXSKSI,0,none,Potassium not hypertension
+LBXSLDSI,0,none,LDH not hypertension
+LBXSOSSI,0,none,Osmolality not hypertension
+LBXSPH,0,none,Phosphorus not hypertension
+LBXSTP,0,none,Protein not hypertension
+LBXSTB,0,none,Bilirubin not hypertension
+LBXSTR,0,none,Triglycerides not hypertension
+LBXSUA,0,none,Uric acid not hypertension
+LBXSBU,0,none,Urea nitrogen not hypertension
+LBXSCR,0,none,Creatinine not hypertension
+LBXSNASI,0,none,Sodium not hypertension
+URXUMA,0,none,Urine albumin not hypertension
+URXUMS,0,none,Urine albumin not hypertension
+URXUCR,0,none,Urine creatinine not hypertension
+URXCRS,0,none,Urine creatinine not hypertension
+URDACT,0,none,ACR not hypertension
+URDUMALC,0,none,Albumin comment not hypertension
+URDUCRLC,0,none,Creatinine comment not hypertension
+GTXDRANK,0,none,Challenge amount not hypertension
+GTDCODE,0,none,OGTT comment not hypertension
+GTDBL2MN,0,none,OGTT timing not hypertension
+GTDDR1MN,0,none,OGTT timing not hypertension
+GTDDR2MN,0,none,OGTT timing not hypertension
+GTDSCMMN,0,none,OGTT timing not hypertension
+LBDGLTSI,0,none,Two hour glucose not hypertension
+LBXGLT,0,none,Two hour glucose not hypertension
+WTSOG2YR,0,none,OGTT weight not hypertension
+LBXGLU,0,none,Fasting glucose not hypertension
+LBDGLUSI,0,none,Fasting glucose not hypertension
+WTSAF2YR,0,none,Fasting weight not hypertension
+LBXGH,0,none,Glycohemoglobin not hypertension
+RXDCOUNT,0,none,Number medicines not indication
+RXDDAYS,0,none,Duration medicine not indication
+RXDDRGID,1,C,Generic drug code indication
+RXDDRUG,1,C,Generic drug name indication
+RXDRSC1,1,C,ICD indication code 1
+RXDRSC2,1,C,ICD indication code 2
+RXDRSC3,1,C,ICD indication code 3
+RXDRSD1,1,C,ICD indication description 1
+RXDRSD2,1,C,ICD indication description 2
+RXDRSD3,1,C,ICD indication description 3
+RXDUSE,0,none,Any prescription use not indication
+RXQSEEN,0,none,Container seen not indication

@@ -1,0 +1,12 @@
+{
+  "status": "DEVELOPMENT_RUN_FINISHED",
+  "arm": "q_replay_t1024_core24",
+  "units": 192,
+  "generation_requests": 192,
+  "failed_or_unparseable_units": 3,
+  "wall_clock_seconds": 188.26935151498765,
+  "independent_scientific_validation": false,
+  "heldout_evaluation": false,
+  "execution_of_model_code": false,
+  "scope": "synthetic_proposal_generation_only"
+}

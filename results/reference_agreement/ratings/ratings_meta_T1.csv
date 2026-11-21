@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+DIQ175A,0,none,Risk perception not defining
+DIQ175B,0,none,Risk perception not defining
+DIQ175C,0,none,Risk perception not defining
+DIQ175D,0,none,Risk perception not defining
+DIQ175E,0,none,Risk perception not defining
+DIQ175F,0,none,Risk perception not defining
+DIQ175G,0,none,Risk perception not defining
+DIQ175H,0,none,Risk perception not defining
+DIQ175I,0,none,Risk perception not defining
+DIQ175J,0,none,Risk perception not defining
+DIQ175K,0,none,Risk perception not defining
+DIQ175L,0,none,Risk perception not defining
+DIQ175M,0,none,Risk perception not defining
+DIQ175N,0,none,Risk perception not defining
+DIQ175O,0,none,Risk perception not defining
+DIQ175P,0,none,Risk perception not defining
+DIQ175Q,0,none,Risk perception not defining
+DIQ175R,0,none,Risk perception not defining
+DIQ175S,0,none,Risk perception not defining
+DIQ175T,0,none,Risk perception not defining
+DIQ175U,0,none,Risk perception not defining
+DIQ175V,0,none,Risk perception not defining
+DIQ175W,0,none,Risk perception not defining
+DIQ175X,0,none,Risk perception not defining
+DIQ010,1,C,Self-reported physician diagnosis diabetes
+DIQ050,1,C,Taking insulin treatment
+DIQ060U,0,none,Unit code not defining
+DIQ070,1,C,Taking diabetic pills treatment
+DIQ080,0,none,Retinopathy complication not definition
+DIQ160,0,none,Prediabetes not diabetes diagnosis
+DIQ170,0,none,Risk conditions not diagnosis
+DIQ172,0,none,Perceived risk not diagnosis
+DIQ180,0,none,Had blood test not result
+DIQ230,0,none,Diabetes care visit not definition
+DIQ240,0,none,Usual diabetes doctor not definition
+DIQ260U,0,none,Unit for glucose checking
+DIQ275,0,none,Checked A1c not value
+DIQ280,1,A,Last A1c level value
+DIQ291,0,none,Target A1c not measured
+DIQ300D,0,none,Self-reported diastolic pressure
+DIQ300S,0,none,Self-reported systolic pressure
+DIQ350U,0,none,Unit for foot checks
+DIQ360,0,none,Eye exam not definition
+DID040,1,C,Age first told diabetes
+DID060,1,C,Duration taking insulin
+DID250,0,none,Doctor visits not definition
+DID260,0,none,Glucose checking frequency
+DID310D,0,none,Target diastolic pressure
+DID310S,0,none,Target systolic pressure
+DID320,0,none,Recent LDL number
+DID330,0,none,Target LDL not definition
+DID341,0,none,Foot checks not definition
+DID350,0,none,Foot checking frequency
+BPXCHR,0,none,Heart rate not diabetes
+BPXDI1,0,none,Diastolic pressure not diabetes
+BPXDI2,0,none,Diastolic pressure not diabetes
+BPXDI3,0,none,Diastolic pressure not diabetes
+BPXDI4,0,none,Diastolic pressure not diabetes
+BPXPLS,0,none,Pulse not diabetes
+BPXPTY,0,none,Pulse type not diabetes
+BPXPULS,0,none,Pulse regularity not diabetes
+BPXSY1,0,none,Systolic pressure not diabetes
+BPXSY2,0,none,Systolic pressure not diabetes
+BPXSY3,0,none,Systolic pressure not diabetes
+BPXSY4,0,none,Systolic pressure not diabetes
+BPAARM,0,none,Arm selected not diabetes
+BPAEN1,0,none,Enhancement first reading
+BPAEN2,0,none,Enhancement second reading
+BPAEN3,0,none,Enhancement third reading
+BPAEN4,0,none,Enhancement fourth reading
+BPACSZ,0,none,Cuff size not diabetes
+BPXML1,0,none,Inflation level not diabetes
+PEASCCT1,0,none,Blood pressure comment not diabetes
+BPQ020,0,none,Hypertension diagnosis not diabetes
+BPQ030,0,none,Hypertension told twice not diabetes
+BPQ040A,0,none,Hypertension medicine advice not diabetes
+BPQ050A,0,none,Taking hypertension medicine not diabetes
+BPQ060,0,none,Cholesterol checked not diabetes
+BPQ070,0,none,Time since cholesterol check
+BPQ080,0,none,High cholesterol told not diabetes
+BPQ090D,0,none,Cholesterol medicine advice not diabetes
+BPQ100D,0,none,Following medicine advice not diabetes
+BPD035,0,none,Age told hypertension not diabetes
+DPQ010,0,none,Anhedonia not diabetes
+DPQ020,0,none,Depressed mood not diabetes
+DPQ030,0,none,Sleep problem not diabetes
+DPQ040,0,none,Tiredness not diabetes
+DPQ050,0,none,Appetite not diabetes
+DPQ060,0,none,Self-worth not diabetes
+DPQ070,0,none,Concentration not diabetes
+DPQ080,0,none,Psychomotor not diabetes
+DPQ090,0,none,Self-harm thoughts not diabetes
+DPQ100,0,none,Impairment not diabetes
+LBDSALSI,0,none,Serum albumin not diabetes
+LBDSBUSI,0,none,Urea nitrogen not diabetes
+LBDSCASI,0,none,Calcium not diabetes
+LBDSCRSI,0,none,Creatinine not diabetes
+LBDSCHSI,0,none,Cholesterol not diabetes
+LBDSGBSI,0,none,Globulin not diabetes
+LBDSGLSI,0,none,Serum glucose not fasting
+LBDSIRSI,0,none,Iron not diabetes
+LBDSPHSI,0,none,Phosphorus not diabetes
+LBDSTBSI,0,none,Bilirubin not diabetes
+LBDSTPSI,0,none,Total protein not diabetes
+LBDSTRSI,0,none,Triglycerides not diabetes
+LBDSUASI,0,none,Uric acid not diabetes
+LBXSCA,0,none,Calcium not diabetes
+LBXSCK,0,none,Creatine kinase not diabetes
+LBXSAL,0,none,Serum albumin not diabetes
+LBXSAPSI,0,none,Alkaline phosphatase not diabetes
+LBXSASSI,0,none,AST not diabetes
+LBXSATSI,0,none,ALT not diabetes
+LBXSGTSI,0,none,GGT not diabetes
+LBXSGB,0,none,Globulin not diabetes
+LBXSGL,0,none,Serum glucose not fasting
+LBXSCH,0,none,Cholesterol not diabetes
+LBXSCLSI,0,none,Chloride not diabetes
+LBXSC3SI,0,none,Bicarbonate not diabetes
+LBXSIR,0,none,Iron not diabetes
+LBXSKSI,0,none,Potassium not diabetes
+LBXSLDSI,0,none,LDH not diabetes
+LBXSOSSI,0,none,Osmolality not diabetes
+LBXSPH,0,none,Phosphorus not diabetes
+LBXSTP,0,none,Total protein not diabetes
+LBXSTB,0,none,Bilirubin not diabetes
+LBXSTR,0,none,Triglycerides not diabetes
+LBXSUA,0,none,Uric acid not diabetes
+LBXSBU,0,none,Urea nitrogen not diabetes
+LBXSCR,0,none,Creatinine not diabetes
+LBXSNASI,0,none,Sodium not diabetes
+URXUMA,0,none,Urine albumin not diabetes
+URXUMS,0,none,Urine albumin not diabetes
+URXUCR,0,none,Urine creatinine not diabetes
+URXCRS,0,none,Urine creatinine not diabetes
+URDACT,0,none,ACR not diabetes
+URDUMALC,0,none,Urine albumin comment not diabetes
+URDUCRLC,0,none,Urine creatinine comment not diabetes
+GTXDRANK,0,none,Glucose challenge amount
+GTDCODE,0,none,OGTT comment not diabetes
+GTDBL2MN,0,none,OGTT timing not diabetes
+GTDDR1MN,0,none,OGTT timing not diabetes
+GTDDR2MN,0,none,OGTT timing not diabetes
+GTDSCMMN,0,none,OGTT timing not diabetes
+LBDGLTSI,0,none,Two hour glucose not fasting
+LBXGLT,0,none,Two hour glucose not fasting
+WTSOG2YR,0,none,OGTT weight not diabetes
+LBXGLU,1,A,Fasting glucose defining value
+LBDGLUSI,1,B,Fasting glucose other units
+WTSAF2YR,0,none,Fasting weight not diabetes
+LBXGH,1,A,Glycohemoglobin defining value
+RXDCOUNT,0,none,Number medicines not indication
+RXDDAYS,0,none,Duration medicine not indication
+RXDDRGID,1,C,Generic drug code indication
+RXDDRUG,1,C,Generic drug name indication
+RXDRSC1,1,C,ICD indication code 1
+RXDRSC2,1,C,ICD indication code 2
+RXDRSC3,1,C,ICD indication code 3
+RXDRSD1,1,C,ICD indication description 1
+RXDRSD2,1,C,ICD indication description 2
+RXDRSD3,1,C,ICD indication description 3
+RXDUSE,0,none,Any prescription use not indication
+RXQSEEN,0,none,Container seen not indication

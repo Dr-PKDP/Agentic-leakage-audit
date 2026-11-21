@@ -1,0 +1,41 @@
+{
+  "version": "p6_v06",
+  "scope": "DEVELOPMENT_ONLY_NOT_CONFIRMATORY",
+  "arm": "q_replay_t1024_core24",
+  "context_set": "core24",
+  "thinking": "default",
+  "model": "p6-qwen3-8b",
+  "base_url": "http://127.0.0.1:8010/v1",
+  "seeds": [
+    42
+  ],
+  "temperature": 0.2,
+  "max_tokens": 512,
+  "review_max_tokens": 2048,
+  "timeout_seconds": 300,
+  "retries": 0,
+  "workers": 8,
+  "constrained": false,
+  "prompt_variant": "original",
+  "replay_source": "/data/pduttapramanik/p6_vllm/outputs/longlimit/20261028T041845Z",
+  "truncate_review_tokens": 1024,
+  "replay_counts": {
+    "source_units": 192,
+    "with_saved_review": 192,
+    "truncated": 90
+  },
+  "generator_streams": [
+    "self_review",
+    "structure_feedback",
+    "evidence_critic",
+    "patch_critic"
+  ],
+  "workflow_units": 192,
+  "max_generation_calls": 192,
+  "patch_paths_share_generation": true,
+  "jobs_sha256": "d373fd3aaff5b2da7433fc802035905bf443e3171d9b39189abfa6eab1637e2f",
+  "script_sha256": "decd38e64b7518bcd2c842b8e3404113e68dbcbfe9b3d5c6cc9b017d280a4edc",
+  "v4_script_sha256": "1649d94540600146e4f562c48525b68f82813b2fa6e360c8fa881bbdb8b7cb83",
+  "ext_script_sha256": "7d0b3824a869d7d9c027facaa4cf339b32c046b47da6d3fdcb8d978d8e0d5ea8",
+  "execution_authorized": false
+}

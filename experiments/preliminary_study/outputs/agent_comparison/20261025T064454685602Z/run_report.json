@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETED",
+  "units": 45,
+  "requests_made": 135,
+  "elapsed_seconds": 264.86568481009454,
+  "config_sha256": "b1d492661aab5f5d4aff7b084d1206240a871c5c302054a800b177c42ee53647",
+  "output_directory": "/data/pduttapramanik/p6_vllm/outputs/agent_comparison/20261025T064454685602Z",
+  "aggregate": [
+    {
+      "case": "ALL",
+      "condition": "single_self_review",
+      "attempted_units": 15,
+      "completed_units": 15,
+      "initial_structure_valid": 0,
+      "initial_contract_pass": 0,
+      "final_structure_valid": 4,
+      "final_contract_pass": 1,
+      "total_elapsed_seconds": 80.189
+    },
+    {
+      "case": "ALL",
+      "condition": "structure_feedback",
+      "attempted_units": 15,
+      "completed_units": 15,
+      "initial_structure_valid": 0,
+      "initial_contract_pass": 0,
+      "final_structure_valid": 15,
+      "final_contract_pass": 7,
+      "total_elapsed_seconds": 67.725
+    },
+    {
+      "case": "ALL",
+      "condition": "guarded_critic",
+      "attempted_units": 15,
+      "completed_units": 15,
+      "initial_structure_valid": 0,
+      "initial_contract_pass": 0,
+      "final_structure_valid": 15,
+      "final_contract_pass": 4,
+      "total_elapsed_seconds": 116.94
+    }
+  ],
+  "limitations": [
+    "Synthetic developer-designed cases, not an independent test set.",
+    "Scoring assesses explicit contract compliance, not scientific validity.",
+    "Same generation settings and stage limits; actual token usage may differ.",
+    "No structured decoding: structure-feedback is prompt/checker feedback.",
+    "Model seed determinism and actual serving configuration are not verified.",
+    "A client timeout does not prove server-side cancellation.",
+    "No participant data read and no generated code executed."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "adults": 5719,
+  "y_diabetes": {
+    "n": 5198,
+    "prevalence": 0.196
+  },
+  "y_hypertension": {
+    "n": 5301,
+    "prevalence": 0.5325
+  },
+  "y_depression": {
+    "n": 4888,
+    "prevalence": 0.0814
+  },
+  "y_ckd": {
+    "n": 5074,
+    "prevalence": 0.1673
+  }
+}

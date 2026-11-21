@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+RXDDAYS,1,C,Duration of a named prescription medication records treatment exposure.
+BPAEN3,0,none,Not part of the CKD case definition or treatment.
+LBXSGTSI,0,none,Not part of the CKD case definition or treatment.
+RXDRSC3,1,C,Prescription indication code identifies the medication's condition.
+DIQ175E,0,none,Not part of the CKD case definition or treatment.
+RXDRSD3,1,C,Prescription indication description identifies the medication's condition.
+LBXSTP,0,none,Not part of the CKD case definition or treatment.
+DIQ240,0,none,Not part of the CKD case definition or treatment.
+DPQ070,0,none,Not part of the CKD case definition or treatment.
+LBXSTR,0,none,Not part of the CKD case definition or treatment.
+BPQ080,0,none,Not part of the CKD case definition or treatment.
+LBDSALSI,0,none,Not part of the CKD case definition or treatment.
+RXDRSD2,1,C,Prescription indication description identifies the medication's condition.
+DIQ280,0,none,Not part of the CKD case definition or treatment.
+LBXSNASI,0,none,Not part of the CKD case definition or treatment.
+BPAEN4,0,none,Not part of the CKD case definition or treatment.
+DIQ175M,0,none,Not part of the CKD case definition or treatment.
+BPXPLS,0,none,Not part of the CKD case definition or treatment.
+BPXDI1,0,none,Not part of the CKD case definition or treatment.
+DPQ040,0,none,Not part of the CKD case definition or treatment.
+DIQ175V,0,none,Not part of the CKD case definition or treatment.
+BPQ060,0,none,Not part of the CKD case definition or treatment.
+LBDGLTSI,0,none,Not part of the CKD case definition or treatment.
+LBXSTB,0,none,Not part of the CKD case definition or treatment.
+LBXSCK,0,none,Not part of the CKD case definition or treatment.
+LBDSTBSI,0,none,Not part of the CKD case definition or treatment.
+LBXGLU,0,none,Not part of the CKD case definition or treatment.
+DIQ230,0,none,Not part of the CKD case definition or treatment.
+DIQ175F,0,none,Not part of the CKD case definition or treatment.
+URXCRS,1,B,Urine creatinine restates the ratio input in µmol/L.
+DID060,0,none,Not part of the CKD case definition or treatment.
+BPXDI3,0,none,Not part of the CKD case definition or treatment.
+DIQ175P,0,none,Not part of the CKD case definition or treatment.
+BPXDI2,0,none,Not part of the CKD case definition or treatment.
+DIQ175W,0,none,Not part of the CKD case definition or treatment.
+LBXSATSI,0,none,Not part of the CKD case definition or treatment.
+DIQ175T,0,none,Not part of the CKD case definition or treatment.
+LBDSCASI,0,none,Not part of the CKD case definition or treatment.
+BPQ100D,0,none,Not part of the CKD case definition or treatment.
+BPXPTY,0,none,Not part of the CKD case definition or treatment.
+URDUCRLC,1,B,Creatinine comment code accompanies a defining ratio input.
+DIQ010,0,none,Not part of the CKD case definition or treatment.
+LBXSCA,0,none,Not part of the CKD case definition or treatment.
+DIQ175A,0,none,Not part of the CKD case definition or treatment.
+LBXSOSSI,0,none,Not part of the CKD case definition or treatment.
+BPQ030,0,none,Not part of the CKD case definition or treatment.
+RXQSEEN,0,none,Not part of the CKD case definition or treatment.
+LBXSLDSI,0,none,Not part of the CKD case definition or treatment.
+DIQ360,0,none,Not part of the CKD case definition or treatment.
+LBXSCH,0,none,Not part of the CKD case definition or treatment.
+DIQ175R,0,none,Not part of the CKD case definition or treatment.
+DIQ175L,0,none,Not part of the CKD case definition or treatment.
+DIQ175D,0,none,Not part of the CKD case definition or treatment.
+BPQ050A,0,none,Not part of the CKD case definition or treatment.
+DIQ175H,0,none,Not part of the CKD case definition or treatment.
+LBXSCLSI,0,none,Not part of the CKD case definition or treatment.
+DIQ300S,0,none,Not part of the CKD case definition or treatment.
+RXDUSE,0,none,Not part of the CKD case definition or treatment.
+DIQ175S,0,none,Not part of the CKD case definition or treatment.
+DID320,0,none,Not part of the CKD case definition or treatment.
+WTSOG2YR,0,none,Not part of the CKD case definition or treatment.
+DIQ350U,0,none,Not part of the CKD case definition or treatment.
+LBDSUASI,0,none,Not part of the CKD case definition or treatment.
+LBDSCRSI,1,B,Serum creatinine restates the defining input in µmol/L.
+LBXSPH,0,none,Not part of the CKD case definition or treatment.
+GTDDR2MN,0,none,Not part of the CKD case definition or treatment.
+PEASCCT1,0,none,Not part of the CKD case definition or treatment.
+BPAEN1,0,none,Not part of the CKD case definition or treatment.
+DID330,0,none,Not part of the CKD case definition or treatment.
+LBDGLUSI,0,none,Not part of the CKD case definition or treatment.
+LBDSCHSI,0,none,Not part of the CKD case definition or treatment.
+URXUMA,1,A,Urine albumin is a numerator input to the defining ratio.
+RXDDRGID,1,C,Medication identifier can reveal condition-specific treatment.
+DPQ100,0,none,Not part of the CKD case definition or treatment.
+DIQ160,0,none,Not part of the CKD case definition or treatment.
+DIQ260U,0,none,Not part of the CKD case definition or treatment.
+GTXDRANK,0,none,Not part of the CKD case definition or treatment.
+LBXSASSI,0,none,Not part of the CKD case definition or treatment.
+BPXDI4,0,none,Not part of the CKD case definition or treatment.
+DPQ090,0,none,Not part of the CKD case definition or treatment.
+DID260,0,none,Not part of the CKD case definition or treatment.
+LBXSAPSI,0,none,Not part of the CKD case definition or treatment.
+LBXSAL,0,none,Not part of the CKD case definition or treatment.
+BPXSY4,0,none,Not part of the CKD case definition or treatment.
+DIQ170,0,none,Not part of the CKD case definition or treatment.
+BPQ090D,0,none,Not part of the CKD case definition or treatment.
+BPXML1,0,none,Not part of the CKD case definition or treatment.
+BPQ040A,0,none,Not part of the CKD case definition or treatment.
+DPQ010,0,none,Not part of the CKD case definition or treatment.
+DIQ175Q,0,none,Not part of the CKD case definition or treatment.
+URXUMS,1,B,Urine albumin restates the ratio input in mg/L.
+DIQ175G,0,none,Not part of the CKD case definition or treatment.
+BPXCHR,0,none,Not part of the CKD case definition or treatment.
+DIQ060U,0,none,Not part of the CKD case definition or treatment.
+RXDRSD1,1,C,Prescription indication description identifies the medication's condition.
+LBXSCR,1,A,Serum creatinine is the specified eGFR calculation input.
+LBXSIR,0,none,Not part of the CKD case definition or treatment.
+LBDSGLSI,0,none,Not part of the CKD case definition or treatment.
+LBXSUA,0,none,Not part of the CKD case definition or treatment.
+LBXSBU,0,none,Not part of the CKD case definition or treatment.
+DID350,0,none,Not part of the CKD case definition or treatment.
+DIQ175J,0,none,Not part of the CKD case definition or treatment.
+DIQ175I,0,none,Not part of the CKD case definition or treatment.
+DPQ060,0,none,Not part of the CKD case definition or treatment.
+DPQ080,0,none,Not part of the CKD case definition or treatment.
+LBXGH,0,none,Not part of the CKD case definition or treatment.
+DID310D,0,none,Not part of the CKD case definition or treatment.
+RXDCOUNT,0,none,Not part of the CKD case definition or treatment.
+LBXSKSI,0,none,Not part of the CKD case definition or treatment.
+RXDRSC1,1,C,Prescription indication code identifies the medication's condition.
+URDACT,1,A,Albumin-to-creatinine ratio is an explicit CKD case criterion.
+GTDSCMMN,0,none,Not part of the CKD case definition or treatment.
+BPXSY2,0,none,Not part of the CKD case definition or treatment.
+DIQ275,0,none,Not part of the CKD case definition or treatment.
+DIQ291,0,none,Not part of the CKD case definition or treatment.
+GTDDR1MN,0,none,Not part of the CKD case definition or treatment.
+LBDSPHSI,0,none,Not part of the CKD case definition or treatment.
+DIQ175B,0,none,Not part of the CKD case definition or treatment.
+BPQ070,0,none,Not part of the CKD case definition or treatment.
+DIQ175C,0,none,Not part of the CKD case definition or treatment.
+BPQ020,0,none,Not part of the CKD case definition or treatment.
+DID040,0,none,Not part of the CKD case definition or treatment.
+LBDSTRSI,0,none,Not part of the CKD case definition or treatment.
+LBDSBUSI,0,none,Not part of the CKD case definition or treatment.
+LBDSIRSI,0,none,Not part of the CKD case definition or treatment.
+LBXSGB,0,none,Not part of the CKD case definition or treatment.
+DID341,0,none,Not part of the CKD case definition or treatment.
+LBXSC3SI,0,none,Not part of the CKD case definition or treatment.
+DPQ050,0,none,Not part of the CKD case definition or treatment.
+BPAARM,0,none,Not part of the CKD case definition or treatment.
+BPD035,0,none,Not part of the CKD case definition or treatment.
+URDUMALC,1,B,Albumin comment code accompanies a defining ratio input.
+GTDCODE,0,none,Not part of the CKD case definition or treatment.
+DID310S,0,none,Not part of the CKD case definition or treatment.
+DIQ300D,0,none,Not part of the CKD case definition or treatment.
+LBXGLT,0,none,Not part of the CKD case definition or treatment.
+LBXSGL,0,none,Not part of the CKD case definition or treatment.
+BPXSY1,0,none,Not part of the CKD case definition or treatment.
+BPAEN2,0,none,Not part of the CKD case definition or treatment.
+DIQ175O,0,none,Not part of the CKD case definition or treatment.
+DIQ180,0,none,Not part of the CKD case definition or treatment.
+DID250,0,none,Not part of the CKD case definition or treatment.
+BPXSY3,0,none,Not part of the CKD case definition or treatment.
+DIQ050,0,none,Not part of the CKD case definition or treatment.
+DIQ175K,0,none,Not part of the CKD case definition or treatment.
+RXDDRUG,1,C,Medication name can reveal condition-specific treatment.
+DIQ080,0,none,Not part of the CKD case definition or treatment.
+LBDSGBSI,0,none,Not part of the CKD case definition or treatment.
+DIQ172,0,none,Not part of the CKD case definition or treatment.
+DIQ175U,0,none,Not part of the CKD case definition or treatment.
+BPXPULS,0,none,Not part of the CKD case definition or treatment.
+DIQ175N,0,none,Not part of the CKD case definition or treatment.
+BPACSZ,0,none,Not part of the CKD case definition or treatment.
+RXDRSC2,1,C,Prescription indication code identifies the medication's condition.
+DIQ175X,0,none,Not part of the CKD case definition or treatment.
+LBDSTPSI,0,none,Not part of the CKD case definition or treatment.
+DIQ070,0,none,Not part of the CKD case definition or treatment.
+URXUCR,1,A,Urine creatinine is a denominator input to the defining ratio.
+DPQ020,0,none,Not part of the CKD case definition or treatment.
+GTDBL2MN,0,none,Not part of the CKD case definition or treatment.
+WTSAF2YR,0,none,Not part of the CKD case definition or treatment.
+DPQ030,0,none,Not part of the CKD case definition or treatment.

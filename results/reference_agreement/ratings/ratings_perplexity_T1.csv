@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+LBXGLU,1,A,Fasting glucose measurement directly enters the diabetes definition.
+LBDSCASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ300D,0,none,Diabetes questionnaire content does not establish the target condition.
+BPQ090D,0,none,Blood pressure or cholesterol information does not define the target condition.
+URDUMALC,0,none,Urine measurement does not enter this outcome definition.
+DIQ175E,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+LBXSCLSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDSTRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSTP,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXCHR,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBXSAPSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+RXDDRUG,1,C,Drug name field explicitly included under criterion C.
+DIQ175V,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+URXCRS,0,none,Urine measurement does not enter this outcome definition.
+LBDSCHSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ080,1,C,Records physician-diagnosed diabetic eye complications.
+DIQ172,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+BPXPTY,0,none,Blood pressure or cholesterol information does not define the target condition.
+DID060,1,C,Insulin duration records use of diabetes treatment.
+DIQ010,1,A,Physician diagnosis directly enters the diabetes definition.
+LBXGLT,0,none,Postchallenge testing is not part of the stated diabetes definition.
+RXDDAYS,0,none,Ambiguous: general medication use does not establish condition-specific treatment.
+DPQ020,0,none,Depressive symptom item does not define or document the target condition.
+GTXDRANK,0,none,Postchallenge testing is not part of the stated diabetes definition.
+DIQ175B,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+BPAEN3,0,none,Blood pressure or cholesterol information does not define the target condition.
+DPQ030,0,none,Depressive symptom item does not define or document the target condition.
+LBXSC3SI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXDI1,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPQ080,0,none,Blood pressure or cholesterol information does not define the target condition.
+GTDCODE,0,none,Postchallenge testing is not part of the stated diabetes definition.
+LBXSLDSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ240,0,none,Ambiguous: care contact does not explicitly document diagnosis or treatment use.
+RXDDRGID,1,C,Drug identifier explicitly included under criterion C.
+BPAEN1,0,none,Blood pressure or cholesterol information does not define the target condition.
+URDACT,0,none,Urine measurement does not enter this outcome definition.
+LBXSGL,0,none,Ambiguous: serum glucose lacks confirmation of the defining fasting measurement.
+DIQ175F,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+RXQSEEN,0,none,Container verification does not specify treatment identity or indication.
+BPQ050A,0,none,Ambiguous: medicine indication unspecified; component also covers cholesterol.
+BPQ100D,0,none,Ambiguous: medicine indication unspecified; component also covers cholesterol.
+DPQ010,0,none,Depressive symptom item does not define or document the target condition.
+LBXSGTSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ070,1,C,Records current medication specifically for diabetes.
+URXUMA,0,none,Urine measurement does not enter this outcome definition.
+BPXDI4,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBDSBUSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXPULS,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ230,0,none,Ambiguous: care contact does not explicitly document diagnosis or treatment use.
+BPXDI3,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPXPLS,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPD035,0,none,Blood pressure or cholesterol information does not define the target condition.
+RXDRSC1,1,C,Prescription component identifies this as a medication indication code.
+LBDSPHSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175N,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DID040,1,C,Age at diagnosis records that diabetes was diagnosed.
+BPXML1,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ300S,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175P,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DID350,0,none,Examination or self-check history does not explicitly state diagnosis or treatment.
+BPAEN4,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBDSTPSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DID310D,0,none,Diabetes questionnaire content does not establish the target condition.
+BPACSZ,0,none,Blood pressure or cholesterol information does not define the target condition.
+RXDRSD3,1,C,Prescription component identifies this as a medication indication description.
+RXDCOUNT,0,none,Medication count specifies neither drug identity nor condition-specific treatment.
+LBDSCRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSATSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175G,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+BPAARM,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ175J,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+RXDRSC3,1,C,Prescription component identifies this as a medication indication code.
+DIQ275,0,none,Testing history provides neither defining result nor diagnosis or treatment.
+LBXSNASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175T,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+LBXSGB,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXSY4,0,none,Blood pressure or cholesterol information does not define the target condition.
+DPQ040,0,none,Depressive symptom item does not define or document the target condition.
+DIQ160,0,none,Prediabetes diagnosis is explicitly distinct from diabetes in this question.
+LBXSCR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+URXUCR,0,none,Urine measurement does not enter this outcome definition.
+BPXDI2,0,none,Blood pressure or cholesterol information does not define the target condition.
+DPQ090,0,none,Depressive symptom item does not define or document the target condition.
+LBXSAL,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+RXDRSD1,1,C,Prescription component identifies this as a medication indication description.
+LBDSGBSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSCK,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+URDUCRLC,0,none,Urine measurement does not enter this outcome definition.
+DPQ080,0,none,Depressive symptom item does not define or document the target condition.
+DIQ175M,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DIQ175R,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DIQ175L,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+URXUMS,0,none,Urine measurement does not enter this outcome definition.
+DIQ175D,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DIQ175O,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+GTDSCMMN,0,none,Postchallenge testing is not part of the stated diabetes definition.
+DIQ175I,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DIQ175X,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+BPAEN2,0,none,Blood pressure or cholesterol information does not define the target condition.
+DID330,0,none,Diabetes questionnaire content does not establish the target condition.
+LBXSBU,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ175K,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+LBDSGLSI,0,none,Ambiguous: serum glucose lacks confirmation of the defining fasting measurement.
+DIQ260U,0,none,Glucose monitoring frequency is not a defining measurement or treatment use.
+LBXSIR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXSY3,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBXSTB,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBDGLTSI,0,none,Postchallenge testing is not part of the stated diabetes definition.
+DIQ170,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DPQ060,0,none,Depressive symptom item does not define or document the target condition.
+DIQ175W,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DIQ291,0,none,Recommended A1c target is not a measured result or treatment use.
+RXDRSD2,1,C,Prescription component identifies this as a medication indication description.
+BPQ060,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBXSTR,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+RXDRSC2,1,C,Prescription component identifies this as a medication indication code.
+LBXSCA,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+GTDBL2MN,0,none,Postchallenge testing is not part of the stated diabetes definition.
+DID310S,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175Q,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DIQ180,0,none,Testing history provides neither defining result nor diagnosis or treatment.
+DIQ175A,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DIQ175S,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+DID341,0,none,Examination or self-check history does not explicitly state diagnosis or treatment.
+WTSAF2YR,0,none,Glucose-related measurement or procedure does not define the target condition.
+DIQ175H,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+LBXSCH,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ360,0,none,Examination or self-check history does not explicitly state diagnosis or treatment.
+BPQ040A,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBDGLUSI,1,B,Defining fasting glucose expressed in different units.
+DIQ050,1,C,Records current insulin treatment in the diabetes questionnaire.
+PEASCCT1,0,none,Blood pressure or cholesterol information does not define the target condition.
+DID250,0,none,Ambiguous: care contact does not explicitly document diagnosis or treatment use.
+DIQ280,1,B,Self-reported A1c restates a defining quantity in another component.
+LBDSALSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DPQ070,0,none,Depressive symptom item does not define or document the target condition.
+RXDUSE,0,none,Ambiguous: general medication use does not establish condition-specific treatment.
+LBDSIRSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DPQ100,0,none,Depressive symptom item does not define or document the target condition.
+DID260,0,none,Glucose monitoring frequency is not a defining measurement or treatment use.
+DID320,0,none,Diabetes questionnaire content does not establish the target condition.
+DIQ175U,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+LBXGH,1,A,Glycohemoglobin measurement directly enters the diabetes definition.
+LBXSUA,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DIQ350U,0,none,Examination or self-check history does not explicitly state diagnosis or treatment.
+BPQ030,0,none,Blood pressure or cholesterol information does not define the target condition.
+LBXSASSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXSY2,0,none,Blood pressure or cholesterol information does not define the target condition.
+DIQ060U,0,none,Ambiguous: unit label alone identifies no defining quantity or treatment.
+GTDDR1MN,0,none,Postchallenge testing is not part of the stated diabetes definition.
+LBDSTBSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSPH,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+DPQ050,0,none,Depressive symptom item does not define or document the target condition.
+DIQ175C,0,none,Records perceived risk rather than diabetes diagnosis or treatment.
+WTSOG2YR,0,none,Postchallenge testing is not part of the stated diabetes definition.
+LBDSUASI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSOSSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+LBXSKSI,0,none,Laboratory measurement does not define this outcome or record condition-specific care.
+BPXSY1,0,none,Blood pressure or cholesterol information does not define the target condition.
+BPQ070,0,none,Blood pressure or cholesterol information does not define the target condition.
+GTDDR2MN,0,none,Postchallenge testing is not part of the stated diabetes definition.
+BPQ020,0,none,Blood pressure or cholesterol information does not define the target condition.

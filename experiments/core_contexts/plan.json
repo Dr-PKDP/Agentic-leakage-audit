@@ -1,0 +1,27 @@
+{
+  "version": "p6_integrated_development_0.4",
+  "scope": "DEVELOPMENT_ONLY_NOT_CONFIRMATORY",
+  "model": "p6-qwen3-8b",
+  "base_url": "http://127.0.0.1:8010/v1",
+  "seeds": [
+    42
+  ],
+  "temperature": 0.2,
+  "max_tokens": 1024,
+  "timeout_seconds": 300,
+  "retries": 0,
+  "contexts": 24,
+  "inputs": 48,
+  "generator_streams": [
+    "self_review",
+    "structure_feedback",
+    "evidence_critic",
+    "patch_critic"
+  ],
+  "workflow_units": 192,
+  "max_generation_calls": 384,
+  "patch_paths_share_generation": true,
+  "jobs_sha256": "0caf3fbd29cc07382588a0efafb23ea3a5f9121a20e6947eda70331def585b03",
+  "script_sha256": "1649d94540600146e4f562c48525b68f82813b2fa6e360c8fa881bbdb8b7cb83",
+  "execution_authorized": false
+}

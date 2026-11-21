@@ -1,0 +1,169 @@
+{
+ "T1_diabetes_screening": {
+  "reference_n": 22,
+  "flagged_of_reference": 7,
+  "missed": 15,
+  "rule_flags_total": 52,
+  "flagged_not_in_reference": 41,
+  "by_category": {
+   "A": {
+    "n": 3,
+    "flagged": 2
+   },
+   "B": {
+    "n": 5,
+    "flagged": 1
+   },
+   "C": {
+    "n": 14,
+    "flagged": 4
+   }
+  },
+  "ref_absent_from_schema": [],
+  "missed_vars": [
+   "LBXGLT",
+   "LBDGLTSI",
+   "GTDCODE",
+   "LBXSGL",
+   "LBDSGLSI",
+   "DID040",
+   "DID060",
+   "RXDDRUG",
+   "RXDDRGID",
+   "RXDRSC1",
+   "RXDRSC2",
+   "RXDRSC3",
+   "RXDRSD1",
+   "RXDRSD2",
+   "RXDRSD3"
+  ]
+ },
+ "T2_hypertension_screening": {
+  "reference_n": 23,
+  "flagged_of_reference": 12,
+  "missed": 11,
+  "rule_flags_total": 33,
+  "flagged_not_in_reference": 17,
+  "by_category": {
+   "A": {
+    "n": 8,
+    "flagged": 8
+   },
+   "B": {
+    "n": 2,
+    "flagged": 0
+   },
+   "C": {
+    "n": 13,
+    "flagged": 4
+   }
+  },
+  "ref_absent_from_schema": [],
+  "missed_vars": [
+   "DIQ300S",
+   "DIQ300D",
+   "BPD035",
+   "RXDDRUG",
+   "RXDDRGID",
+   "RXDRSC1",
+   "RXDRSC2",
+   "RXDRSC3",
+   "RXDRSD1",
+   "RXDRSD2",
+   "RXDRSD3"
+  ]
+ },
+ "T3_depressive_symptoms": {
+  "reference_n": 18,
+  "flagged_of_reference": 10,
+  "missed": 8,
+  "rule_flags_total": 14,
+  "flagged_not_in_reference": 0,
+  "by_category": {
+   "A": {
+    "n": 10,
+    "flagged": 10
+   },
+   "B": {
+    "n": 0,
+    "flagged": 0
+   },
+   "C": {
+    "n": 8,
+    "flagged": 0
+   }
+  },
+  "ref_absent_from_schema": [],
+  "missed_vars": [
+   "RXDDRUG",
+   "RXDDRGID",
+   "RXDRSC1",
+   "RXDRSC2",
+   "RXDRSC3",
+   "RXDRSD1",
+   "RXDRSD2",
+   "RXDRSD3"
+  ]
+ },
+ "T4_ckd_screening": {
+  "reference_n": 17,
+  "flagged_of_reference": 4,
+  "missed": 13,
+  "rule_flags_total": 8,
+  "flagged_not_in_reference": 0,
+  "by_category": {
+   "A": {
+    "n": 4,
+    "flagged": 4
+   },
+   "B": {
+    "n": 5,
+    "flagged": 0
+   },
+   "C": {
+    "n": 8,
+    "flagged": 0
+   }
+  },
+  "ref_absent_from_schema": [],
+  "missed_vars": [
+   "LBDSCRSI",
+   "URXUMS",
+   "URXCRS",
+   "URDUMALC",
+   "URDUCRLC",
+   "RXDDRUG",
+   "RXDDRGID",
+   "RXDRSC1",
+   "RXDRSC2",
+   "RXDRSC3",
+   "RXDRSD1",
+   "RXDRSD2",
+   "RXDRSD3"
+  ]
+ },
+ "rule_prefixes_matching_no_schema_variable": {
+  "T1_diabetes_screening": [
+   "LBDGH"
+  ],
+  "T2_hypertension_screening": [],
+  "T3_depressive_symptoms": [
+   "FNQ"
+  ],
+  "T4_ckd_screening": [
+   "LBDCRE",
+   "URXUACR",
+   "KIQ",
+   "CKQ"
+  ]
+ },
+ "harmonization": {
+  "variables": 571,
+  "by_n_cycles": {
+   "3": 399,
+   "1": 52,
+   "2": 120
+  }
+ },
+ "schema_variables_excluding_SEQN": 551
+}

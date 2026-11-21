@@ -1,0 +1,294 @@
+{
+  "pool_per_task": {
+    "T1": 162,
+    "T2": 162,
+    "T3": 162,
+    "T4": 162
+  },
+  "reference_pairs_per_task": {
+    "T1": 26,
+    "T2": 28,
+    "T3": 18,
+    "T4": 17
+  },
+  "reference_pairs_outside_pool": [],
+  "raters": {
+    "chatgpt": {
+      "pooled_kappa": 0.92,
+      "per_task": {
+        "T1": {
+          "kappa": 0.798,
+          "agree": 154,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            19,
+            26
+          ],
+          "rater_flags_outside_reference": 1
+        },
+        "T2": {
+          "kappa": 0.979,
+          "agree": 161,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            28,
+            28
+          ],
+          "rater_flags_outside_reference": 1
+        },
+        "T3": {
+          "kappa": 0.937,
+          "agree": 160,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            18
+          ],
+          "rater_flags_outside_reference": 1
+        },
+        "T4": {
+          "kappa": 0.968,
+          "agree": 161,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            17
+          ],
+          "rater_flags_outside_reference": 1
+        }
+      }
+    },
+    "perplexity": {
+      "pooled_kappa": 0.902,
+      "per_task": {
+        "T1": {
+          "kappa": 0.791,
+          "agree": 154,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            18,
+            26
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T2": {
+          "kappa": 0.884,
+          "agree": 157,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            23,
+            28
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T3": {
+          "kappa": 0.968,
+          "agree": 161,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            18
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T4": {
+          "kappa": 1.0,
+          "agree": 162,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            17
+          ],
+          "rater_flags_outside_reference": 0
+        }
+      }
+    },
+    "gemini": {
+      "pooled_kappa": 0.866,
+      "per_task": {
+        "T1": {
+          "kappa": 0.653,
+          "agree": 144,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            23,
+            26
+          ],
+          "rater_flags_outside_reference": 15
+        },
+        "T2": {
+          "kappa": 0.938,
+          "agree": 159,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            28,
+            28
+          ],
+          "rater_flags_outside_reference": 3
+        },
+        "T3": {
+          "kappa": 0.968,
+          "agree": 161,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            18
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T4": {
+          "kappa": 1.0,
+          "agree": 162,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            17
+          ],
+          "rater_flags_outside_reference": 0
+        }
+      }
+    },
+    "grok": {
+      "pooled_kappa": 0.895,
+      "per_task": {
+        "T1": {
+          "kappa": 0.791,
+          "agree": 154,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            18,
+            26
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T2": {
+          "kappa": 0.858,
+          "agree": 156,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            22,
+            28
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T3": {
+          "kappa": 0.968,
+          "agree": 161,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            18
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T4": {
+          "kappa": 1.0,
+          "agree": 162,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            17
+          ],
+          "rater_flags_outside_reference": 0
+        }
+      }
+    },
+    "meta": {
+      "pooled_kappa": 0.896,
+      "per_task": {
+        "T1": {
+          "kappa": 0.76,
+          "agree": 153,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            26
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T2": {
+          "kappa": 0.887,
+          "agree": 157,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            24,
+            28
+          ],
+          "rater_flags_outside_reference": 1
+        },
+        "T3": {
+          "kappa": 0.968,
+          "agree": 161,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            18
+          ],
+          "rater_flags_outside_reference": 0
+        },
+        "T4": {
+          "kappa": 1.0,
+          "agree": 162,
+          "n": 162,
+          "reference_flagged_by_rater": [
+            17,
+            17
+          ],
+          "rater_flags_outside_reference": 0
+        }
+      }
+    }
+  },
+  "between_raters": {
+    "chatgpt|perplexity": {
+      "kappa": 0.929,
+      "agree": 638,
+      "n": 648
+    },
+    "chatgpt|gemini": {
+      "kappa": 0.838,
+      "agree": 622,
+      "n": 648
+    },
+    "chatgpt|grok": {
+      "kappa": 0.907,
+      "agree": 635,
+      "n": 648
+    },
+    "chatgpt|meta": {
+      "kappa": 0.922,
+      "agree": 637,
+      "n": 648
+    },
+    "perplexity|gemini": {
+      "kappa": 0.818,
+      "agree": 620,
+      "n": 648
+    },
+    "perplexity|grok": {
+      "kappa": 0.962,
+      "agree": 643,
+      "n": 648
+    },
+    "perplexity|meta": {
+      "kappa": 0.978,
+      "agree": 645,
+      "n": 648
+    },
+    "gemini|grok": {
+      "kappa": 0.811,
+      "agree": 619,
+      "n": 648
+    },
+    "gemini|meta": {
+      "kappa": 0.813,
+      "agree": 619,
+      "n": 648
+    },
+    "grok|meta": {
+      "kappa": 0.955,
+      "agree": 642,
+      "n": 648
+    }
+  }
+}

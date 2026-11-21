@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+DIQ175A,0,none,Risk perception not depression
+DIQ175B,0,none,Risk perception not depression
+DIQ175C,0,none,Risk perception not depression
+DIQ175D,0,none,Risk perception not depression
+DIQ175E,0,none,Risk perception not depression
+DIQ175F,0,none,Risk perception not depression
+DIQ175G,0,none,Risk perception not depression
+DIQ175H,0,none,Risk perception not depression
+DIQ175I,0,none,Risk perception not depression
+DIQ175J,0,none,Risk perception not depression
+DIQ175K,0,none,Risk perception not depression
+DIQ175L,0,none,Risk perception not depression
+DIQ175M,0,none,Risk perception not depression
+DIQ175N,0,none,Risk perception not depression
+DIQ175O,0,none,Risk perception not depression
+DIQ175P,0,none,Risk perception not depression
+DIQ175Q,0,none,Risk perception not depression
+DIQ175R,0,none,Risk perception not depression
+DIQ175S,0,none,Risk perception not depression
+DIQ175T,0,none,Risk perception not depression
+DIQ175U,0,none,Risk perception not depression
+DIQ175V,0,none,Risk perception not depression
+DIQ175W,0,none,Risk perception not depression
+DIQ175X,0,none,Risk perception not depression
+DIQ010,0,none,Diabetes diagnosis not depression
+DIQ050,0,none,Insulin not depression
+DIQ060U,0,none,Unit code not depression
+DIQ070,0,none,Diabetic pills not depression
+DIQ080,0,none,Retinopathy not depression
+DIQ160,0,none,Prediabetes not depression
+DIQ170,0,none,Risk conditions not depression
+DIQ172,0,none,Perceived risk not depression
+DIQ180,0,none,Blood test not depression
+DIQ230,0,none,Diabetes care not depression
+DIQ240,0,none,Diabetes doctor not depression
+DIQ260U,0,none,Unit glucose checking
+DIQ275,0,none,Checked A1c not depression
+DIQ280,0,none,Last A1c not depression
+DIQ291,0,none,Target A1c not depression
+DIQ300D,0,none,Self-reported pressure not depression
+DIQ300S,0,none,Self-reported pressure not depression
+DIQ350U,0,none,Unit foot checks
+DIQ360,0,none,Eye exam not depression
+DID040,0,none,Age diabetes not depression
+DID060,0,none,Insulin duration not depression
+DID250,0,none,Doctor visits not depression
+DID260,0,none,Glucose checking not depression
+DID310D,0,none,Target pressure not depression
+DID310S,0,none,Target pressure not depression
+DID320,0,none,LDL not depression
+DID330,0,none,Target LDL not depression
+DID341,0,none,Foot checks not depression
+DID350,0,none,Foot checking not depression
+BPXCHR,0,none,Heart rate not depression
+BPXDI1,0,none,Diastolic not depression
+BPXDI2,0,none,Diastolic not depression
+BPXDI3,0,none,Diastolic not depression
+BPXDI4,0,none,Diastolic not depression
+BPXPLS,0,none,Pulse not depression
+BPXPTY,0,none,Pulse type not depression
+BPXPULS,0,none,Pulse regularity not depression
+BPXSY1,0,none,Systolic not depression
+BPXSY2,0,none,Systolic not depression
+BPXSY3,0,none,Systolic not depression
+BPXSY4,0,none,Systolic not depression
+BPAARM,0,none,Arm selected not depression
+BPAEN1,0,none,Enhancement first reading
+BPAEN2,0,none,Enhancement second reading
+BPAEN3,0,none,Enhancement third reading
+BPAEN4,0,none,Enhancement fourth reading
+BPACSZ,0,none,Cuff size not depression
+BPXML1,0,none,Inflation level not depression
+PEASCCT1,0,none,Pressure comment not depression
+BPQ020,0,none,Hypertension not depression
+BPQ030,0,none,Hypertension twice not depression
+BPQ040A,0,none,Hypertension medicine not depression
+BPQ050A,0,none,Hypertension medicine not depression
+BPQ060,0,none,Cholesterol checked not depression
+BPQ070,0,none,Time cholesterol check
+BPQ080,0,none,High cholesterol not depression
+BPQ090D,0,none,Cholesterol medicine not depression
+BPQ100D,0,none,Following medicine not depression
+BPD035,0,none,Age hypertension not depression
+DPQ010,1,A,PHQ-9 item 1
+DPQ020,1,A,PHQ-9 item 2
+DPQ030,1,A,PHQ-9 item 3
+DPQ040,1,A,PHQ-9 item 4
+DPQ050,1,A,PHQ-9 item 5
+DPQ060,1,A,PHQ-9 item 6
+DPQ070,1,A,PHQ-9 item 7
+DPQ080,1,A,PHQ-9 item 8
+DPQ090,1,A,PHQ-9 item 9
+DPQ100,0,none,Impairment not PHQ-9 total
+LBDSALSI,0,none,Albumin not depression
+LBDSBUSI,0,none,Urea nitrogen not depression
+LBDSCASI,0,none,Calcium not depression
+LBDSCRSI,0,none,Creatinine not depression
+LBDSCHSI,0,none,Cholesterol not depression
+LBDSGBSI,0,none,Globulin not depression
+LBDSGLSI,0,none,Serum glucose not depression
+LBDSIRSI,0,none,Iron not depression
+LBDSPHSI,0,none,Phosphorus not depression
+LBDSTBSI,0,none,Bilirubin not depression
+LBDSTPSI,0,none,Protein not depression
+LBDSTRSI,0,none,Triglycerides not depression
+LBDSUASI,0,none,Uric acid not depression
+LBXSCA,0,none,Calcium not depression
+LBXSCK,0,none,Creatine kinase not depression
+LBXSAL,0,none,Albumin not depression
+LBXSAPSI,0,none,Alkaline phosphatase not depression
+LBXSASSI,0,none,AST not depression
+LBXSATSI,0,none,ALT not depression
+LBXSGTSI,0,none,GGT not depression
+LBXSGB,0,none,Globulin not depression
+LBXSGL,0,none,Serum glucose not depression
+LBXSCH,0,none,Cholesterol not depression
+LBXSCLSI,0,none,Chloride not depression
+LBXSC3SI,0,none,Bicarbonate not depression
+LBXSIR,0,none,Iron not depression
+LBXSKSI,0,none,Potassium not depression
+LBXSLDSI,0,none,LDH not depression
+LBXSOSSI,0,none,Osmolality not depression
+LBXSPH,0,none,Phosphorus not depression
+LBXSTP,0,none,Protein not depression
+LBXSTB,0,none,Bilirubin not depression
+LBXSTR,0,none,Triglycerides not depression
+LBXSUA,0,none,Uric acid not depression
+LBXSBU,0,none,Urea nitrogen not depression
+LBXSCR,0,none,Creatinine not depression
+LBXSNASI,0,none,Sodium not depression
+URXUMA,0,none,Urine albumin not depression
+URXUMS,0,none,Urine albumin not depression
+URXUCR,0,none,Urine creatinine not depression
+URXCRS,0,none,Urine creatinine not depression
+URDACT,0,none,ACR not depression
+URDUMALC,0,none,Albumin comment not depression
+URDUCRLC,0,none,Creatinine comment not depression
+GTXDRANK,0,none,Challenge amount not depression
+GTDCODE,0,none,OGTT comment not depression
+GTDBL2MN,0,none,OGTT timing not depression
+GTDDR1MN,0,none,OGTT timing not depression
+GTDDR2MN,0,none,OGTT timing not depression
+GTDSCMMN,0,none,OGTT timing not depression
+LBDGLTSI,0,none,Two hour glucose not depression
+LBXGLT,0,none,Two hour glucose not depression
+WTSOG2YR,0,none,OGTT weight not depression
+LBXGLU,0,none,Fasting glucose not depression
+LBDGLUSI,0,none,Fasting glucose not depression
+WTSAF2YR,0,none,Fasting weight not depression
+LBXGH,0,none,Glycohemoglobin not depression
+RXDCOUNT,0,none,Number medicines not indication
+RXDDAYS,0,none,Duration medicine not indication
+RXDDRGID,1,C,Generic drug code indication
+RXDDRUG,1,C,Generic drug name indication
+RXDRSC1,1,C,ICD indication code 1
+RXDRSC2,1,C,ICD indication code 2
+RXDRSC3,1,C,ICD indication code 3
+RXDRSD1,1,C,ICD indication description 1
+RXDRSD2,1,C,ICD indication description 2
+RXDRSD3,1,C,ICD indication description 3
+RXDUSE,0,none,Any prescription use not indication
+RXQSEEN,0,none,Container seen not indication

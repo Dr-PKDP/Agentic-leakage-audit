@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+DIQ175A,0,none,Risk perception not CKD
+DIQ175B,0,none,Risk perception not CKD
+DIQ175C,0,none,Risk perception not CKD
+DIQ175D,0,none,Risk perception not CKD
+DIQ175E,0,none,Risk perception not CKD
+DIQ175F,0,none,Risk perception not CKD
+DIQ175G,0,none,Risk perception not CKD
+DIQ175H,0,none,Risk perception not CKD
+DIQ175I,0,none,Risk perception not CKD
+DIQ175J,0,none,Risk perception not CKD
+DIQ175K,0,none,Risk perception not CKD
+DIQ175L,0,none,Risk perception not CKD
+DIQ175M,0,none,Risk perception not CKD
+DIQ175N,0,none,Risk perception not CKD
+DIQ175O,0,none,Risk perception not CKD
+DIQ175P,0,none,Risk perception not CKD
+DIQ175Q,0,none,Risk perception not CKD
+DIQ175R,0,none,Risk perception not CKD
+DIQ175S,0,none,Risk perception not CKD
+DIQ175T,0,none,Risk perception not CKD
+DIQ175U,0,none,Risk perception not CKD
+DIQ175V,0,none,Risk perception not CKD
+DIQ175W,0,none,Risk perception not CKD
+DIQ175X,0,none,Risk perception not CKD
+DIQ010,0,none,Diabetes not CKD
+DIQ050,0,none,Insulin not CKD
+DIQ060U,0,none,Unit code not CKD
+DIQ070,0,none,Diabetic pills not CKD
+DIQ080,0,none,Retinopathy not CKD
+DIQ160,0,none,Prediabetes not CKD
+DIQ170,0,none,Risk conditions not CKD
+DIQ172,0,none,Perceived risk not CKD
+DIQ180,0,none,Blood test not CKD
+DIQ230,0,none,Diabetes care not CKD
+DIQ240,0,none,Diabetes doctor not CKD
+DIQ260U,0,none,Unit glucose checking
+DIQ275,0,none,Checked A1c not CKD
+DIQ280,0,none,Last A1c not CKD
+DIQ291,0,none,Target A1c not CKD
+DIQ300D,0,none,Self-reported pressure not CKD
+DIQ300S,0,none,Self-reported pressure not CKD
+DIQ350U,0,none,Unit foot checks
+DIQ360,0,none,Eye exam not CKD
+DID040,0,none,Age diabetes not CKD
+DID060,0,none,Insulin duration not CKD
+DID250,0,none,Doctor visits not CKD
+DID260,0,none,Glucose checking not CKD
+DID310D,0,none,Target pressure not CKD
+DID310S,0,none,Target pressure not CKD
+DID320,0,none,LDL not CKD
+DID330,0,none,Target LDL not CKD
+DID341,0,none,Foot checks not CKD
+DID350,0,none,Foot checking not CKD
+BPXCHR,0,none,Heart rate not CKD
+BPXDI1,0,none,Diastolic not CKD
+BPXDI2,0,none,Diastolic not CKD
+BPXDI3,0,none,Diastolic not CKD
+BPXDI4,0,none,Diastolic not CKD
+BPXPLS,0,none,Pulse not CKD
+BPXPTY,0,none,Pulse type not CKD
+BPXPULS,0,none,Pulse regularity not CKD
+BPXSY1,0,none,Systolic not CKD
+BPXSY2,0,none,Systolic not CKD
+BPXSY3,0,none,Systolic not CKD
+BPXSY4,0,none,Systolic not CKD
+BPAARM,0,none,Arm selected not CKD
+BPAEN1,0,none,Enhancement first reading
+BPAEN2,0,none,Enhancement second reading
+BPAEN3,0,none,Enhancement third reading
+BPAEN4,0,none,Enhancement fourth reading
+BPACSZ,0,none,Cuff size not CKD
+BPXML1,0,none,Inflation level not CKD
+PEASCCT1,0,none,Pressure comment not CKD
+BPQ020,0,none,Hypertension not CKD
+BPQ030,0,none,Hypertension twice not CKD
+BPQ040A,0,none,Hypertension medicine not CKD
+BPQ050A,0,none,Hypertension medicine not CKD
+BPQ060,0,none,Cholesterol checked not CKD
+BPQ070,0,none,Time cholesterol check
+BPQ080,0,none,High cholesterol not CKD
+BPQ090D,0,none,Cholesterol medicine not CKD
+BPQ100D,0,none,Following medicine not CKD
+BPD035,0,none,Age hypertension not CKD
+DPQ010,0,none,Anhedonia not CKD
+DPQ020,0,none,Depressed mood not CKD
+DPQ030,0,none,Sleep not CKD
+DPQ040,0,none,Tiredness not CKD
+DPQ050,0,none,Appetite not CKD
+DPQ060,0,none,Self-worth not CKD
+DPQ070,0,none,Concentration not CKD
+DPQ080,0,none,Psychomotor not CKD
+DPQ090,0,none,Self-harm thoughts not CKD
+DPQ100,0,none,Impairment not CKD
+LBDSALSI,0,none,Serum albumin not eGFR
+LBDSBUSI,0,none,Urea nitrogen not eGFR
+LBDSCASI,0,none,Calcium not eGFR
+LBDSCRSI,1,B,Serum creatinine other units
+LBDSCHSI,0,none,Cholesterol not CKD
+LBDSGBSI,0,none,Globulin not CKD
+LBDSGLSI,0,none,Serum glucose not CKD
+LBDSIRSI,0,none,Iron not CKD
+LBDSPHSI,0,none,Phosphorus not CKD
+LBDSTBSI,0,none,Bilirubin not CKD
+LBDSTPSI,0,none,Protein not CKD
+LBDSTRSI,0,none,Triglycerides not CKD
+LBDSUASI,0,none,Uric acid not CKD
+LBXSCA,0,none,Calcium not CKD
+LBXSCK,0,none,Creatine kinase not CKD
+LBXSAL,0,none,Serum albumin not eGFR
+LBXSAPSI,0,none,Alkaline phosphatase not CKD
+LBXSASSI,0,none,AST not CKD
+LBXSATSI,0,none,ALT not CKD
+LBXSGTSI,0,none,GGT not CKD
+LBXSGB,0,none,Globulin not CKD
+LBXSGL,0,none,Serum glucose not CKD
+LBXSCH,0,none,Cholesterol not CKD
+LBXSCLSI,0,none,Chloride not CKD
+LBXSC3SI,0,none,Bicarbonate not CKD
+LBXSIR,0,none,Iron not CKD
+LBXSKSI,0,none,Potassium not CKD
+LBXSLDSI,0,none,LDH not CKD
+LBXSOSSI,0,none,Osmolality not CKD
+LBXSPH,0,none,Phosphorus not CKD
+LBXSTP,0,none,Protein not CKD
+LBXSTB,0,none,Bilirubin not CKD
+LBXSTR,0,none,Triglycerides not CKD
+LBXSUA,0,none,Uric acid not CKD
+LBXSBU,0,none,Urea nitrogen not CKD
+LBXSCR,1,A,Serum creatinine enters eGFR
+LBXSNASI,0,none,Sodium not CKD
+URXUMA,1,A,Urine albumin enters ACR
+URXUMS,1,A,Urine albumin enters ACR
+URXUCR,1,A,Urine creatinine enters ACR
+URXCRS,1,B,Urine creatinine other units
+URDACT,1,A,ACR defining value
+URDUMALC,1,B,Albumin comment code
+URDUCRLC,1,B,Creatinine comment code
+GTXDRANK,0,none,Challenge amount not CKD
+GTDCODE,0,none,OGTT comment not CKD
+GTDBL2MN,0,none,OGTT timing not CKD
+GTDDR1MN,0,none,OGTT timing not CKD
+GTDDR2MN,0,none,OGTT timing not CKD
+GTDSCMMN,0,none,OGTT timing not CKD
+LBDGLTSI,0,none,Two hour glucose not CKD
+LBXGLT,0,none,Two hour glucose not CKD
+WTSOG2YR,0,none,OGTT weight not CKD
+LBXGLU,0,none,Fasting glucose not CKD
+LBDGLUSI,0,none,Fasting glucose not CKD
+WTSAF2YR,0,none,Fasting weight not CKD
+LBXGH,0,none,Glycohemoglobin not CKD
+RXDCOUNT,0,none,Number medicines not indication
+RXDDAYS,0,none,Duration medicine not indication
+RXDDRGID,1,C,Generic drug code indication
+RXDDRUG,1,C,Generic drug name indication
+RXDRSC1,1,C,ICD indication code 1
+RXDRSC2,1,C,ICD indication code 2
+RXDRSC3,1,C,ICD indication code 3
+RXDRSD1,1,C,ICD indication description 1
+RXDRSD2,1,C,ICD indication description 2
+RXDRSD3,1,C,ICD indication description 3
+RXDUSE,0,none,Any prescription use not indication
+RXQSEEN,0,none,Container seen not indication

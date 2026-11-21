@@ -1,0 +1,29 @@
+{
+  "version": "p6_direct_revision_1",
+  "arm": "direct_revision_nhanes",
+  "context_set": "nhanes",
+  "thinking": "default",
+  "model": "p6-qwen3-8b",
+  "base_url": "http://127.0.0.1:8010/v1",
+  "seeds": [
+    42,
+    43
+  ],
+  "temperature": 0.2,
+  "max_tokens": 512,
+  "timeout_seconds": 300,
+  "retries": 0,
+  "workers": 8,
+  "arms": [
+    "direct_full",
+    "direct_patch"
+  ],
+  "workflow_units": 136,
+  "max_generation_calls": 136,
+  "patch_paths_share_generation": true,
+  "jobs_sha256": "ab4fb8595252a209419447cb4835201b6bbf640dba77a5158078727c5f367b3c",
+  "script_sha256": "ef4f0d8c9c6378a425f728319c57d6ac2239169f72503f79557741de4df697a2",
+  "v4_script_sha256": "1649d94540600146e4f562c48525b68f82813b2fa6e360c8fa881bbdb8b7cb83",
+  "ext_script_sha256": "82a2bf9fbfeec29e8b83b69da3f7daa8e6cd8a57657d4eaa3940fd64c9175474",
+  "execution_authorized": false
+}

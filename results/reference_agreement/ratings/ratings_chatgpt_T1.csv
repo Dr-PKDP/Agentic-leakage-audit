@@ -1,0 +1,163 @@
+variable,exclude,criterion,reason
+URDACT,0,none,Not part of the diabetes case definition or treatment.
+RXDRSC3,1,C,Prescription indication code identifies the medication's condition.
+URXUCR,0,none,Not part of the diabetes case definition or treatment.
+DPQ010,0,none,Not part of the diabetes case definition or treatment.
+DIQ175M,0,none,Not part of the diabetes case definition or treatment.
+GTXDRANK,0,none,Not part of the diabetes case definition or treatment.
+DPQ050,0,none,Not part of the diabetes case definition or treatment.
+DID250,0,none,Not part of the diabetes case definition or treatment.
+LBXSCA,0,none,Not part of the diabetes case definition or treatment.
+BPXDI2,0,none,Not part of the diabetes case definition or treatment.
+DID350,0,none,Not part of the diabetes case definition or treatment.
+BPQ070,0,none,Not part of the diabetes case definition or treatment.
+DIQ180,0,none,Not part of the diabetes case definition or treatment.
+DPQ080,0,none,Not part of the diabetes case definition or treatment.
+LBXSTP,0,none,Not part of the diabetes case definition or treatment.
+DPQ020,0,none,Not part of the diabetes case definition or treatment.
+BPQ090D,0,none,Not part of the diabetes case definition or treatment.
+GTDBL2MN,0,none,Not part of the diabetes case definition or treatment.
+BPQ060,0,none,Not part of the diabetes case definition or treatment.
+LBXSAL,0,none,Not part of the diabetes case definition or treatment.
+LBDSBUSI,0,none,Not part of the diabetes case definition or treatment.
+WTSAF2YR,0,none,Not part of the diabetes case definition or treatment.
+DIQ175P,0,none,Not part of the diabetes case definition or treatment.
+DIQ175W,0,none,Not part of the diabetes case definition or treatment.
+LBXGLU,1,A,Fasting glucose is an explicit laboratory case criterion.
+DIQ175D,0,none,Not part of the diabetes case definition or treatment.
+DIQ160,0,none,Not part of the diabetes case definition or treatment.
+DPQ060,0,none,Not part of the diabetes case definition or treatment.
+DIQ175J,0,none,Not part of the diabetes case definition or treatment.
+DIQ175F,0,none,Not part of the diabetes case definition or treatment.
+LBDSTPSI,0,none,Not part of the diabetes case definition or treatment.
+DPQ040,0,none,Not part of the diabetes case definition or treatment.
+LBXSASSI,0,none,Not part of the diabetes case definition or treatment.
+LBXSTB,0,none,Not part of the diabetes case definition or treatment.
+LBDGLUSI,1,B,Fasting glucose restates the defining measurement in mmol/L.
+BPXSY4,0,none,Not part of the diabetes case definition or treatment.
+BPXSY1,0,none,Not part of the diabetes case definition or treatment.
+BPXPTY,0,none,Not part of the diabetes case definition or treatment.
+DIQ175S,0,none,Not part of the diabetes case definition or treatment.
+DIQ060U,0,none,Not part of the diabetes case definition or treatment.
+RXQSEEN,0,none,Not part of the diabetes case definition or treatment.
+DIQ175V,0,none,Not part of the diabetes case definition or treatment.
+LBDSIRSI,0,none,Not part of the diabetes case definition or treatment.
+LBXSTR,0,none,Not part of the diabetes case definition or treatment.
+DID341,0,none,Not part of the diabetes case definition or treatment.
+LBXGLT,0,none,Two-hour challenge glucose is not the defined fasting glucose.
+BPXDI4,0,none,Not part of the diabetes case definition or treatment.
+DIQ175R,0,none,Not part of the diabetes case definition or treatment.
+LBDSCRSI,0,none,Not part of the diabetes case definition or treatment.
+GTDDR2MN,0,none,Not part of the diabetes case definition or treatment.
+RXDRSD3,1,C,Prescription indication description identifies the medication's condition.
+DIQ175K,0,none,Not part of the diabetes case definition or treatment.
+DPQ100,0,none,Not part of the diabetes case definition or treatment.
+LBXSGL,0,none,Not part of the diabetes case definition or treatment.
+BPXPULS,0,none,Not part of the diabetes case definition or treatment.
+LBXSCR,0,none,Not part of the diabetes case definition or treatment.
+LBDSCHSI,0,none,Not part of the diabetes case definition or treatment.
+DIQ175N,0,none,Not part of the diabetes case definition or treatment.
+DIQ230,1,C,Records diabetes-specific dietitian or educator intervention.
+LBDSGBSI,0,none,Not part of the diabetes case definition or treatment.
+LBDSTBSI,0,none,Not part of the diabetes case definition or treatment.
+RXDDRGID,1,C,Medication identifier can reveal condition-specific treatment.
+LBXSNASI,0,none,Not part of the diabetes case definition or treatment.
+DIQ291,0,none,Not part of the diabetes case definition or treatment.
+DIQ172,0,none,Not part of the diabetes case definition or treatment.
+LBDSALSI,0,none,Not part of the diabetes case definition or treatment.
+BPQ100D,0,none,Not part of the diabetes case definition or treatment.
+BPXDI1,0,none,Not part of the diabetes case definition or treatment.
+DIQ175X,0,none,Not part of the diabetes case definition or treatment.
+DIQ170,0,none,Not part of the diabetes case definition or treatment.
+LBXSCK,0,none,Not part of the diabetes case definition or treatment.
+URXUMA,0,none,Not part of the diabetes case definition or treatment.
+DID060,1,C,Records duration of insulin treatment for diabetes.
+DIQ175B,0,none,Not part of the diabetes case definition or treatment.
+LBXSOSSI,0,none,Not part of the diabetes case definition or treatment.
+BPQ020,0,none,Not part of the diabetes case definition or treatment.
+BPQ050A,0,none,Not part of the diabetes case definition or treatment.
+BPACSZ,0,none,Not part of the diabetes case definition or treatment.
+RXDCOUNT,0,none,Not part of the diabetes case definition or treatment.
+BPQ040A,0,none,Not part of the diabetes case definition or treatment.
+URDUMALC,0,none,Not part of the diabetes case definition or treatment.
+BPAEN1,0,none,Not part of the diabetes case definition or treatment.
+DID310D,0,none,Not part of the diabetes case definition or treatment.
+LBXSCLSI,0,none,Not part of the diabetes case definition or treatment.
+LBXSBU,0,none,Not part of the diabetes case definition or treatment.
+LBXSIR,0,none,Not part of the diabetes case definition or treatment.
+BPXCHR,0,none,Not part of the diabetes case definition or treatment.
+URXCRS,0,none,Not part of the diabetes case definition or treatment.
+DIQ080,1,C,Records a diabetes-related complication diagnosis.
+DID330,0,none,Not part of the diabetes case definition or treatment.
+DIQ070,1,C,Records current oral diabetes medication use.
+BPXDI3,0,none,Not part of the diabetes case definition or treatment.
+BPQ030,0,none,Not part of the diabetes case definition or treatment.
+BPXML1,0,none,Not part of the diabetes case definition or treatment.
+DIQ260U,0,none,Not part of the diabetes case definition or treatment.
+BPXSY2,0,none,Not part of the diabetes case definition or treatment.
+LBXSUA,0,none,Not part of the diabetes case definition or treatment.
+RXDRSC1,1,C,Prescription indication code identifies the medication's condition.
+DIQ010,1,A,Self-reported physician diagnosis defines the diabetes case.
+LBXSAPSI,0,none,Not part of the diabetes case definition or treatment.
+BPAEN3,0,none,Not part of the diabetes case definition or treatment.
+LBDSUASI,0,none,Not part of the diabetes case definition or treatment.
+LBXSCH,0,none,Not part of the diabetes case definition or treatment.
+DIQ240,0,none,Not part of the diabetes case definition or treatment.
+LBXSKSI,0,none,Not part of the diabetes case definition or treatment.
+BPAARM,0,none,Not part of the diabetes case definition or treatment.
+LBXSC3SI,0,none,Not part of the diabetes case definition or treatment.
+DIQ360,0,none,Not part of the diabetes case definition or treatment.
+DIQ175E,0,none,Not part of the diabetes case definition or treatment.
+RXDUSE,0,none,Not part of the diabetes case definition or treatment.
+DIQ175C,0,none,Not part of the diabetes case definition or treatment.
+WTSOG2YR,0,none,Not part of the diabetes case definition or treatment.
+LBXSGB,0,none,Not part of the diabetes case definition or treatment.
+LBXSGTSI,0,none,Not part of the diabetes case definition or treatment.
+URDUCRLC,0,none,Not part of the diabetes case definition or treatment.
+RXDDRUG,1,C,Medication name can reveal condition-specific treatment.
+DIQ175U,0,none,Not part of the diabetes case definition or treatment.
+DIQ175T,0,none,Not part of the diabetes case definition or treatment.
+LBDSTRSI,0,none,Not part of the diabetes case definition or treatment.
+DIQ300D,0,none,Not part of the diabetes case definition or treatment.
+BPAEN4,0,none,Not part of the diabetes case definition or treatment.
+DIQ175A,0,none,Not part of the diabetes case definition or treatment.
+DIQ175G,0,none,Not part of the diabetes case definition or treatment.
+URXUMS,0,none,Not part of the diabetes case definition or treatment.
+BPD035,0,none,Not part of the diabetes case definition or treatment.
+DIQ175Q,0,none,Not part of the diabetes case definition or treatment.
+RXDRSD1,1,C,Prescription indication description identifies the medication's condition.
+DIQ175L,0,none,Not part of the diabetes case definition or treatment.
+DPQ090,0,none,Not part of the diabetes case definition or treatment.
+DIQ175O,0,none,Not part of the diabetes case definition or treatment.
+BPAEN2,0,none,Not part of the diabetes case definition or treatment.
+LBXSPH,0,none,Not part of the diabetes case definition or treatment.
+GTDCODE,0,none,Comment code concerns the glucose challenge rather than fasting glucose.
+GTDSCMMN,0,none,Not part of the diabetes case definition or treatment.
+DIQ350U,0,none,Not part of the diabetes case definition or treatment.
+RXDRSC2,1,C,Prescription indication code identifies the medication's condition.
+LBDSCASI,0,none,Not part of the diabetes case definition or treatment.
+DPQ070,0,none,Not part of the diabetes case definition or treatment.
+DID040,1,C,Records age at physician diagnosis of diabetes.
+BPQ080,0,none,Not part of the diabetes case definition or treatment.
+RXDDAYS,1,C,Duration of a named prescription medication records treatment exposure.
+BPXPLS,0,none,Not part of the diabetes case definition or treatment.
+DIQ280,1,B,Reported last HbA1c value restates a defining biomarker quantity.
+PEASCCT1,0,none,Not part of the diabetes case definition or treatment.
+DIQ050,1,C,Records current insulin treatment for diabetes.
+DPQ030,0,none,Not part of the diabetes case definition or treatment.
+GTDDR1MN,0,none,Not part of the diabetes case definition or treatment.
+LBXSATSI,0,none,Not part of the diabetes case definition or treatment.
+DIQ175I,0,none,Not part of the diabetes case definition or treatment.
+DIQ300S,0,none,Not part of the diabetes case definition or treatment.
+DID260,0,none,Not part of the diabetes case definition or treatment.
+DID310S,0,none,Not part of the diabetes case definition or treatment.
+LBDSPHSI,0,none,Not part of the diabetes case definition or treatment.
+BPXSY3,0,none,Not part of the diabetes case definition or treatment.
+LBDSGLSI,0,none,Not part of the diabetes case definition or treatment.
+DID320,0,none,Not part of the diabetes case definition or treatment.
+DIQ175H,0,none,Not part of the diabetes case definition or treatment.
+DIQ275,0,none,Not part of the diabetes case definition or treatment.
+LBDGLTSI,0,none,Two-hour challenge glucose is not the defined fasting glucose.
+LBXSLDSI,0,none,Not part of the diabetes case definition or treatment.
+RXDRSD2,1,C,Prescription indication description identifies the medication's condition.
+LBXGH,1,A,Glycohemoglobin is an explicit laboratory case criterion.
