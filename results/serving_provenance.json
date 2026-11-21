@@ -1,5 +1,5 @@
 {
- "note": "Collected from the archived run records. A weight revision, a quantization scheme and a compute dtype were not recorded by the runs and are reported as null. The context length is the value the server was started with, not a property of the model.",
+ "note": "Run-level fields are collected from the archived run records. The weight revision, served dtype and quantization setting were recorded on the serving host and come from results/model_weights.json, which also holds the SHA-256 of every shard. The context length is the value the server was started with, not a property of the model.",
  "models": [
   {
    "serving_identifier": "p6-granite-8b",
@@ -21,8 +21,10 @@
    "server_fingerprints": [
     "vllm-0.32.0-4c52e6b3"
    ],
-   "weight_revision": null,
-   "quantization_or_dtype": null
+   "weight_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+   "served_dtype": "bfloat16",
+   "quantization": null,
+   "weight_shards": 4
   },
   {
    "serving_identifier": "p6-qwen3-8b",
@@ -47,8 +49,10 @@
    "server_fingerprints": [
     "vllm-0.32.0-e51e4670"
    ],
-   "weight_revision": null,
-   "quantization_or_dtype": null
+   "weight_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "served_dtype": "bfloat16",
+   "quantization": null,
+   "weight_shards": 5
   },
   {
    "serving_identifier": "qwen3.8-27b",
@@ -61,8 +65,10 @@
    "root": "/data/pduttapramanik/arbiter/models/qwen3.8-27b",
    "max_model_len": 32768,
    "server_version": "0.30.0",
-   "weight_revision": null,
-   "quantization_or_dtype": null
+   "weight_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+   "served_dtype": "bfloat16",
+   "quantization": null,
+   "weight_shards": 18
   }
  ]
 }

@@ -592,8 +592,8 @@
   },
   {
    "path": "analysis/serving_provenance.py",
-   "bytes": 3520,
-   "sha256": "cc439d16b16ff28f4fd61a552ae37400b9a86d0a664c2245c38a515eaabfd6ee"
+   "bytes": 4011,
+   "sha256": "1299c2167c392ac674a54f068e3a0b0788e99c5f9b01cc4a02d04f252174588b"
   },
   {
    "path": "nhanes/__init__.py",
@@ -1271,6 +1271,11 @@
    "sha256": "ffef8da40b772120e3a51a68b2b9c526c52d6941669bb55a2082a62fe93e1bb6"
   },
   {
+   "path": "results/model_weights.json",
+   "bytes": 4404,
+   "sha256": "68adfa56dd98c58b70154f314e9e39284c5cc9345eed68e6977344c608d1bc9c"
+  },
+  {
    "path": "results/nhanes/schema_audit.json",
    "bytes": 2539,
    "sha256": "c7137c0e57dc20965e488d9f765ca257eeb4bea50c67b13b2b75a589f3406929"
@@ -1597,8 +1602,8 @@
   },
   {
    "path": "results/serving_provenance.json",
-   "bytes": 2287,
-   "sha256": "5862189cdaa28161d9824698154033de8dedae13a482d8410b3833b06a9064d2"
+   "bytes": 2621,
+   "sha256": "1b8d62cb0ee1068ac0242fddb5020bc9c3f11fc9c006f14e6eb42798651cf678"
   }
  ]
 }

@@ -3,9 +3,10 @@
 Reads the model entry and server version that each run stored in its summary or run report, and the
 server fingerprint that the responses carry in the request logs. Writes results/serving_provenance.json.
 
-The records fix the serving identifier, the local model directory, the context length the server was
-started with and the server version. They do not record a weight revision, a quantization scheme or a
-compute dtype, so those cannot be reported.
+The run records fix the serving identifier, the local model directory, the context length the server was
+started with and the server version. The weight revision, the served dtype, the quantization setting and the
+SHA-256 of every weight shard were recorded afterwards on the serving host and are deposited in
+results/model_weights.json; they are merged here.
 
 Usage: python analysis/serving_provenance.py [--out DIR]
 """
@@ -58,14 +59,19 @@ def main():
                         e["server_fingerprints"].append(resp["system_fingerprint"])
                     break
 
+    weights = json.loads((RES / "model_weights.json").read_text(encoding="utf-8"))["models"]
     for e in entries.values():
         e["runs"] = sorted(set(e["runs"]))
-        e["weight_revision"] = None
-        e["quantization_or_dtype"] = None
+        w = weights.get(e["serving_identifier"], {})
+        e["weight_revision"] = w.get("download_revision")
+        e["served_dtype"] = w.get("served_dtype")
+        e["quantization"] = w.get("quantization")
+        e["weight_shards"] = w.get("shards")
 
-    out = {"note": ("Collected from the archived run records. A weight revision, a quantization scheme "
-                    "and a compute dtype were not recorded by the runs and are reported as null. The "
-                    "context length is the value the server was started with, not a property of the model."),
+    out = {"note": ("Run-level fields are collected from the archived run records. The weight revision, served "
+                    "dtype and quantization setting were recorded on the serving host and come from "
+                    "results/model_weights.json, which also holds the SHA-256 of every shard. The context "
+                    "length is the value the server was started with, not a property of the model."),
            "models": [entries[k] for k in sorted(entries)]}
     a.out.mkdir(parents=True, exist_ok=True)
     (a.out / "serving_provenance.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")

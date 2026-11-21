@@ -1,0 +1,68 @@
+{
+ "note": "Recorded on the serving host on 2026-11-21 from the model directories and the vLLM start-up logs. The revision is the commit hash stored by the download client in each model directory. Shard digests are the SHA-256 of the files in the directories on that date; their modification dates are 2026-10-23 (Qwen3-8B), 2026-10-28 (Granite 3.3 8B Instruct) and 2026-10-04 (Qwen3.8-27B). The run records carry no timestamps, so the digests identify the weights now on disk and not, independently, the weights read at each run.",
+ "models": {
+  "p6-qwen3-8b": {
+   "directory_name": "Qwen3-8B",
+   "download_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "config_dtype": "bfloat16",
+   "served_dtype": "bfloat16",
+   "quantization": null,
+   "kv_cache_dtype": "auto",
+   "tensor_parallel_size": 1,
+   "shards": 5,
+   "sha256": {
+    "model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+    "model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+    "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+    "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+    "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff"
+   }
+  },
+  "p6-granite-8b": {
+   "directory_name": "granite-3.3-8b-instruct",
+   "download_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+   "config_dtype": "bfloat16",
+   "served_dtype": "bfloat16",
+   "quantization": null,
+   "kv_cache_dtype": "auto",
+   "tensor_parallel_size": 1,
+   "shards": 4,
+   "sha256": {
+    "model-00001-of-00004.safetensors": "b309f7b9e116fafc27c1100629bfcccbcebdab18a4bf7df7accfa728260dc57e",
+    "model-00002-of-00004.safetensors": "f2e40f157f0139e4b67bbaa4b10efa351162c062771cb543b143c6916a687266",
+    "model-00003-of-00004.safetensors": "5cf5203a027b7055c995a9d4bdb3a4c9dd44849ae6c9eefa6a16852a816bea76",
+    "model-00004-of-00004.safetensors": "76ac0c0dbd790a1e003d2fc098a297bfe82a422c129046e9d4e67e6ed3d820f0"
+   }
+  },
+  "qwen3.8-27b": {
+   "directory_name": "qwen3.8-27b",
+   "download_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+   "config_dtype": "bfloat16",
+   "served_dtype": "bfloat16",
+   "quantization": null,
+   "kv_cache_dtype": "auto",
+   "tensor_parallel_size": 1,
+   "shards": 18,
+   "sha256": {
+    "model-00001-of-00018.safetensors": "ba0ce20aae489ad196733da5064bcdf159a1fe84f53336648196e1ebb7751b1c",
+    "model-00002-of-00018.safetensors": "06a148c01bfbe3faa14a5f184a7ff29a706f7ae1c8b2705d2058e26d17a001fb",
+    "model-00003-of-00018.safetensors": "2e1bf62cbcd406eaa64b60d10353e1f0ef4039d0976e56f05cabe953454f9968",
+    "model-00004-of-00018.safetensors": "511e34063187882659753c4d93f3859f93c019fd438d8813071921c81d9a3f1a",
+    "model-00005-of-00018.safetensors": "635cb53446dc74f219740fc59e18b774f877b803b9722e289ca62575a6efa701",
+    "model-00006-of-00018.safetensors": "0bc5214fac607f0e6cc92eec3789d4b8559410ef9fce66621ba8158e8410dae0",
+    "model-00007-of-00018.safetensors": "80b0c49033e9a0d5762562aa12f4acdb7f54da586f3d0110f28c48d91cf07892",
+    "model-00008-of-00018.safetensors": "7192c5b66185d3592927daabee1cc19e6f6e0ce75988ee20e824b624765fda79",
+    "model-00009-of-00018.safetensors": "af3c48cc37af44f3db6ae0579baf019180d48d9c527caa0a1f03ff85813a56d8",
+    "model-00010-of-00018.safetensors": "163490a76f3bea3a40855b7efc04ce6d27afaf1a34f0bbde495b9491f76457c9",
+    "model-00011-of-00018.safetensors": "5f3ae1b948aeee39da77aec558e8236cd65fe4d7cb7686a76bb007acc563c6d8",
+    "model-00012-of-00018.safetensors": "a3de1c7114677a8f5ac5c4892c90e8238ea5c1e2038c80e757dfc87c3902ca55",
+    "model-00013-of-00018.safetensors": "06ab79a41f74c9c5cb734816feb0c7fc364104b227165ee7391231e1155aa02a",
+    "model-00014-of-00018.safetensors": "4138ed94603065ba884bbcadedb04d7718bb40117e85e6f5c6fc5b9c05b7a85b",
+    "model-00015-of-00018.safetensors": "69224e27b9de4e7dbf6fc936c6eaae08447bda3b80a6c31a871ab451173afd22",
+    "model-00016-of-00018.safetensors": "73cb9a1089fb6155cb648609478d6633be8a5c7d9ca5a05bc8925ce8a553cefe",
+    "model-00017-of-00018.safetensors": "beb51f01056142ac4984bd800507b0dd0fd18de57f8e9ef6ea41d1a3598983a8",
+    "model-00018-of-00018.safetensors": "1d3479509e21494658f9b64d317f5ea8e55c4025d28c702d6c4d0b356ce8ea06"
+   }
+  }
+ }
+}
