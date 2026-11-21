@@ -536,6 +536,11 @@
    "sha256": "a58ef31ac08a80dba446b94d57bcc40ac426584c858cf5391989d23e2705bbf3"
   },
   {
+   "path": "analysis/predictor_sets.py",
+   "bytes": 5490,
+   "sha256": "bf8e6f3621d1803c12a4edcb138933f794390b9ed3d9a080ee940a8293e81dcb"
+  },
+  {
    "path": "analysis/prompt_variant_stats.py",
    "bytes": 3788,
    "sha256": "ff52869b1addceda4d7f848508f5ffe5de570a5db583dc23cc98b04ead264031"
@@ -584,6 +589,11 @@
    "path": "analysis/sensitivity.py",
    "bytes": 12165,
    "sha256": "ddd238e37d845d3acd1613033b6ca23adc809b1d05e9d2f2dabe00c03acf447b"
+  },
+  {
+   "path": "analysis/serving_provenance.py",
+   "bytes": 3520,
+   "sha256": "cc439d16b16ff28f4fd61a552ae37400b9a86d0a664c2245c38a515eaabfd6ee"
   },
   {
    "path": "nhanes/__init__.py",
@@ -906,6 +916,11 @@
    "sha256": "ff06c588930d8cd40b84744c579c8877abd4f48fbc9cfccd286a807f29269c26"
   },
   {
+   "path": "results/granite/core24/final_artifacts.csv",
+   "bytes": 28880,
+   "sha256": "645fed9407b2d84410ea297e2526e3506bae84fa5aa6b49ed590c494b0612488"
+  },
+  {
    "path": "results/granite/core24/models.json",
    "bytes": 762,
    "sha256": "9c81475025801f0b2ca70c1891be86fa4f4e3a208abb1cca69a8f516b3bde6f8"
@@ -954,6 +969,11 @@
    "path": "results/granite/core24/summary_strict_as_run.json",
    "bytes": 11475,
    "sha256": "b630f5ba405f0cc0c8f6712a779d46f66c7b0b918429af97b32af48abb5f4367"
+  },
+  {
+   "path": "results/granite/nhanes/final_artifacts.csv",
+   "bytes": 44840,
+   "sha256": "3523f6eb47689b448b6b4aadb114cbd50b2b11f82152283fde8dd3d87b3f3304"
   },
   {
    "path": "results/granite/nhanes/models.json",
@@ -1266,6 +1286,11 @@
    "sha256": "ab75fc73bf6d4e793f3782ed4dd65acd9ea584b3e1d7e4013f1b1c11d1ed7e3c"
   },
   {
+   "path": "results/predictor_sets.json",
+   "bytes": 1935,
+   "sha256": "9f8817ff9b8e340fe88c55af11e4f3d7c8849a5205326788f861de82e7665d7b"
+  },
+  {
    "path": "results/prompt_variant_stats.json",
    "bytes": 35069,
    "sha256": "a5387b01c4bb6ec762c9f4aa0eb76fc85c5b1a5e0fc6388ac437bb9c4c15d804"
@@ -1569,6 +1594,11 @@
    "path": "results/review_replay/q_replay_t1024_nhanes/summary.json",
    "bytes": 25508,
    "sha256": "697df317685ddd2d04c18847a8ffb3e2acb75187d238f5da25857c313a86507d"
+  },
+  {
+   "path": "results/serving_provenance.json",
+   "bytes": 2287,
+   "sha256": "5862189cdaa28161d9824698154033de8dedae13a482d8410b3833b06a9064d2"
   }
  ]
 }

@@ -206,6 +206,17 @@ python analysis/designated_tests.py
 
 `designated_tests.py` computes the five designated hypothesis-level tests and writes `results/designated_tests.json`. Contexts are the unit of inference: each contrast is the mean over contexts of the within-context difference in the outcome rate, with a percentile interval from 10,000 bootstrap resamples of contexts (seed 2026) and a two-sided randomization test that flips the sign of each context's difference, enumerating every assignment for 20 contexts or fewer. The same rows are also fitted by a generalized estimating equation with an identity link, binomial variance and an exchangeable working correlation clustered on context, which needs `statsmodels`. The Holm procedure is applied across the five. The expected results are H1 +61.9 pp (p = 0.0004, Holm 0.0012), H2 +100 pp (0.125, 0.125), H3 +9.2 pp (0.0001, 0.0005), H4 +52.9 pp (0.00244, 0.00488) and H5 +25.7 pp (0.00018, 0.00072). The five tests were selected once the responses of the later experiments were available, so they are multiplicity-adjusted hypothesis-level tests and not a prespecified confirmatory family.
 
+## Serving provenance and the traceability of the executed check
+
+```
+python analysis/serving_provenance.py
+python analysis/predictor_sets.py
+```
+
+`serving_provenance.py` collects the model entry and server version that each run stored, and the server build the responses carry, into `results/serving_provenance.json`. The two 8B models were served by vLLM 0.32.0 and Qwen3.8-27B by vLLM 0.30.0. No weight revision, quantization scheme or compute dtype was recorded by the runs.
+
+`predictor_sets.py` quantifies two limits of `results/execution_check/executed_outcomes.csv`. The table records no predictor names, and its key of model, arm, context, input, path and seed is not unique, because an arm label covers repeated scoring views and sub-runs: 704 keys carry more than one row, and the 3,638 rows describe 2,685 distinct units among those assessable. Collapsing each key to a single row gives agreement of 2,656 of 2,685 under each of three selection rules. The per-unit final artifacts survive for one arm, in `results/granite/nhanes/final_artifacts.csv` and `results/granite/core24/final_artifacts.csv`; restricted to the 30 whose executed row is unambiguous, the 14 distinct predictor sets agreed with the evaluator in 13 cases. That subset is a provenance check, not a result.
+
 ## Agreement of AI tools with the reference sets
 
 `analysis/reference_agreement.py` compares the ratings of five general-purpose AI tools (ChatGPT, Perplexity, Gemini, Grok, Meta AI) with the NHANES reference exclusion sets. Each tool labeled every variable of the ten 2015–2016 files that hold the reference variables (162 candidates) as excluded or not for each of the four screening tasks, from the variable name, component and description, without seeing the reference. The script reports Cohen's kappa against the reference (pooled and per task), the share of reference pairs each tool flags, the flags outside the reference, the kappa between tools, and writes `disagreements.csv` with empty columns for a cross-check by the authors. The tools are a check on the reference, not independent human raters.

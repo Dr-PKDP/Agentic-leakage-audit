@@ -1,0 +1,333 @@
+context_id,proposal_id,stream,seed,path,status,gate_action,initial_verdict,final_verdict,n_selected,selected
+P6D05_N002,P00CBDF88320C,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N002,P00CBDF88320C,evidence_critic,43,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N002,P00CBDF88320C,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGTSI LBXSTR LBXSUA
+P6D05_N002,P00CBDF88320C,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGTSI LBXSTR LBXSUA
+,P00CBDF88320C,patch_critic,43,patch_critic,unparseable_output,,,,,
+P6D05_N002,P00CBDF88320C,self_review,42,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N002,P00CBDF88320C,self_review,43,self_review,unparseable_output,,supported,,,
+P6D05_N002,P00CBDF88320C,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N002,P00CBDF88320C,structure_feedback,43,structure_feedback,unparseable_output,,supported,,,
+P6D05_N009,P28731BE635D5,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N009,P28731BE635D5,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+,P28731BE635D5,patch_critic,42,patch_critic,unparseable_output,,,,,
+P6D05_N009,P28731BE635D5,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPQ080 BPXPLS LBXSCH LBXSGL
+P6D05_N009,P28731BE635D5,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPQ080 BPXPLS LBXSCH LBXSGL
+P6D05_N009,P28731BE635D5,self_review,42,self_review,unparseable_output,,supported,,,
+P6D05_N009,P28731BE635D5,self_review,43,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N009,P28731BE635D5,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N009,P28731BE635D5,structure_feedback,43,structure_feedback,completed,,supported,supported,4,BPQ080 BPXPLS LBXSCH LBXSGL
+P6D05_N013,P2FAB56FD3B6E,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N013,P2FAB56FD3B6E,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+,P2FAB56FD3B6E,patch_critic,42,patch_critic,unparseable_output,,,,,
+P6D05_N013,P2FAB56FD3B6E,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSCH LBXSGL LBXSTB
+P6D05_N013,P2FAB56FD3B6E,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSCH LBXSGL LBXSTB
+P6D05_N013,P2FAB56FD3B6E,self_review,42,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N013,P2FAB56FD3B6E,self_review,43,self_review,unparseable_output,,supported,,,
+P6D05_N013,P2FAB56FD3B6E,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N013,P2FAB56FD3B6E,structure_feedback,43,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N006,P309D4CDB4D00,evidence_critic,42,evidence_critic,completed,,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P309D4CDB4D00,evidence_critic,43,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N006,P309D4CDB4D00,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P309D4CDB4D00,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P309D4CDB4D00,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P309D4CDB4D00,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P309D4CDB4D00,self_review,42,self_review,completed,,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P309D4CDB4D00,self_review,43,self_review,completed,,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P309D4CDB4D00,structure_feedback,42,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P309D4CDB4D00,structure_feedback,43,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,DIQ300S LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N010,P402629B52176,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N010,P402629B52176,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+P6D05_N010,P402629B52176,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,P402629B52176,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,P402629B52176,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,P402629B52176,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,P402629B52176,self_review,42,self_review,completed,,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,P402629B52176,self_review,43,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N010,P402629B52176,structure_feedback,42,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N010,P402629B52176,structure_feedback,43,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N011,P464629409F6E,evidence_critic,42,evidence_critic,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ100 LBXSCH LBXSGL LBXSTR
+P6D05_N011,P464629409F6E,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N011,P464629409F6E,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ100 LBXSCH LBXSGL LBXSTR
+P6D05_N011,P464629409F6E,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ100 LBXSCH LBXSGL LBXSTR
+P6D05_N011,P464629409F6E,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ100 LBXSCH LBXSGL LBXSTR
+P6D05_N011,P464629409F6E,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ100 LBXSCH LBXSGL LBXSTR
+P6D05_N011,P464629409F6E,self_review,42,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N011,P464629409F6E,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N011,P464629409F6E,structure_feedback,42,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N011,P464629409F6E,structure_feedback,43,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N006,P50AF815C032C,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N006,P50AF815C032C,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+P6D05_N006,P50AF815C032C,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P50AF815C032C,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P50AF815C032C,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P50AF815C032C,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P50AF815C032C,self_review,42,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N006,P50AF815C032C,self_review,43,self_review,completed,,supported,supported,4,LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P50AF815C032C,structure_feedback,42,structure_feedback,completed,,supported,supported,4,LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N006,P50AF815C032C,structure_feedback,43,structure_feedback,completed,,supported,supported,4,LBXSCH LBXSGL LBXSKSI LBXSTR
+P6D05_N008,P51EC48AF9AB5,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N008,P51EC48AF9AB5,evidence_critic,43,evidence_critic,completed,,supported,supported,4,LBXSATSI LBXSCH LBXSTR LBXSUA
+P6D05_N008,P51EC48AF9AB5,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P51EC48AF9AB5,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P51EC48AF9AB5,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P51EC48AF9AB5,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P51EC48AF9AB5,self_review,42,self_review,unparseable_output,,supported,,,
+P6D05_N008,P51EC48AF9AB5,self_review,43,self_review,completed,,supported,supported,4,LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P51EC48AF9AB5,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N008,P51EC48AF9AB5,structure_feedback,43,structure_feedback,completed,,supported,contradicted_contract,8,BPD035 BPQ020 BPXSY1 LBXSATSI LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N017,P54B707615DBF,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N017,P54B707615DBF,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+P6D05_N017,P54B707615DBF,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N017,P54B707615DBF,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N017,P54B707615DBF,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N017,P54B707615DBF,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N017,P54B707615DBF,self_review,42,self_review,unparseable_output,,supported,,,
+P6D05_N017,P54B707615DBF,self_review,43,self_review,unparseable_output,,supported,,,
+P6D05_N017,P54B707615DBF,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N017,P54B707615DBF,structure_feedback,43,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N013,P55466591393C,evidence_critic,42,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N013,P55466591393C,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N013,P55466591393C,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSCH LBXSGL LBXSTB RXDRSC1 RXDRSD1
+P6D05_N013,P55466591393C,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSCH LBXSGL LBXSTB RXDRSC1 RXDRSD1
+P6D05_N013,P55466591393C,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSCH LBXSGL LBXSTB RXDRSC1 RXDRSD1
+P6D05_N013,P55466591393C,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSCH LBXSGL LBXSTB RXDRSC1 RXDRSD1
+P6D05_N013,P55466591393C,self_review,42,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N013,P55466591393C,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N013,P55466591393C,structure_feedback,42,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N013,P55466591393C,structure_feedback,43,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N014,P564AA4ABD26F,evidence_critic,42,evidence_critic,unparseable_output,,supported,,,
+P6D05_N014,P564AA4ABD26F,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+P6D05_N014,P564AA4ABD26F,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSAL LBXSCH LBXSGL
+P6D05_N014,P564AA4ABD26F,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSAL LBXSCH LBXSGL
+,P564AA4ABD26F,patch_critic,43,patch_critic,unparseable_output,,,,,
+P6D05_N014,P564AA4ABD26F,self_review,42,self_review,completed,,supported,contradicted_contract,5,BPXSY1 LBXSAL LBXSCH LBXSGL URDACT
+P6D05_N014,P564AA4ABD26F,self_review,43,self_review,unparseable_output,,supported,,,
+P6D05_N014,P564AA4ABD26F,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N014,P564AA4ABD26F,structure_feedback,43,structure_feedback,unparseable_output,,supported,,,
+P6D05_N012,P570745655DD3,evidence_critic,42,evidence_critic,unparseable_output,,supported,,,
+P6D05_N012,P570745655DD3,evidence_critic,43,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N012,P570745655DD3,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSATSI LBXSCH LBXSGL LBXSTP
+P6D05_N012,P570745655DD3,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSATSI LBXSCH LBXSGL LBXSTP
+P6D05_N012,P570745655DD3,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSATSI LBXSCH LBXSGL LBXSTP
+P6D05_N012,P570745655DD3,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSATSI LBXSCH LBXSGL LBXSTP
+P6D05_N012,P570745655DD3,self_review,42,self_review,unparseable_output,,supported,,,
+P6D05_N012,P570745655DD3,self_review,43,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N012,P570745655DD3,structure_feedback,42,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N012,P570745655DD3,structure_feedback,43,structure_feedback,completed,,supported,supported,4,LBXSATSI LBXSCH LBXSGL LBXSTP
+P6D05_N001,P5A27BDEE08EE,evidence_critic,42,evidence_critic,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 LBXGH LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P5A27BDEE08EE,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+,P5A27BDEE08EE,patch_critic,42,patch_critic,unparseable_output,,,,,
+P6D05_N001,P5A27BDEE08EE,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 LBXGH LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P5A27BDEE08EE,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 LBXGH LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P5A27BDEE08EE,self_review,42,self_review,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 LBXGH LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P5A27BDEE08EE,self_review,43,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N001,P5A27BDEE08EE,structure_feedback,42,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 LBXGH LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P5A27BDEE08EE,structure_feedback,43,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 LBXGH LBXSATSI LBXSCH LBXSTR
+P6D05_N005,P5A49C633426A,evidence_critic,42,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N005,P5A49C633426A,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N005,P5A49C633426A,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY2 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,P5A49C633426A,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY2 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,P5A49C633426A,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY2 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,P5A49C633426A,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY2 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,P5A49C633426A,self_review,42,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N005,P5A49C633426A,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N005,P5A49C633426A,structure_feedback,42,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,BPXSY2 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,P5A49C633426A,structure_feedback,43,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N014,P5EBCBFFD32D2,evidence_critic,42,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N014,P5EBCBFFD32D2,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N014,P5EBCBFFD32D2,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 LBXSAL LBXSCH LBXSCR LBXSGL
+P6D05_N014,P5EBCBFFD32D2,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 LBXSAL LBXSCH LBXSCR LBXSGL
+P6D05_N014,P5EBCBFFD32D2,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 LBXSAL LBXSCH LBXSCR LBXSGL
+P6D05_N014,P5EBCBFFD32D2,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 LBXSAL LBXSCH LBXSCR LBXSGL
+P6D05_N014,P5EBCBFFD32D2,self_review,42,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N014,P5EBCBFFD32D2,self_review,43,self_review,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 LBXSAL LBXSCH LBXSCR LBXSGL
+P6D05_N014,P5EBCBFFD32D2,structure_feedback,42,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N014,P5EBCBFFD32D2,structure_feedback,43,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 LBXSAL LBXSCH LBXSCR LBXSGL
+P6D05_N008,P68C330649F97,evidence_critic,42,evidence_critic,completed,,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P68C330649F97,evidence_critic,43,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N008,P68C330649F97,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P68C330649F97,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P68C330649F97,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P68C330649F97,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P68C330649F97,self_review,42,self_review,completed,,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P68C330649F97,self_review,43,self_review,completed,,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P68C330649F97,structure_feedback,42,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N008,P68C330649F97,structure_feedback,43,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,BPD035 LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N012,P7EB350F4C65C,evidence_critic,42,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N012,P7EB350F4C65C,evidence_critic,43,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N012,P7EB350F4C65C,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSATSI LBXSCH LBXSGL LBXSTP RXDDRGID RXDDRUG
+P6D05_N012,P7EB350F4C65C,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSATSI LBXSCH LBXSGL LBXSTP RXDDRGID RXDDRUG
+P6D05_N012,P7EB350F4C65C,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSATSI LBXSCH LBXSGL LBXSTP RXDDRGID RXDDRUG
+P6D05_N012,P7EB350F4C65C,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSATSI LBXSCH LBXSGL LBXSTP RXDDRGID RXDDRUG
+P6D05_N012,P7EB350F4C65C,self_review,42,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N012,P7EB350F4C65C,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N012,P7EB350F4C65C,structure_feedback,42,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N012,P7EB350F4C65C,structure_feedback,43,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N016,P823981888DF1,evidence_critic,42,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N016,P823981888DF1,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+,P823981888DF1,patch_critic,42,patch_critic,unparseable_output,,,,,
+P6D05_N016,P823981888DF1,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSAL LBXSCH LBXSGL URDUMALC URXUMS
+P6D05_N016,P823981888DF1,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSAL LBXSCH LBXSGL URDUMALC URXUMS
+P6D05_N016,P823981888DF1,self_review,42,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N016,P823981888DF1,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N016,P823981888DF1,structure_feedback,42,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N016,P823981888DF1,structure_feedback,43,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N015,P9C929C1B445F,evidence_critic,42,evidence_critic,completed,,contradicted_contract,contradicted_contract,5,LBDSCRSI LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,P9C929C1B445F,evidence_critic,43,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N015,P9C929C1B445F,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,LBDSCRSI LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,P9C929C1B445F,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,LBDSCRSI LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,P9C929C1B445F,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,LBDSCRSI LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,P9C929C1B445F,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,LBDSCRSI LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,P9C929C1B445F,self_review,42,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N015,P9C929C1B445F,self_review,43,self_review,completed,,contradicted_contract,contradicted_contract,5,LBDSCRSI LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,P9C929C1B445F,structure_feedback,42,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,LBDSCRSI LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,P9C929C1B445F,structure_feedback,43,structure_feedback,completed,,contradicted_contract,contradicted_contract,4,BPXSY1 LBDSCRSI LBXSAL LBXSCH
+P6D05_N001,P9FCD6E6D0F27,evidence_critic,42,evidence_critic,unparseable_output,,supported,,,
+P6D05_N001,P9FCD6E6D0F27,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+P6D05_N001,P9FCD6E6D0F27,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P9FCD6E6D0F27,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P9FCD6E6D0F27,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P9FCD6E6D0F27,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N001,P9FCD6E6D0F27,self_review,42,self_review,unparseable_output,,supported,,,
+P6D05_N001,P9FCD6E6D0F27,self_review,43,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N001,P9FCD6E6D0F27,structure_feedback,42,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N001,P9FCD6E6D0F27,structure_feedback,43,structure_feedback,completed,,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N002,PB48E1126E325,evidence_critic,42,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N002,PB48E1126E325,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N002,PB48E1126E325,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,LBDSGLSI LBXSCH LBXSGTSI LBXSTR LBXSUA
+P6D05_N002,PB48E1126E325,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,LBDSGLSI LBXSCH LBXSGTSI LBXSTR LBXSUA
+P6D05_N002,PB48E1126E325,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,LBDSGLSI LBXSCH LBXSGTSI LBXSTR LBXSUA
+P6D05_N002,PB48E1126E325,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,LBDSGLSI LBXSCH LBXSGTSI LBXSTR LBXSUA
+P6D05_N002,PB48E1126E325,self_review,42,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N002,PB48E1126E325,self_review,43,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N002,PB48E1126E325,structure_feedback,42,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N002,PB48E1126E325,structure_feedback,43,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N017,PB80A13A0D020,evidence_critic,42,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N017,PB80A13A0D020,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N017,PB80A13A0D020,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSAL LBXSATSI LBXSCH LBXSGL RXDDRUG RXDRSC1
+P6D05_N017,PB80A13A0D020,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSAL LBXSATSI LBXSCH LBXSGL RXDDRUG RXDRSC1
+P6D05_N017,PB80A13A0D020,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSAL LBXSATSI LBXSCH LBXSGL RXDDRUG RXDRSC1
+P6D05_N017,PB80A13A0D020,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSAL LBXSATSI LBXSCH LBXSGL RXDDRUG RXDRSC1
+P6D05_N017,PB80A13A0D020,self_review,42,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N017,PB80A13A0D020,self_review,43,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N017,PB80A13A0D020,structure_feedback,42,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N017,PB80A13A0D020,structure_feedback,43,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N003,PB8F3AE164456,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N003,PB8F3AE164456,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+P6D05_N003,PB8F3AE164456,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N003,PB8F3AE164456,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N003,PB8F3AE164456,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N003,PB8F3AE164456,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSATSI LBXSCH LBXSTR
+P6D05_N003,PB8F3AE164456,self_review,42,self_review,unparseable_output,,supported,,,
+P6D05_N003,PB8F3AE164456,self_review,43,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N003,PB8F3AE164456,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N003,PB8F3AE164456,structure_feedback,43,structure_feedback,unparseable_output,,supported,,,
+P6D05_N010,PBC0B21BD1CB0,evidence_critic,42,evidence_critic,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ040 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,PBC0B21BD1CB0,evidence_critic,43,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N010,PBC0B21BD1CB0,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ040 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,PBC0B21BD1CB0,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ040 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,PBC0B21BD1CB0,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ040 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,PBC0B21BD1CB0,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ040 LBXSATSI LBXSCH LBXSGL
+P6D05_N010,PBC0B21BD1CB0,self_review,42,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N010,PBC0B21BD1CB0,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N010,PBC0B21BD1CB0,structure_feedback,42,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N010,PBC0B21BD1CB0,structure_feedback,43,structure_feedback,completed,,contradicted_contract,contradicted_contract,5,BPXSY1 DPQ040 LBXSATSI LBXSCH LBXSGL
+P6D05_N003,PC673F9ED65A0,evidence_critic,42,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N003,PC673F9ED65A0,evidence_critic,43,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N003,PC673F9ED65A0,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSATSI LBXSCH LBXSTR RXDDRUG RXDRSC1
+P6D05_N003,PC673F9ED65A0,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSATSI LBXSCH LBXSTR RXDDRUG RXDRSC1
+P6D05_N003,PC673F9ED65A0,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSATSI LBXSCH LBXSTR RXDDRUG RXDRSC1
+P6D05_N003,PC673F9ED65A0,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSATSI LBXSCH LBXSTR RXDDRUG RXDRSC1
+P6D05_N003,PC673F9ED65A0,self_review,42,self_review,completed,,contradicted_contract,contradicted_contract,6,BPXSY1 LBXSATSI LBXSCH LBXSTR RXDDRUG RXDRSC1
+P6D05_N003,PC673F9ED65A0,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N003,PC673F9ED65A0,structure_feedback,42,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N003,PC673F9ED65A0,structure_feedback,43,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N007,PD2FDEA43B1D2,evidence_critic,42,evidence_critic,unparseable_output,,supported,,,
+P6D05_N007,PD2FDEA43B1D2,evidence_critic,43,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N007,PD2FDEA43B1D2,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSNASI LBXSUA
+P6D05_N007,PD2FDEA43B1D2,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSNASI LBXSUA
+P6D05_N007,PD2FDEA43B1D2,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSNASI LBXSUA
+P6D05_N007,PD2FDEA43B1D2,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSNASI LBXSUA
+P6D05_N007,PD2FDEA43B1D2,self_review,42,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N007,PD2FDEA43B1D2,self_review,43,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N007,PD2FDEA43B1D2,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N007,PD2FDEA43B1D2,structure_feedback,43,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N009,PE030693E2EE7,evidence_critic,42,evidence_critic,completed,,contradicted_contract,contradicted_contract,5,BPQ080 BPXDI2 BPXPLS LBXSCH LBXSGL
+P6D05_N009,PE030693E2EE7,evidence_critic,43,evidence_critic,unparseable_output,,contradicted_contract,,,
+,PE030693E2EE7,patch_critic,42,patch_critic,unparseable_output,,,,,
+P6D05_N009,PE030693E2EE7,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPQ080 BPXDI2 BPXPLS LBXSCH LBXSGL
+P6D05_N009,PE030693E2EE7,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPQ080 BPXDI2 BPXPLS LBXSCH LBXSGL
+P6D05_N009,PE030693E2EE7,self_review,42,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N009,PE030693E2EE7,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N009,PE030693E2EE7,structure_feedback,42,structure_feedback,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N009,PE030693E2EE7,structure_feedback,43,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N005,PE2B8CFA6DA77,evidence_critic,42,evidence_critic,completed,,supported,supported,4,LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,PE2B8CFA6DA77,evidence_critic,43,evidence_critic,completed,,supported,insufficient_evidence,,
+,PE2B8CFA6DA77,patch_critic,42,patch_critic,unparseable_output,,,,,
+P6D05_N005,PE2B8CFA6DA77,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,PE2B8CFA6DA77,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,PE2B8CFA6DA77,self_review,42,self_review,completed,,supported,supported,4,LBXSATSI LBXSCH LBXSTR LBXSUA
+P6D05_N005,PE2B8CFA6DA77,self_review,43,self_review,unparseable_output,,supported,,,
+P6D05_N005,PE2B8CFA6DA77,structure_feedback,42,structure_feedback,completed,,supported,contradicted_contract,7,BPXDI1 BPXSY2 LBXSATSI LBXSCH LBXSGL LBXSTR LBXSUA
+P6D05_N005,PE2B8CFA6DA77,structure_feedback,43,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N007,PE4D35906BE9F,evidence_critic,42,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N007,PE4D35906BE9F,evidence_critic,43,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N007,PE4D35906BE9F,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSCH LBXSGL LBXSNASI LBXSUA RXDDRUG RXDRSD1
+P6D05_N007,PE4D35906BE9F,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSCH LBXSGL LBXSNASI LBXSUA RXDDRUG RXDRSD1
+P6D05_N007,PE4D35906BE9F,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSCH LBXSGL LBXSNASI LBXSUA RXDDRUG RXDRSD1
+P6D05_N007,PE4D35906BE9F,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,6,LBXSCH LBXSGL LBXSNASI LBXSUA RXDDRUG RXDRSD1
+P6D05_N007,PE4D35906BE9F,self_review,42,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N007,PE4D35906BE9F,self_review,43,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N007,PE4D35906BE9F,structure_feedback,42,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N007,PE4D35906BE9F,structure_feedback,43,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N016,PE792D4067A0C,evidence_critic,42,evidence_critic,completed,,supported,supported,4,BPXSY1 LBXSAL LBXSCH LBXSGL
+P6D05_N016,PE792D4067A0C,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+P6D05_N016,PE792D4067A0C,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSAL LBXSCH LBXSGL
+P6D05_N016,PE792D4067A0C,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSAL LBXSCH LBXSGL
+P6D05_N016,PE792D4067A0C,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSAL LBXSCH LBXSGL
+P6D05_N016,PE792D4067A0C,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSAL LBXSCH LBXSGL
+P6D05_N016,PE792D4067A0C,self_review,42,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N016,PE792D4067A0C,self_review,43,self_review,completed,,supported,insufficient_evidence,,
+P6D05_N016,PE792D4067A0C,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N016,PE792D4067A0C,structure_feedback,43,structure_feedback,completed,,supported,supported,4,BPXSY1 LBXSAL LBXSCH LBXSGL
+P6D05_N004,PEFB071FF0AA0,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N004,PEFB071FF0AA0,evidence_critic,43,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N004,PEFB071FF0AA0,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXPLS LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PEFB071FF0AA0,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXPLS LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PEFB071FF0AA0,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXPLS LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PEFB071FF0AA0,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXPLS LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PEFB071FF0AA0,self_review,42,self_review,completed,,supported,supported,4,BPXPLS LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PEFB071FF0AA0,self_review,43,self_review,completed,,supported,supported,4,BPXPLS LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PEFB071FF0AA0,structure_feedback,42,structure_feedback,unparseable_output,,supported,,,
+P6D05_N004,PEFB071FF0AA0,structure_feedback,43,structure_feedback,unparseable_output,,supported,,,
+P6D05_N004,PF90EAB945DDC,evidence_critic,42,evidence_critic,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N004,PF90EAB945DDC,evidence_critic,43,evidence_critic,unparseable_output,,contradicted_contract,,,
+P6D05_N004,PF90EAB945DDC,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXPLS DID040 LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PF90EAB945DDC,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXPLS DID040 LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PF90EAB945DDC,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXPLS DID040 LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PF90EAB945DDC,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,contradicted_contract,contradicted_contract,5,BPXPLS DID040 LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PF90EAB945DDC,self_review,42,self_review,completed,,contradicted_contract,insufficient_evidence,,
+P6D05_N004,PF90EAB945DDC,self_review,43,self_review,unparseable_output,,contradicted_contract,,,
+P6D05_N004,PF90EAB945DDC,structure_feedback,42,structure_feedback,completed,,contradicted_contract,contradicted_contract,8,BPXPLS DID040 DIQ070 LBXGH LBXSATSI LBXSCH LBXSGTSI LBXSTR
+P6D05_N004,PF90EAB945DDC,structure_feedback,43,structure_feedback,unparseable_output,,contradicted_contract,,,
+P6D05_N011,PFB878286A58C,evidence_critic,42,evidence_critic,unparseable_output,,supported,,,
+P6D05_N011,PFB878286A58C,evidence_critic,43,evidence_critic,unparseable_output,,supported,,,
+P6D05_N011,PFB878286A58C,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSCH LBXSGL LBXSTR
+P6D05_N011,PFB878286A58C,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSCH LBXSGL LBXSTR
+P6D05_N011,PFB878286A58C,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSCH LBXSGL LBXSTR
+P6D05_N011,PFB878286A58C,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,BPXSY1 LBXSCH LBXSGL LBXSTR
+P6D05_N011,PFB878286A58C,self_review,42,self_review,unparseable_output,,supported,,,
+P6D05_N011,PFB878286A58C,self_review,43,self_review,completed,,supported,supported,4,BPXSY1 LBXSCH LBXSGL LBXSTR
+P6D05_N011,PFB878286A58C,structure_feedback,42,structure_feedback,completed,,supported,supported,4,BPXSY1 LBXSCH LBXSGL LBXSTR
+P6D05_N011,PFB878286A58C,structure_feedback,43,structure_feedback,completed,,supported,insufficient_evidence,,
+P6D05_N015,PFDEC76DB8CDF,evidence_critic,42,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N015,PFDEC76DB8CDF,evidence_critic,43,evidence_critic,completed,,supported,insufficient_evidence,,
+P6D05_N015,PFDEC76DB8CDF,patch_critic,42,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,PFDEC76DB8CDF,patch_critic,42,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,PFDEC76DB8CDF,patch_critic,43,patch_critic/interface_only,completed,fallback_retained_input,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,PFDEC76DB8CDF,patch_critic,43,patch_critic/evidence_guarded,completed,fallback_retained_input,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,PFDEC76DB8CDF,self_review,42,self_review,completed,,supported,contradicted_contract,8,BPXSY1 LBDSCRSI LBXSAL LBXSATSI LBXSCH LBXSCR LBXSGL URXUMA
+P6D05_N015,PFDEC76DB8CDF,self_review,43,self_review,completed,,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,PFDEC76DB8CDF,structure_feedback,42,structure_feedback,completed,,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL
+P6D05_N015,PFDEC76DB8CDF,structure_feedback,43,structure_feedback,completed,,supported,supported,4,LBXSAL LBXSATSI LBXSCH LBXSGL

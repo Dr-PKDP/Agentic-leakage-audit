@@ -1,0 +1,83 @@
+{
+ "note": "The executed table does not record predictor names and its key is not unique, so a set-level denominator cannot be formed for the whole pool. Both limits are quantified here; the joined subset is a provenance check and not a result.",
+ "threshold_auc": 0.02,
+ "rows_as_published": [
+  2989,
+  3030
+ ],
+ "distinct_units_among_assessable_rows": 2685,
+ "agreement_after_collapsing_each_key": {
+  "first": [
+   2656,
+   2685
+  ],
+  "last": [
+   2656,
+   2685
+  ],
+  "least_agreeing": [
+   2655,
+   2685
+  ]
+ },
+ "rows_and_keys_by_arm": {
+  "p6-granite-8b|g_con_nhanes": {
+   "rows": 747,
+   "distinct_keys": 339,
+   "keys_with_more_than_one_row": 204
+  },
+  "p6-granite-8b|nhanes_review2048": {
+   "rows": 655,
+   "distinct_keys": 359,
+   "keys_with_more_than_one_row": 296
+  },
+  "p6-qwen3-8b|nhanes_default": {
+   "rows": 338,
+   "distinct_keys": 338,
+   "keys_with_more_than_one_row": 0
+  },
+  "p6-qwen3-8b|nhanes_review2048": {
+   "rows": 339,
+   "distinct_keys": 339,
+   "keys_with_more_than_one_row": 0
+  },
+  "p6-qwen3-8b|nhanes_think_off": {
+   "rows": 338,
+   "distinct_keys": 338,
+   "keys_with_more_than_one_row": 0
+  },
+  "p6-qwen3-8b|q_con_nhanes": {
+   "rows": 544,
+   "distinct_keys": 340,
+   "keys_with_more_than_one_row": 204
+  },
+  "p6-qwen3-8b|q_replay_full_nhanes": {
+   "rows": 339,
+   "distinct_keys": 339,
+   "keys_with_more_than_one_row": 0
+  },
+  "p6-qwen3-8b|q_replay_t1024_nhanes": {
+   "rows": 338,
+   "distinct_keys": 338,
+   "keys_with_more_than_one_row": 0
+  }
+ },
+ "archived_artifact_arm": {
+  "model": "p6-granite-8b",
+  "arm": "nhanes_review2048",
+  "manifest": "granite/nhanes/final_artifacts.csv",
+  "artifacts_joined_to_an_unambiguous_row": 30,
+  "artifacts_skipped_ambiguous_key": 141,
+  "artifacts_skipped_no_fitted_auc": 0,
+  "distinct_predictor_sets": 14,
+  "set_level_agreement": [
+   13,
+   14
+  ],
+  "row_level_agreement": [
+   28,
+   30
+  ],
+  "sets_with_inconsistent_rows": 0
+ }
+}
