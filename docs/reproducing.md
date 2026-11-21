@@ -125,7 +125,7 @@ The scripts in `experiments/label_contexts` import the core-context runner from 
 python analysis/replay_decoding_execution_stats.py
 ```
 
-The script recomputes, from the archived outcome tables, the quantities reported for Experiments 6 to 9 and writes `results/replay_decoding_execution_stats.json`. It needs only the standard library.
+The script recomputes, from the archived outcome tables, the quantities reported for Experiments 6 to 9 and writes `results/replay_decoding_execution_stats.json`. It needs only the standard library. A final predictor set counts as inflated when its AUC is at least 0.02 above that of the reference set of its context; the archived table stores that difference rounded to four decimals and no record lies within 0.0005 of the threshold. The table records verdicts and AUCs but not the predictor names of each proposal, so agreement is reported over rows (2,989 of 3,030) and over contexts (disagreement in 3 of the 17 label contexts) and not over distinct predictor sets.
 
 Experiment 6 (`results/review_replay/`). The reviews saved by the 2,048-token run of Experiment 3 are given to the reviser unchanged (`q_replay_full_*`) or cut to their first 1,024 tokens with the serving model's own tokenizer (`q_replay_t1024_*`); only the revision is generated. The replay of the complete reviews reproduces the repair counts of the source run exactly (71 of 84 pooled on the core contexts, 122 of 136 on the label contexts), so the two conditions differ only in the length of the critique.
 
@@ -139,7 +139,7 @@ Experiment 8 (`results/gate_operating_characteristics/`). The battery runs offli
 bash experiments/constrained_and_replay/run_stages.sh gate
 ```
 
-Experiment 9 (`results/execution_check/`). A fixed pipeline (median imputation with missingness indicators, standardization, one-hot coding of the four prescription fields, L2-penalized logistic regression, five-fold stratified cross-validated AUC with seed 20261119, no survey weights) is fitted to the public NHANES 2015–2016 files DEMO_I, BIOPRO_I, GHB_I, GLU_I, BPX_I, BPQ_I, DIQ_I, DPQ_I, ALB_CR_I and RXQ_RX_I for adults aged 20 years or older. The outcomes are diabetes (DIQ010 = 1, HbA1c of 6.5% or more, or fasting glucose of 126 mg/dL or more), hypertension (mean systolic pressure of 130 mmHg or more, mean diastolic pressure of 80 mmHg or more, or BPQ040A = 1), depression (PHQ-9 of 10 or more with all nine items valid) and chronic kidney disease (eGFR below 60 mL/min/1.73 m² by CKD-EPI 2021, or urine albumin-to-creatinine ratio of 30 mg/g or more). A proposal is executed only as a list of predictors; names absent from the analytic file are ignored. A final predictor set counts as inflated when its AUC exceeds that of the reference set of its context by 0.02 or more. The model's text is never executed as code.
+Experiment 9 (`results/execution_check/`). A fixed pipeline (median imputation with missingness indicators, standardization, one-hot coding of the four prescription fields, L2-penalized logistic regression, five-fold stratified cross-validated AUC with seed 20261119, no survey weights) is fitted to the public NHANES 2015–2016 files DEMO_I, BIOPRO_I, GHB_I, GLU_I, BPX_I, BPQ_I, DIQ_I, DPQ_I, ALB_CR_I and RXQ_RX_I for adults aged 20 years or older. The outcomes are diabetes (DIQ010 = 1, HbA1c of 6.5% or more, or fasting glucose of 126 mg/dL or more), hypertension (mean systolic pressure of 130 mmHg or more, mean diastolic pressure of 80 mmHg or more, or BPQ040A = 1, which records ever having been told to take prescribed medicine for high blood pressure and is therefore a prescription-history proxy rather than current use), depression (PHQ-9 of 10 or more with all nine items valid) and chronic kidney disease (eGFR below 60 mL/min/1.73 m² by CKD-EPI 2021, or urine albumin-to-creatinine ratio of 30 mg/g or more). A proposal is executed only as a list of predictors; names absent from the analytic file are ignored. A final predictor set counts as inflated when its AUC exceeds that of the reference set of its context by 0.02 or more. The model's text is never executed as code.
 
 ```
 export P6_NHANES_DIR=data/nhanes_2015_2016   # the ten files above, downloaded by the fetch step if absent
@@ -195,11 +195,22 @@ P6_CONFIRM=yes nohup bash experiments/direct_revision/run_check_revision.sh > ch
 
 The script makes at most 232 requests and analyzes each run against the critic-reviser paths of the 2,048-token run and against the direct-revision run in `results/direct_revision/`.
 
+## Acceptance-gate registry and the designated tests
+
+```
+python analysis/gate_pool.py
+python analysis/designated_tests.py
+```
+
+`gate_pool.py` builds the registry of every condition in which the same generated patch passed through both acceptance gates, writing `results/gate_pool.json`. A condition is one generation run over one context set, so each generated patch is counted once; the normalized rescoring of the Granite and clarified-instruction runs rescores runs already in the registry and is listed separately rather than pooled. A pair enters the pool when the initial proposal was supported and both gate outcomes are assessable. The expected totals are 23 conditions, 633 paired supported inputs, 71 harmful edits under the interface-only gate and 3 under the evidence gate, with 29 further pairs excluded as unevaluable.
+
+`designated_tests.py` computes the five designated hypothesis-level tests and writes `results/designated_tests.json`. Contexts are the unit of inference: each contrast is the mean over contexts of the within-context difference in the outcome rate, with a percentile interval from 10,000 bootstrap resamples of contexts (seed 2026) and a two-sided randomization test that flips the sign of each context's difference, enumerating every assignment for 20 contexts or fewer. The same rows are also fitted by a generalized estimating equation with an identity link, binomial variance and an exchangeable working correlation clustered on context, which needs `statsmodels`. The Holm procedure is applied across the five. The expected results are H1 +61.9 pp (p = 0.0004, Holm 0.0012), H2 +100 pp (0.125, 0.125), H3 +9.2 pp (0.0001, 0.0005), H4 +52.9 pp (0.00244, 0.00488) and H5 +25.7 pp (0.00018, 0.00072). The five tests were selected once the responses of the later experiments were available, so they are multiplicity-adjusted hypothesis-level tests and not a prespecified confirmatory family.
+
 ## Agreement of AI tools with the reference sets
 
 `analysis/reference_agreement.py` compares the ratings of five general-purpose AI tools (ChatGPT, Perplexity, Gemini, Grok, Meta AI) with the NHANES reference exclusion sets. Each tool labeled every variable of the ten 2015–2016 files that hold the reference variables (162 candidates) as excluded or not for each of the four screening tasks, from the variable name, component and description, without seeing the reference. The script reports Cohen's kappa against the reference (pooled and per task), the share of reference pairs each tool flags, the flags outside the reference, the kappa between tools, and writes `disagreements.csv` with empty columns for a cross-check by the authors. The tools are a check on the reference, not independent human raters.
 
-The ratings are in `results/reference_agreement/ratings/`. The authors adjudicated the 43 task–variable pairs on which at least one tool disagreed with the reference. Nine pairs were added, which gives the adjusted reference `results/nhanes/schema_audit_reference_adjusted.csv` (89 pairs, against 80). The primary analyses use the original reference.
+The ratings are in `results/reference_agreement/ratings/` and the task they were given is described in `results/reference_agreement/rating_task.md`. The authors adjudicated the 43 task–variable pairs on which at least one tool disagreed with the reference. Nine pairs were added, which gives the adjusted reference `results/nhanes/schema_audit_reference_adjusted.csv` (89 pairs, against 80). The primary analyses use the original reference.
 
 ```
 python analysis/reference_agreement.py --ratings results/reference_agreement/ratings \

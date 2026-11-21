@@ -1216,10 +1216,80 @@
         2989,
         3030
       ],
-      "distinct_artifacts": [
-        171,
-        175
-      ]
+      "records_near_threshold": 0,
+      "contexts": 17,
+      "contexts_with_any_disagreement": 3,
+      "mean_context_agreement": 0.9869,
+      "per_context": {
+        "P6D05_N001": {
+          "rows": 180,
+          "disagreements": 0
+        },
+        "P6D05_N002": {
+          "rows": 176,
+          "disagreements": 0
+        },
+        "P6D05_N003": {
+          "rows": 178,
+          "disagreements": 0
+        },
+        "P6D05_N004": {
+          "rows": 179,
+          "disagreements": 0
+        },
+        "P6D05_N005": {
+          "rows": 180,
+          "disagreements": 0
+        },
+        "P6D05_N006": {
+          "rows": 185,
+          "disagreements": 33
+        },
+        "P6D05_N007": {
+          "rows": 174,
+          "disagreements": 0
+        },
+        "P6D05_N008": {
+          "rows": 188,
+          "disagreements": 0
+        },
+        "P6D05_N009": {
+          "rows": 170,
+          "disagreements": 0
+        },
+        "P6D05_N010": {
+          "rows": 182,
+          "disagreements": 0
+        },
+        "P6D05_N011": {
+          "rows": 178,
+          "disagreements": 0
+        },
+        "P6D05_N012": {
+          "rows": 178,
+          "disagreements": 6
+        },
+        "P6D05_N013": {
+          "rows": 159,
+          "disagreements": 0
+        },
+        "P6D05_N014": {
+          "rows": 181,
+          "disagreements": 0
+        },
+        "P6D05_N015": {
+          "rows": 186,
+          "disagreements": 0
+        },
+        "P6D05_N016": {
+          "rows": 178,
+          "disagreements": 2
+        },
+        "P6D05_N017": {
+          "rows": 178,
+          "disagreements": 0
+        }
+      }
     },
     "cross_tab": {
       "counterpart|evaluator_supported|not_inflated": 808,

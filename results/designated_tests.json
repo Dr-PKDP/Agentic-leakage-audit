@@ -1,0 +1,137 @@
+{
+ "note": "Selected after the responses of the later experiments were available; multiplicity-adjusted hypothesis-level analyses, not a prespecified confirmatory family.",
+ "bootstrap_resamples": 10000,
+ "bootstrap_seed": 2026,
+ "tests": [
+  {
+   "hypothesis": "H1",
+   "contrast": "Repair with a critic review against revision without one (self-review, core contexts)",
+   "contexts": 21,
+   "rows_first_condition": 21,
+   "rows_second_condition": 21,
+   "mean_difference_pp": 61.9,
+   "context_bootstrap_95": [
+    42.9,
+    81.0
+   ],
+   "contexts_favoring_first": 13,
+   "contexts_favoring_second": 0,
+   "randomization_p": 0.0004,
+   "randomization_assignments": 10000,
+   "gee": {
+    "risk_difference_pp": 61.9,
+    "ci95_pp": [
+     41.1,
+     82.7
+    ],
+    "clusters": 21,
+    "converged": true
+   },
+   "holm_adjusted_p": 0.0012
+  },
+  {
+   "hypothesis": "H2",
+   "contrast": "Repair by patch against repair by full proposal, permissions family (F05, core contexts)",
+   "contexts": 4,
+   "rows_first_condition": 4,
+   "rows_second_condition": 4,
+   "mean_difference_pp": 100.0,
+   "context_bootstrap_95": [
+    100.0,
+    100.0
+   ],
+   "contexts_favoring_first": 4,
+   "contexts_favoring_second": 0,
+   "randomization_p": 0.125,
+   "randomization_assignments": 16,
+   "gee": {
+    "risk_difference_pp": 100.0,
+    "ci95_pp": [
+     100.0,
+     100.0
+    ],
+    "clusters": 4,
+    "converged": true
+   },
+   "holm_adjusted_p": 0.125
+  },
+  {
+   "hypothesis": "H3",
+   "contrast": "Harmful edits under the interface-only gate against the evidence gate (every condition)",
+   "contexts": 41,
+   "rows_first_condition": 633,
+   "rows_second_condition": 633,
+   "mean_difference_pp": 9.2,
+   "context_bootstrap_95": [
+    6.9,
+    14.7
+   ],
+   "contexts_favoring_first": 22,
+   "contexts_favoring_second": 0,
+   "randomization_p": 0.0001,
+   "randomization_assignments": 10000,
+   "gee": {
+    "risk_difference_pp": 10.4,
+    "ci95_pp": [
+     6.6,
+     14.2
+    ],
+    "clusters": 41,
+    "converged": true
+   },
+   "holm_adjusted_p": 0.0005
+  },
+  {
+   "hypothesis": "H4",
+   "contrast": "Repair by the evidence critic against the name-prefix baseline (label contexts)",
+   "contexts": 17,
+   "rows_first_condition": 34,
+   "rows_second_condition": 17,
+   "mean_difference_pp": 52.9,
+   "context_bootstrap_95": [
+    29.4,
+    76.5
+   ],
+   "contexts_favoring_first": 11,
+   "contexts_favoring_second": 1,
+   "randomization_p": 0.00244,
+   "randomization_assignments": 131072,
+   "gee": {
+    "risk_difference_pp": 52.9,
+    "ci95_pp": [
+     29.2,
+     76.7
+    ],
+    "clusters": 17,
+    "converged": true
+   },
+   "holm_adjusted_p": 0.00488
+  },
+  {
+   "hypothesis": "H5",
+   "contrast": "Repair at a review limit of 2,048 tokens against 1,024 (label contexts, four streams)",
+   "contexts": 17,
+   "rows_first_condition": 136,
+   "rows_second_condition": 136,
+   "mean_difference_pp": 25.7,
+   "context_bootstrap_95": [
+    16.9,
+    34.6
+   ],
+   "contexts_favoring_first": 15,
+   "contexts_favoring_second": 1,
+   "randomization_p": 0.00018,
+   "randomization_assignments": 131072,
+   "gee": {
+    "risk_difference_pp": 25.7,
+    "ci95_pp": [
+     16.7,
+     34.7
+    ],
+    "clusters": 17,
+    "converged": true
+   },
+   "holm_adjusted_p": 0.00072
+  }
+ ]
+}

@@ -2,7 +2,13 @@
 
 Reads results/review_replay, results/constrained_decoding, results/gate_operating_characteristics and
 results/execution_check together with the archived longer-limit and clarified-instruction runs, and writes
-results/replay_decoding_execution_stats.json. No model calls and no participant data.
+results/replay_decoding_execution_stats.json. No model calls.
+
+A final predictor set counts as inflated when its cross-validated AUC is at least 0.02 above that of the
+reference set of its context. The archived table stores the difference rounded to four decimals, and no
+record lies within 0.0005 of the threshold, so the comparison is unaffected by the rounding. The table
+records verdicts and AUCs but not the predictor names of each final proposal, so agreement is reported
+over rows and over contexts, which is the unit of inference, and not over distinct predictor sets.
 """
 import collections
 import csv
@@ -177,12 +183,12 @@ def execution():
         r["inflated"] = float(r["inflation_final"]) >= th
         r["flagged"] = r["final_verdict"] == CON
     agree = sum(r["inflated"] == r["flagged"] for r in assess)
-    seen, distinct = set(), []
+    boundary = sum(abs(float(r["inflation_final"]) - th) < 0.0005 for r in assess)
+    by_ctx = collections.defaultdict(list)
     for r in assess:
-        k = (r["context_id"], r["input"], r["auc_final"], r["final_verdict"])
-        if k not in seen:
-            seen.add(k)
-            distinct.append(r)
+        by_ctx[r["context_id"]].append(r)
+    ctx = {c: {"rows": len(v), "disagreements": sum(r["inflated"] != r["flagged"] for r in v)}
+           for c, v in sorted(by_ctx.items())}
     cross = collections.Counter((r["input"], r["flagged"], r["inflated"]) for r in assess)
     paths = {}
     for p in sorted({r["path"] for r in assess}):
@@ -199,7 +205,12 @@ def execution():
         task[r["task"]].append(float(r["inflation"]))
     return {
         "threshold_auc": th, "final_proposals_scored": len(rs), "assessable": len(assess),
-        "agreement": {"rows": [agree, len(assess)], "distinct_artifacts": [sum(r["inflated"] == r["flagged"] for r in distinct), len(distinct)]},
+        "agreement": {"rows": [agree, len(assess)], "records_near_threshold": boundary,
+                      "contexts": len(ctx),
+                      "contexts_with_any_disagreement": sum(1 for v in ctx.values() if v["disagreements"]),
+                      "mean_context_agreement": round(sum((v["rows"] - v["disagreements"]) / v["rows"]
+                                                          for v in ctx.values()) / len(ctx), 4),
+                      "per_context": ctx},
         "cross_tab": {f"{k[0]}|evaluator_{'contradicted' if k[1] else 'supported'}|{'inflated' if k[2] else 'not_inflated'}": v for k, v in sorted(cross.items())},
         "by_path": paths,
         "patch_pairs_supported_start": {"pairs": len(both), "interface_only_inflated": sum(v["patch_critic/interface_only"] for v in both),

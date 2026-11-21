@@ -511,9 +511,19 @@
    "sha256": "3e6718add4e17e9f6f1f736c9e2154e71ed7e5aa5062b8665b336e8de942f120"
   },
   {
+   "path": "analysis/designated_tests.py",
+   "bytes": 9534,
+   "sha256": "5c7370fb6aa96014ef249cb0ff745473a84dbde8ffb9fa4aa26b9c0fa27289bb"
+  },
+  {
    "path": "analysis/extended_stats.py",
    "bytes": 4638,
    "sha256": "28eb3b75dc6d52c6709be6c625683e5a10053e2125be7e30bb581923050c16d7"
+  },
+  {
+   "path": "analysis/gate_pool.py",
+   "bytes": 12239,
+   "sha256": "0aad0b3cde63cc0c4a814ac5044dd027f55dc8aa0513485fbb96995089bbcf40"
   },
   {
    "path": "analysis/longlimit_stats.py",
@@ -547,8 +557,8 @@
   },
   {
    "path": "analysis/replay_decoding_execution_stats.py",
-   "bytes": 10669,
-   "sha256": "13cc6b55d7faac457616364b933ebb9345c449c7880eab598bd20224d6f34219"
+   "bytes": 11617,
+   "sha256": "78720cdc34bf447d3a639fd04531d7630f8438cdf192ffb30962823ef2e6b193"
   },
   {
    "path": "analysis/review_flags.py",
@@ -801,6 +811,11 @@
    "sha256": "cff09e84c3def684631bc772592e3e7bbc9383033ba1f0405494b785bb0fbe70"
   },
   {
+   "path": "results/designated_tests.json",
+   "bytes": 3277,
+   "sha256": "7fc8eded5bc6b71f85f548ed4f6db8028bc912a4e0d43e74133952f42d44fb01"
+  },
+  {
    "path": "results/direct_revision/core24/outcomes.csv",
    "bytes": 26132,
    "sha256": "fc4e5c6cee5a24a3c46ed05fbe9fbf1011b5891166bf12a30688daa0d4a4c166"
@@ -884,6 +899,11 @@
    "path": "results/gate_operating_characteristics/summary.json",
    "bytes": 36388,
    "sha256": "388150f7e22cb39388382fa5aabe52b33b0c84170c4aa86f3dd58ac38da83ab9"
+  },
+  {
+   "path": "results/gate_pool.json",
+   "bytes": 99654,
+   "sha256": "ff06c588930d8cd40b84744c579c8877abd4f48fbc9cfccd286a807f29269c26"
   },
   {
    "path": "results/granite/core24/models.json",
@@ -1261,6 +1281,11 @@
    "sha256": "55f724d1dd49a8f6965a9b0931142c84b619853e7f8022ef04cec916852bc599"
   },
   {
+   "path": "results/reference_agreement/rating_task.md",
+   "bytes": 2892,
+   "sha256": "d107c0a3e145fc9378b69d1e52adb2f06725e7c13530f62524701b57992abcc3"
+  },
+  {
    "path": "results/reference_agreement/ratings/ratings_chatgpt_T1.csv",
    "bytes": 11436,
    "sha256": "9d4f12892b6028d4b6a1d8e6088eca6bda19fa5905e6918b6b451260a4ea47c7"
@@ -1362,8 +1387,8 @@
   },
   {
    "path": "results/replay_decoding_execution_stats.json",
-   "bytes": 28078,
-   "sha256": "06ede7602b163e1622e5130eeacc112889347540929ee28463293e5f03af7b16"
+   "bytes": 29665,
+   "sha256": "32a669138439d74ff6185329c4e163dc57473c32bab7b496272a2961c0b35a19"
   },
   {
    "path": "results/review_limit_2048/core24/outcomes.csv",

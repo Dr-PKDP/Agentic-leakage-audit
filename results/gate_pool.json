@@ -1,0 +1,6225 @@
+{
+ "summary": {
+  "conditions": 23,
+  "paired_supported_inputs": 633,
+  "unevaluable_pairs_excluded": 29,
+  "harmful_interface_only": 71,
+  "harmful_evidence_gate": 3,
+  "risk_difference_pp_pooled": 10.7,
+  "discordant_pairs": 68,
+  "pairs_where_evidence_gate_worse": 0,
+  "contexts": 41,
+  "contexts_with_discordance": 22,
+  "repair_side": {
+   "paired_contradicted_inputs": 614,
+   "unevaluable_pairs_excluded": 12,
+   "repairs_interface_only": 413,
+   "repairs_evidence_gate": 400,
+   "discordant_pairs": 13
+  },
+  "context_level_mean_difference_pp": 9.2,
+  "context_bootstrap_95": [
+   6.9,
+   14.7
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 2026,
+  "signflip_p": 0.0001,
+  "signflip_assignments": 10000,
+  "signflip_clusters": 41
+ },
+ "registry": [
+  {
+   "condition": "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   "context_set": "core",
+   "experiment": 1,
+   "table": "core_contexts/per_input_outcomes.csv",
+   "paired_supported_inputs": 23,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 1 repeat; Qwen3-8B, original instruction",
+   "context_set": "core",
+   "experiment": 1,
+   "table": "label_contexts/core24_think_off/outcomes.csv",
+   "paired_supported_inputs": 23,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   "context_set": "label",
+   "experiment": 2,
+   "table": "label_contexts/nhanes_default/outcomes.csv",
+   "paired_supported_inputs": 32,
+   "unevaluable_pairs": 2,
+   "harmful_interface_only": 5,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 2 repeat; Qwen3-8B, original instruction",
+   "context_set": "label",
+   "experiment": 2,
+   "table": "label_contexts/nhanes_think_off/outcomes.csv",
+   "paired_supported_inputs": 32,
+   "unevaluable_pairs": 2,
+   "harmful_interface_only": 5,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   "context_set": "core",
+   "experiment": 3,
+   "table": "review_limit_2048/core24/outcomes.csv",
+   "paired_supported_inputs": 24,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   "context_set": "label",
+   "experiment": 3,
+   "table": "review_limit_2048/nhanes/outcomes.csv",
+   "paired_supported_inputs": 33,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 4,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   "context_set": "core",
+   "experiment": 4,
+   "table": "granite/core24/strict/outcomes.csv",
+   "paired_supported_inputs": 23,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   "context_set": "label",
+   "experiment": 4,
+   "table": "granite/nhanes/strict/outcomes.csv",
+   "paired_supported_inputs": 29,
+   "unevaluable_pairs": 5,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   "context_set": "core",
+   "experiment": 4,
+   "table": "granite_clarified/core24/strict/outcomes.csv",
+   "paired_supported_inputs": 23,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   "context_set": "label",
+   "experiment": 4,
+   "table": "granite_clarified/nhanes/strict/outcomes.csv",
+   "paired_supported_inputs": 24,
+   "unevaluable_pairs": 10,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Qwen3-8B, clarified instruction",
+   "context_set": "core",
+   "experiment": 4,
+   "table": "review_limit_2048_clarified/core24/strict/outcomes.csv",
+   "paired_supported_inputs": 24,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 5; Qwen3-8B, no review",
+   "context_set": "core",
+   "experiment": 5,
+   "table": "direct_revision/core24/outcomes.csv",
+   "paired_supported_inputs": 24,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 7,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 5; Qwen3-8B, no review",
+   "context_set": "label",
+   "experiment": 5,
+   "table": "direct_revision/nhanes/outcomes.csv",
+   "paired_supported_inputs": 34,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 27,
+   "harmful_evidence_gate": 2
+  },
+  {
+   "condition": "Experiment 5; Qwen3-8B, check then revise",
+   "context_set": "core",
+   "experiment": 5,
+   "table": "check_revision/core24/outcomes.csv",
+   "paired_supported_inputs": 23,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 3,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 5; Qwen3-8B, check then revise",
+   "context_set": "label",
+   "experiment": 5,
+   "table": "check_revision/nhanes/outcomes.csv",
+   "paired_supported_inputs": 34,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 5,
+   "harmful_evidence_gate": 1
+  },
+  {
+   "condition": "Experiment 6; Qwen3-8B, complete saved reviews",
+   "context_set": "core",
+   "experiment": 6,
+   "table": "review_replay/q_replay_full_core24/outcomes.csv",
+   "paired_supported_inputs": 24,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 6; Qwen3-8B, complete saved reviews",
+   "context_set": "label",
+   "experiment": 6,
+   "table": "review_replay/q_replay_full_nhanes/outcomes.csv",
+   "paired_supported_inputs": 33,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 4,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   "context_set": "core",
+   "experiment": 6,
+   "table": "review_replay/q_replay_t1024_core24/outcomes.csv",
+   "paired_supported_inputs": 23,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   "context_set": "label",
+   "experiment": 6,
+   "table": "review_replay/q_replay_t1024_nhanes/outcomes.csv",
+   "paired_supported_inputs": 32,
+   "unevaluable_pairs": 2,
+   "harmful_interface_only": 5,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 10; Qwen3.8-27B, clarified instruction",
+   "context_set": "core",
+   "experiment": 10,
+   "table": "model_scale/qwen3_27b/q27b_clar_core24/outcomes.csv",
+   "paired_supported_inputs": 24,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 10; Qwen3.8-27B, clarified instruction",
+   "context_set": "label",
+   "experiment": 10,
+   "table": "model_scale/qwen3_27b/q27b_clar_nhanes/outcomes.csv",
+   "paired_supported_inputs": 34,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 10; Qwen3.8-27B, constrained revision",
+   "context_set": "core",
+   "experiment": 10,
+   "table": "model_scale/qwen3_27b/q27b_con_core24/outcomes.csv",
+   "paired_supported_inputs": 24,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 10; Qwen3.8-27B, constrained revision",
+   "context_set": "label",
+   "experiment": 10,
+   "table": "model_scale/qwen3_27b/q27b_con_nhanes/outcomes.csv",
+   "paired_supported_inputs": 34,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  }
+ ],
+ "rescorings_excluded": [
+  {
+   "condition": "Experiment 4; Granite 3.3 8B Instruct, original instruction, normalized",
+   "context_set": "core",
+   "table": "granite/core24/normalized/outcomes.csv",
+   "paired_supported_inputs": 23,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 5,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Granite 3.3 8B Instruct, original instruction, normalized",
+   "context_set": "label",
+   "table": "granite/nhanes/normalized/outcomes.csv",
+   "paired_supported_inputs": 31,
+   "unevaluable_pairs": 3,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Granite 3.3 8B Instruct, clarified instruction, normalized",
+   "context_set": "core",
+   "table": "granite_clarified/core24/normalized/outcomes.csv",
+   "paired_supported_inputs": 23,
+   "unevaluable_pairs": 1,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Granite 3.3 8B Instruct, clarified instruction, normalized",
+   "context_set": "label",
+   "table": "granite_clarified/nhanes/normalized/outcomes.csv",
+   "paired_supported_inputs": 31,
+   "unevaluable_pairs": 3,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  {
+   "condition": "Experiment 4; Qwen3-8B, clarified instruction, normalized",
+   "context_set": "core",
+   "table": "review_limit_2048_clarified/core24/normalized/outcomes.csv",
+   "paired_supported_inputs": 24,
+   "unevaluable_pairs": 0,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  }
+ ],
+ "per_context": {
+  "P6D04_C001": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C002": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C003": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C004": {
+   "pairs": 11,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C005": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C006": {
+   "pairs": 11,
+   "harmful_interface_only": 4,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C007": {
+   "pairs": 12,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C008": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C009": {
+   "pairs": 12,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C010": {
+   "pairs": 12,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C011": {
+   "pairs": 12,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C012": {
+   "pairs": 12,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C013": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C014": {
+   "pairs": 11,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C015": {
+   "pairs": 12,
+   "harmful_interface_only": 1,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C016": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C017": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C018": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C019": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C020": {
+   "pairs": 9,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C021": {
+   "pairs": 12,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C022": {
+   "pairs": 12,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C023": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D04_C024": {
+   "pairs": 12,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N001": {
+   "pairs": 21,
+   "harmful_interface_only": 3,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N002": {
+   "pairs": 21,
+   "harmful_interface_only": 3,
+   "harmful_evidence_gate": 1
+  },
+  "P6D05_N003": {
+   "pairs": 21,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N004": {
+   "pairs": 21,
+   "harmful_interface_only": 7,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N005": {
+   "pairs": 21,
+   "harmful_interface_only": 8,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N006": {
+   "pairs": 22,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N007": {
+   "pairs": 21,
+   "harmful_interface_only": 5,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N008": {
+   "pairs": 22,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N009": {
+   "pairs": 18,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N010": {
+   "pairs": 22,
+   "harmful_interface_only": 6,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N011": {
+   "pairs": 21,
+   "harmful_interface_only": 5,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N012": {
+   "pairs": 21,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N013": {
+   "pairs": 14,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 2
+  },
+  "P6D05_N014": {
+   "pairs": 21,
+   "harmful_interface_only": 7,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N015": {
+   "pairs": 22,
+   "harmful_interface_only": 0,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N016": {
+   "pairs": 21,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 0
+  },
+  "P6D05_N017": {
+   "pairs": 21,
+   "harmful_interface_only": 2,
+   "harmful_evidence_gate": 0
+  }
+ },
+ "pair_columns": [
+  "context_id",
+  "proposal_id",
+  "seed",
+  "context_set",
+  "condition",
+  "harmful_interface_only",
+  "harmful_evidence_gate"
+ ],
+ "pairs": [
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 1 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 1 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 2 (review limit 1,024); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 2 repeat; Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 3 (review limit 2,048); Qwen3-8B, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, original instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   1,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   1,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 4; Granite 3.3 8B Instruct, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   1,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 4; Qwen3-8B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   1
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   1
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, no review",
+   1,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   1,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   1,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   1,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   1,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   1,
+   1
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   1,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   1,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   1,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 5; Qwen3-8B, check then revise",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   1,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   1,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   1,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   1,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, complete saved reviews",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   1,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   1,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   1,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   1,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   1,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   1,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 6; Qwen3-8B, reviews cut to 1,024 tokens",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, clarified instruction",
+   0,
+   0
+  ],
+  [
+   "P6D04_C001",
+   "P0D622157E4E4",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C002",
+   "PB1B01D3107B6",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C003",
+   "P47EFF910C2F1",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C004",
+   "P37499145E4BF",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C005",
+   "PCE19850F7C55",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C006",
+   "PC0199EC80C3B",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C007",
+   "PE8FBA2D3F6A5",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C008",
+   "P1A2DFD2FEA0A",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C009",
+   "P93D10779CD49",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C010",
+   "P3BBB97950FB6",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C011",
+   "P295B1217536B",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C012",
+   "P17376429D7ED",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C013",
+   "P7C0A0ECF4B34",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C014",
+   "P2084A8339B3A",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C015",
+   "PEC9CE5B71734",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C016",
+   "P721BEE9E82B1",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C017",
+   "PB7B5BBAEA81F",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C018",
+   "P503C0FDFD061",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C019",
+   "P629223F0CA8D",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C020",
+   "P7A23A56E5D35",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C021",
+   "PAED0E945CDF6",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C022",
+   "PDD4D431F663C",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C023",
+   "P18460F39E4F5",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D04_C024",
+   "P5ADE2C4BF0FA",
+   "42",
+   "core",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N001",
+   "P9FCD6E6D0F27",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N002",
+   "P00CBDF88320C",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N003",
+   "PB8F3AE164456",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N004",
+   "PEFB071FF0AA0",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N005",
+   "PE2B8CFA6DA77",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N006",
+   "P50AF815C032C",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N007",
+   "PD2FDEA43B1D2",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N008",
+   "P51EC48AF9AB5",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N009",
+   "P28731BE635D5",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N010",
+   "P402629B52176",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N011",
+   "PFB878286A58C",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N012",
+   "P570745655DD3",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N013",
+   "P2FAB56FD3B6E",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N014",
+   "P564AA4ABD26F",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N015",
+   "PFDEC76DB8CDF",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N016",
+   "PE792D4067A0C",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "42",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ],
+  [
+   "P6D05_N017",
+   "P54B707615DBF",
+   "43",
+   "label",
+   "Experiment 10; Qwen3.8-27B, constrained revision",
+   0,
+   0
+  ]
+ ]
+}
