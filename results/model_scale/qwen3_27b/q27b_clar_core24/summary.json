@@ -652,7 +652,7 @@
     "object": "model",
     "created": 1795145232,
     "owned_by": "vllm",
-    "root": "/data/pduttapramanik/arbiter/models/qwen3.8-27b",
+    "root": "models/qwen3.8-27b",
     "parent": null,
     "max_model_len": 32768,
     "permission": [

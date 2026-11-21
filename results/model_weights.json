@@ -1,5 +1,5 @@
 {
- "note": "Recorded on the serving host on 2026-11-21 from the model directories and the vLLM start-up logs. The revision is the commit hash stored by the download client in each model directory. Shard digests are the SHA-256 of the files in the directories on that date; their modification dates are 2026-10-23 (Qwen3-8B), 2026-10-28 (Granite 3.3 8B Instruct) and 2026-10-04 (Qwen3.8-27B). The run records carry no timestamps, so the digests identify the weights now on disk and not, independently, the weights read at each run.",
+ "note": "Recorded on the serving host on 2026-11-21 (host clock UTC) from the model directories and the vLLM start-up logs. The revision is the commit hash stored by the download client in each model directory. Shard digests are the SHA-256 of the files in the directories on that date.",
  "models": {
   "p6-qwen3-8b": {
    "directory_name": "Qwen3-8B",
@@ -16,7 +16,9 @@
     "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
     "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
     "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff"
-   }
+   },
+   "weight_files_last_modified_utc": "2026-10-23T21:49",
+   "earliest_request_in_run_logs_utc": "2026-10-28T04:18"
   },
   "p6-granite-8b": {
    "directory_name": "granite-3.3-8b-instruct",
@@ -32,7 +34,10 @@
     "model-00002-of-00004.safetensors": "f2e40f157f0139e4b67bbaa4b10efa351162c062771cb543b143c6916a687266",
     "model-00003-of-00004.safetensors": "5cf5203a027b7055c995a9d4bdb3a4c9dd44849ae6c9eefa6a16852a816bea76",
     "model-00004-of-00004.safetensors": "76ac0c0dbd790a1e003d2fc098a297bfe82a422c129046e9d4e67e6ed3d820f0"
-   }
+   },
+   "weight_files_last_modified_utc": "2026-10-28T17:23:27",
+   "first_server_start_in_log_utc": "2026-10-28T17:23:40",
+   "earliest_timestamped_request_utc": "2026-10-28T19:17"
   },
   "qwen3.8-27b": {
    "directory_name": "qwen3.8-27b",
@@ -62,7 +67,11 @@
     "model-00016-of-00018.safetensors": "73cb9a1089fb6155cb648609478d6633be8a5c7d9ca5a05bc8925ce8a553cefe",
     "model-00017-of-00018.safetensors": "beb51f01056142ac4984bd800507b0dd0fd18de57f8e9ef6ea41d1a3598983a8",
     "model-00018-of-00018.safetensors": "1d3479509e21494658f9b64d317f5ea8e55c4025d28c702d6c4d0b356ce8ea06"
-   }
+   },
+   "weight_files_last_modified_utc": "2026-10-04T02:59",
+   "earliest_server_log_utc": "2026-10-05T03:58",
+   "run_logs_carry_timestamps": false
   }
- }
+ },
+ "reading": "For Qwen3-8B and Granite the weight files were last modified before the first recorded request or server start, so the digests refer to files that were on disk during the runs. For Qwen3.8-27B the P6 run records carry no timestamps; the files have not been modified since 2026-10-04, before its earliest server log."
 }

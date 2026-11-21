@@ -1207,8 +1207,8 @@
   },
   {
    "path": "results/model_scale/qwen3_27b/q27b_clar_core24/summary.json",
-   "bytes": 11430,
-   "sha256": "df2b5283240fdd6cc07b20cc71331c4e6c17f94ff03210bc30fd00f6a89b06c7"
+   "bytes": 11401,
+   "sha256": "7235e74af9cfe7147b249447b1a4df0731d05c5833b1467fd434528bc305e925"
   },
   {
    "path": "results/model_scale/qwen3_27b/q27b_clar_nhanes/outcomes.csv",
@@ -1227,8 +1227,8 @@
   },
   {
    "path": "results/model_scale/qwen3_27b/q27b_clar_nhanes/summary.json",
-   "bytes": 25721,
-   "sha256": "7c26f3f56788f73353c4ed16ddd580bbcb80d55e51b2747b7ec2c831915ff4f4"
+   "bytes": 25692,
+   "sha256": "817b79b8ffc2fe78fb0498a3e9abfbab51f83ed5d204184506abbf6d8a6d8671"
   },
   {
    "path": "results/model_scale/qwen3_27b/q27b_con_core24/outcomes.csv",
@@ -1247,8 +1247,8 @@
   },
   {
    "path": "results/model_scale/qwen3_27b/q27b_con_core24/summary.json",
-   "bytes": 11449,
-   "sha256": "05f653d3d04fea14201c8f8e50cc3890523f56db28fb0342e89f938ff122d8ee"
+   "bytes": 11420,
+   "sha256": "bb3f363417623f5c1ebf80ab641be27312d2250094bbb9b949f4c754d421c1a1"
   },
   {
    "path": "results/model_scale/qwen3_27b/q27b_con_nhanes/outcomes.csv",
@@ -1267,13 +1267,13 @@
   },
   {
    "path": "results/model_scale/qwen3_27b/q27b_con_nhanes/summary.json",
-   "bytes": 25719,
-   "sha256": "ffef8da40b772120e3a51a68b2b9c526c52d6941669bb55a2082a62fe93e1bb6"
+   "bytes": 25690,
+   "sha256": "526d64ed1aa8f43c5ae3ef816ba7e23ed430e0c4c403d62b1ea863722115e91c"
   },
   {
    "path": "results/model_weights.json",
-   "bytes": 4404,
-   "sha256": "68adfa56dd98c58b70154f314e9e39284c5cc9345eed68e6977344c608d1bc9c"
+   "bytes": 4934,
+   "sha256": "b8b5a4312361c8ef55a0f1aef7a486bf949932a5ec5a589c31b0d5f5ed0224d3"
   },
   {
    "path": "results/nhanes/schema_audit.json",
@@ -1602,8 +1602,8 @@
   },
   {
    "path": "results/serving_provenance.json",
-   "bytes": 2621,
-   "sha256": "1b8d62cb0ee1068ac0242fddb5020bc9c3f11fc9c006f14e6eb42798651cf678"
+   "bytes": 2592,
+   "sha256": "18aa150357b9e2fe5e6ed16bc9542e45aa4c19af2cafc9c19f28a7543df506e9"
   }
  ]
 }

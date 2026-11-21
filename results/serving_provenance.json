@@ -62,7 +62,7 @@
     "model_scale/qwen3_27b/q27b_con_core24",
     "model_scale/qwen3_27b/q27b_con_nhanes"
    ],
-   "root": "/data/pduttapramanik/arbiter/models/qwen3.8-27b",
+   "root": "models/qwen3.8-27b",
    "max_model_len": 32768,
    "server_version": "0.30.0",
    "weight_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
